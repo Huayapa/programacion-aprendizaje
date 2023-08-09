@@ -1,0 +1,51 @@
+.fixed {
+  background-color: skyblue;
+  position: fixed;
+  top: 0;
+}
+
+.link {
+  display: inline-block;
+}
+
+.p-lorem {
+  background-color: yellow;
+  margin-top: 100px;
+}
+
+.relative {
+  background-color: lightcoral;
+  position: relative;
+  height: 100px;
+  top: 140px;
+}
+
+.absolute {
+  background-color: lightgreen;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.article {
+  margin-left: 50;
+  border: thin solid black;
+  width: 500px;
+  display: inline-block;
+  margin-right: 0px;
+}
+.sticky-aside {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 100px;
+  width: 100px;
+  padding: 30px;
+  margin-left: 500px;
+}
+
+.sticky-p {
+  background-color: cornflowerblue;
+  position: sticky;
+  top: 500px;
+}

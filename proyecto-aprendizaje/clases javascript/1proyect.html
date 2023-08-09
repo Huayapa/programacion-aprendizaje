@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
+<title> fundamentos javascript</title>
+</head>
+
+<body>
+  <h1>este es un texto cualquiera</h1>
+    <script>
+  
+      //valor de let y operaciones con numeros
+ let a =2;
+ let b = new Number(76);
+ let c = 43.87;
+ let d = "7.5";
+  console.log(a,b);
+  console.log(parseInt(c));
+  console.log(parseFloat(c));
+  console.log(typeof c, typeof d);
+  console.log(a+b);
+  console.log(c * d);
+  console.log(b-a)
+  //funciones
+  function saludar10(nombre ="desconocido", edad = 0){
+  console.log(`hola mi nombre es ${nombre} y de edad tengo ${edad} años`);
+}
+saludar10("josue",17);
+saludar10()
+//funciones 2 
+//funcion sola
+funciondeclarada()
+function funciondeclarada(){
+  console.log("escribir lo que sea")
+}
+funciondeclarada()
+
+//funcion con constante
+const funcionexpresada = function(){
+  console.log("esto es una funcion")
+}
+funcionexpresada()
+
+//arreglo, array
+const a1 = [];
+const b1 = [2, false, "como estan", ["a", "b", "c", [1,2,3,4,5,6]]]
+ console.log(a1);
+ console.log(b1);
+ console.log(b1.length);
+ console.log(b1[1]);
+ console.log(b1[3][2]);
+ console.log(b1[3][3][5]);
+
+ //otro metodo existen mas de 20 metodos
+ const a2 = Array.of(4,true, 3, 43)
+ console.log(a2)
+
+ const b2 = Array(30).fill(true);
+ console.log(b2)
+//push agrega y pop quita el ultimo
+const colores1 = ["amarillo", "azul", "verde", "rojo"];
+console.log(colores1)
+ colores1.push("rosado", "morado");
+  console.log(colores1)
+ colores1.pop()
+  console.log(colores1)
+
+colores1.forEach(function(el, index){console.log(`<li id="${index}">${el}</li>`);
+})
+//object
+const josue1 ={
+  nombre: "josue",
+  apellido: "huayapa",
+  edad: 17,
+}
+console.log(josue1.edad)
+//operadores aritmeticos
+let a3 = 10 + (10 - 30) * 4;
+let modulo = 10 % 3;
+
+ console.log(a3)
+ console.log(modulo)
+//relaciones
+
+console.log(19 > 32);
+console.log(10 > 7);
+console.log(8 >= 9);
+console.log(10 >= 8);
+console.log(8 >= 8);
+//valor de =, ==, ===;
+console.log(5 == 5);  //true
+console.log("7" == 7);  //true
+
+console.log(7 === 7); //true
+console.log("10" === 10); //false
+//incremento o decremento
+let o = 1;
+o = o + 4
+console.log(o);
+let i = 3;
+i *= 4
+console.log(i);
+let a5 = 2;
+console.log(++a5);
+console.log(++a5);
+console.log(++a5);
+console.log(--a5);
+
+//logicos
+console.log(!true); //false
+console.log(!false); //true
+console.log((9 === 9) || ("9" === 9));  //true
+console.log((9 === 9) && ("9" === 9));  //false
+
+//condicionales
+//if-else
+let edad1 = 17;
+if (edad1 >= 18) {console.log("eres mayor de edad");
+}else {
+  console.log("eres menor de edad")
+}
+//if- else if- else
+/* 
+dejame dormir - 0hrs - 5hrs
+buenos dias- 6hrs - 11hrs
+buenas tardes-  12hrs - 18hrs
+buenas noches- 19hrs - 23hrs
+*/
+let hora = 13
+if (hora >= 0 && hora <= 5) {
+  console.log("dejame dormir");
+}else if (hora >= 6 && hora <= 11){
+  console.log("buenos dias");
+}else if (hora >= 12 && hora <= 18){
+  console.log("buenas tardes");
+}else{
+  console.log("buenas noches");
+}
+//operador ternario (condicion) ? verdadero : falsa
+console.log("esto de aca abajo es un operador ternario")
+let edad2 = 18
+let eresmayor = (edad2 >= 18) ? "eres mayor de edad" 
+: "eres menor de edad";
+console.log(eresmayor);
+//switch- case
+/*
+domingo- 0
+lunes- 1
+martes- 2
+miercoles- 3
+jueves- 4
+viernes- 5
+sabado- 6
+*/
+let dia = 2
+switch (dia) {
+  case 0:
+    console.log("domingo");
+    break;
+  case 1:
+    console.log("lunes");
+    break;
+  case 2:
+    console.log("martes");
+    break;
+  case 3:
+    console.log("miercoles");
+    break;
+  case 4:
+    console.log("jueves");
+    break;
+  case 5:
+    console.log("viernes");
+    break;
+  case 6:
+    console.log("sabado");
+    break;
+  default:
+    console.log("este dia no existe");
+    break;
+}
+//ciclos(loops)
+//while
+let contador = 0;
+while (contador < 10){
+  console.log("while" + contador);
+  contador++;
+}
+//do while
+do {
+  console.log("do while" + contador);
+  contador++;
+} while (contador < 10);
+//for
+for (let a4 = 0; a4 < 10; a4++) {
+  console.log("for" + a4);
+}
+
+let numeros1 = [10,20,30,40];
+for(let a5 = 0;a5 < numeros1.length; a5++) {
+  console.log(numeros1[a5]);
+}
+const josue3 ={
+  nombre:"josue",
+  apellido:"huayapa",
+}
+for (const propiedad in josue3) {
+   console.log(`key: ${propiedad}, value ${josue3[propiedad]}`);
+}
+
+let numeros2 = [10, 20, 30, 40, 50, 60];
+for (const elemento of numeros2){
+  console.log(elemento);
+}
+
+let cadena = "hola buenos dias";
+
+for (const caracter of cadena){
+  console.log(caracter);
+}
+//manejo de errores
+try {
+  console.log("este es el try");
+  //adasda// error intensional
+} catch (error) {
+  console.log("catch verifica el error");
+  console.log(error);
+} finally{
+  console.log("se ejecutara despues del resto"); 
+}
+// segundo metodo
+try {
+  let numeros3 = 10;
+  if (isNaN(numeros3)) {
+    throw new error("el caracter introducido no es numero");
+  }
+  console.log(numeros3 * numeros3);
+} catch (error1) {
+  console.log(`se produjo un error: ${error1}`);
+}
+//breack------------------------------------------
+const numeros4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 10];
+for (let a6 = 0; a6 < numeros4.length; a6++) {
+  if(a6 === 5) {
+    break;
+  }
+  console.log(numeros4[a6]);
+}
+
+//continue-------------------------------------------
+const numeros5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 10];
+for (let a6 = 0; a6 < numeros5.length; a6++) {
+  if(a6 === 5) {
+    continue;
+  }
+  console.log(numeros5[a6]);
+}
+
+//sin destructuracion
+const numeros6 = [1, 2, 3];
+ let uno = numeros6[0],
+   dos = numeros6[1],
+   tres = numeros6[2];
+
+ console.log(uno, dos, tres);
+
+//con destructuracion
+const [one, two, three] = numeros6;
+ console.log(one, two, three);
+
+ const persona = {
+   nombre: "josue",
+   apellido: "huayapa",
+   edad: 17
+ };
+
+ let { nombre, edad, apellido } = persona;
+ console.log(nombre, apellido, edad);
+
+ //objetos literales
+ const dog = {
+   nombre: "whizz",
+   edad: "13",
+   raza: "labrador",
+   ladrar(){
+     console.log("guauuuu gwau")
+   }
+ }
+ console.log(dog);
+ dog.ladrar()
+//-----------------------------------------------------------------------
+ //parametros rest
+//suma
+ function sumar(a, b, ...c) {
+   let resultado = a + b;
+
+   c.forEach(function (n) {
+     resultado += n
+   });
+
+   return resultado;
+ }
+ console.log(sumar(1, 2));
+ console.log(sumar(1, 2, 3));
+ console.log(sumar(1, 2, 3, 4));
+ console.log(sumar(1, 2, 3, 4, 5));
+ console.log(sumar(1, 2, 3, 4, 5, 6));
+ console.log(sumar(1, 2, 3, 4, 5, 6, 7));
+ console.log(sumar(30, 70, 100, 300));
+ //operador spread
+ // sumar valores para que sea uno
+
+ const arr1 = [1, 2, 3, 4, 5],
+   arr2 = [6, 7, 8, 9, 0];
+ console.log(arr1, arr2);
+ const arr3 = [...arr1, ...arr2];
+  console.log(arr3);
+//----------------------------------------------------------------------------
+  //arrow function puede cambiarse por funcion
+  const saludar1 = () => console.log(`hola`);
+  saludar1();
+
+
+  const saludar2 = nombre => console.log(`hola tu eres ${nombre}`);
+  saludar2("josue");
+
+
+  const sumar2 = (a, b) => a + b;
+  console.log(sumar2(7, 20));
+
+
+  const funcionDeVariasLineas = () => {
+    console.log("Uno");
+    console.log("Dos");
+    console.log("Tres");
+  }
+  funcionDeVariasLineas();
+
+
+  const numeros7 = [1, 2, 3, 4, 5, 6];
+  numeros7.forEach((el,index) => console.log(`el ${el} esta en la posicion ${index}`));
+  //-----------------------------------------------------------------------------------------
+ //prototipos (UpperCamelCase)
+//metodo 1 adentro del prototype
+  /*function Animal(nombre, genero){
+   //atributos
+    this.nombre = nombre;
+    this.genero = genero;
+
+    //metodos recomendable tenerlo afuera del prototipo
+    this.sonar = function () {
+      console.log("realizo sonidos de un ser viviente");
+    }
+  }
+    const Snoopy = new Animal("Snoopy", "Macho");
+    const lolaBunny = new Animal("LolaBunny", "Hembra");
+
+  console.log(Snoopy);
+  console.log(lolaBunny); 
+
+  //metodo 2 fuera del prototipo
+
+  function Animal(nombre, genero){
+   //atributos
+    this.nombre = nombre;
+    this.genero = genero;
+  }
+  
+
+    //metodos recomendable tenerlo afuera del prototipo
+    Animal.prototype.sonar = function () {
+      console.log("realizo sonidos de un ser viviente");
+    }
+   
+    const Snoopy = new Animal("Snoopy", "Macho");
+    const lolaBunny = new Animal("LolaBunny", "Hembra");
+
+  console.log(Snoopy);
+  console.log(lolaBunny);
+  //---------------------------------------------------------------------------
+  //herencia prototipica
+  function Perro(nombre, genero, tamanio) {
+    this.super = Animal;
+    this.super(nombre, genero);
+    this.tamanio = tamanio;
+  }
+  //la palabra perro esta heredando de animal
+  Perro.prototype = new Animal();
+Perro.prototype.constructor = Perro;
+//sobreescritura de metodos del prototipo padre en el hijo
+Perro.prototype.sonar = function () {
+  console.log("soy un perro y mi sonido es ladrar");
+}
+Perro.prototype.ladrar = function () {
+  console.log("guaauu guauuuu!!!!!");
+}
+const snoopy1 = new Perro("snoopy","Macho","mediano");
+console.log(snoopy1);
+snoopy1.ladrar(); */
+//------------------------------------------------------------------------------
+//clases y herencia
+class Animal{
+  constructor(nombre, genero){
+    this.nombre = nombre;
+    this.genero = genero;
+  }
+  sonar(){
+    console.log("realizo sonidos porque soy un ser vivo");
+  }
+  saludar(){
+    console.log(`hola me llamo ${this.nombre}`);
+  }
+}
+class Perro extends Animal{
+  constructor(nombre, genero, tamanio){
+    super(nombre, genero);
+    this.tamanio = tamanio;
+    this.raza = null;//(1)
+  }
+  sonar() {
+   console.log("soy un perro y mi sonido es un ladrido");
+  }
+  ladrar() {
+    console.log("guau guauuu!!");
+  }
+  static queEres(){
+   console.log("soy un perro");
+  }
+  //----------------------------------------------------------------------------
+  //el this esta en las clases y herencias(1)
+  //static getters y setters
+  get getRaza() {
+  return this.raza;
+}
+set setRaza(raza) {
+  this.raza = raza;
+}
+}
+
+const mimi = new Animal("mimi","nombre"),
+scooby = new Perro("scooby", "macho", "gigante");
+Perro.queEres();
+console.log(mimi);
+console.log(scooby);
+mimi.saludar();
+mimi.sonar();
+scooby.sonar();
+scooby.ladrar();
+scooby.setRaza = "gran danés";
+console.log(scooby.getRaza);
+//----------------------------------------------------------------------------
+//objeto console
+console.log(console)
+console.error("creo un error");
+console.warn("hola este es un aviso");
+console.info("este es un aviso");
+
+let nombre8 = "josue",
+  apellido8 = "huayapa",
+  edad8 = 17;
+//primer metodo
+console.log(`Hola mi nombre es ${nombre8} ${apellido8} y tengo ${edad} años`); 
+//segundo metodo 
+console.log(`Hola mi nombre es %s %s y tengo %d años`, nombre8, apellido8, edad8);
+console.log(document);
+console.table(Object.entries(console).sort());//crea una tablita
+//un metodo
+const numeros8 = [1, 2, 3, 4, 5],
+      vocales8 = ["a", "e", "i", "o", "u"];
+console.table(numeros8);
+console.table(vocales8);
+//metodo de tiempo
+console.time('tiempo 78');
+  const arreglo7 = Array(10000000);
+for (let a6 = 0; a6 < arreglo7.length; a6++) {
+  arreglo7[a6] = a6;
+}  
+console.timeEnd('tiempo 78');
+//metodo 2
+const perro1 = {
+  nombre: "Boni",
+  raza: "boxer",
+  color: "cafe"
+}
+console.table(perro1);
+//metodo imprimir varios
+for(let a7 = 0 ; a7 <= 50;a7++){
+  console.count("codigos for");
+  console.log(a7)
+}
+//metodo 3
+let x = 1,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    y = 2
+Pruebaxy = "x es menor que y";
+console.assert(x<y, {x, y, Pruebaxy})
+//objeto Date
+console.log(Date());  
+let fecha = new Date ();
+console.log(fecha);
+console.log(fecha.getDate());//dia del mes
+console.log(fecha.getDay());//dia de la semana
+console.log(fecha.getMonth());//el mes
+console.log(fecha.getFullYear());//año
+console.log(fecha.getHours());//hora
+console.log(fecha.getMinutes());//minutos
+console.log(fecha.getSeconds());//segundos
+console.log(fecha.getMilliseconds());//milisegundos
+console.log(fecha.toString());//fecha
+console.log(fecha.toDateString());//solo la fecha
+console.log(fecha.toLocaleString());//iniciales de la fecha 13/5/2022 09:29:43
+console.log(fecha.toLocaleDateString());//13/5/2022
+console.log(fecha.toLocaleTimeString());//09:29:43
+console.log(fecha.getTimezoneOffset());//300
+console.log(Date.now());//1652452916675 //cuanto tiempo a pasado desde el 1 de enero de 1970
+//tu fecha de nacimiento
+let cumprejosue = new Date(2005,2,17);
+console.log(cumprejosue);
+//------------------------------------------------------------------------------
+//object math
+//metodo de redondeo
+console.log(Math);
+console.log(Math.abs(-7.8));//solo numeros absolutos
+console.log(Math.ceil(7.8));//numero entero mayor osea 8 en este ejemplo
+console.log(Math.floor(7.8));//numero inmediato entero en este caso 7
+console.log(Math.round(7.2));//redondea al numero mas cercano
+//raiz y exponentes
+console.log(Math.sqrt(81));//una raiz cuadrada en este ejemplo es 9
+console.log(Math.pow(2, 5));//son exponentes , su resultado es 32
+//saber si tu numero es negativo, cero o positivo
+console.log(Math.sign(-78));//-1 0 1
+//generar numeros aleatorios entre 0 , 1 
+console.log(Math.random());//cuantan las decimales
+//ejemplo para numero ramdom de 0 a 1000 sin decimales
+console.log(Math.round(Math.random()* 1000));
+//-------------------------------------------------------------------------------
+//otra cosa una suma
+function sumar3(a, b, ...c){
+let resultado1 = a + b;
+c.forEach(function(n){
+  resultado1 += n
+})
+return resultado1;
+}
+console.log(sumar3(115, 89));//puedes sumar solo cambiando los numeros
+//---------------------------------------------------------------------------------
+//operadores de corto circuito
+//cortocircuito OR - ||
+function saludar3(nombre2) {
+  nombre2 = nombre2 || "desconocido";
+  console.log(`Hola ${nombre2}`);
+}
+
+saludar3("josue");
+saludar3();
+//estos son los verdaderos que ejecutara el codigo izquierdo
+console.log("letras" || "valor cortocircuito OR");
+console.log(78 || "valor cortocircuito OR");
+console.log(true || "valor cortocircuito OR");
+console.log([] || "valor cortocircuito OR");
+console.log({} || "valor cortocircuito OR");
+console.log(-56 || "valor cortocircuito OR");
+//estos son los falsos que ejecutara el codigo derecho
+console.log(false || "valor cortocircuito OR");
+console.log(null || "valor cortocircuito OR");
+console.log(undefined || "valor cortocircuito OR");
+console.log("" || "valor cortocircuito OR");
+console.log(0 || "valor cortocircuito OR");
+console.log(NaN || "valor cortocircuito OR");
+
+//cortocircuito AND - &&
+//estos son los falsos que ejecutara el codigo izquierdo
+console.log(false && "valor cortocircuito OR");
+console.log(null && "valor cortocircuito OR");
+console.log(undefined && "valor cortocircuito OR");
+console.log("" && "valor cortocircuito OR");
+console.log(0 && "valor cortocircuito OR");
+console.log(NaN && "valor cortocircuito OR");
+//estos son los verdaderos que ejecutara el codigo derecho
+console.log("letras" && "valor cortocircuito OR");
+console.log(78 && "valor cortocircuito OR");
+console.log(true && "valor cortocircuito OR");
+console.log([] && "valor cortocircuito OR");
+console.log({} && "valor cortocircuito OR");
+console.log(-56 && "valor cortocircuito OR");
+//--------------------------------------------------------------------------
+//alert, confirm y prompt
+//alert("hola soy una alerta");
+//confirm("hola podrias aceptar o no");
+//prompt("escribe lo que tu quieras");
+
+ /*let alerta1 = alert("hola soy una alerta"),
+    confirmacion = confirm("hola podrias aceptar o no"),
+    aviso = prompt("escribe lo que tu quieras");
+
+ console.log(alerta1);//lo marcara en la consola
+ console.log(confirmacion);//lo marcara en la consola
+ console.log(aviso);//lo marcara en la consola*/
+ //------------------------------------------------------------------------------
+ //expresiones regulares
+ let cadena1 = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, eum aliquid dolorem nihil temporibus possimus est suscipit doloribus, eaque laudantium neque quo velit dolores autem. Esse nobis atque molestias quia";
+ //metodo 1
+ let expReg = new RegExp("lorem", "ig");
+ console.log(expReg.test(cadena1));
+ console.log(expReg.exec(cadena1));
+ //metodo 2
+ let expReg2 = /lorem/ig;
+ console.log(expReg2.test(cadena1));
+ console.log(expReg2.exec(cadena1));
+ //----------------------------------------------------------------------------------------------------
+ //funciones anonimas autoejecutables
+ //clasica
+ (function () {
+   console.log('version clasica')
+ })();
+
+ //la crockford
+ ((function () {
+   console.log('version crockford')
+ })());
+
+ //unaria
+ +function () {
+   console.log('version unaria')
+ }();
+
+ //facebook
+ !function () {
+   console.log('version facebook')
+ }();
+ 
+</Script>
+</body>
+
+</html>

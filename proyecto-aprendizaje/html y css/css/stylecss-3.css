@@ -1,0 +1,1742 @@
+
+
+/*reseteo*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+.url-enlaces {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* main {
+    display: flex;
+} */
+
+/* @media screen and (width: 1000px) {
+    .aside-temario {
+        position: sticky;
+        top: 0;
+        z-index: -1;
+        font-size: 1rem;
+    }
+    
+} */
+/* variables */
+html {
+    --style-color-azul: #0d2e69;
+    --style-bg-color: #1db9d1;
+    font-size: 16px;
+}
+/* tipografia */
+html {
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+/*css para navegador*/
+.nav-css {
+    background-color: var(--style-bg-color);
+    border: thick solid var(--style-color-azul);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-self: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.nav-css h1 {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.url-enlaces {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+
+.url-enlaces a {
+    height: 100%;
+    align-items: center;
+}
+
+.url-enlaces * {
+    text-decoration: none;
+    display: flex;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.li-inicio a:active {
+    background-color: var(--style-color-azul);
+    color: #fff;
+    opacity: 50%;
+}
+
+.li-inicio a:link,
+.li-inicio a:visited {
+    color: #0d2e69;
+}
+
+
+.li-inicio a:hover {
+    background-color: var(--style-color-azul);
+    color: #fff;
+    opacity: 75%;
+}
+
+[id] {
+    scroll-margin-top: 7ex;
+}
+
+/*hero image*/
+.hero-image {
+    /* background-color: rgba(red, green, blue, 100); */
+    background-image: url(../img/codigo-css.jpeg);
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    background-attachment: fixed;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image div {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}
+
+/*css para las cajas*/
+
+.container {
+    background-color: var(--style-bg-color);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.container-info,
+.container-code {
+    margin: 1rem;
+    width: 90%;
+}
+
+
+/*texto para h2 h3 o otros*/
+
+.title-h2 {
+    border-bottom: thick solid var(--style-color-azul);
+    font-size: 2rem;
+}
+
+.red-title {
+    color: #f00;
+    margin: 1rem;
+    margin-left: 0.5rem;
+}
+
+.yellow-title {
+    color: #ff0;
+    margin: 1rem;
+    margin-left: 0.5rem;
+}
+
+.orange-title {
+    color: #f77800;
+    margin: 1rem;
+    margin-left: 0.5rem;
+}
+
+.green-title {
+    color: #0ee81c;
+    margin: 1rem;
+    margin-left: 0.5rem;
+}
+
+/*codigo*/
+
+.style-code-1 {
+    background-color: #91b1e6;
+    border-radius: 0.5rem;
+    border: medium solid #0452b3;
+    width: 60%;
+    overflow: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.red {
+    color: #f00;
+}
+
+.yellow {
+    color: #ff0;
+}
+
+.orange {
+    color: #f77800;
+}
+
+.blue {
+    color: #00f;
+}
+
+.green {
+    color: #0ee81c;
+}
+
+.purple {
+    color: purple;
+}
+
+.skyblue {
+    color: #00aae4;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #000;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:link {
+    color: #0452b3;
+}
+.footer a:visited {
+    color: #0452b3;
+}
+
+.footer a:hover {
+    opacity: 50%;
+    color: #808080;
+}
+
+.footer a:active {
+    opacity: 100%;
+    color: #1db9d1;
+}
+
+.footer {
+    padding: 1rem;
+}
+/*lista de temario*/
+
+.temario-list {
+    font-size: 1.5rem;
+}
+
+.temario-list a {
+    list-style-type: upper-roman;
+    text-decoration: none;
+}
+
+.temario-list a:link {
+    color: #00f;
+}
+
+
+.temario-list a:visited {
+    color: #00f;
+}
+
+.temario-list a:hover {
+    opacity: 40%;
+    color: #0d2e69;
+}
+
+.temario-list a:active {
+    background-color: #808080;
+    color: #000;
+    opacity: 100%;
+}
+/*
+otros
+*/
+
+.estilos-codigo-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caja-medio {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------*/
+
+/*Aqui enpieza las clases*/
+/*
+Sombras
+*/
+
+.box {
+    border: thick solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+/*
+sombras en caja
+*/
+.box-shadow {
+    /* box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset; */
+    box-shadow: 1rem 1rem 1rem 1rem;
+    box-shadow: -1rem -1rem 1rem 1rem #0d2e69;
+    box-shadow: 1rem 1rem 1rem 1rem #0d2e69 inset;
+}
+/*
+sombras en textos
+*/
+
+.text-shadow {
+    font-size: 2rem;
+    text-align: center;
+    /* text-shadow: mov-x mov-y blur-radius color; */
+    text-shadow: -1rem -1rem .4rem #0d2e69;
+}
+
+/*
+sombras multiples
+*/
+.shadow-multiple {
+    box-shadow: 1rem 1rem 1rem 1rem #0d2e69, 1rem 1rem 1rem 1rem #055 inset;
+}
+
+/*
+filtro drop shadow
+*/
+
+.filter-shadow img {
+    /* box-shadow: 1rem 1rem 1rem 1rem #f00 inset; */
+    /* filter:drop-shadow(mov-x mov-y blur-radius color); */
+    filter: drop-shadow(1rem 1rem 1rem red);
+}
+
+/*degradados*/
+.ejemplo-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+/*
+linear-gradient 
+*/
+
+.linear-gradient {
+    background-image: linear-gradient(red, green);
+    background-image: linear-gradient(red, green, blue, orange);
+    background-image: linear-gradient(0deg, red, green, blue, orange);
+    background-image: linear-gradient(45deg, red, green, blue, orange);
+    background-image: linear-gradient(45deg, red 20%, green 10%, blue 10%, orange 90%);
+}
+
+.linear-gradient-1 {
+    background-image: linear-gradient(90deg, red 30%, white 30% 70%, red 30%);
+}
+
+/*
+radial-gradient
+*/
+
+.radial-gradient {
+    background-image: radial-gradient(cyan, magenta);
+    background-image: radial-gradient(
+        circle 2rem, 
+        cyan, 
+        magenta, 
+        yellow
+    );
+    background-image: radial-gradient(
+        circle 4rem, 
+        cyan 30%, 
+        magenta 30% 80%,
+        yellow
+    );
+    background-image: radial-gradient(
+        circle 100px, 
+        cyan 30%, 
+        magenta 60%, 
+        yellow 90%
+    );
+    background-image: radial-gradient(
+        ellipse 100px 50px,
+        cyan 30%, 
+        magenta 60%, 
+        yellow 90%
+        );
+    }
+    
+.radial-gradient-1 {
+    background-image: radial-gradient(
+        circle 100px at left top,
+        cyan 30%, 
+        magenta 60%, 
+        yellow 90%
+    );
+}
+
+/*
+conicos (conic-gradient)
+*/
+
+.conic-gradient {
+    background-image: conic-gradient(red, green);
+    background-image: conic-gradient(
+        red 50%,
+        green 60%,
+        blue 80%
+    );
+    background-image: conic-gradient(
+        red 0deg 90deg,
+        green 120deg 240deg,
+        blue 270deg
+    );
+    background-image: conic-gradient(
+        from 90deg,
+        red 0deg 90deg,
+        green 120deg 240deg,
+        blue 270deg
+    );
+    background-image: conic-gradient(
+        from 180deg,
+        red 0deg 90deg,
+        green 120deg 240deg,
+        blue 270deg
+    );
+}
+
+.conic-gradient-2 {
+    background-image: conic-gradient(
+        from 90deg,
+        red 0deg 120deg,
+        white 120deg 240deg,
+        blue 240deg
+    );
+}
+
+/*repetir degradados*/
+
+.repeat-gradient-lineal {
+    background-image: repeating-linear-gradient(
+        red 0 10px,
+        green 10px 20px,
+        blue 20px 30px
+    );
+}
+
+.repeat-gradient-radial {
+    background-image: repeating-radial-gradient(
+        circle 4rem,
+        cyan 0 10px,
+        magenta 10px 20px,
+        yellow 20px 30px
+    );
+}
+
+.repeat-gradient-conic {
+    background-image: repeating-conic-gradient(
+        red 0 8%,
+        yellow 8% 16%,
+        black 16% 24%
+    );
+}
+
+/*Graficas con Degradados*/
+
+.chart-gradient {
+    background-image: conic-gradient(
+        cyan 0% 50%, 
+        magenta 50% 80%, 
+        yellow 80%
+        );
+    border-radius: 50%;
+}
+
+.donut-gradient {
+    background-image: radial-gradient(
+        white 40%, 
+        black 41%, 
+        transparent 45%
+    ), conic-gradient(
+        cyan 0% 50%,
+        magenta 50% 80%,
+        yellow 80%
+    );
+    border-radius: 50%;
+}
+
+/*Filtros filter:*/
+.card {
+    border: thick solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 200px;
+    
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+/*
+blur()
+*/
+
+.card-blur img {
+    filter: blur(.17rem);
+}
+
+/*
+brightness
+*/
+.card-brightness img {
+    filter: brightness(.7);
+}
+
+/*
+contrast
+*/
+
+.card-contrast img {
+    filter: contrast(.5);
+}
+
+/*
+grayscale
+*/
+
+.card-grayscale img {
+    filter: grayscale(1);
+}
+
+/*
+sepia
+*/
+
+.card-sepia img {
+    filter: sepia(1);
+}
+
+/*
+hue-rotate
+*/
+
+.card-hue-rotate img {
+    filter: hue-rotate(90deg);
+}
+
+/*
+invert()
+*/
+
+.card-invert img {
+    filter: invert(1);
+}
+
+/*
+opacity()
+*/
+
+.card-opacity img {
+    filter: opacity(0.5);
+}
+
+/*
+saturate()
+*/
+
+.card-saturate img {
+    filter: saturate(2);
+}
+
+/*
+filtros-multiples
+*/
+
+.filtro-multiple {
+    filter: blur(.1rem) hue-rotate(270deg) opacity(.75) invert(1);
+}
+
+/*
+Filtros a fondos (backdrop-filter)
+*/
+
+.relative {
+    position: relative;
+}
+
+.backdrop-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.backdrop-filter h4 {
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgba(255, 102, 255, 0.5);
+    /*
+     backdrop-filter: grayscale(2);
+    backdrop-filter: sepia(1);
+    backdrop-filter: opacity(.25);
+    backdrop-filter: hue-rotate(180deg);
+     */
+    backdrop-filter: blur(.5rem);
+}
+
+/*
+modo dark/light con filtros
+*/
+
+.dark-mode {
+    background-color: #fff;
+    color: #000;
+    filter: invert(1);
+    padding: 1rem;
+}
+
+.dark-mode img {
+    filter: invert(1);
+}
+
+/*Modos de Mezclas (mix-blend-mode)*/
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blend-mode img {
+    background-color: wheat;
+    mix-blend-mode: color;
+    mix-blend-mode: color-dodge;
+    mix-blend-mode: screen;
+    mix-blend-mode: multiply;
+    mix-blend-mode: exclusion;
+    mix-blend-mode: soft-light;
+}
+
+/*Modos de Mezclas a fondos (background-blend-mode)*/
+
+.bg-blend-mode {
+    background-image: url("../assent/puesta-sol.jpg"), url("../assent/favicon.png");
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color;
+    background-blend-mode: soft-light;
+    background-blend-mode: multiply;
+    background-blend-mode: darken;
+}
+
+/*Mascaras (clip-path)*/
+
+.clip-path-circle {
+    /*
+     clip-path: circle();
+    clip-path: circle(200px);
+    clip-path: circle(100px at left top); 
+    */
+    clip-path: circle(100px at 23% 50%);
+}
+
+.clip-path-ellipse {
+    /* 
+    clip-path: ellipse();
+    clip-path: ellipse(200px 100px);
+    clip-path: ellipse(200px 100px at left top); 
+    */
+    clip-path: ellipse(200px 100px at 23% 50%);
+}
+
+.clip-path-inset {
+    /*
+     clip-path: inset(1rem);
+    clip-path: inset(1rem 2rem);
+    clip-path: inset(1rem 2rem 3rem);
+    clip-path: inset(1rem 2rem 3rem 4rem);
+     */
+    clip-path: inset(1rem round 1rem);
+}
+
+.clip-path-polygon {
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+/*Formas (shape-side)*/
+.estilos-shapes {
+    border: thick solid black;
+    background-color: #91b1e6;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+.estilos-shapes img {
+    border-radius: 50%;
+    border: thin solid gray;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+.shape-1 {
+    margin: 4rem 2rem 4rem 0;
+    shape-outside: circle();
+}
+.shape-2 {
+    margin: 4rem 0 4rem 2rem;
+    shape-outside: ellipse();
+}
+.shape-3 {
+    margin: 2rem 2rem 0 0;
+    shape-outside: polygon(
+        1% 28%, 
+        31% 14%, 
+        46% 19%, 
+        55% 26%, 
+        61% 41%, 
+        63% 53%, 
+        61% 67%, 
+        82% 79%, 
+        99% 98%, 
+        0% 100%
+    );
+}
+
+/*---------efect scroll one page-----------*/
+/*
+Los Codigos estan en el css de scroll-one-page.css
+*/
+
+/*---------------- Ajustes del Scroll Efectos Slides---------------- */
+/*
+Los Codigos estan en el css de scroll-snap-slides.css
+*/
+
+/*Ajuste del Scroll Efecto Carrusel Horizontal (scroll-snap-type & scroll-snap-align)*/
+/*
+Los Codigos estan en el css de scroll-snap-slides.css
+*/
+
+
+/*--------------------------------------------------------------------------*/
+/*--------------------Movimiento en CSS-----------------------------*/
+/*Transiciones*/
+
+.transitions .box {
+    background-color: magenta;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;
+    transition: border-color 2s linear 0.3s;
+    transition: all 2s ease-in-out 250ms;
+    transition: background-color 2s ease-in-out 250ms,
+    border-color 2s ease-in-out 250ms,
+    border-radius 2s ease-in-out 250ms;
+}
+
+.transitions .box:hover {
+    background-color: cyan;
+    border-color: red;
+    border-radius: 2rem;
+}
+
+/*transiciones multiples*/
+
+.transitions .card {
+    transition: opacity 1s ease-out,
+        border-color 3s steps(5),
+        filter 2s ease-in 1s,
+        box-shadow 1.5s linear 2s;
+    /*steps() dara parpadeo y cambiara de color dependiendo del numero*/
+}
+
+.transitions .card:hover {
+    opacity: 0.75;
+    border-color: orchid;
+    filter: blur(0.15rem);
+    box-shadow: 1rem 1rem 2rem 0.5rem #000;
+}
+
+.transitions .card img {
+    transition: object-position 2s ease-in-out 3s;
+}
+
+.transitions .card img:hover {
+    object-position: 0% 50%;
+}
+
+/*--------------------------------------------------------------------------*/
+/*------------------------Transformaciones---------------------------*/
+/*
+transformaciones en 2d:
+*/
+
+/*transform()*/
+.transform-2d-translate img {
+ transition: transform 2s ease-in-out;
+}
+
+.transform-2d-translate img:hover {
+ transform: none;
+ /* transform: translateX(4rem);
+ transform: translateY(4rem);
+ transform: translateY(-4rem);
+ transform: translate(-4rem, -4rem); */
+ transform: translate(50%, 50%);
+}
+/*scale()*/
+
+.transform-2d-scale img {
+ transition: transform 2s ease-in-out;
+}
+
+.transform-2d-scale img:hover {
+ /* transform: scaleX(2);
+ transform: scaleY(.5);
+ transform: scale(2, .5); */
+ transform: scale(-.5, -.5);
+}
+
+/*rotate()*/
+.transform-2d-rotate img {
+ transition: transform 2s ease-in-out;
+}
+
+.transform-2d-rotate img:hover {
+ /* transform: rotateX(90deg);
+ transform: rotateY(90deg);
+ transform: rotateZ(90deg); */
+ transform: rotate(90deg);
+}
+
+/*skew()*/
+.transform-2d-skew img {
+ transition: transform 2s ease-in-out;
+}
+
+.transform-2d-skew img:hover {
+ /* transform: skewX(20deg);
+ transform: skewX(-20deg);
+ transform: skewY(20deg);
+ transform: skewY(-20deg); */
+ transform: skew(20deg, 20deg);
+}
+
+/*matrix()*/
+.transform-2d-matrix img {
+ transition: transform 2s ease-in-out;
+}
+
+.transform-2d-matrix img:hover {
+ transform: matrix(1, 2, 2, 1, 20, 10);
+}
+
+/*Transformaciones Multiples*/
+.transform-2d-multiple img {
+ transition: transform 2s ease-in-out;
+}
+
+.transform-2d-multiple img:hover {
+ transform: translate(25%, -50%)
+ rotate(240deg)
+ skew(10deg, 20deg) 
+ scale(-0.5, -0.5);
+}
+
+/*
+Activar la perspectiva 3D
+*/
+
+.transform-3d {
+    perspective: 10rem;
+}
+
+.transform-3d img {
+    transition: transform 2s ease-in-out;
+}
+
+.transform-3d-1 img:hover {
+    /* transform: perspective(1000px) translateZ(4rem);
+    transform: perspective(100rem) translateZ(4rem); */
+    transform: perspective(10rem) translateZ(4rem);
+}
+
+/*
+Transformaciones en 3D
+*/
+
+.transform-3d-2 img:hover {
+    /* transform: translate3d(2rem, 50%, -3rem);
+    transform: scaleZ(1.5);
+    transform: scale3d(2, 0.5, 3);
+    transform: rotateX(60deg);
+    transform: rotateY(60deg); */
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+/*
+Transformaciones en 3D matrix()
+*/
+
+.transform-3d-3 img:hover {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 6, 0, 0, 0, 1, 0, 50, 100, 0, 1.1);
+}
+
+/*
+Transformaciones en 3D multiples
+*/
+
+.transform-3d-multiple img:hover {
+    transform: rotate3d(-1, 2.5, -2, 60deg) translate3d(2rem, 50%, -3rem) scale3d(2, -0.5, 3);
+}
+
+/*
+Origenes de Transformacion(transform-origin)
+*/
+
+.transform-origin {
+    width: 60%;
+}
+
+.transform-origin img {
+    transition: transform 2s ease-in-out;
+    /* transform-origin: x y z; */
+    /* 
+    transform-origin: 50% 50% 0;
+    transform-origin: 0 0 0;
+    transform-origin: 100% 100% 0;
+    transform-origin: top left; 
+    */
+    transform-origin: -2rem -3rem;
+}
+
+.transform-origin img:hover {
+    transform: rotate(360deg);
+}
+
+
+/*
+Ejercicio de Flip Cards
+ con transiciones y
+  transformaciones
+*/
+
+
+/*flip card 1 y 2*/
+.flip-card-1,
+.flip-card-2 {
+    border: thick solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 300px;
+
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    transform-style: preserve-3d;
+}
+
+.flip-card-1 img,
+.flip-card-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+/*flip card 1*/
+.flip-card-1:hover {
+    transform: rotateY(180deg);
+}
+
+/*flip card 2*/
+.flip-card-2 {
+    transform-origin: center right;
+}
+.flip-card-2:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+
+/*flip card*/
+
+.flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-front {
+    transform: rotateY(0deg);
+}
+.flip-back {
+    transform: rotateY(180deg);
+}
+
+/*----------------------------------------------------------------------------*/
+/*---------------------------------Animaciones-------------------------------*/
+
+/*
+Conceptos Basicos
+*/
+
+@keyframes myAwesomeAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform:  translateX(0);
+    }
+}
+
+.my-animation {
+    width: 50%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: myAwesomeAnimation;
+    animation-duration: 3s;
+}
+
+/*
+Propiedad de Animacion
+*/
+
+.my-animation-property {
+    width: 50%;
+    animation-name: myAwesomeAnimation;
+    animation-duration: 3s;
+    /* animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-timing-function: cubic-bezier(.38, .94, .92, .32); */
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+    /* animation-direction: normal;
+    animation-direction: reverse; */
+    animation-direction: alternate;
+    /* animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    animation-fill-mode: backwards; */
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation: myAwesomeAnimation 1.5s ease 250ms 6 alternate both running;
+}
+
+/*
+Linea de tiempo y fotogramas
+claves en CSS
+*/
+
+@keyframes myAwesomeAnimation2 {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
+.my-animation-2 {
+    width: 50%;
+    animation: myAwesomeAnimation2 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+/*
+Animacion Multiple
+*/
+
+@keyframes multipleAnimation1 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes multipleAnimation2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+.animation-multiple {
+    animation: multipleAnimation1 2s infinite, multipleAnimation2 1s infinite;
+}
+
+/*--------------------------------------------------------------------------*/
+/*-----------------Ejercicios para aplicar lo aprendido---------------------*/
+/*
+fade-in fade-out
+*/
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    font-size: 5vw;
+    animation: fadein 2s linear 2s infinite alternate both;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    font-size: 5vw;
+    animation: fadeout 2s linear 2s infinite alternate both;
+}
+
+
+/*
+Efecto shake
+*/
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate(-1px, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate(2px, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate(-4px, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate(4px, 0);
+    }
+}
+
+.shake {
+    font-size: 5vw;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.shake:hover {
+    animation: shake 2s cubic-bezier(0.36, 07, 0.19, 0.97) both;
+    transform: translate(0, 0);
+}
+
+/*
+Efecto pulse
+*/
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    font-size: 5vw;
+    animation: pulse 1s linear infinite;
+}
+
+/*
+creando un corazon con puro css
+*/
+
+@keyframes heartColor {
+    10% {
+        background-color: #d00;
+    }
+}
+
+.heart {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vw;
+    height: 10vw;
+    /* background-color: #888; */
+    animation: pulse 1s infinite;
+}
+
+.heart::after,
+.heart::before {
+    position: absolute;
+    content: "";
+    left: 5vw;
+    top: 0;
+    width: 5vw;
+    height: 8vw;
+    background-color: #a00;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    border-radius: 5vw 5vw 0 0;
+    animation: heartColor 1s infinite;
+}
+
+.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/*
+Spinner / Loader Animado
+*/
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.spinner {
+    width: 5vw;
+    height: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 0.8vw solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    animation: spinner 1s ease-out infinite;
+}
+
+/*---------------botones Animados------------------------------*/
+/*
+maquetacion
+*/
+
+.btn {
+    position: relative;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.2rem;
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0.25rem 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.anim-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0.25rem;
+    background-color: #d00;
+    transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+
+/*
+microinteraccion
+*/
+
+.anim-bottom:hover::after {
+    width: 100%;
+}
+
+.to-left::after {
+    left: 0;
+}
+
+.to-center::after {
+    left: 50%;
+}
+
+.to-center:hover::after {
+    left: 0;
+}
+
+.to-right::after {
+    right: 0;
+}
+
+/*
+Botones con gradientes Animados
+*/
+
+.anim-bg-gradient {
+    background-image: linear-gradient(to right, pink, violet, orange, orangered);
+    background-size: 300% 100%;
+    transition: background-position 1s ease-in-out;
+}
+
+.anim-bg-gradient:hover {
+    background-position: 100% 0;
+}
+
+/*----------------Menu de Pestañas Tabs----------------------------*/
+/*
+Maquetacion
+*/
+
+.tabs-menu {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 70%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DDD;
+    overflow: hidden;
+}
+
+.tabs-menu input[type="radio"] {
+    display: none;
+}
+
+.tabs-menu label {
+    position: relative;
+    z-index: 1;
+    width: calc(100% / 4 - 0.5rem);
+    text-align: center;
+    cursor: pointer;
+}
+
+.tabs-menu label:hover {
+    color: #fff;
+}
+
+.tabs-menu input[type="radio"]:checked + label {
+    color: #fff;
+}
+
+.tab-bg-hover {
+    position: absolute;
+    width: calc(100% / 4 - 0.5rem);
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(90deg, #a00, #d00);
+    transition: transform 200ms ease-in-out;
+}
+
+/*
+Animacion
+*/
+
+#tab-1:checked ~ .tab-bg-hover {
+    transform: translateX(0);
+}
+
+#tab-2:checked ~ .tab-bg-hover {
+    transform: translateX(100%);
+}
+
+#tab-3:checked ~ .tab-bg-hover {
+    transform: translateX(200%);
+}
+
+#tab-4:checked ~ .tab-bg-hover {
+    transform: translateX(300%);
+}
+
+/*---------------------Menu de hamburguesas------------------------*/
+/*
+Menu off Canvas (marcado HTML)
+*/
+
+/*No hay nada ya que esta en html*/
+
+/*
+Boton de Hamburguesa Animado
+*/
+
+.off-canvas-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 999;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    /* opacity: 0.25; */
+    opacity: 0;
+}
+
+.off-canvas-burger {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 998;
+    width: 3rem;
+    height: 0.6rem;
+    background-color: #d00;
+    border-radius: 0.3rem;
+    transform: rotate(0deg) translate(0,-1.2rem);
+    transform-origin: top left;
+    transition: transform 0.5s ease, background-color 500ms ease;
+}
+
+.off-canvas-burger::before,
+.off-canvas-burger::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.6rem;
+    background-color: #d00;
+    border-radius: 0.3rem;
+    transition: transform 500ms ease;
+}
+
+.off-canvas-burger::before {
+    transform: rotate(0deg) translate(0, -0.9rem);
+    /* background-color: blue; */
+}
+
+.off-canvas-burger::after {
+    transform: rotate(0deg) translate(0, 0.3rem);
+    /* background-color: green; */
+}
+
+.off-canvas-btn:checked + .off-canvas-burger {
+    background-color: transparent;
+}
+
+.off-canvas-btn:checked + .off-canvas-burger::before {
+    transform: rotate(45deg) translate(0,0);
+}
+
+.off-canvas-btn:checked + .off-canvas-burger::after {
+    transform: rotate(-45deg) translate(0.4rem, -0.5rem);
+}
+
+/*
+Menu off Canvas (maquetacion y animacion)
+*/
+
+.off-canvas-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+    transition: transform 500ms ease-in-out;
+    transform: translate(100%, 0);
+}
+
+.off-canvas-menu-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.off-canvas-link {
+    border-bottom: thin solid #d00;
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 300ms ease;
+}
+
+.off-canvas-link:first-child {
+    border-top: thin solid #d00;
+}
+
+.off-canvas-link:hover {
+    background-color: #d005;
+}
+
+.off-canvas-btn:checked ~ .off-canvas-menu {
+    transform: translate(0, 0);
+}
+
+/*------------------------------------------------------------------------------*/
+.boton-modal {
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border: thin solid #808080;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.boton-modal:hover {
+    background-color: #0008;
+    color: white;
+}
+/*-----------------------------Ventana Modal----------------------------------*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease-in-out;
+}
+
+.modal-container {
+    position: relative;
+    border: thin double #d00;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3rem;
+    color: #fff;
+    background-color: #d00;
+    border-radius: 50%;
+    transition: background-color 300ms linear, transform 300ms ease-in-out;
+}
+
+.modal-close:hover {
+    background-color: #a00;
+    transform: scale(1.2);
+}
+/*-----------------------------------------------------------------------------*/
+/*---------------Intro Peliculas Star Wars------------------*/
+
+@keyframes introStarWars {
+    0% {
+        transform: perspective(100vh) rotateX(15deg) translateY(100%);
+    }
+
+    100% {
+        transform: perspective(100vh) rotateX(25deg) translateY(-200%);
+    }
+}
+
+.star-wars {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #ffb13a;
+    background-image: url("../assent/stars-wars.jpg");
+    text-align: center;
+}
+
+.star-wars-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    animation: introStarWars 20s linear infinite;
+}
+
+.star-wars h2,
+.star-wars h3 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.star-wars p {
+    font-size: 3vw;
+    line-height: 4rem;
+}
+
+/*-----------------------Fin-----------------------*/
+@keyframes h2-animation-fin {
+    0%,
+    50%,
+    100% {
+        transform: scale(0.5);
+    }
+
+    25%,
+    75% {
+        transform: scale(1);
+    }
+
+}
+.fin-h2 {
+    text-align: center;
+    font-size: 3rem;
+    animation: h2-animation-fin 3s ease-in-out infinite;
+}
+
+.inicio {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    margin: 2rem;
+    text-decoration: none;
+    border: thin solid gray;
+    padding: 1rem;
+}

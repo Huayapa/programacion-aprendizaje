@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+
+
+
+.window-nav {
+  background-color: black;
+  width: auto;
+  position: sticky;
+  z-index: 15;
+  height: 65px;
+  margin: 0;
+  top: 0;
+}
+
+.img-window-logo {
+  width: 50px;
+  padding: 5px;
+}
+
+.barra-buscador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.links a:link {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.links a:active {
+  background-color: grey;
+  color: white;
+}
+
+.links a:visited {
+  color: white;
+}
+
+.links a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.texto-principal {
+  position: absolute;
+  z-index: 10;
+  background-color: initial;
+}
+
+.img-window {
+  position: absolute ;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.search- {
+  width: 50vh;
+  height: 30px;
+}

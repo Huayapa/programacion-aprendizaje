@@ -1,0 +1,390 @@
+/*Reseteo*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  --style-color: #84b6f4;
+  --style-color-border: #f4c284;
+  --style-color-code: #bbd5f9;
+  --style-color-oscuro: #005187;
+  --style-color-container: #dceafc;
+  background-color: #fcffff;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--style-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #1074b6;
+  border-radius: 1rem;
+  /* border: medium solid #000; */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #0a3d5f;
+  border-radius: 1rem;
+  /* border: medium solid #000; */
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+[id] {
+  scroll-margin-top: 11ch;
+}
+
+/*maquetacion mobile*/
+
+.maquetacion {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  grid-template-rows:auto 50vh auto 1fr auto;
+  grid-template-areas: 
+    "nav nav"
+    "header header"
+    "aside-t aside-t"
+    "main main"
+    "footer footer";
+}
+
+.nav {
+  grid-area: nav;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+.aside-t {
+  grid-area: aside-t;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.hero-image {
+  background-size: 100% 60%;
+}
+
+/* navegacion */
+.nav {
+  background-color: var(--style-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 1rem;
+  /* border: medium solid var(--style-color-border); */
+  animation: translate-hero-image 400ms ease-in
+}
+
+.nav-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav h1 {
+  text-align: center;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  margin: 0;
+  /* padding: 1rem; */
+  margin-bottom: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  padding: 1rem;
+  /* margin: 1rem; */
+}
+
+.nav a:visited {
+  color: white;
+}
+
+.nav a:hover {
+  color: #2f9fcc;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition:border-bottom 300ms ease-in ;
+  border-bottom: medium solid var(--style-color-oscuro);
+}
+
+/*secciones*/
+
+.aside-t {
+  width: 90%;
+  background-color: var(--style-color-container);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  /* justify-content: center; */
+}
+
+.aside-t h2 {
+  font-size: 2rem;
+  border-bottom: medium solid #000;
+}
+
+.aside-t a,
+.aside-t a:visited {
+  font-size: 1.4rem;
+  color: #f4c284;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.aside-t a:hover {
+  transition: color 1s ease, text-decoration 1s ease;
+  color: #0a3d5f;
+  text-decoration: underline;
+}
+
+.container-section > section {
+  background-color: var(--style-color-container);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  /* border: thin solid var(--style-color-border); */
+}
+
+.container-section h2:first-child {
+  border-bottom: medium solid black;
+}
+
+/*codigo-colores*/
+.style-code-1 {
+  background-color: var(--style-color-code);
+  border-radius: 0.5rem;
+  border: medium solid var(--style-color);
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/*codigo*/
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.white {
+  color: #fff;
+}
+
+.skye-blue {
+  color: skyblue;
+}
+
+.orange {
+  color: orange;
+}
+
+.purple {
+  color: purple;
+}
+
+/*titulos colores*/
+
+/* .red-title,
+.yellow-title,
+.green-title,
+.blue-title,
+.skye-blue,
+.orange-title,
+.purple-title {
+    -webkit-text-stroke: thin #000;
+    -moz-text-stroke: thin #000;
+} */
+.red-title {
+  color: red;
+}
+
+.yellow-title {
+  color: yellow;
+}
+
+.green-title {
+  color: green;
+}
+
+.blue-title {
+  color: blue;
+}
+
+.skye-blue-title {
+  color: skyblue;
+}
+
+.orange-title {
+  color: orange;
+}
+
+.purple-title {
+  color: purple;
+}
+
+/* maquetacion desktop */
+@media screen and (min-width: 1024px) {
+  .maquetacion {
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto 100vh 1fr auto;
+    grid-template-areas:
+      "nav nav"
+      "header header"
+      "main aside-t"
+      "footer footer";
+  }
+
+  .hero-image {
+    background-size: 100%;
+  }
+
+  .nav-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: auto;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav a {
+    padding-top: 100%;
+    padding-bottom: 1.4rem;
+  }
+
+  .nav h1 {
+    margin: 1rem;
+  }
+
+  .aside-t {
+    height: max-content;
+  }
+
+  .style-code-1 {
+    width: 50%;
+  }
+
+  [id] {
+    scroll-margin-top: 10ch;
+  }
+}
+
+
+/*hero image*/
+
+.hero-image {
+  background-image: url(/img/professional-programmer-working-late-in-the-dark-office.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-size: 100% 80%; */
+  color: #fff;
+  font-size: clamp(1rem , 2vw + 2rem, 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  animation: translate-hero-image 600ms ease-in-out;
+  /* filter: brightness(0.7);  */
+}
+
+@keyframes translate-hero-image {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateX(-300%);
+  }
+
+  100% {
+    transform: translateX(1rem);
+  }
+
+}
+
+.hero-image h2 {
+  animation: movimiento 1s ease-in;
+  text-shadow: 1rem 1rem 10px #000;
+}
+
+/*footer*/
+.footer-final {
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  margin: 0;
+  padding: 1rem;
+}
+
+.footer-final h2 {
+  margin: 0;
+}
+
+.footer-final a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-final a:hover {
+  color: var(--style-color-oscuro);
+  text-decoration: underline;
+}
+
+/*------------------------------------------------------------*/
+/*
+Fin de maquetacion
+*/

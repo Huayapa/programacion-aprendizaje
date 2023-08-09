@@ -1,0 +1,688 @@
+/*los import son de mala practica*/
+@import url(otra-hoja.css);
+
+/*esto es mi  practica*/
+.introduccion-css {
+  margin-top: 50px;
+}
+body {
+  margin: 20px;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.temario-link a:link {
+  color: rgb(37, 175, 37);
+}
+
+.temario-link a[href^="clasescss.html"] {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.temario-link a:active {
+  background-color: black;
+}
+
+.temario-link a:visited {
+  color: rgb(37, 175, 37);
+}
+
+.temario-link a:hover {
+  color: greenyellow;
+}
+
+.codigo-html-css {
+  background-color: rgb(78, 81, 122);
+  color: white;
+  font-family: sans-serif;
+  border-radius: 20px;
+  width: 500px;
+}
+
+.punto-css-selector {
+  color: rgba(255, 166, 0, 0.932);
+  font-size: 20px;
+}
+
+.selector-css {
+  color: rgba(255, 166, 0, 0.932);
+}
+
+.type-atributo {
+  color: cornflowerblue;
+}
+
+.string-html-css {
+  color: red;
+}
+
+.number-html-css {
+  color: lightgreen;
+}
+
+.navegation {
+  background-color: dodgerblue;
+  position: absolute;
+  width: 100%;
+}
+
+.navegation a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navegation {
+  float: right;
+}
+
+.navegation a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navegacion-buscador input[type="search"] {
+  width: 200px;
+  height: 25px;
+  border-radius: 25px;
+  border: none;
+}
+
+.navegacion-buscador {
+  float: right;
+  margin: 7px;
+}
+
+.navegacion-buscador button {
+  background-color: #0074d9;
+  color: #f2f2f2;
+  float: none;
+  padding: 5px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.body-one {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-position-css {
+  background-color: lightcyan;
+  border: 1px solid grey;
+  width: 400px;
+}
+
+.container-title {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+body {
+  margin: 0;
+}
+/*Aqui cierro mi practica*/
+
+/*
+ Soy un comentario.
+ Regla css consta de 2 partes:
+ 1: el selector
+ 2: bloque de declaraciones 
+*/
+h1 {
+  color: orangered;
+  background-color: skyblue;
+}
+/*
+Selectores basicos:
+1: etiquetas - son elementos html
+2: identificadores - atributo id - #
+3: clases - atributo class
+*/
+p {
+  color: midnightblue;
+}
+
+#parrafo-dos {
+  background-color: skyblue;
+}
+/*Dar estilos con class nos permite reutilizar el codigo*/
+.text-32 {
+  font-size: 32px;
+}
+
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+.text-white {
+  color: white;
+}
+
+/*clases de selectores avanzados hijos directos y hijos descendentes y hermanos*/
+.hijo-directo > li {
+  background-color: bisque;
+}
+
+.hijos-descendientes b {
+  background-color: aquamarine;
+}
+
+.hermanos-general ~ li {
+  background-color: beige;
+}
+
+.hermanos-adyacentes + li {
+  background-color: beige;
+}
+
+h3 {
+  color: salmon;
+}
+
+.bg-color-aquamarine {
+  background-color: aquamarine;
+  color: rgb(26, 26, 182);
+  width: 600px;
+}
+
+/* Selectores de atributos */
+.selectores-atributo a[href] {
+  color: orangered;
+}
+
+.selectores-atributo a[target="_blank"] {
+  font-weight: bold;
+}
+
+.selectores-atributo a[href*="notas"] {
+  font-size: 20px;
+}
+
+.selectores-atributo a[href^="http:"] {
+  text-decoration: none;
+}
+
+.selectores-atributo a[href$=".com"] {
+  background-color: black;
+}
+
+.selectores-atributo a[class~="cursos"] {
+  background-color: midnightblue;
+}
+
+.selectores-atributo a[class|="menu"] {
+  font-style: italic;
+}
+
+/* Selector universal */
+* {
+  font-family: sans-serif;
+}
+.selector-universal * {
+  font-size: 15;
+}
+
+/*pseudoclases*/
+/* formularios */
+.form-pseudoclases *:required {
+  border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+  border-color: green;
+}
+.form-pseudoclases *:invalid {
+  border-color: red;
+}
+
+.form-pseudoclases *:focus {
+  background-color: skyblue;
+}
+.form-pseudoclases *:disabled {
+  border-color: grey;
+}
+/* nav links */
+.menu-pseudoclases a:link {
+  color: brown;
+}
+
+.menu-pseudoclases a:active {
+  background-color: blue;
+}
+.menu-pseudoclases a:visited {
+  color: olive;
+}
+
+.menu-pseudoclases a:hover {
+  color: orange;
+}
+
+.p-pseudoclases:hover {
+  font-size: 23px;
+}
+#temario:target {
+  background-color: lightgreen;
+}
+/*Pseudoclases por posicion y tipo*/
+.lista-pseudoclases li:first-child {
+  color: green;
+}
+
+.lista-pseudoclases li:last-child {
+  color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3) {
+  color: navy;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+  font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) {
+  font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even) {
+  background-color: yellow;
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+  background-color: orange;
+}
+/* psudoclases de tipos */
+.articulo-pseudoclases p:first-of-type {
+  background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type {
+  background-color: violet;
+}
+
+.articulo-pseudoclases p:nth-of-type(3) {
+  background-color: fuchsia;
+}
+/*se añade mas a tu lista de not con ,*/
+
+.articulo-pseudoclases *:not(p) {
+  background-color: beige;
+}
+/*Pseudoclase*/
+.saga-geminis::before {
+  content: "🤼‍♂️";
+}
+
+.saga-geminis::after {
+  content: "🍁";
+}
+
+.saga-precio::before {
+  content: "$";
+  font-weight: bold;
+}
+
+.saga-precio::after {
+  content: "USD";
+  font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.p-pseudoelementos::first-line {
+  color: coral;
+}
+
+.p-pseudoelementos::selection {
+  background-color: black;
+  color: green;
+}
+
+.input-pseudoelementos::placeholder {
+  color: aqua;
+}
+/*  Agrupacion de selectores  */
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+  background-color: black;
+  border-color: #39ff14;
+  border-width: 2px;
+  border-style: inset;
+  font-size: 20px;
+  display: block;
+  width: 300px;
+  color: #39ff14;
+}
+
+/*
+El algoritmo de CSS:
+1)La cascada
+2)La especificidad
+3)La Herencia
+*/
+blockquote {
+  background-color: aquamarine;
+}
+
+.cita-marco {
+  background-color: red;
+  background-color: inherit;
+}
+
+.p-width-height {
+  width: 400px;
+  height: 100px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: blue;
+  border: blue solid 4px;
+}
+
+.caja-linea,
+.caja-bloque {
+  background-color: darkcyan;
+  color: white;
+  width: 500px;
+  height: 100px;
+  border: medium solid black;
+  padding: 16px;
+}
+
+.caja-bloque {
+  margin: 40px;
+}
+
+.caja-linea {
+  margin: 20px;
+}
+
+/*visibility*/
+.div-visibility {
+  visibility: hidden;
+}
+
+/*overflow*/
+.overflow {
+  background-color: darkcyan;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+}
+
+.overflow2 {
+  background-color: darkcyan;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  overflow: auto;
+}
+
+/*Tamaño de cajas (box-sizing)*/
+
+.box-sizing-content {
+  background-color: deepskyblue;
+  width: 500px;
+}
+
+/*
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+*/
+
+/*Tamaño de caja (box-sizing border-box)*/
+.container-col-3 {
+  background-color: burlywood;
+  width: 600px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.container-col-3 > * {
+  width: 200px;
+  border: thin solid red;
+  float: left;
+}
+
+.container-col-4 {
+  background-color: burlywood;
+  width: 600px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.container-col-4 > * {
+  box-sizing: border-box;
+  width: 200px;
+  border: thin solid red;
+  float: left;
+}
+
+/*float*/
+.container-floats {
+  background-color: cornflowerblue;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+/*colapso de margenes*/
+/*margenes verticales*/
+.margin-collapse {
+  background-color: skyblue;
+}
+
+.margin-collapse section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/*margenes horizontales*/
+.margin-collapse-h {
+  background-color: skyblue;
+}
+
+.margin-collapse-h span {
+  border: thin solid black;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+/*centrados de cajas*/
+.sitio-web {
+  border: thin solid black;
+  background-color: thistle;
+  width: 400px;
+  height: 500px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; */
+}
+/*posicionamiento css*/
+/*posicionamiento static*/
+.static {
+  background-color: yellow;
+  position: static;
+  top: 16px;
+  left: 16px;
+}
+/*Posicionamiento relative*/
+.relative {
+  background-color: turquoise;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  top: -20px;
+  left: 50px;
+}
+/*Posicionamiento absoluto*/
+.absolute {
+  background-color: tomato;
+  /* position: absolute; */
+  width: 200px;
+  height: 50px;
+  /* top: 0;
+  left: 0; */
+}
+
+.relative-parent {
+  background-color: khaki;
+  position: absolute;
+  width: 600px;
+  height: 50px;
+}
+
+.absolute-child {
+  background-color: lightcoral;
+  position: absolute;
+  /* left: 0;
+  top: 0; */
+  top: 10px;
+  left: 5px;
+}
+/*Posicionamiento fixed*/
+.fixed {
+  background-color: lightgreen;
+  /* position: fixed; */
+  width: 300px;
+  height: 100px;
+  /* right: 20px;
+  bottom: 10px; */
+  /* top: 30;
+  left: 50px; */
+}
+/*Posicionamiento sticky*/
+.sticky {
+  background-color: lightskyblue;
+  position: sticky;
+  top: 100px;
+}
+.sticky-parent {
+  border: thin dashed black;
+  height: 600px;
+}
+
+.sticky-child {
+  background-color: lightslategray;
+  position: sticky;
+  top: 75px;
+}
+
+/*
+Propiedad z-index= controla la profundidad del posicionamiento
+*/
+.z-index-1,
+.z-index-2 {
+  background-color: mediumaquamarine;
+  border: thin solid black;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.z-index-1 {
+  z-index: 1;
+  z-index: 5;
+}
+
+.z-index-2 {
+  top: -200px;
+  left: 100px;
+  z-index: 2;
+  z-index: -5;
+}
+
+.z-index-parent {
+  background-color: mediumorchid;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.z-index-child {
+  background-color: mediumvioletred;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: -75px;
+  left: 200px;
+  z-index: -3;
+}
+/* Efecto de slides con position Sticky */
+.slide {
+  background-color: paleturquoise;
+  width: 100%;
+  height: 100vh;
+}
+
+.slide:nth-child(odd) {
+  background-color: palevioletred;
+}
+
+.slide-title {
+  background-color: palegreen;
+  padding: 16px;
+  text-align: center;
+  position: sticky;
+  margin-top: 0;
+  top: 50px;
+}
+/* ventana modal con posicionamiento fixed */
+
+.modal-window {
+  background-color: black;
+  color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.5;
+  display: none;
+}
+
+.modal-window:target {
+  display: block;
+}
+
+/*margenes negativos*/
+
+.box {
+  background-color: sandybrown;
+  padding: 20px;
+  margin-top: -30px;
+  margin-left: -20px;
+}
+/*fin*/

@@ -1,0 +1,3789 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo -->
+    <title>Aprendiendo CSS 3</title>
+    <!-- descripcion -->
+    <meta name="description" content="Esta tercera parte aprendere sobre las animaciones">
+    <!-- google font tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">
+    <!-- link de vinculacion css -->
+    <link rel="stylesheet" href="css/stylecss-3.css">
+    <!-- url canonica -->
+    <link rel="canonical" href="https://mi-dominio-de-prueba-3-css.com/url-css-3">
+    <!-- logo para el icono -->
+    <link rel="icon" href="img/css-logo.png">
+    <!-- Tema de color mobile -->
+    <meta name="theme-color" content="#1b7cde">
+    <!-- link al compartirlo en las redes -->
+    <meta property="og:title" content="Clases Css Animaciones" />
+    <meta property="og:description" content="Esta es la tercera parte de css que trata sobre las animaciones" />
+    <meta property="og:image" content="https://tudominio.com/img/html.png" />
+    <meta property="og:url" content="https://mi-dominio-de-prueba-3-css.com/url-css-3" />
+    <!-- link para compartir en redes (twitter) -->
+    <meta name="twitter:cart" content="summary">
+    <meta name="twitter:site" content="@huayapa1">
+</head>
+<body>
+    <nav class="nav-css">
+        <h1>Aprendiendo CSS</h1>
+        <ul class="url-enlaces">
+            <li class="li-inicio"><a href="clasescss-3.html#inicio-presentacion">Inicio</a></li>
+            <li class="li-inicio"><a href="clasescss-3.html#temario">Temario</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section class="hero-image" id="inicio-presentacion">
+            <div>
+                <h2>Bienvenido a la parte de Efectos Visuales y movimiento en CSS</h2>
+            </div>
+        </section>
+    </header>
+    <main>
+      <article class="secciones">
+        <!-- Introducción del curso -->
+        <section class="container">
+          <h2 id="introduccion" class="title-h2">Introducción</h2>
+          <article class="container-info">
+            <p>
+              Esta parte tratara sobre los Efectos Visuales y Movimiento en CSS, donde aprendere a hacer uso de estos efecto para poder aplicarlo a mi aprendisaje.
+            </p>
+            <h3 class="red-title">Paginas Recomendadas o usadas:</h3>
+            <ol>
+              <li>
+                <a href="https://cssgradient.io/" target="_blank">cssgradient</a>
+              </li>
+              <li>
+                <a href="https://www.colorzilla.com/gradient-editor/" target="_blank">colorzilla</a>
+              </li>
+              <li>
+                <a href="https://bennettfeely.com/clippy/" target="_blank">bennettfeely</a>
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank"
+                >developer mozilla</a>
+              </li>
+              <li>
+                <a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">cubic-bezier</a>
+              </li>
+            </ol>
+          </article>
+          <article class="container-code">
+          </article>
+        </section>
+        <hr>
+        <!-- Temario de Curso -->
+        <section id="temario" class="container">
+          <h2 class="title-h2">Temario de Curso</h2>
+          <article class="container-info">
+              <p>
+                Aqui esta mi temario donde estara mis aprendisajes
+              </p>
+              <ol class="temario-list">
+                <h3>Sombras & Degradados</h3>
+                <li>
+                  <a href="clasescss-3.html#sombras-cajas">Sombras</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#degradados">Degradados</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#partrones-degradado">Patrones con Degradados</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#grafico-degradado">Graficas con Degradados</a>
+                </li>
+                <h3>Filtros</h3>
+                <li>
+                  <a href="clasescss-3.html#filtro-filter">filtro</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#filtro-multiple">Filtros Multiples</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#filtro-fondo">Filtros a Fondos</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#modo-dark-light-filter">modo dark/light usando filtros</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#modo-mezcla">Modos de Mezclas</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#modos-mezcla-fondos"
+                  >Modos de Mezclas a fondos</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#mascaras-clip-path">Mascaras (clip-path)</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#formas-shape-side">Formas (shape-side)</a>
+                </li>
+                <li>
+                  <details>
+                    <summary>
+                      Ejemplos de usar scroll
+                    </summary>
+                    <ul>
+                      <li>
+                        <a href="clasescss-3.html#sitio-one-page-sroll"
+                        >Sitio One Page Scroll</a>
+                      </li>
+                      <li>
+                        <a href="clasescss-3.html#ajuste-scroll-efecto-slide"
+                        >Ajustes del Scroll Efectos Slides</a>
+                      </li>
+                      <li>
+                        <a href="clasescss-3.html#ajuste-scroll-carrusel-horizontal"
+                        >Ajuste del Scroll Efecto Carrusel Horizontal</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#texto-degradado">Texto con Degradados</a>
+                </li>
+                <h3>Transiciones</h3>
+                <li>
+                  <a href="clasescss-3.html#transiciones">Transiciones</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#propiedad-animable">Propiedades Animables</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#transicion-multiple">Transiciones Multiples</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#all-transiciones-porque"
+                  >Porque no usar el all en las transiciones</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#algoritmo-css-transiciones"
+                  >El algoritmo de Css y su efecto sobre las transiciones</a>
+                </li>
+                <h3>Transformaciones 2D & 3D</h3>
+                <li>
+                  <a href="clasescss-3.html#transformacion-2d">Transformaciones en 2D</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#transformacion-matrix">Transformacion Matrix 2D</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#transformacion-multiple">Tranformaciones Multiples</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#activando-perspectiva-3d">Activando la perspectiva en 3D</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#transformacion-3d">Transformaciones en 3D</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#transformacion-3d-matrix"
+                  >transformaciones en 3d matrix</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#transformacion-3d-multiple"
+                  >transformaciones en 3d multiples</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#origenes-transformacion"
+                  >Origenes de Transformacion(transform-origin)</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#flip-card-transiciones-transformaciones"
+                  >Flip Cards transiciones y transformaciones</a>
+                </li>
+                <h3>Animaciones</h3>
+                <li>
+                  <a href="clasescss-3.html#animaciones"
+                  >Animacion</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#propiedad-animacion"
+                  >Propiedades de Animacion en CSS</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#linea-tiempo-fotogramas"
+                  >Linea de tiempo y fotogramas claves en CSS</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#animacion-multiple">Animacion Multiples</a>
+                </li>
+                <h3>Ejercicios Practicos</h3>
+                <li>
+                  <a href="clasescss-3.html#ejercicio-practico">ejercicio Basico</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#efecto-faidein-fadeout">Efecto faidein & fadeout</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#efecto-shake">Efecto shake</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#efecto-pulse">Efecto Pulse</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#corazon-css">Corazon en CSS</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#spinner-loader-animado">Spinner / Loader Animado</a>
+                </li>
+                <li>
+                  <details>
+                    <summary>Botones Animados</summary>
+                    <ul>
+                      <li>
+                        <a href="clasescss-3.html#botones-animados-maquetacion"
+                        >Botones Animados (maquetacion)</a>
+                      </li>
+                      <li>
+                        <a href="clasescss-3.html#botones-animados-microinteraccion"
+                        >Botones Animados (microinteraciones)</a>
+                      </li>
+                      <li>
+                        <a href="clasescss-3.html#boton-gradiente-animado"
+                        >Botones con gradientes Animados</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary>Menu de Pestañas</summary>
+                    <ul>
+                      <li>
+                        <a href="clasescss-3.html#menu-pestaña-tabs-maquetacion"
+                        >Menu de Pestañas Tabs (maquetacion)</a>
+                      </li>
+                      <li>
+                        <a href="clasescss-3.html#menu-pestaña-tabs-animacion"
+                        >Menu de Pestañas Tabs (Animacion)</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary>Menu de Hamburguesa</summary>
+                    <ul>
+                      <li>
+                        <a href="clasescss-3.html#menu-off-canvas"
+                        >Menu off Canvas (marcado HTML)</a>
+                      </li>
+                      <li>
+                        <a href="clasescss-3.html#boton-burger-animado"
+                        >Boton de hamburguesa Animado</a>
+                      </li>
+                      <li>
+                        <a href="clasescss-3.html#boton-burger-animado"
+                        >Menu Off Canvas (Maquetacion y animacion)</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#ventana-modal">Ventana Modal</a>
+                </li>
+                <li>
+                  <a href="clasescss-3.html#intro-star-wars">Intro Peliculas Star Wars</a>
+                </li>
+              </ol>
+          </article>
+        </section>
+        <hr>
+        <!-- Sombras a las cajas (box-shadow -->
+        <section id="sombras-cajas" class="container">
+            <h2 class="title-h2">Sombras a las cajas (box-shadow)</h2>
+            <article class="container-info">
+              <p>
+                Podemos aplicar sombras a nuestras cajas o a los textos y existen 3 tipos de sombra
+              </p>
+              <ol>
+                <li>
+                  <div class="info-box">
+                    <h3>Sombra a la caja</h3>
+                    <p>
+                      Para esto hacemos uso de <b>box-shadow</b> y estos son los valores que le puedes otorgar:
+                    </p>
+                    <ol>
+                      <li>movimiento-x</li>
+                      <li>movimiento-y</li>
+                      <li>blur-radius</li>
+                      <li>spred-blur</li>
+                      <li>color</li>
+                      <li>inset (crea una sombra interna)</li>
+                    </ol>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red-title">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.box-shadow</span> {
+                          <span class="blue">box-shadow</span>: <span class="green">1rem 1rem 1rem 1rem #0d2e69</span>;
+                          <span class="blue">box-shadow</span>: <span class="green">-1rem -1rem 1rem 1rem #0d2e69</span>;
+                          <span class="blue">box-shadow</span>: <span class="green">1rem 1rem 1rem 1rem #0d2e69 inset</span>;
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red-title">Ejemplo</h3>
+                    <div class="box box-shadow"></div>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="info-box">
+                    <h3>Sombra al texto</h3>
+                    <p>
+                      Para poder aplicar sombras a tus textos debes usar la propiedad <b>text-shadow</b> y estos son sus valores:
+                    </p>
+                    <ol>
+                      <li>movimiento-x</li>
+                      <li>movimiento-y</li>
+                      <li>blur-radius</li>
+                      <li>color</li>
+                    </ol>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red-title">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.text-shadow</span> {
+                          <span class="blue">font-size</span>: <span class="green">2rem</span>;
+                          <span class="blue">text-align</span>: <span class="red">center</span>;
+                          <span class="blue">text-shadow</span>: <span class="green">-1rem -1rem .4rem #0d2e69</span>;
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red-title">Ejemplo</h3>
+                    <div class="box text-shadow">
+                      <p>soy un texto</p>
+                    </div>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="info-box">
+                    <h3>Sombras Multiples</h3>
+                    <p>
+                      Nos permite crear varias sombras en la misma propiedad, solo debes poner otra <b>,</b>.
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red-title">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.text-shadow</span> {
+                          <span class="blue">text-shadow</span>: <span class="green">1rem 1rem 1rem 1rem #0d2e69</span>,
+                          <span class="green">1rem 1rem 1rem 1rem #055 inset</span>;
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red-title">Ejemplo</h3>
+                    <div class="box shadow-multiple"></div>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="info-box">
+                    <h3>Filtro (drop-shadow)</h3>
+                    <p>
+                      Estos son filtros que nos añadiran mas variedad a nuestras sombras, cada de estos filtros son funciones y mostraremos uno de ellos ya que son varios.
+                    </p>
+                    <h3 class="red-title">Funcion</h3>
+                    <ul>
+                      <li>
+                        <div class="info-box">
+                          <h4>drop-shadow</h4>
+                          <p>
+                            Es una funcion que dara sombra a las imagenes con transparencia y puede recibir estos valores:
+                          </p>
+                          <ol>
+                            <li>movimiento-x</li>
+                            <li>movimiento-y</li>
+                            <li>blur-radius</li>
+                            <li>color</li>
+                          </ol>
+                        </div>
+                        <div class="code-box">
+                          <h3 class="red-title">Codigo</h3>
+                          <pre class="style-code-1">
+                            <code>
+                              <span class="orange">.filter-shadow img</span> {
+                                <span class="blue">filter</span>: <span class="yellow">drop-shadow</span>(<span class="green">1rem 1rem 1rem</span> <span class="red">red</span> )
+                              }
+                            </code>
+                          </pre>
+                          <h3 class="red-title">Ejemplo</h3>
+                          <div class="box filter-shadow">
+                            <img src="assent/arbol.png" alt="arbol">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ol>
+            </article>
+        </section>
+        <hr>
+        <!-- Degradados -->
+        <section id="degradados" class="container">
+            <h2 class="title-h2">Degradados</h2>
+            <article class="container-info">
+              <p>
+                Los degradados la logica que debemos entender antes de aplicarlos y hay estas 3 propiedades:
+              </p>
+              <p>
+                Para facilitar el uso de los degradados podemos usar 
+                <a href="https://cssgradient.io/" target="_blank"
+                >cssgradient</a>
+                 o 
+                <a href="https://www.colorzilla.com/gradient-editor/" target="_blank"
+                >colorzilla</a> 
+                ya que tiene una interfaz entendible a la vista pero primero debes entender como se usas las gradiantes.
+              </p>
+              <h3 class="yellow-title">Recuerda que</h3>
+              <ul>
+                <li>
+                  <p>
+                    Estas son funciones dentro del <b>background</b>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Lo recomendable es usar el <b>background-image</b> porque es la propiedad especifica
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Puede aceptar cualquier tipo de colores(rgb,hsl,nombres,codigo hexadecimal)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    En estas funciones al poner 0 grados debes llevar siempre <b>deg</b>
+                  </p>
+                </li>
+              </ul>
+              <ol>
+                <li>
+                  <div class="info-box">
+                    <h3>lineales (linear-gradient)</h3>
+                    <p>
+                      Puedes agregar cualquier cantidad de colores , el grado del color tambien puedes poner cuanto % tendra cada color y se aplicaran por linea
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.linear-gradient</span> {
+                          <span class="blue">background-image</span>: <span class="yellow">linear-gradient</span>(<span class="red">red, green</span> );
+                          <span class="blue">background-image</span>: <span class="yellow">linear-gradient</span>(<span class="red">red, green, blue, orange</span> );
+                          <span class="blue">background-image</span>: <span class="yellow">linear-gradient</span>(<span class="red">0deg, red, green, blue, orange</span> );
+                          <span class="blue">background-image</span>: <span class="yellow">linear-gradient</span>(<span class="red">45deg, red, green, blue, orange</span> );
+                          <span class="blue">background-image</span>: <span class="yellow">linear-gradient</span>(<span class="red">45deg, red 20%, green 10%, blue 10%, orange 90%</span> );
+                          <span class="blue">background-image</span>: <span class="yellow">linear-gradient</span>(<span class="red">90deg, red 30%, white 30% 70%, red 30%</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <div class="ejemplo-box">
+                      <div class="box linear-gradient"></div>
+                      <div class="box linear-gradient-1"></div>
+                    </div>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="info-box">
+                    <h3>Radiales (radial-gradient)</h3>
+                    <p>
+                      <b>radial-gradient</b> por defecto es circular y acepta los mismo valores que el lineal pero tambien puede ajustar los gradiados con <b>circle 2rem</b>
+                    </p>
+                    <p>
+                      Una diferencia es que en radial-gradient no puedes usar los grados para moverlos, debes usar direcciones <b>at left top</b>
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.radial-gradient</span> {
+                          <span class="blue">background-image</span>: <span class="yellow">radial-gradient</span>(<span class="red">circle 2rem cyan, magenta, yellow</span>);
+                          <span class="blue">background-image</span>: <span class="yellow">radial-gradient</span>(<span class="red">circle 4rem, cyan 30%, magenta 30% 80%, yellow</span>);
+                          <span class="blue">background-image</span>: <span class="yellow">radial-gradient</span>(<span class="red">circle 100px, cyan 30%, magenta 60%, yellow 90%</span>);
+                          <span class="blue">background-image</span>: <span class="yellow">radial-gradient</span>(<span class="red">circle 100px 50px, cyan 30%, magenta 60%, yellow 90%</span>);
+                          <span class="blue">background-image</span>: <span class="yellow">radial-gradient</span>(<span class="red">ellipse 100px at left top, cyan 30%, magenta 60%, yellow 90%</span>);
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <div class="ejemplo-box">
+                      <div class="box radial-gradient"></div>
+                      <div class="box radial-gradient-1"></div>
+                    </div>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="info-box">
+                    <h3>conicos (conic-gradient)</h3>
+                    <p>
+                      Lo que hace es generar una proyecion conica, (como es casi reciente no estaran las sugerencias de emmet) y acepta casi los mismos valores que los anteriores funciones
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.conic-gradient</span> {
+                          <span class="blue">background-image</span>: <span class="yellow">conic-gradient</span>(<span class="red">red, green</span>);
+                          <span class="blue">background-image</span>: <span class="yellow">conic-gradient</span>(<span class="red">red 50%, green 60%, blue 80%</span>);
+                          <span class="blue">background-image</span>: <span class="yellow">conic-gradient</span>(<span class="red">from 90deg, red 0deg 90deg, green 120deg 240deg, blue 270deg</span>);
+                          <span class="blue">background-image</span>: <span class="yellow">conic-gradient</span>(<span class="red">from 180deg, red 0deg 90deg, green 120deg 240deg, blue 270deg</span>);
+                          <span class="blue">background-image</span>: <span class="yellow">conic-gradient</span>(<span class="red">from 90deg, red 0deg 120deg, green 120deg 240deg, blue 240deg</span>);
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <div class="ejemplo-box">
+                      <div class="box conic-gradient"></div>
+                      <div class="box conic-gradient-2"></div>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </article>
+        </section>
+        <hr>
+        <!-- Patrones con Degradados -->
+        <section id="partrones-degradado" class="container">
+            <h2 class="title-h2">Patrones con Degradados</h2>
+            <article class="container-info">
+              <p>
+                Existen 3 funciones auxiliares que nos permiten generar patrones a la hora de implemetar los degradados para formar patrones visuales
+              </p>
+              <h3 class="red">Funciones</h3>
+              <p>
+                Recueda que estas funciones deben estar dentro de <b>background-image</b> y son las mismas funciones que vimos anteriormente solo que le agregamos <b>repeating</b>.
+              </p>
+              <ol>
+                <li>
+                  <h3 class="yellow">repeating-linear-gradient</h3>
+                  <p>
+                    Repetira las lineas si el valor que le distes no llena la caja
+                  </p>
+                  <h3 class="red">Codigo</h3>
+                  <pre class="style-code-1">
+                    <code>
+                      <span class="orange">repeat-gradient-lineal</span> {
+                        <span class="blue">background-image</span>: <span class="yellow">repeating-linear-gradient</span>(<span class="green">red 0 10px, green 10px 20px, blue 20px 30px</span>);
+                      }
+                    </code>
+                  </pre>
+                  <h3 class="red">Ejemplo</h3>
+                  <div class="box repeat-gradient-lineal"></div>
+                </li>
+                <li>
+                  <h3 class="yellow">repeating-radius-gradient</h3>
+                  <p>
+                    Repetira las lineas si el valor que le distes no llena la caja
+                  </p>
+                  <h3 class="red">Codigo</h3>
+                  <pre class="style-code-1">
+                    <code>
+                      <span class="orange">repeat-gradient-radial</span> {
+                        <span class="blue">background-image</span>: <span class="yellow">repeating-radial-gradient</span>(<span class="green">circle 4rem, cyan 0 10px, magenta 10px 20px, yellow 20px 30px</span>);
+                      }
+                    </code>
+                  </pre>
+                  <h3 class="red">Ejemplo</h3>
+                  <div class="box repeat-gradient-radial"></div>
+                </li>
+                <li>
+                  <h3 class="yellow">repeating-gradient-conic</h3>
+                  <p>
+                    Repetira las lineas si el valor que le distes no llena la caja
+                  </p>
+                  <h3 class="red">Codigo</h3>
+                  <pre class="style-code-1">
+                    <code>
+                      <span class="orange">repeat-gradient-conic</span> {
+                        <span class="blue">background-image</span>: <span class="yellow">repeating-conic-gradient</span>(<span class="green">red 0 8%, yellow 8% 16%, black 16% 24%</span>);
+                      }
+                    </code>
+                  </pre>
+                  <h3 class="red">Ejemplo</h3>
+                  <div class="box repeat-gradient-conic"></div>
+                </li>
+              </ol>
+            </article>
+        </section>
+        <hr>
+        <!-- Graficas con Degradados -->
+        <section id="grafico-degradado" class="container">
+            <h2 class="title-h2">Graficas con Degradados</h2>
+            <article class="container-info">
+              <p>
+                Con los degradados podemos hacer infinidades de cosas aqui unos ejemplos:
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red">Codigo</h3>
+              <pre class="style-code-1">
+                <code>
+                  <span class="orange">.chart-gradient</span> {
+                    <span class="blue">background-image</span>: <span class="yellow">conic-gradient</span>(
+                      <span class="red">cyan</span> <span class="green">0% 50%</span>,
+                      <span class="red">magenta</span> <span class="green">50% 80%</span>,
+                      <span class="red">yellow</span> <span class="green">80%</span>
+                    );
+                    <span class="blue">border-radius</span>: <span class="green">50%</span>;
+                  }
+                </code>
+              </pre>
+              <pre class="style-code-1">
+                <code>
+                  <span class="orange">.donut-gradient</span> {
+                    <span class="blue">background-image</span>: <span class="yellow">radial-gradient</span>(
+                      <span class="red">white</span> <span class="green">40%</span>,
+                      <span class="red">black</span> <span class="green">41%</span>,
+                      <span class="red">transparent</span> <span class="green">45%</span>
+                    ), <span class="yellow">conic-gradient</span>(
+                      <span class="red">cyan</span> <span class="green">0% 50%</span>,
+                      <span class="red">magenta</span> <span class="green">50% 80%</span>,
+                      <span class="red">yellow</span> <span class="green">80%</span>
+                    );
+                    <span class="blue">border-radius</span>: <span class="green">50%</span>;
+                  }
+                </code>
+              </pre>
+              <h3 class="red">Ejemplo</h3>
+              <div class="ejemplo-box">
+                <div class="box chart-gradient"></div>
+                <div class="box donut-gradient"></div>
+              </div>
+            </article>
+        </section>
+        <hr>
+        <!-- filtro(filter) -->
+        <section id="filtro-filter" class="container">
+            <h2 class="title-h2">filtro(filter)</h2>
+            <article class="container-info">
+              <p>
+                Los filtros se pueden usar en sofware de diseño o photoshop o filtros de instagram, tenemos muchos filtros que podemos aplicar a nuestros elementos. 
+              </p>
+              <h3 class="yellow-title">Funciones</h3>
+              <p>
+                los filtros son mas notorios si se trabaja en una imagen.
+              </p>
+              <ol>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">blur()</h3>
+                    <p>
+                      Aplica un filtro de desenfoque
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-blur  img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">blur</span>( <span class="green">.17rem</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-blur">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">brightness()</h3>
+                    <p>
+                      Aplica la intencidad de la luz y acepta 1 o 0 <b class="red">(eso quiere decir que usaras decimales) ya que si pones mas de 1 el brillo sera muy alto</b>
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-brightness img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">brightness</span>( <span class="green">.7</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-brightness">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">contrast()</h3>
+                    <p>
+                      Aplica el contraste al elemento y vamos de 0 a 1 <b class="red">(se puede poner mas de 1 pero se satura la imagen)</b>
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-contrast img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">contrast</span>( <span class="green">.5</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-contrast">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">grayscale()</h3>
+                    <p>
+                      Como su nombre lo dice es que aplicara la escala de los grises y ponemos de 0 a 1.
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-grayscale img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">grayscale</span>( <span class="green">1</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-grayscale">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">sepia()</h3>
+                    <p>
+                      Es lo mismo que la funcion <b>grayscale</b> pero este trabaja en los colores mas amarillos y cafes
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-sepia img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">sepia</span>( <span class="green">1</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-sepia">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">hue-rotate()</h3>
+                    <p>
+                      Aplica el color dependiendo del grado que pongas <b class="red">(recuerda los grados por colores)</b>
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-hue-rotate img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">hue-rotate</span>( <span class="green">90deg</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-hue-rotate">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">invert()</h3>
+                    <p>
+                      Invierte los colores y estos sirven con los valores 0 y 1 <b class="red">(no sirven con decimales)</b>
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-invert img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">invert</span>( <span class="green">1</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-invert">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">opacity()</h3>
+                    <p>
+                      Aplica opacidad a tu elemento y acepta de 0 a 1
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-opacity img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">opacity</span>( <span class="green">0.5</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-opacity">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <h3 class="yellow-title">saturate()</h3>
+                    <p>
+                      Aplica saturacion al elemento y va de 0 a 1 ya que usar mas satura la imagen demasiado
+                    </p>
+                  </div>
+                  <div class="code-box">
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-1">
+                      <code>
+                        <span class="orange">.card-saturate img</span> {
+                          <span class="blue">filter</span>: <span class="yellow">saturate</span>( <span class="green">2</span> );
+                        }
+                      </code>
+                    </pre>
+                    <h3 class="red">Ejemplo</h3>
+                    <article class="card card-saturate">
+                      <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                    </article>
+                  </div>
+                </li>
+              </ol>
+            </article>
+        </section>
+        <hr>
+        <!-- Filtros Multiples -->
+        <section id="filtro-multiple" class="container">
+            <h2 class="title-h2">Filtros Multiples</h2>
+            <article class="container-info">
+              <p>
+                Los filtros multiples son para poder aplicar varios filtros a un solo elemento y se aplica separandolos por espacio cada funcion, en la misma propiedad.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red">Codigo</h3>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.filtro-multiple</span> {
+        <span class="blue">filter</span>: <span class="yellow">blur</span>(<span class="green">.1rem</span>) <span class="yellow">hue-rotate</span>(<span class="green">270deg</span>) <span class="yellow">opacity</span>(<span class="green">.75</span>) <span class="yellow">invert</span>(<span class="green">1</span>);
+      }
+    </code>
+  </pre>
+              <h3 class="red">Ejemplo</h3>
+              <article class="card">
+                <img class="filtro-multiple" src="assent/puesta-sol.jpg" alt="ejemplo">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- Filtros a Fondos (backdrop-filter) Aqui-->
+        <section id="filtro-fondo" class="container">
+            <h2 class="title-h2"
+            >Filtros a Fondos (backdrop-filter)</h2>
+            <article class="container-info">
+              <p>
+                Podemos aplicar filtros a los fondos a los elementos y se aplica usando la propiedad <b>backdrop-filter</b> y puedes poner la funciones de los filtros.
+              </p>
+              <p>
+                Tambien puedes agregar filtros multiples al igual que los anteriores
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+  <pre class="style-code-1">
+  <code>
+    <span class="orange">.relative</span> {
+      <span class="blue">position</span>: <span class="red">relative</span>;
+    }
+  </code>
+  </pre>
+  <pre class="style-code-1">
+  <code>
+    <span class="orange">.backdrop-filter</span> {
+      <span class="blue">position</span>: <span class="red">absolute</span>;
+      <span class="blue">top</span>: <span class="green">0</span>;
+      <span class="blue">left</span>: <span class="green">0</span>;
+      <span class="blue">width</span>: <span class="green">100%</span>;
+      <span class="blue">height</span>: <span class="green">100%</span>;
+      <span class="blue">display</span>: <span class="red">flex</span>;
+      <span class="blue">justify-content</span>: <span class="red">center</span>;
+      <span class="blue">align-items</span>: <span class="red">center</span>;
+      <span class="blue">text-align</span>: <span class="red">center</span>;
+    }
+  </code>
+  </pre>
+  <pre class="style-code-1">
+  <code>
+    <span class="orange">.backdrop-filter h3</span> {
+      <span class="blue">border-radius</span>: <span class="green">.5rem</span>;
+      <span class="blue">padding</span>: <span class="green">1rem</span>;
+      <span class="blue">font-size</span>: <span class="green">1.5rem</span>;
+      <span class="blue">color</span>: <span class="red">#fff</span>;
+      <span class="blue">background-color</span>: <span class="green">rgba(255, 102, 255, 0.5)</span>;
+      <span class="blue">backdrop-filter</span>: <span class="green">blur(.5rem)</span>;
+    }
+  </code>
+  </pre>
+              <h3 class="red-title">Ejemplo</h3>
+              <article class="card relative">
+                <img src="assent/puesta-sol.jpg" alt="ejemplo">
+                <div class="backdrop-filter">
+                  <h4>Puesta de sol</h4>
+                </div>
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- modo dark/light usando filtros -->
+        <section id="modo-dark-light-filter" class="container">
+            <h2 class="title-h2">Modo dark/light usando filtros</h2>
+            <article class="container-info">
+              <p>
+                Hay una tecnica que podemos usar con filtros para crear temas oscuros y claros, sin necesidad de usar algun programa de programacion
+              </p>
+              <h3 class="yellow">Recuerda:</h3>
+              <ul>
+                <li>
+                  <p>
+                    la clase debe estar el la etiqueta <b>&lt;html&gt; o &lt;body&gt;</b>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Esto solo es una manera practica de hacerlo, no es el mejor ya que tiene algunos problemas
+                  </p>
+                </li>
+              </ul>
+            </article>
+            <article class="container-code">
+              <h3 class="red">Codigo</h3>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.dark-mode</span> {
+        <span class="blue">background-color</span>: <span class="red">#fff</span>;
+        <span class="blue">color</span>: <span class="red">#000</span>;
+        <span class="blue">filter</span>: <span class="yellow">invert(1)</span>;
+        <span class="blue">padding</span>: <span class="green">1rem</span>;
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.dark-mode img</span> {
+        <span class="blue">filter</span>: <span class="yellow">invert(1)</span>;
+      }
+    </code>
+  </pre>
+              <h3 class="red">Ejemplo</h3>
+              <section class="dark-mode">
+                <h4>Soy un titulo</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum in commodi quas, quia voluptates sed dolor maxime. Blanditiis voluptatem officiis nihil repudiandae eius deleniti animi atque laudantium maxime a.
+                </p>
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol">
+              </section>
+            </article>
+        </section>
+        <hr>
+        <!-- Modos de Mezclas (mix-blend-mode) -->
+        <section id="modo-mezcla" class="container">
+            <h2 class="title-h2">Modos de Mezclas (mix-blend-mode)</h2>
+            <article class="container-info">
+              <p>
+                Los Modos de mezclas como su nombre lo dice  mezclan capa por capa y se fucionan las imagenes para formar efectos.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red">Codigo</h3>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.relative</span> {
+        <span class="blue">position</span>: <span class="red">relative</span>;
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.relative</span> {
+        <span class="blue">position</span>: <span class="red">absolute</span>;
+        <span class="blue">top</span>: <span class="red">0</span>;
+        <span class="blue">left</span>: <span class="red">0</span>;
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.blend-mode img</span> {
+        <span class="blue">mix-blend-mode</span>: <span class="red">color</span>;
+        <span class="blue">mix-blend-mode</span>: <span class="red">color-dodge</span>;
+        <span class="blue">mix-blend-mode</span>: <span class="red">screen</span>;
+        <span class="blue">mix-blend-mode</span>: <span class="red">multiply</span>;
+        <span class="blue">mix-blend-mode</span>: <span class="red">exclusion</span>;
+        <span class="blue">mix-blend-mode</span>: <span class="red">soft-light</span>;
+      }
+    </code>
+  </pre>
+              <h3 class="red">Ejemplo</h3>
+              <article class="card relative blend-mode">
+                <img src="assent/puesta-sol.jpg" alt="">
+                <img class="absolute" src="assent/arbol.png" alt="">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- Modos de Mezclas a fondos (background-blend-mode) -->
+        <section id="modos-mezcla-fondos" class="container">
+            <h2 class="title-h2"
+            >Modos de Mezclas a fondos (background-blend-mode)</h2>
+            <article class="container-info">
+              <p>
+                Son lo mismo que los modos de Mezclas pero estos trabajan sobre imagenes de fondo <b class="red">(background-image)</b> y necesitamos usar la propiedad <b>background-blend-mode</b>
+              </p>
+              <h3 class="yellow-title">Recomendacion</h3>
+              <ul>
+                <li>
+                  <p>
+                    El orden de las imagenes en <b>background-image</b> inportan
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    En ves de usar min-blend-mode, debes usar <b>background-blend-mode</b> ya que estos trabajan dentro del background
+                  </p>
+                </li>
+              </ul>
+            </article>
+            <article class="container-code">
+              <h3 class="red">Codigo</h3>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">bg-blend-mode</span> {
+        <span class="blue">background-image</span>: <span class="yellow">url</span>(<span class="red">../assets/imagen2.jpg</span>), <span class="yellow">url</span>(<span class="red">../assets/imagen.jpg</span>);
+        <span class="blue">background-size</span>: <span class="red">cover, contain</span>;
+        <span class="blue">background-repeat</span>: <span class="red">no-repeat</span>;
+        <span class="blue">background-position</span>: <span class="red">center</span>;
+        <span class="blue">background-blend-mode</span>: <span class="red">color</span>;
+        <span class="blue">background-blend-mode</span>: <span class="red">soft-light</span>;
+        <span class="blue">background-blend-mode</span>: <span class="red">multiply</span>;
+        <span class="blue">background-blend-mode</span>: <span class="red">darken</span>;
+      }
+    </code>
+  </pre>
+              <h3 class="red">Ejemplo</h3>
+              <section class="card bg-blend-mode"></section>
+            </article>
+        </section>
+        <hr>
+        <!-- Mascaras (clip-path) -->
+        <section id="mascaras-clip-path" class="container">
+            <h2 class="title-h2">Mascaras (clip-path)</h2>
+            <article class="container-info">
+              <p>
+                Las mascaras son efectos para imagenes o elementos que le quieras agregar interes sin necesidad de usar una aplicacion para graficos
+              </p>
+              <div class="info-clip-path">
+                <h3 class="blue">clip-path</h3>
+                <p>
+                  <b>clip-path</b> es la propiedad que debemos usar y sirve para aplicar el efecto de enmascaramiento.
+                </p>
+                <p>
+                  Esta propiedad va a ser uso de 4 funciones, uno de circulo <b>circle()</b>, otro de elipse <b>ellipse()</b>, otra de manera rectagular y otro de poligonos <b>polygon()</b>.
+                </p>
+              </div>
+              <ul>
+                <li class="circle-clip-path">
+                  <div class="info-clip-path">
+                    <h4 class="yellow-title">Circle()</h4>
+                    <p>
+                      Esta funcion pueden aceptar unidades de medida para especificar el tamaño del radio y tambien puedes especificar la direccion con <b>at</b> y la direccion <b>at left bottom</b>o <b>at 30% 70%</b>.
+                    </p>
+                  </div>
+                  <div class="code-clip-path">
+                    <h4 class="red-title">Codigo</h4>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">clip-path-circle</span> {
+        <span class="blue">clip-path</span>: <span class="yellow">circle</span>();
+        <span class="blue">clip-path</span>: <span class="yellow">circle</span>(<span class="green">200px</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">circle</span>(<span class="green">100px at left top</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">circle</span>(<span class="green">100px at 23% 50%</span>);
+      }
+    </code>
+  </pre>
+                    <h4 class="red-title">Ejemplo</h4>
+                    <section class="card clip-path-circle">
+                      <img src="assent/puesta-sol.jpg" alt="puesta-sol">
+                    </section>
+                  </div>
+                </li>
+                <hr>
+                <li class="ellipse-clip-path">
+                  <div class="info-clip-path">
+                    <h4 class="yellow-title">ellipse()</h4>
+                    <p>
+                      Esta funcion debe aceptar 2 unidades de medidad uno para el <b>y</b> y el otro para el <b>x</b> y tambien puedes especificar la direccion con <b>at</b> y la direccion <b>at left bottom</b>o <b>at 30% 70%</b>.
+                    </p>
+                  </div>
+                  <div class="code-clip-path">
+                    <h4 class="red-title">Codigo</h4>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">clip-path-ellipse</span> {
+        <span class="blue">clip-path</span>: <span class="yellow">ellipse</span>();
+        <span class="blue">clip-path</span>: <span class="yellow">ellipse</span>(<span class="green">200px 100px</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">ellipse</span>(<span class="green">100px at left top</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">ellipse</span>(<span class="green">100px at 23% 50%</span>);
+      }
+    </code>
+  </pre>
+                    <h4 class="red-title">Ejemplo</h4>
+                    <section class="card clip-path-ellipse">
+                      <img src="assent/puesta-sol.jpg" alt="puesta-sol">
+                    </section>
+                  </div>
+                </li>
+                <hr>
+                <li class="inset-clip-path">
+                  <div class="info-clip-path">
+                    <h4 class="yellow-title">inset()</h4>
+                    <p>
+                      Debe tener siempre algun valor ya que no funcionara, sirve como si fuera un padding hacia su contenido y puede aceptar hasta 4 unidades de medida, tambien puedes añadir el valor <b>round</b> (redondeara los costados).
+                    </p>
+                  </div>
+                  <div class="code-clip-path">
+                    <h4 class="red-title">Codigo</h4>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">clip-path-inset</span> {
+        <span class="blue">clip-path</span>: <span class="yellow">inset</span>(<span class="green">1rem</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">inset</span>(<span class="green">1rem 2rem</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">inset</span>(<span class="green">1rem 2rem 3rem</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">inset</span>(<span class="green">1rem 2rem 3rem 4rem</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">inset</span>(<span class="green">1rem round 1rem</span>);
+      }
+    </code>
+  </pre>
+                    <h4 class="red-title">Ejemplo</h4>
+                    <section class="card clip-path-inset">
+                      <img src="assent/puesta-sol.jpg" alt="puesta-sol">
+                    </section>
+                  </div>
+                </li>
+                <hr>
+                <li class="polygon-clip-path">
+                  <div class="info-clip-path">
+                    <h4 class="yellow-title">polygon</h4>
+                    <p>
+                      Esta funcion necesita valores para que funcione, sirve para poder crear figuras geometricas ya que puedes poner que cada punto este en la direccion que quieras(puede ser nuy confuso)
+                    </p>
+                    <p>
+                      Esta funcion puede ser algo confusa y tediosa al crear formas geometricas es por eso que hay una pagina que te ayudara se llama: <a href="https://bennettfeely.com/clippy/" target="_blank">clip path generator</a>.
+                    </p>
+                  </div>
+                  <div class="code-clip-path">
+                    <h4 class="red-title">Codigo</h4>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">clip-path-polygon</span> {
+        <span class="blue">clip-path</span>: <span class="yellow">polygon</span>(<span class="green">0 0, 100% 0, 50% 100%</span>);
+        <span class="blue">clip-path</span>: <span class="yellow">polygon</span>(<span class="green">0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%</span>);
+      }
+    </code>
+  </pre>
+                    <h4 class="red-title">Ejemplo</h4>
+                    <section class="card clip-path-polygon">
+                      <img src="assent/puesta-sol.jpg" alt="puesta-sol">
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </article>
+        </section>
+        <hr>
+        <!-- Formas (shape-side) -->
+        <section id="formas-shape-side" class="container">
+            <h2 class="title-h2">Formas (shape-side)</h2>
+            <article class="container-info">
+              <p>
+                La propiedad <b>shape-side</b> nos permite hacer que los elementos (textos,imagenes) puedan tomar formas o siluetas geometricas y podemos usar las mismas funciones que <b>clip-path</b> (excepto <b>inside()</b>)
+              </p>
+              <p>
+                Aqui tambien sirve el <a href="https://bennettfeely.com/clippy/" target="_blank">clip path generator</a>
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.shape-1</span> {
+        <span class="blue">margin</span>: <span class="green">4rem 2rem 4rem 0</span>;
+        <span class="blue">shape-outside</span>: <span class="yellow">circle</span>();
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.shape-2</span> {
+        <span class="blue">margin</span>: <span class="green">4rem 0 4rem 2rem</span>;
+        <span class="blue">shape-outside</span>: <span class="yellow">ellipse</span>();
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.shape-3</span> {
+        <span class="blue">margin</span>: <span class="green">2rem 2rem 0 0</span>;
+        <span class="blue">shape-outside</span>: <span class="yellow"></span>(
+          <span class="green">1% 28%,
+          31% 14%,
+          46% 19%, 
+          55% 26%, 
+          61% 41%, 
+          63% 53%, 
+          61% 67%, 
+          82% 79%, 
+          99% 98%, 
+          0% 100%
+          </span>);
+      }
+    </code>
+  </pre>
+              <h3 class="red-title">Ejemplo</h3>
+              <section class="estilos-shapes">
+                <h4>Ejemplos de formas entre textos e imagenes</h4>
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol" class="float-left shape-1">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, velit suscipit dicta repellat exercitationem obcaecati a assumenda nobis, quas porro atque, architecto perferendis aperiam ipsum sapiente! Nihil tempore officiis similique.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, velit suscipit dicta repellat exercitationem obcaecati a assumenda nobis, quas porro atque, architecto perferendis aperiam ipsum sapiente! Nihil tempore officiis similique.
+                </p>
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol" class="float-right shape-2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, velit suscipit dicta repellat exercitationem obcaecati a assumenda nobis, quas porro atque, architecto perferendis aperiam ipsum sapiente! Nihil tempore officiis similique.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, velit suscipit dicta repellat exercitationem obcaecati a assumenda nobis, quas porro atque, architecto perferendis aperiam ipsum sapiente! Nihil tempore officiis similique.
+                </p>
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol" class="float-left shape-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ad, labore velit necessitatibus cupiditate vitae libero voluptatem corrupti officiis. Laborum rerum, omnis iusto alias atque consectetur blanditiis itaque qui eaque?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ad, labore velit necessitatibus cupiditate vitae libero voluptatem corrupti officiis. Laborum rerum, omnis iusto alias atque consectetur blanditiis itaque qui eaque?
+                </p>
+              </section>
+            </article>
+        </section>
+        <hr>
+        <!-- Sitio One Page Scroll (scroll-margin-top  scroll-behavior)-->
+        <section id="sitio-one-page-sroll" class="container">
+            <h2 class="title-h2">Sitio One Page Scroll</h2>
+            <article class="container-info">
+              <p>
+                Aqui veremos un par de efectos que seran sobre el desplazamiento de la pagina (scroll).
+              </p>
+              <h3 class="yellow">Propiedades</h3>
+              <ol>
+                <hr>
+                <li>
+                  <h3 class="blue">scroll-margin</h3>
+                  <p>
+                    Tiene 4 propiedades juntas (top, right, left, bottom) y sirve para el margen del scroll.
+                  </p>
+                  <div class="ejemplo-problema">
+                    <h4 class="red">Ejemplo de Problema</h4>
+                    <p>
+                      Cuando tenemos algun contenido con <b>position: sticky;</b> y queremos ir a alguna seccion con tu enlace, habra un problema ya que la seccion empieza desde el <b>top 0</b> y el contenido con una <b>position: sticky;</b> se comera esa parte
+                    </p>
+                  </div>
+                  <div class="solucion-ejemplo">
+                    <h4 class="yellow">Soluciones</h4>
+                    <ul>
+                      <li>
+                        <p>
+                          Podemos usar <b>padding-top</b> para solucionarlo pero no es la mejor forma.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          La mejor forma de solucionarlos es usando el <b>scroll-margin-top</b> y usar la unidad de medida <b>ex</b> ya que esta trabaja con la altura y un <b>ex</b> es igual a la mitad de <b>1rem</b>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="codigo-ejemplo">
+                    <h4 class="red-title">Codigo</h4>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">[id]</span> {
+        <span class="blue">scroll-margin-top</span>: <span class="green">7,5ex</span>;
+      }
+    </code>
+  </pre>
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <div class="info-ejemplo">
+                    <h3 class="blue">scroll-behavior</h3>
+                    <p>
+                      Sirve para poner animaciones cuando realizemos algun tipo de scroll (<small>En este ejemplo lo usamos para los enlaces</small>)
+                    </p>
+                  </div>
+                  <div class="codigo-ejemplo">
+                    <h4 class="red-title">Codigo</h4>
+    <pre class="style-code-1">
+      <code>
+        <span class="orange">html</span> {
+          <span class="blue">scroll-behavior</span>: <span class="red">smooth</span>;
+        }
+      </code>
+    </pre>
+                  </div>
+                </li>
+                <hr>
+              </ol>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Ejemplos:</h3>
+              <p>
+                El ejemplo estara en otro enlace ya que debemos maquetarlo desde el inicio.
+              </p>
+              <a href="scroll-one-page.html">Link del ejemplo</a>
+            </article>
+        </section>
+        <hr>
+        <!--
+           Ajustes del Scroll Efectos Slides (scroll-snap-type scroll-snap-align
+        -->
+        <section id="ajuste-scroll-efecto-slide" class="container">
+            <h2 class="title-h2">Ajustes del Scroll Efectos Slides</h2>
+            <article class="container-info">
+              <p>
+                Sirve Cuando queremos mover el scroll suavemente y automaticamente centrar el contenido para que se vea como una presentacion de diapositivas <i>PowerPoint</i>
+              </p>
+              <h3 class="red-title">Importante</h3>
+              <ul>
+                <li>
+                  <p>
+                    Para poder que pueda funcionar es inportante que el <b>height</b>este al <b>100vh</b> y despues ponerle <b>overflow-y: scroll</b> ya que sin esto no funcionara.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    las cajas hijas deben tener el <b>scroll-snap-align</b> y los padres <b>scroll-snap-type</b> para que funcione
+                  </p>
+                </li>
+              </ul>
+              <h3 class="yellow">Propiedades:</h3>
+              <ol>
+                <hr>
+                <li>
+                  <h3 class="blue">scroll-snap-type</h3>
+                  <div class="info-snap">
+                    <p>
+                      Sirve para indicar la direccion y el efecto que hara, acepta 2 valores y cada valor tiene distintos valores:
+                    </p>
+    <pre class="style-code-1">
+      <code>
+        scroll-snap-type:
+         [x | y | inline | block |both] }Estos valores puede aceptar
+                                    el primero y es para la direccion
+         [madatory | proximity] }Esto valores son para el segundo y 
+                                  sirven para los efectos
+        ;
+      </code>
+    </pre>
+  
+                  </div>
+                </li>
+                <hr>
+                <li>
+                  <h3 class="blue">scroll-snap-align</h3>
+                  <div class="info-snap">
+                    <p>
+                    Sirve para cuando realizemos un scroll se centre bien y acepta <b>(none, start, end, center)</b> 
+                    </p>
+                  </div>
+                </li>
+                <hr>
+              </ol>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigos</h3>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.slides</span> {
+        <span class="blue">width</span>: <span class="green">100%</span>;
+        <span class="blue">height</span>: <span class="green">100vh</span>;
+        <span class="blue">overflow-y</span>: <span class="red">scroll</span>;
+        <span class="blue">scroll-snap-type</span>: <span class="red">block mandatory</span>; }Propiedad 1
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.slide</span> {
+        <span class="blue">width</span>: <span class="green">100%</span>;
+        <span class="blue">height</span>: <span class="red">inherit</span>;
+        <span class="blue">background-color</span>: <span class="red">#1e2345</span>;
+        <span class="blue">scroll-snap-align</span>: <span class="red">center</span>; }Propiedad 2
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.slide:nth-child(even)</span> {
+        <span class="blue">background-color</span>: <span class="red">#108eb4</span>;
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.slide-container</span> {
+        <span class="blue">width</span>: <span class="green">80%</span>;
+        <span class="blue">height</span>: <span class="red">inherit</span>;
+        <span class="blue">margin</span>: <span class="red">0 auto</span>;
+        <span class="blue">display</span>: <span class="red">flex</span>;
+        <span class="blue">flex-direction</span>: <span class="red">column</span>;
+        <span class="blue">justify-content</span>: <span class="red">center</span>;
+        <span class="blue">align-items</span>: <span class="red">center</span>;
+        <span class="blue">font-size</span>: <span class="green">3vw</span>;
+        <span class="blue">color</span>: <span class="red">#d9e8f0</span>;
+      }
+    </code>
+  </pre>
+              <h3 class="red-title">Ejemplo</h3>
+              <p>
+                Los ejemplo estaran en este enlace.
+              </p>
+              <a href="scroll-snap-slides.html">Ajustes del scroll (ejemplo slides)</a>
+            </article>
+        </section>
+        <hr>
+        <!-- 
+          Ajuste del Scroll Efecto Carrusel Horizontal (scroll-snap-type & scroll-snap-align) 
+        -->
+        <section id="ajuste-scroll-carrusel-horizontal" class="container">
+            <h2 class="title-h2">Ajuste del Scroll Efecto Carrusel Horizontal</h2>
+            <article class="container-info">
+              <p>
+                Anteriormente ya lo vimos de como funciona en Vertical, ahora vamos a ver como se trabaja en horizontal
+              </p>
+              <h3 class="yellow">Inportante</h3>
+              <ul>
+                <li>
+                  <p>
+                    Usaremos flex y grid css, por eso debes saberlo antes de continuar
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    La caja debe estar dentro de otra caja ya que a uno le aplicaremos <b>overflow-x:hidden;</b> y al otro <b>overflow-x:scroll;</b>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    La caja padre debe tener <b>display: flex;</b> para que su caja hija pueda acoplarse a su tamaño
+                  </p>
+                </li>
+              </ul>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="code-style">
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.carousel</span> {
+        <span class="blue">border</span>: <span class="red">thick solid #d938f0</span>;
+        <span class="blue">display</span>: <span class="red">flex</span>;
+        <span class="blue">width</span>: <span class="green">50%</span>;
+        <span class="blue">height</span>: <span class="green">50vh</span>;
+        <span class="blue">overflow-x</span>: <span class="red">hidden</span>;
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.carousel-container</span> {
+        <span class="blue">width</span>: <span class="green">100%</span>;
+        <span class="blue">display</span>: <span class="red">grid</span>;
+        <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">5, 100%</span>);
+        <span class="blue">overflow-x</span>: <span class="red">scroll</span>;
+        <span class="blue">overflow-y</span>: <span class="red">hidden</span>;
+        <span class="blue">scroll-snap-type</span>: <span class="red">inline madatory</span>;
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.carousel-slide</span> {
+        <span class="blue">display</span>: <span class="red">flex</span>;
+        <span class="blue">flex-direction</span>: <span class="red">column</span>;
+        <span class="blue">justify-content</span>: <span class="red">center</span>;
+        <span class="blue">align-items</span>: <span class="red">center</span>;
+        <span class="blue">background-color</span>: <span class="red">#108eb4</span>;
+        <span class="blue">scroll-snap-align</span>: <span class="red">center</span>;
+      }
+    </code>
+  </pre>
+  <pre class="style-code-1">
+    <code>
+      <span class="orange">.carousel-slide:nth-child(even)</span> {
+        <span class="blue">background-color</span>: <span class="red">#1e2345</span>;
+      }
+    </code>
+  </pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <p>
+                Los ejemplos estaran en este enlace.
+              </p>
+              <a href="scroll-snap-slides.html">Ajustes del scroll (ejemplo carrusel)</a>
+            </article>
+        </section>
+        <hr>
+        <!-- Texto con Degradados aqui-->
+        <section id="texto-degradado" class="container">
+            <h2 class="title-h2">Texto con Degradados</h2>
+            <article class="container-info">
+              <p>
+                Ahora vamos aprender a usar textos con degradados <i>(no los explicamos antes en los degradados porque puede servir cuando usemos diapositivas)</i>
+              </p>
+              <h3 class="yellow">Importante</h3>
+              <ul>
+                <li>
+                  <p>
+                    Las propiedades para hacer textos con degradados aun no estan soportados es por eso que vamos a usar los prefijos del navegador 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Debe tener un <b>background-clip: text;</b> y sirve para el color de fondo y la imagen comienze desde el texto
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Hay un poco de latencia al aplicar gradiente al texto, es por eso que no debes abusar mucho.
+                  </p>
+                </li>
+              </ul>
+              <h3 class="blue">text-fill-color</h3>
+              <p>
+                Debe usarse los prefijos, Sirve para que lo que no sea texto se convierta en transparent <b>text-fill-color: transparent;</b> es como ignorar la propiedad color.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.gradient-text</span> {
+      <span class="blue">background-image</span>: <span class="yellow">linear-gradient</span>( <span class="green">45deg</span>, <span class="red">magenta, yellow</span>);
+      <span class="blue">-ms-background-clip</span>: <span class="red">text</span>;
+      <span class="blue">-moz-background-clip</span>: <span class="red">text</span>;
+      <span class="blue">-webkit-background-clip</span>: <span class="red">text</span>;
+      <span class="blue">background-clip</span>: <span class="red">text</span>;
+      <span class="blue">-ms-text-fill-color</span>: <span class="red">transparent</span>;
+      <span class="blue">-moz-text-fill-color</span>: <span class="red">transparent</span>;
+      <span class="blue">-webkit-text-fill-color</span>: <span class="red">transparent</span>;
+    }
+  </code>
+</pre>
+              <h3 class="red-title">Ejemplo</h3>
+              <p>
+                El ejemplo estara en el siguiente link
+              </p>
+              <a href="scroll-snap-slides.html">Ejemplo texto de degradado</a>
+            </article>
+        </section>
+        <hr>
+        <!-------------- Movimiento en CSS ------------->
+        <!-- Transiciones -->
+        <section id="transiciones" class="container">
+          <h2 class="title-h2">Transiciones</h2>
+          <article class="container-info">
+            <p>
+              Hay varias propiedades para las transiciones:
+            </p>
+            <h3 class="yellow">Propiedades</h3>
+            <p>
+              <b>transition</b> es un shorthand de estas propiedades
+            </p>
+            <ol>
+              <li>
+                <h4 class="blue">transition-property</h4>
+                <p>
+                  Sirve para indicar a que propiedad le va aplicar una transicion
+                </p>
+              </li>
+              <li>
+                <h4 class="blue">transition-duration</h4>
+                <p>
+                  Es la duracion que tendra la transicion <b>(acepta segundos o milisegundos)</b>
+                </p>
+              </li>
+              <li>
+                <h4 class="blue">transition-timing-function</h4>
+                <p>
+                  Es para aplicar el efecto de la transicion, puede aceptar estas funciones <i>none | linear | ease | ease-in | ease-out | ease-in-out | steps</i>
+                </p>
+              </li>
+              <li>
+                <h4 class="blue">transition-delay</h4>
+                <p>
+                  Es el tiempo de espera antes de que comienze la transicion
+                </p>
+              </li>
+            </ol>
+            <h3 class="red">Inportante</h3>
+            <p>
+              si usas el shorthand, las antiguas propiedades ya no funcionaran por la hoja en cascada, hay una solucion pero es de mala practica no obstante puedes usarlo si tu pagina usa pocas animaciones y solo tienes que poner <b>all</b> en ves de definir una propiedad en <b>transition</b>
+            </p>
+          </article>
+          <article class="container-code">
+            <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transitions .box </span> {
+      <span class="blue">background-color</span>: <span class="red">magenta</span>;
+      <span class="blue">transition-property</span>: <span class="red">background-color</span>;
+      <span class="blue">transition-duration</span>: <span class="green">500ms</span>;
+      <span class="blue">transition-timing-function</span>: <span class="red">ease</span>;
+      <span class="blue">transition-delay</span>: <span class="green">0.5s</span>;
+      <span class="blue">transition</span>: <span class="red">border-color 2s linear 0.3s</span>;
+      <span class="blue">transition</span>: <span class="red">all 2s ease-in-out 250ms</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transitions .box:hover</span> {
+      <span class="blue">background-color</span>: <span class="red">cyan</span>;
+      <span class="blue">border-color</span>: <span class="red">red</span>;
+      <span class="blue">border-radius</span>: <span class="red">2rem</span>;
+    }
+  </code>
+</pre>
+            <h3 class="red-title">Ejemplo</h3>
+            <section class="transitions">
+              <div class="box"></div>
+            </section>
+          </article>
+        </section>
+        <hr>
+        <!-- Propiedades Animables -->
+        <section id="propiedad-animable" class="container">
+            <h2 class="title-h2">Propiedades Animables</h2>
+            <article class="container-info">
+              <p>
+                Existen propiedades con son inanimables (no funcionan al usar transition), si quieres saber cuales son animables entrar a esta pagina: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank"
+                >Propiedades Animables</a>
+              </p>
+            </article>
+        </section>
+        <hr>
+        <!-- Transiciones Multiples -->
+        <section id="transicion-multiple" class="container">
+            <h2 class="title-h2">Transiciones Multiples</h2>
+            <article class="container-info">
+              <p>
+                Ahora vamos aprender a como controlar cada propiedad tenga su propia <b>transition</b> para esto es muy simple ya que solo debemos agregar comas al final de <b>transition</b>(shorthand)
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="codigos-de-ejemplo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transitions .card</span> {
+      <span class="blue">transition</span>: <span class="red">opacity 1s ease-out</span>,
+      <span class="red">border-color 3s steps(5)</span>,
+      <span class="red">filter 2s ease-in 1s</span>,
+      <span class="red">box-shadow 1.5s linear 2s</span>;
+      <span class="green">/*steps() dara parpadeo y cambiara de color dependiendo del numero*/</span>
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transitions .card:hover</span> {
+      <span class="blue">opacity</span>: <span class="green">0.75</span>;
+      <span class="blue">border-color</span>: <span class="red">orchid</span>;
+      <span class="blue">filter</span>: <span class="yellow">blur</span>(<span class="green">0.15rem</span>);
+      <span class="blue">box-shadow</span>: <span class="red">1rem 1rem 2rem 0.5rem #000</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transitions .card img</span> {
+      <span class="blue">transition</span>: <span class="red">object-position 2s ease-in-out 2s</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transitions .card img:hover</span> {
+      <span class="blue">object-position</span>: <span class="green">100% 50%</span>;
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <section class="transitions">
+                <img class="card" src="assent/puesta-sol.jpg" alt="Puesta de sol" >
+              </section>
+            </article>
+        </section>
+        <hr>
+        <!-- Porque no usar el all en las transiciones -->
+        <section id="all-transiciones-porque" class="container">
+            <h2 class="title-h2">Porque no usar el all en las transiciones</h2>
+            <article class="container-info">
+              <p>
+                El valor que le das al <b>all</b> afecta a todas las propiedades incluyendo a la clases que le das anteriormente, es por eso que se considera mala practica si no sabes controlar al 100% las propiedades que vas a animar.
+              </p>
+            </article>
+        </section>
+        <hr>
+        <!-- El algoritmo de Css y su efecto sobre las transiciones -->
+        <section id="algoritmo-css-transiciones" class="container">
+            <h2 class="title-h2"
+            >El algoritmo de Css y su efecto sobre las transiciones</h2>
+            <article class="container-info">
+              <p>
+                Estas transiciones son afectadas con el algoritmo de CSS (cascada, especificidad y por la herencia) es por eso que al recargar la pagina suceden las animaciones por un instante
+              </p>
+            </article>
+        </section>
+        <hr>
+        <!-- Transformaciones en 2D -->
+        <section id="transformacion-2d" class="container">
+            <h2 class="title-h2">Transformaciones en 2D</h2>
+            <article class="container-info">
+              <div class="info-principal">
+                <i>
+                  Existen 2 tipos de transformaciones en 2d y 3d mostraremos primero lo 2d
+                </i>
+                <p>
+                  Sirven para crear transformaciones y su propiedad es <b>transform</b>Existen 4 transformaciones en 2d que son las mas conocidad y mas usadas:
+                </p>
+              </div>
+              <div class="inportante">
+                <h3 class="yellow">Inportante</h3>
+                <ul>
+                  <li>
+                    <p>
+                      En este ejemplo vamos a transformar la imagen y no los border para que se pueda apreciar mejor.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Para que funcione debemos añadir la propiedad <b>transition</b> y el valor que animaremos con su respectivo segundo y forma.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Cuado uses la propiedad <b>transform</b> debes añadir sus funciones respectivas.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <ol>
+                <li>
+                  <h3 class="red">Traslacion en x o y</h3>
+                  <p>
+                    Sirve para trasladar el elemento su funcion se llama <b class="yellow">translate</b>(debes añadir 2 valores para esto), si quieres moverlo solo un lado puedes usar <b class="yellow">translateX</b> o <b class="yellow">translateY</b>, puedes utilizar cualquier unidad de medida
+                  </p>
+                  <div class="Codigo-ejm">
+                    <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-translate img</span> {
+      <span class="blue">translation</span>: <span class="red">transform 2s ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-translate img:hover</span> {
+      <span class="blue">transform</span>: <span class="red">none</span>;
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">4rem</span>);
+      <span class="blue">transform</span>: <span class="yellow">translateY</span>(<span class="green">4rem</span>);
+      <span class="blue">transform</span>: <span class="yellow">translateY</span>(<span class="green">-4rem</span>);
+      <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">-4rem, -4rem</span>);
+      <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">50%, 50%</span>);
+    }
+  </code>
+</pre>
+                  <h3 class="red-title">Ejemplo</h3>
+                    <section class="card transform-2d-translate">
+                      <img src="assent/puesta-sol.jpg" alt="Puesta de Sol">
+                    </section>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="red">Escala (aumento de tamaño) en x o y</h3>
+                  <p>
+                    Sirve para aumentar o reducir el tamaño del elemento, debes usar la funcion <b class="yellow">scale()</b> (debe tener 2 unidades de medida) y si solo quieres aplicar a una direccion debes usar <b class="yellow">scaleX()</b> o <b class="yellow">scaleY()</b>.
+                  </p>
+                  <div class="Codigo-ejm">
+                    <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-scale img</span> {
+      <span class="blue">translation</span>: <span class="red">transform 2s ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-scale img:hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">scaleX</span>(<span class="green">2</span>);
+      <span class="blue">transform</span>: <span class="yellow">scaleY</span>(<span class="green">.5</span>);
+      <span class="blue">transform</span>: <span class="yellow">scale</span>(<span class="green">2, .5</span>);
+      <span class="blue">transform</span>: <span class="yellow">scale</span>(<span class="green">-.5, -.5</span>);
+    }
+  </code>
+</pre>
+                    <h3 class="red-title">Ejemplo</h3>
+                    <section class="card transform-2d-scale">
+                      <img src="assent/puesta-sol.jpg" alt="Puesta de Sol">
+                    </section>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="red">Rotacion</h3>
+                  <p>
+                    Sirve para poder rotar al elemento, debes usar la funcion <b class="yellow">rotate()</b> (acepta valor de rotacion 240deg) y tambien tiene la funcion <b class="yellow">rotateX()</b> o <b class="yellow">rotateY()</b> O <b class="yellow">rotateZ()</b>(para apreciar mejor el x o y debemos verlo en 3d)
+                  </p>
+                  <div class="Codigo-ejm">
+                    <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-rotate img</span> {
+      <span class="blue">translation</span>: <span class="red">transform 2s ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-rotate img:hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">rotateX</span>(<span class="green">90deg</span>);
+      <span class="blue">transform</span>: <span class="yellow">rotateY</span>(<span class="green">90deg</span>);
+      <span class="blue">transform</span>: <span class="yellow">rotateZ</span>(<span class="green">90deg</span>);
+      <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">90deg</span>);
+    }
+  </code>
+</pre>
+                    <h3 class="red-title">Ejemplo</h3>
+                    <section class="card transform-2d-rotate">
+                      <img src="assent/puesta-sol.jpg" alt="Puesta de Sol">
+                    </section>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="red">skew (sesgar) en x o y</h3>
+                  <p>
+                    Sirve para crear sesgados y solo existen en 2d, debemos usar la funcion <b class="yellow">skew()</b> (acepta valor de rotacion 240deg) y tambien las funciones <b class="yellow">skewX()</b> o <b class="yellow">skewY()</b>
+                  </p>
+                  <div class="Codigo-ejm">
+                    <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-skew img</span> {
+      <span class="blue">translation</span>: <span class="red">transform 2s ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-skew img:hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">skewX</span>(<span class="green">20deg</span>);
+      <span class="blue">transform</span>: <span class="yellow">skewX</span>(<span class="green">-20deg</span>);
+      <span class="blue">transform</span>: <span class="yellow">skewY</span>(<span class="green">20deg</span>);
+      <span class="blue">transform</span>: <span class="yellow">skewY</span>(<span class="green">-20deg</span>);
+      <span class="blue">transform</span>: <span class="yellow">skew</span>(<span class="green">20deg, 20deg</span>);
+    }
+  </code>
+</pre>
+                    <h3 class="red-title">Ejemplo</h3>
+                    <section class="card transform-2d-skew">
+                      <img src="assent/puesta-sol.jpg" alt="Puesta de Sol">
+                    </section>
+                  </div>
+                </li>
+              </ol>
+            </article>
+        </section>
+        <hr>
+        <!-- Transformacion Matrix 2D -->
+        <section id="transformacion-matrix" class="container">
+          <h2 class="title-h2">Transformacion Matrix 2D</h2>
+          <article class="container-info">
+            <p>
+              Ya vimos las funciones para transformaciones 2d mas usadas, ahora veremos una funcion extra que nos permite hacer efectos visuales muy interesantes.
+            </p>
+            <h3 class="yellow">matrix()</h3>
+            <p>
+              Tiene sierta complejidad porque hay calculos matematicos para que funcione y puede recibir hasta 6 valores: <b>matrix( scaleX(), skewY(),skewX(), scaleY(), translateX(), tranlateY() )</b>, a diferencia de las otras funciones aqui debes poner valores de numeros enteros.
+            </p>
+            <p>
+              Como es algo complejo para mayor info en: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" target="_blank">developer mozilla</a>
+            </p>
+          </article>
+          <article class="container-code">
+            <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-matrix img</span> {
+      <span class="blue">transition</span>: <span class="red">transform 2s ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-matrix img:hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">matrix</span>(<span class="green">1, 2, 2, 1, 20, 10</span>);
+    }
+  </code>
+</pre>
+            <h3 class="red-title">Ejemplo</h3>
+            <section class="card transform-2d-matrix">
+              <img src="assent/puesta-sol.jpg" alt="Puesta de Sol">
+            </section>
+          </article>
+        </section>
+        <hr>
+        <!-- Tranformaciones Multiples -->
+        <section id="transformacion-multiple" class="container">
+            <h2 class="title-h2">Tranformaciones Multiples</h2>
+            <article class="container-info">
+              <p>
+                Como anteriores secciones para poder hacer algo multiple solo necesitamos poner al final un espacio ( ) de la funcion.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-matrix img</span> {
+      <span class="blue">transition</span>: <span class="red">transform 2s ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.transform-2d-matrix img:hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">25%, -50%</span>)
+      <span class="yellow">translate</span>(<span class="green">240deg</span>)
+      <span class="yellow">translate</span>(<span class="green">10deg, 20deg</span>)
+      <span class="yellow">translate</span>(<span class="green">-0.5, -0.5</span>);
+    }
+  </code>
+</pre>
+              <h3 class="red-title">Ejemplo</h3>
+              <section class="card transform-2d-multiple">
+                <img src="assent/puesta-sol.jpg" alt="Puesta de Sol">
+              </section>
+            </article>
+        </section>
+        <hr>
+        <!-- Activando la perspectiva en 3D AQUI-->
+        <section id="activando-perspectiva-3d" class="container">
+            <h2 class="title-h2">Activando la perspectiva en 3D</h2>
+            <article class="container-info">
+              <p>
+                Para poder empezar con las transformaciones en 3D primero debemos activarlos (solo es una ilucion visual ya que se trabaja en 2D).
+              </p>
+              <h3 class="red-title">Pasos para activar la perspectiva en 3D</h3>
+              <ul>
+                <li>
+                  <p>
+                    Primero debemos activar a nuestros elementos la perspectiva para transformaciones en 3D
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Segundo debemos crear la caja y la imagen con sus respectivo <b>transition</b> y <b>transform</b>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Tercero, antes de aplicar el <b>transform</b> debemos añadir la perspectiva en 3d (como perspectiva multiple) o tambien a la caja padre ponerle el atributo <b>perspective</b> y su respectivas unidad de medida
+                  </p>
+                </li>
+              </ul>
+              <h3>perspective()</h3>
+              <p>
+                Sirve para parecerse una perspectiva 3d, acepta unidades de medida, entre mayor numero de medida mas lento es el efecto
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="codigo-style">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.transform-3d</span> {
+    <span class="blue">perspective</span>: <span class="green">10rem</span>;
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.transform-3d img</span> {
+    <span class="blue">transition</span>: <span class="green">transform 2s ease-in-out</span>;
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.transform-3d img:hover</span> {
+    <span class="blue">transform</span>: <span class="yellow">perspective</span>( <span class="green">1000px</span>) <span class="yellow">translateZ</span>( <span class="green">4rem</span>);
+    <span class="blue">transform</span>: <span class="yellow">perspective</span>( <span class="green">100rem</span>) <span class="yellow">translateZ</span>( <span class="green">4rem</span>);
+    <span class="blue">transform</span>: <span class="yellow">perspective</span>( <span class="green">10rem</span>) <span class="yellow">translateZ</span>( <span class="green">4rem</span>);
+  }
+</code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <article class="card transform-3d transform-3d-1">
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol"></article>
+            </article>
+        </section>
+        <hr>
+        <!-- Transformaciones en 3D -->
+        <section id="transformacion-3d" class="container">
+            <h2 class="title-h2">Transformaciones en 3D</h2>
+            <article class="container-info">
+              <p>
+                Por general no son como tal en 3D si no es una ilucion visual para que se vea como 3d, puedes usar cualquier unidad de medidad para que funcione
+              </p>
+              <p>
+                Puede ser un poco dificil apreciar el 3D es por eso que te dejo estos link donde se apreciara mejor el 3d dependiendo de la funcione que le das: 
+              </p>
+              <ul>
+                <li>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d" target="_blank">developer-translate3d</a>
+                </li>
+                <li>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d" target="_blank"
+                  >developer-scale3d</a>
+                </li>
+                <li>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d" target="_blank"
+                  >developer-rotate3d</a>
+                </li>
+              </ul>
+              <p>
+                Estaremos viendo las mismas funciones anteriores pero con el 3d, ya que en el anterior no se notaba mucho
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="codigo-style">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.transform-3d-2 img:hover</span> {
+    <span class="blue">transform</span>: <span class="yellow">translate3d</span>(<span class="green">2rem, 50%, -3rem</span>);
+    <span class="blue">transform</span>: <span class="yellow">scaleZ</span>(<span class="green">1.5</span>);
+    <span class="blue">transform</span>: <span class="yellow">scale3d</span>(<span class="green">2, 0.5, 3</span>);
+    <span class="blue">transform</span>: <span class="yellow">rotateX</span>(<span class="green">60deg</span>);
+    <span class="blue">transform</span>: <span class="yellow">rotateY</span>(<span class="green">60deg</span>);
+    <span class="blue">transform</span>: <span class="yellow">rotate3d</span>(<span class="green">1, 1, 1, 45deg</span>);
+  }
+</code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <article class="card transform-3d transform-3d-2">
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- transformaciones en 3d matrix -->
+        <section id="transformacion-3d-matrix" class="container">
+            <h2 class="title-h2">transformaciones en 3d matrix</h2>
+            <article class="container-info">
+              <p>
+                Ya hablamos antes sobre la funcion <b>matrix()</b> pero aun no vimos de como se comporta con el 3D
+              </p>
+              <h3 class="yellow">matrix3d()</h3>
+              <p>
+                Esta propiedad es mucho mas dificil que el <b>matrix()</b> ya que acepta 16 valores, para mayor informacion y mayor conocimiento te dejo este enlace: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d" target="_blank"
+                >developer-matrix3d</a>
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+<pre class="style-code-1">
+<code>
+  <span class="blue">transform</span>: <span class="yellow">matrix3d</span>(<span class="green">1, 0, 0, 0, 0, 1, 6, 0, 0, 0, 1, 0, 50, 100, 0, 1.1</span>);
+</code>
+</pre>
+              <h3 class="red-title">Ejemplo</h3>
+              <article class="card transform-3d transform-3d-3">
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- transformaciones en 3d multiples -->
+        <section id="transformacion-3d-multiple" class="container">
+            <h2 class="title-h2">transformaciones en 3d multiples</h2>
+            <article class="container-info">
+              <p>
+                Al igual que las transformaciones en 2d para usar de forma multiple solo debemos poner un espacio al final de una funcion
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="code-style">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.transform-3d-multiple img:hover</span> {
+    <span class="blue">transform</span>: <span class="yellow">rotate3d</span>(<span class="green">-1, 2.5, -2, 60deg</span>) 
+    <span class="yellow">translate3d</span>(<span class="green">2rem, 50%, -3rem</span>) 
+    <span class="yellow">scale3d</span>(<span class="green">2, -0.5, 3</span>);
+  }
+</code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <article class="card transform-3d transform-3d-multiple">
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- Origenes de Transformacion(transform-origin) -->
+        <section id="origenes-transformacion" class="container">
+            <h2 class="title-h2">Origenes de Transformacion</h2>
+            <article class="container-info">
+              <p>
+                Existe una propiedad que define el punto de origen de la transformacion(me refiero a el punto central cuando quieres rotar una imagen)
+              </p>
+              <img src="img/LabelReferencePoints.png" alt="">
+              <p>
+                Este punto de origen se puede cambiar la direccion para que no rote desde el centro.
+              </p>
+              <h3 class="blue">transform-origin:</h3>
+              <p>
+                Sirve para cambiar la direccion del punto de origen y acepta 3 valores (x, y, z), si solo pones un valor los demas automaticamente parasar al valor por defecto, tambien puedes usar palabras claves <b>top left right</b> y unidades de medida <b>-3rem -2rem</b>
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="style-code">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.transform-origin img</span> {
+    <span class="blue">transition</span>: <span class="green">transform 2s ease-in-out</span>;
+    <span class="blue">transform-origin</span>: <span class="green">50% 50% 0</span>;
+    <span class="blue">transform-origin</span>: <span class="green">0 0 0</span>;
+    <span class="blue">transform-origin</span>: <span class="green">100% 100% 0</span>;
+    <span class="blue">transform-origin</span>: <span class="red">top left</span>;
+    <span class="blue">transform-origin</span>: <span class="green">-2rem -3rem</span>;
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.transform-origin img:hover</span> {
+    <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">360deg</span>);
+  }
+</code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <article class="card transform-origin">
+                <img src="assent/puesta-sol.jpg" alt="puesta de sol">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- Flip Cards transiciones y transformaciones -->
+        <section id="flip-card-transiciones-transformaciones" class="container">
+            <h2 class="title-h2">Flip Cards transiciones y transformaciones</h2>
+            <article class="container-info">
+              <p>
+                Un ejercicio siemple para poner aprueba nuestros conocimientos.
+              </p>
+              <h3 class="blue">backface-visibility</h3>
+              <p>
+                Es una propiedad para visualizar las caras dependiendo del valor que pongas, esta propiedad solo tiene efecto con transformaciones en 3d
+              </p>
+              <h3 class="blue">transform-style</h3>
+              <p>
+                Es una propiedad que sirve para determinar como sen van a comportar los hijos en el espacio 3d, acepta estos valores (<b>flat o preserve-3d</b>)
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigos</h3>
+              <div class="style-code">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.flip-card-1</span>,
+  <span class="orange">.flip-card-2</span> {
+    <span class="blue">border</span>: <span class="red">thick solid #000</span>;
+    <span class="blue">margin-left</span>: <span class="red">auto</span>;
+    <span class="blue">margin-top</span>: <span class="red">auto</span>;
+    <span class="blue">width</span>: <span class="green">400px</span>;
+    <span class="blue">height</span>: <span class="green">300px</span>;
+
+    <span class="blue">position</span>: <span class="red">relative</span>;
+    <span class="blue">cursor</span>: <span class="red">pointer</span>;
+    <span class="blue">transition</span>: <span class="red">transform 1s ease-in-out</span>;
+    <span class="blue">perspective</span>: <span class="green">10rem</span>;
+    <span class="blue">transform-style</span>: <span class="red">preserve-3d</span>;
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.flip-card-1 img</span>,
+  <span class="orange">.flip-card-2 img</span> {
+    <span class="blue">width</span>: <span class="green">100%</span>;
+    <span class="blue">height</span>: <span class="green">100%</span>;
+    <span class="blue">object-fit</span>: <span class="red">cover</span>;
+    <span class="blue">object-position</span>: <span class="green">0 50%</span>;
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.flip-card-1:hover</span> {
+    <span class="blue">transform</span>: <span class="yellow">rotateY</span> (<span class="green">180deg</span>);
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.flip-card-2</span> {
+    <span class="blue">transform-origin</span>: <span class="red">center right</span>;
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.flip-card-2:hover</span> {
+    <span class="blue">transform</span>: <span class="yellow">translateX</span> (<span class="green">-100%</span>) 
+    <span class="yellow">rotateY</span> (<span class="green">-180deg</span>);
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.flip-face</span> {
+    <span class="blue">position</span>: <span class="red">absolute</span>;
+    <span class="blue">width</span>: <span class="green">100%</span>;
+    <span class="blue">height</span>: <span class="green">100%</span>;
+    <span class="blue">backface-visibily</span>: <span class="red">hidden</span>;
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.flip-front</span> {
+    <span class="blue">transform</span>: <span class="yellow">rotateY</span>(<span class="green">0deg</span>);
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.flip-back</span> {
+    <span class="blue">transform</span>: <span class="yellow">rotateY</span>(<span class="green">180deg</span>);
+  }
+</code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo 1 (flip card)</h3>
+              <article class="flip-card-1">
+                <div class="flip-face flip-front">
+                  <img src="assent/puesta-sol.jpg" alt="">
+                </div>
+                <div class="flip-face flip-back">
+                  <img src="img/0fa194fad28bdf824955823a4b5ea5a7--html-tags-html-javascript.jpg" alt="">
+                </div>
+              </article>
+              <h3 class="red-title">Ejemplo 2 (flip card)</h3>
+              <article class="flip-card-2">
+                <div class="flip-face flip-front">
+                  <img src="assent/puesta-sol.jpg" alt="">
+                </div>
+                <div class="flip-face flip-back">
+                  <img src="img/0fa194fad28bdf824955823a4b5ea5a7--html-tags-html-javascript.jpg" alt="">
+                </div>
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!--------------- Animaciones ------------------>
+        <!-- Animacion -->
+        <section id="animaciones" class="container">
+            <h2 class="title-h2">Animaciones (conceptos basicos)</h2>
+            <article class="container-info">
+              <i>
+                Ahora que terminamos con las transformaciones, toca hablar sobre las animaciones
+              </i>
+              <p>
+                Las animaciones son para crear movimientos con efectos a tu gusto que podemos aplicar en nuestra pagina web, tienes algunas propiedades del <b>transition</b> pero este shorthand del las animaciones tiene mas propiedades.
+              </p>
+              <div class="animation-shorthand-info">
+                <h3 class="blue">animation</h3>
+                <p>
+                  <b>Animacion</b> es un shorthand de estas 8 propiedades en este mismo orden:
+                </p>
+                <ol>
+                  <li>
+                    <h4 class="blue">animation-name</h4>
+                  </li>
+                  <li>
+                    <h4 class="blue">animation-duration</h4>
+                  </li>
+                  <li>
+                    <h4 class="blue">animation-timing-function</h4>
+                  </li>
+                  <li>
+                    <h4 class="blue">animation-delay</h4>
+                  </li>
+                  <li>
+                    <h4 class="blue">animation-iteration-count</h4>
+                  </li>
+                  <li>
+                    <h4 class="blue">animation-direction</h4>
+                  </li>
+                  <li>
+                    <h4 class="blue">animation-fill-mode</h4>
+                  </li>
+                  <li>
+                    <h4 class="blue">animation-play-state (no es necesario)</h4>
+                  </li>
+                </ol>
+              </div>
+              <p>
+                De todas esas propiedades solo es obligatorio poner los primeros 2, Las propiedades agregadas para las animaciones son estas:
+              </p>
+              <ul>
+                <li>
+                  <h3 class="blue">animation-iteration-count</h3>
+                  <p>
+                    Cuantas veces se va agregar la iteracion (un bucle o repeticion).
+                  </p>
+                </li>
+                <li>
+                  <h3 class="blue">animation-direction</h3>
+                  <p>
+                    La direccion de la animación para saber donde se enpieza
+                  </p>
+                </li>
+                <li>
+                  <h3 class="blue">animation-fill-mode</h3>
+                  <p>
+                    Especifica el modo en que una animacion aplica sus estilos
+                  </p>
+                </li>
+                <li>
+                  <h3 class="blue">animation-play-state</h3>
+                  <p>
+                    Sirve para el estado de la animación, mayormente no se usar ya que para pausar una animacion se usa <b>javascript</b>.
+                  </p>
+                </li>
+              </ul>
+              <h3 class="red-title">Forma de agregar la animacion basica:</h3>
+              <ol>
+                <li>
+                  <p>
+                    El <b>@keyframe</b> es como si fuera la linea del tiempo de la animacion.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    el "myAwesomeAnimation" es el nombre que le das a esta funcion (puedes poner el nombre que quieras) y sirve para ponerlo en la propiedad <b>animation-name</b>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    para saber cual es el inicio debes agregar el <b>from</b> (todo lo que pongas en el from enpecera al iniciarse) y para saber cual es el final debes poner el <b>to</b> (la animacion terminara dependiendo que le pongas).
+                  </p>
+                </li>
+              </ol>
+              <div class="style-code">
+<pre class="style-code-1">
+<code>
+  <span class="purple">@keyframe</span> <span class="blue">myAwesomeAnimation</span> {
+    from {
+      <span class="blue">opacity</span>: <span class="green"></span>;
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">100%</span>)
+    }
+
+    to {
+      <span class="blue">opacity</span>: <span class="green"></span>;
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">0</span>)
+    }
+  }
+</code>
+</pre>
+
+<pre class="style-code-1">
+<code>
+  <span class="orange">.my-animation</span> {
+    <span class="blue">animation-name</span>: myAwesomeAnimation;
+    <span class="blue">animation-duration</span>: <span class="green">3s</span>;
+  }
+</code>
+</pre>
+              </div>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Ejemplos</h3>
+              <article class="card my-animation">
+                <img src="assent/puesta-sol.jpg" alt="Puesta de Sol">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- Propiedades de Animacion en CSS -->
+        <section id="propiedad-animacion" class="container">
+            <h2 class="title-h2">Propiedades de Animacion en CSS</h2>
+            <article class="container-info">
+              <p>
+                Hablaremos mas sobre las propiedades restantes.
+              </p>
+              <h3 class="red-title">Propiedades</h3>
+              <ul>
+                <li>
+                  <h4 class="blue">animation-timing-function</h4>
+                  <p>
+                    Puede aceptar <b>ease, ease-in, ease-in-out y ease-out</b> son duncionesque ya las vimos pero tambien existe la funcion <b>cubic-bezier</b> sirve para alterar valores y modificarlos a tus gusto (para que usarlo de mejor manera aqui un link: <a href="https://cubic-bezier.com/#.25,.1,.25,1" target="_blank">cubic-bezier.com</a> )
+                  </p>
+                  <h5 class="red-title">Codigo</h5>
+                  <div class="codigo-stilo">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.my-animation</span> {
+    <span class="blue">animation-timing-function</span>: <span class="yellow">cubic-bezier</span>: (<span class="green">.42,0,.58,1</span>);
+  }
+</code>
+</pre>
+                  </div>
+                </li>
+                <li>
+                  <h4 class="blue">animation-delay</h4>
+                  <p>
+                    El retraso antes que comienze tu animacion
+                  </p>
+                  <h5 class="red-title">Codigo</h5>
+                  <div class="codigo-estilo">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.my-animation</span> {
+    <span class="blue">animation-delay</span>: <span class="green">0</span>;
+  }
+</code>
+</pre>
+                  </div>
+                </li>
+                <li>
+                  <h4 class="blue">animation-iteration-count</h4>
+                  <p>
+                    El numero de repeticion en la animacion (acepta numeros y infinite)
+                  </p>
+                  <h5 class="red-title">Codigo</h5>
+                  <div class="codigo-estilo">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.my-animation</span> {
+    <span class="blue">animation-iteration-count</span>: <span class="red">infinite</span>;
+  }
+</code>
+</pre>
+                  </div>
+                </li>
+                <li>
+                  <h4 class="blue">animation-direction</h4>
+                  <p>
+                    Como se comportara la direccion de la animacion
+                  </p>
+                  <h5 class="red-title">Codigo</h5>
+                  <div class="codigo-estilo">
+<pre class="style-code-1">
+<code>
+<span class="orange">.my-animation</span> {
+  <span class="blue">animation-direction</span>: <span class="red">alternate</span>;
+}
+</code>
+</pre>
+                  </div>
+                </li>
+                <li>
+                  <h4 class="blue">animation-fill-mode</h4>
+                  <p>
+                    Especifica el modo de la animacion
+                  </p>
+                  <h5 class="red-title">Codigo</h5>
+                  <div class="codigo-estilo">
+<pre class="style-code-1">
+<code>
+<span class="orange">.my-animation</span> {
+  <span class="blue">animation-timing-function</span>: <span class="red">both</span>;
+}
+</code>
+</pre>
+                  </div>
+                </li>
+                <li>
+                  <h4 class="blue">animation-play-state</h4>
+                  <p>
+                    Esta propiedad no tiene mucho sentido ya que es mejor usarlo en <b>javascript</b> y sirve para pausar o correr la animacion.
+                  </p>
+                  <h5 class="red-title">Codigo</h5>
+                  <div class="codigo-estilo">
+<pre class="style-code-1">
+<code>
+<span class="orange">.my-animation</span> {
+  <span class="blue">animation-play-state</span>: <span class="red">running</span>;
+}
+</code>
+</pre>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Ejemplo</h3>
+              <i>Recarga la Pagina</i>
+              <article class="card my-animation-property">
+                <img src="assent/puesta-sol.jpg" alt="Puesta de Sol">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- Linea de tiempo y fotogramas claves en CSS -->
+        <section id="linea-tiempo-fotogramas" class="container">
+            <h2 class="title-h2">Linea de tiempo y fotogramas claves en CSS</h2>
+            <article class="container-info">
+              <p>
+                Como puedo agregar mas de un fotograma a mi animacion aparte de usar el <b>from</b> (Fotograma Inicio) y <b>to</b> (Fotograma Final) e
+              </p>
+              <img src="img/multilayer_view.png.img.png" alt="liena de tiempo">
+              <i>
+                Esto son la linea de tiempo con sus fotogramas en una aplicacion de animacion, las lineas son el tiempo de duracion y los puntos son los cambios de la animacion
+              </i>
+              <p>
+                En css la linea de tiempo funciona por porcentajes (%), eso quiere decir que en ves de usar <b>from</b> o <b>to</b> debesmo usar <b>0%</b> y <b>100%</b> para que los demas porcentajes (1% hasta 99%) sirvan como los fotogramas intermedios, recuerda que a mayor tiempo de duracion mas lento es la animacion
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="codigo-estilo">
+<pre class="style-code-1">
+<code>
+  <span class="purple">@keyframe</span> <span class="blue">myAwesomeAnimation2</span> {
+    0% {
+      <span class="blue">opacity</span>: <span class="green">0</span>;
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">0</span>);
+    }
+
+    50% {
+      <span class="blue">opacity</span>: <span class="green">0.5</span>;
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">-50%</span>);
+    }
+
+    75% {
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">-0%</span>);
+    }
+
+    100% {
+      <span class="blue">opacity</span>: <span class="green">1</span>;
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">100%</span>);
+    }
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.my-animation-2</span> {
+    <span class="blue">animation</span>: <span class="green">myAwesomeAnimation2 2s</span>;
+    <span class="blue">animation-iteration-count</span>: <span class="red">infinite</span>;
+  }
+</code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <article class="card my-animation-2">
+                <img src="assent/puesta-sol.jpg" alt="">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!-- Animacion Multiples -->
+        <section id="animacion-multiple" class="container">
+            <h2 class="title-h2">Animacion Multiples</h2>
+            <article class="container-info">
+              <p>
+                Asi como las transformaciones pueden ser multiples, las <b>animaciones</b> tambien, debemos usar la propiedad shorthand <b>animation</b> y usar las comas (,).
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigos-2">
+                <div class="estilos-codigo-3">
+<pre class="style-code-1">
+<code>
+  <span class="purple">@keyframe</span> <span class="blue">multipleAnimation1</span> {
+    0% {
+      <span class="blue">opacity</span>: <span class="green">1</span>;
+    }
+
+    50% {
+      <span class="blue">opacity</span>: <span class="green">0</span>;
+    }
+
+    100% {
+      <span class="blue">opacity</span>: <span class="green">1</span>;
+    }
+  }
+</code>
+</pre>
+
+<pre class="style-code-1">
+<code>
+  <span class="purple">@keyframe</span> <span class="blue">multipleAnimation2</span> {
+    0% {
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">0</span>);
+    }
+
+    50% {
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">-100%</span>);
+    }
+
+    100% {
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">0</span>);
+    }
+  }
+</code>
+</pre>
+                </div>
+<pre class="style-code-1">
+<code>
+  <span class="orange">animation-multiple</span> {
+    <span class="blue">animation</span>: <span class="green">multipleAnimation1 2s infinite</span>, 
+    <span class="green">multipleAnimation2 2s infinite</span>;
+  }
+</code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <article class="card animation-multiple">
+                <img src="assent/puesta-sol.jpg" alt="">
+              </article>
+            </article>
+        </section>
+        <hr>
+        <!----- ejercicio practico de animacion-------->
+        <!-- ejercicio practico -->
+        <section id="ejercicio-practico" class="container">
+          <h2 class="title-h2">Ejercicios Practicos:</h2>
+        </section>
+        <hr>
+        <!-- Efecto faidein & fadeout -->
+        <section id="efecto-faidein-fadeout" class="container">
+            <h2 class="title-h2">Efecto faidein & fadeout</h2>
+            <article class="container-info">
+              <p>
+                Aqui un ejercicio usando efectos faidein & fadeout (aparecer y descaparecer cosas)
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilo-codigo">
+                <div class="estilos-codigo-2">
+<pre class="style-code-1">
+<code>
+  <span class="purple">@keyframes</span> <span class="blue">fadein</span> {
+    0% {
+      <span class="blue">opacity</span>: <span class="green">0</span>;
+    }
+
+    100% {
+      <span class="blue">opacity</span>: <span class="green">1</span>;
+    }
+  }
+
+  <span class="orange">.fade-in</span> {
+    <span class="blue">font-size</span>: <span class="green">5vw</span>;
+    <span class="blue">animation</span>: <span class="red">fadeout 2s linear 2s infinite alternate both</span>;
+  }
+</code>
+</pre>
+<pre class="style-code-1">
+<code>
+  <span class="purple">@keyframes</span> <span class="blue">fadeout</span> {
+    0% {
+      <span class="blue">opacity</span>: <span class="green">1</span>;
+    }
+
+    100% {
+      <span class="blue">opacity</span>: <span class="green">0</span>;
+    }
+  }
+
+  <span class="orange">.fade-out</span> {
+    <span class="blue">font-size</span>: <span class="green">5vw</span>;
+    <span class="blue">animation</span>: <span class="red">fadeout 2s linear 2s infinite alternate both</span>;
+  }
+</code>
+</pre>
+                </div>
+              </div>
+              <h3 class="red-title">Ejemplo fadein</h3>
+              <div class="fade-in">😎</div>
+              <h3 class="red-title">Ejemplo fadeout</h3>
+              <div class="fade-out">😉</div>
+            </article>
+        </section>
+        <hr>
+        <!-- Efecto shake AQUI-->
+        <section id="efecto-shake" class="container">
+            <h2 class="title-h2">Efecto shake (sacudir)</h2>
+            <article class="container-info">
+              <p>
+                Ahora vamos a probar el efecto de sacudir o shake
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilo-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="purple">@keyframe</span> <span class="blue">shake</span> {
+      10%,
+      90% {
+        <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">-1px, 0</span>);
+      }
+
+      20%,
+      80% {
+        <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">2px, 0</span>);
+      }
+
+      30%,
+      50%,
+      70% {
+        <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">-4px, 0</span>);
+      }
+
+      40%,
+      60% {
+        <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">4px, 0</span>);
+      }
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.shake</span> {
+      <span class="blue">font-size</span>: <span class="green">5vw</span>;
+      <span class="blue">cursor</span>: <span class="red">pointer</span>;
+      <span class="blue">display</span>: <span class="red">inline-block</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.shake</span> {
+      <span class="blue">animation</span>: <span class="green">shake 2s </span><span class="yellow">cubic-bezier</span>(<span class="green">0.36, 07, 0.19, 0.97</span>) <span class="red">both</span>;
+      <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">0, 0</span>);
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <div class="shake">🎂</div>
+            </article>
+        </section>
+        <hr>
+        <!-- Efecto Pulse -->
+        <section id="efecto-pulse" class="container">
+            <h2 class="title-h2">Efecto Pulse</h2>
+            <article class="container-info">
+              <p>
+                Aqui probaremos hacer un pulse (pulsaciones).
+              </p>
+              <h3 class="yellow">Recomendacion</h3>
+              <p>
+                Este ejemplo debes ponerlo con un texto centrado para que se vea mejor
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-ejemplo">
+<pre class="style-code-1">
+  <code>
+    <span class="purple">@keyframe</span> <span class="blue">pulse</span> {
+      0% {
+        <span class="blue">transform</span>: <span class="yellow">scale</span>(<span class="green">1.1</span>);
+      }
+
+      50% {
+        <span class="blue">transform</span>: <span class="yellow">scale</span>(<span class="green">0.8</span>);
+      }
+
+      100% {
+        <span class="blue">transform</span>: <span class="yellow">scale</span>(<span class="green">1</span>);
+      }
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.pulse</span> {
+      <span class="blue">font-size</span>: <span class="green">5vw</span>;
+      <span class="blue">animation</span>: <span class="green">pulse 1s linear infinite</span>;
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <div class="caja-medio">
+                <div class="pulse">❤</div>
+                <div class="pulse">🎁Regalo🎁</div>
+              </div>
+            </article>
+        </section>
+        <hr>
+        <!-- Corazon en CSS -->
+        <section id="corazon-css" class="container">
+            <h2 class="title-h2">Corazon en CSS</h2>
+            <article class="container-info">
+              <p>
+                Ahora vamos a crear un corazon con puro css, para esto usaremos las posiciones y las seudoclases after y before.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="purple">@keyframe</span> <span class="blue">heartColor</span> {
+      10% {
+        <span class="blue">background-color</span>: <span class="red">#d00</span>;
+      }
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.heart</span> {
+      <span class="blue">position</span>: <span class="red">relative</span>;
+      <span class="blue">margin-left</span>: <span class="red">auto</span>;
+      <span class="blue">margin-right</span>: <span class="red">auto</span>;
+      <span class="blue">width</span>: <span class="green">10vw</span>;
+      <span class="blue">height</span>: <span class="green">10vw</span>;
+      <span class="blue">animation</span>: <span class="green">pulse 1s infinite</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.heart::after</span>,
+    <span class="orange">.heart::before</span> {
+      <span class="blue">position</span>: <span class="red">absolute</span>;
+      <span class="blue">content</span>: <span class="red">""</span>;
+      <span class="blue">left</span>: <span class="green">5vw</span>;
+      <span class="blue">top</span>: <span class="green">0</span>;
+      <span class="blue">width</span>: <span class="green">5vw</span>;
+      <span class="blue">height</span>: <span class="green">8vw</span>;
+      <span class="blue">background-color</span>: <span class="red">#a00</span>;
+      <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">-45deg</span>);
+      <span class="blue">transform-origin</span>: <span class="green">0 100%</span>;
+      <span class="blue">border-radius</span>: <span class="green">5vw 5vw 0 0</span>;
+      <span class="blue">animation</span>: <span class="green">heartColor 1s infinite</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.heart::after</span> {
+      <span class="blue">left</span>: <span class="green">0</span>;
+      <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">45deg</span>);
+      <span class="blue">transform-origin</span>: <span class="green">100% 100%</span>;
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <div class="heart"></div>
+            </article>
+        </section>
+        <hr>
+        <!-- Spinner / Loader Animado -->
+        <section id="spinner-loader-animado" class="container">
+            <h2 class="title-h2">Spinner / Loader Animado</h2>
+            <article class="container-info">
+              <p>
+                Ahora aprenderemos a crear un loader que son para cuando algo esta cargando
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="purple">@keyframe</span> <span class="blue">spinner</span> {
+      0% {
+        <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">0deg</span>)
+      }
+
+      100% {
+        <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">360deg</span>)
+      }
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.spinner</span> {
+      <span class="blue">width</span>: <span class="green">5vw</span>;
+      <span class="blue">height</span>: <span class="green">5vw</span>;
+      <span class="blue">margin-left</span>: <span class="red">auto</span>;
+      <span class="blue">margin-right</span>: <span class="red">auto</span>;
+      <span class="blue">border-radius</span>: <span class="green">50%</span>;
+      <span class="blue">border</span>: <span class="green">0.8vw</span> <span class="red">solid</span> <span class="yellow">rgba</span>(<span class="green">0, 0, 0, 0.1</span>);
+      <span class="blue">border-left-color</span>: <span class="red">#09f</span>;
+      <span class="blue">animation</span>: <span class="green">spinner 1s ease-out infinite</span>;
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <div class="spinner"></div>
+            </article>
+        </section>
+        <hr>
+        <!-- Botones Animados (maquetacion) -->
+        <section id="botones-animados-maquetacion" class="container">
+            <h2 class="title-h2">Botones Animados (maquetacion)</h2>
+            <article class="container-info">
+              <p>
+                Ahora aprenderemos a crear botones animados o microinteraciones ya que solo son pequeños cambios que hacen al documento web mas vivo, parte de maquetacion primero.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.btn</span> {
+      <span class="blue">position</span>: <span class="red">relative</span>;
+      <span class="blue">border</span>: <span class="red">none</span>;
+      <span class="blue">border-radius</span>: <span class="green">0.25rem</span>;
+      <span class="blue">padding</span>: <span class="green">0.2rem</span>;
+      <span class="blue">width</span>: <span class="green">15rem</span>;
+      <span class="blue">height</span>: <span class="green">2.5rem</span>;
+      <span class="blue">font-size</span>: <span class="green">1.25rem</span>;
+      <span class="blue">font-weight</span>: <span class="red">bold</span>;
+      <span class="blue">cursor</span>: <span class="red">pointer</span>;
+      <span class="blue">overflow</span>: <span class="red">hidden</span>;
+      <span class="blue">box-sahdow</span>: <span class="green">0.25rem 0.25rem 0.5rem 0.25rem</span> <span class="yellow">rgba</span>(<span class="green">0, 0, 0, 0.15</span>);
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.anim-bottom::after</span> {
+      <span class="blue">content</span>: <span class="red">""</span>;
+      <span class="blue">position</span>: <span class="red">absolute</span>;
+      <span class="blue">bottom</span>: <span class="green">0</span>;
+      <span class="blue">width</span>: <span class="green">0</span>;
+      <span class="blue">height</span>: <span class="green">0.25rem</span>;
+      <span class="blue">background-color</span>: <span class="red">#d00</span>;
+      <span class="blue">transition</span>: <span class="red">width 0.5s ease,
+         left 0.5s ease, 
+         right 0.5s ease</span>;
+    }
+  </code> 
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <button class="btn anim-bottom">Animación Izquierda</button>
+              <button class="btn anim-bottom">Animación Center</button>
+              <button class="btn anim-bottom">Animación Derecha</button>
+            </article>
+        </section>
+        <hr>  
+        <!-- Botones Animados (microinteraciones) -->
+        <section id="botones-animados-microinteraccion" class="container">
+            <h2 class="title-h2">Botones Animados (microinteraciones)</h2>
+            <article class="container-info">
+              <p>
+                Ahora aprenderemos a crear botones animados o microinteraciones ya que solo son pequeños cambios que hacen al documento web mas vivo, parte de hacer las microinteraciones.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.anim-bottom:hover::after</span> {
+      <span class="blue">width</span>: <span class="green">100%</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.to-left::after</span> {
+      <span class="blue">left</span>: <span class="green">0</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.to-center::after</span> {
+      <span class="blue">left</span>: <span class="green">50%</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.to-center:hover::after</span> {
+      <span class="blue">left</span>: <span class="green">0</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.to-right::after</span> {
+      <span class="blue">right</span>: <span class="green">0</span>;
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <button class="btn anim-bottom to-left">Animación Izquierda</button>
+              <button class="btn anim-bottom to-center">Animación Center</button>
+              <button class="btn anim-bottom to-right">Animación Derecha</button>
+            </article>
+        </section>
+          <hr>
+        <!-- Botones con gradientes Animados -->
+        <section id="boton-gradiente-animado" class="container">
+            <h2 class="title-h2">Botones con gradientes Animados</h2>
+            <article class="container-info">
+              <p>
+                Usaremos la maquetacion de boton animado y lo haremos un boton con gradiente
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.anim-bg-gradient</span> {
+      <span class="blue"></span>: <span class="yellow">linear-gradient</span>(<span class="red">to right, pink, violet, orange, orangered</span>);
+      <span class="blue">background-size</span>: <span class="green">300% 100%</span>;
+      <span class="blue"></span>: <span class="green">background-position 1s ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.anim-bg-gradient:hover</span> {
+      <span class="blue">background-position</span>: <span class="green">100% 0</span>;
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <button class="btn anim-bg-gradient">Fondo con Gradiente</button>
+            </article>
+        </section>
+        <hr>
+        <!-- Menu de Pestañas Tabs (maquetacion) -->
+        <section id="menu-pestaña-tabs-maquetacion" class="container">
+            <h2 class="title-h2">Menu de Pestañas Tabs (maquetacion)</h2>
+            <article class="container-info">
+              <p>
+                Ahora practicaremos en crear una animacion para un formulario con multiples alternativas y solo una respuesta.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.tabs-menu</span> {
+      <span class="blue">position</span>: <span class="red">relative</span>;
+      <span class="blue">margin-left</span>: <span class="red">auto</span>;
+      <span class="blue">margin-right</span>: <span class="red">auto</span>;
+      <span class="blue">padding</span>: <span class="green">1rem</span>;
+      <span class="blue">border-radius</span>: <span class="green">1rem</span>;
+      <span class="blue">width</span>: <span class="green">70%</span>;
+      <span class="blue">height</span>: <span class="red">3rem</span>;
+      <span class="blue">display</span>: <span class="red">flex</span>;
+      <span class="blue">justify-content</span>: <span class="red">space-between</span>;
+      <span class="blue">align-items</span>: <span class="red">center</span>;
+      <span class="blue">background-color</span>: <span class="red">#DDD</span>;
+      <span class="blue">overflow</span>: <span class="red">hidden</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.tabs-menu input[type="Radio"]</span> {
+      <span class="blue">display</span>: <span class="red">none</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.tabs-menu label</span> {
+      <span class="blue">position</span>: <span class="red">relative</span>;
+      <span class="blue">z-index</span>: <span class="green">1</span>;
+      <span class="blue">width</span>: <span class="yellow">calc</span>(<span class="green">100% / 4 - 0.5rem</span>);
+      <span class="blue">text-align</span>: <span class="red">center</span>;
+      <span class="blue">cursor</span>: <span class="red">pointer</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.tabs-menu label:hover</span> {
+      <span class="blue">color</span>: <span class="red">#fff</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.tabs-menu input[type="radio"]:checked + label</span> {
+      <span class="blue">color</span>: <span class="red">#fff</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.tab-bg-hover</span> {
+      <span class="blue">position</span>: <span class="red">absolute</span>;
+      <span class="blue">width</span>: <span class="yellow">calc</span>(<span class="green">100% / 4 - 0.5rem</span>);
+      <span class="blue">height</span>: <span class="green">2rem</span>;
+      <span class="blue">border-radius</span>: <span class="green">0.5rem</span>;
+      <span class="blue">background-image</span>: <span class="yellow">linear-gradient</span>(<span class="green">90deg</span>, <span class="red">#a00, #d00</span>);
+      <span class="blue">transform</span>: <span class="green">transform 300ms ease-in-out</span>;
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <nav class="tabs-menu">
+                <input type="radio" id="tab-1-1" name="tabs">
+                <label for="tab-1-1">Seccion 1</label>
+                <input type="radio" id="tab-2-1" name="tabs">
+                <label for="tab-2-1">Seccion 2</label>
+                <input type="radio" id="tab-3-1" name="tabs">
+                <label for="tab-3-1">Seccion 3</label>
+                <input type="radio" id="tab-4-1" name="tabs">
+                <label for="tab-4-1">Seccion 4</label>
+                <div class="tab-bg-hover"></div>
+              </nav>
+            </article>
+        </section>
+        <hr>
+        <!-- Menu de Pestañas Tabs (Animacion) -->
+        <section id="menu-pestaña-tabs-animacion" class="container">
+            <h2 class="title-h2">Menu de Pestañas Tabs (Animacion)</h2>
+            <article class="container-info">
+              <p>
+                Anteriormente maquetamos el menu de pestañas, ahora lo vamos animar
+              </p>
+              <p>
+                Cuando queremos algun comportamiento para hacer una menu de navegacion o un menu de pestañas aqui si es util utilizar los <b>id</b> en css
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">#tab-1:checked ~ .tab-bg-hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">0</span>);
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">#tab-2:checked ~ .tab-bg-hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">100%</span>);
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">#tab-3:checked ~ .tab-bg-hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">200%</span>);
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">#tab-4:checked ~ .tab-bg-hover</span> {
+      <span class="blue">transform</span>: <span class="yellow">translateX</span>(<span class="green">300%</span>);
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <nav class="tabs-menu">
+                <input type="radio" id="tab-1" name="tabs">
+                <label for="tab-1">Seccion 1</label>
+                <input type="radio" id="tab-2" name="tabs">
+                <label for="tab-2">Seccion 2</label>
+                <input type="radio" id="tab-3" name="tabs">
+                <label for="tab-3">Seccion 3</label>
+                <input type="radio" id="tab-4" name="tabs">
+                <label for="tab-4">Seccion 4</label>
+                <div class="tab-bg-hover"></div>
+              </nav>
+            </article>
+        </section>
+        <hr>
+        <!--
+           Menu de hamburguesa
+         -->
+        <!-- Menu off Canvas (marcado HTML) -->
+        <section id="menu-off-canvas" class="container">
+            <h2 class="title-h2">Menu off Canvas (marcado HTML)</h2>
+            <article class="container-info">
+              <p>
+                Menu de hamburguesa o Menu off canvas porque se encuentra a fuera del lienzo del documento.
+              </p>
+              <h3 class="red-title">Inportante:</h3>
+              <p>
+                Lo vamos a hacer sin la necesidad de programar, pero tenemos que respetar el orden de las etiquetas para que funcione tambien tienen que ser hermanos porque sin estas especificaciones no funcionara y esta es su orden:
+              </p>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    &lt;<span class="blue">input</span> <span class="skyblue">type</span>=<span class="red">"checkbox"</span> <span class="skyblue">class</span>=<span class="red">"off-canvas-btn"</span>&gt;
+    &lt;<span class="blue">label</span> <span class="skyblue">class</span>=<span class="red">"off-canvas-burger"</span>&gt;&lt;/<span class="blue">label</span>&gt;
+    &lt;<span class="blue">nav</span> <span class="skyblue">class</span>=<span class="red">"off-cavas-menu"</span>&gt;
+      &lt;<span class="blue">div</span> <span class="skyblue">class</span>=<span class="red">"off-canvas-menu-container"</span>&gt;
+        &lt;<span class="blue">a</span> <span class="skyblue">href</span>=<span class="red">"#"</span> <span class="skyblue">class</span>=<span class="red">off-canvas-link</span>&gt;Seccion 1 &lt;/<span class="blue">a</span>&gt;
+        &lt;<span class="blue">a</span> <span class="skyblue">href</span>=<span class="red">"#"</span> <span class="skyblue">class</span>=<span class="red">off-canvas-link</span>&gt;Seccion 2 &lt;/<span class="blue">a</span>&gt;
+        &lt;<span class="blue">a</span> <span class="skyblue">href</span>=<span class="red">"#"</span> <span class="skyblue">class</span>=<span class="red">off-canvas-link</span>&gt;Seccion 3 &lt;/<span class="blue">a</span>&gt;
+        &lt;<span class="blue">a</span> <span class="skyblue">href</span>=<span class="red">"#"</span> <span class="skyblue">class</span>=<span class="red">off-canvas-link</span>&gt;Seccion 4 &lt;/<span class="blue">a</span>&gt;
+        &lt;<span class="blue">a</span> <span class="skyblue">href</span>=<span class="red">"#"</span> <span class="skyblue">class</span>=<span class="red">off-canvas-link</span>&gt;Seccion 5 &lt;/<span class="blue">a</span>&gt;
+      &lt;/<span class="blue">div</span>&gt;
+    &lt;/<span class="blue">label</span>&gt;
+  </code>
+</pre>
+              </div>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Ejemplo</h3>
+              <div class="estructura-ejemplo">
+                <input type="checkbox" class="prueba">
+                <label class="prueba"></label>
+                <nav class="prueba">
+                  <div class="prueba">
+                    <a href="#" class="prueba">Sección 1</a>
+                    <a href="#" class="prueba">Sección 2</a>
+                    <a href="#" class="prueba">Sección 3</a>
+                    <a href="#" class="prueba">Sección 4</a>
+                    <a href="#" class="prueba">Sección 5</a>
+                  </div>
+                </nav>
+
+              </div>
+            </article>
+        </section>
+        <hr>
+        <!-- Boton de hamburguesa Animado -->
+        <section id="boton-burger-animado" class="container">
+            <h2 class="title-h2">Boton de Hamburguesa Animado</h2>
+            <article class="container-info">
+              <p>
+                Anteriormente ya vimos la estructura del html para este ejemplo ahora vamos a maquetar nuestro boton de hamburguesa.
+              </p>
+              <h3 class="red-title">Tener en cuenta</h3>
+              <p>
+                que cuando estas en un mobil los botones inportantes deben estar en la parte de abajo para mayor comodidad
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-btn</span> {
+      <span class="blue">position</span>: <span class="red">fixed</span>;
+      <span class="blue">bottom</span>: <span class="green">1rem</span>;
+      <span class="blue">right</span>: <span class="green">1rem</span>;
+      <span class="blue">z-index</span>: <span class="green">999</span>;
+      <span class="blue">width</span>: <span class="green">3rem</span>;
+      <span class="blue">height</span>: <span class="green">3rem</span>;
+      <span class="blue">cursor</span>: <span class="red">pointer</span>;
+      <span class="blue">opacity</span>: <span class="green">0</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-burger</span> {
+      <span class="blue">position</span>: <span class="red">fixed</span>;
+      <span class="blue">bottom</span>: <span class="green">1rem</span>;
+      <span class="blue">right</span>: <span class="green">1rem</span>;
+      <span class="blue">z-index</span>: <span class="green">998</span>;
+      <span class="blue">height</span>: <span class="green">3rem</span>;
+      <span class="blue">background-color</span>: <span class="red">#d00</span>;
+      <span class="blue">border-radius</span>: <span class="green">0.3rem</span>;
+      <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">0deg</span>) <span class="yellow">translate</span>(<span class="green">0, -1.2rem</span>);
+      <span class="blue">transform-origin</span>: <span class="red">top left</span>;
+      <span class="blue">transition</span>: <span class="green">transform 0.5s ease, background-color 500ms ease</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-burger::before</span>,
+    <span class="orange">.off-canvas-burger::after</span> {
+      <span class="blue">content</span>: <span class="green">""</span>;
+      <span class="blue">display</span>: <span class="green">block</span>;
+      <span class="blue">width</span>: <span class="green">100%</span>;
+      <span class="blue">height</span>: <span class="green">0.6rem</span>;
+      <span class="blue">background-color</span>: <span class="red">#d00</span>;
+      <span class="blue">border-radius</span>: <span class="green">0.3rem</span>;
+      <span class="blue">transition</span>: <span class="green">transform 500ms ease</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-burger::before</span> {
+      <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">0deg</span>) <span class="yellow">translate</span>(<span class="green">0, -0.9rem</span>);
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-burger::after</span> {
+      <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">0deg</span>) <span class="yellow">translate</span>(<span class="green">0, 0.3rem</span>);
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-btn:checked + .off-canvas-burger</span> {
+      <span class="blue">background-color</span>: <span class="red">transparent</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-btn:checked + .off-canvas-burger::before</span> {
+      <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">45deg</span>) <span class="yellow">translate</span>(<span class="green">0, 0</span>);
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-btn:checked + .off-canvas-burger::after</span> {
+      <span class="blue">transform</span>: <span class="yellow">rotate</span>(<span class="green">-45deg</span>) <span class="yellow">translate</span>(<span class="green">0.4rem, -0.5rem</span>);
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <p>
+                El ejemplo es la tres lineas de abajo a la derecha que si le das click se comvertira en una x.
+              </p>
+              <div class="estructura-ejemplo">
+                <input type="checkbox" class="off-canvas-btn">
+                <label class="off-canvas-burger"></label>
+                <nav class="off-canvas-menu">
+                  <div class="off-canvas-menu-container">
+                    <a href="#" class="off-canvas-link">Sección 1</a>
+                    <a href="#" class="off-canvas-link">Sección 2</a>
+                    <a href="#" class="off-canvas-link">Sección 3</a>
+                    <a href="#" class="off-canvas-link">Sección 4</a>
+                    <a href="#" class="off-canvas-link">Sección 5</a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+        </section>
+        <hr>
+        <!-- Menu Off Canvas (Maquetacion y animacion) -->
+        <section id="boton-burger-animado" class="container">
+            <h2 class="title-h2">Menu Off Canvas (Maquetacion y animacion)</h2>
+            <article class="container-info">
+              <p>
+                Anteriormente ya vimos la estructura del html y el boton de hambuerguesa animado para este ejemplo ahora vamos a maquetarlo y animarlo (Menu off Canvas)
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-menu</span> {
+      <span class="blue">position</span>: <span class="red">fixed</span>;
+      <span class="blue">top</span>: <span class="green">0</span>;
+      <span class="blue">left</span>: <span class="green">0</span>;
+      <span class="blue">bottom</span>: <span class="green">0</span>;
+      <span class="blue">right</span>: <span class="green">0</span>;
+      <span class="blue">z-index</span>: <span class="green">997</span>;
+      <span class="blue">display</span>: <span class="red">flex</span>;
+      <span class="blue">justify-content</span>: <span class="red">center</span>;
+      <span class="blue">align-items</span>: <span class="red">center</span>;
+      <span class="blue">background-color</span>: <span class="red">#0008</span>;
+      <span class="blue">transition</span>: <span class="green">transform 500ms ease-in-out</span>;
+      <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">100%, 0</span>);
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-menu-container</span> {
+      <span class="blue">width</span>: <span class="green">100%</span>;
+      <span class="blue">height</span>: <span class="green">100vh</span>;
+      <span class="blue">display</span>: <span class="red">flex</span>;
+      <span class="blue">flex-direction</span>: <span class="red">column</span>;
+      <span class="blue">justify-content</span>: <span class="red">center</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-link</span> {
+      <span class="blue">border-bottom</span>: <span class="red">thin solid #d00</span>;
+      <span class="blue">padding</span>: <span class="green">2rem</span>;
+      <span class="blue">font-size</span>: <span class="green">1.5rem</span>;
+      <span class="blue">text-align</span>: <span class="red">center</span>;
+      <span class="blue">text-decoration</span>: <span class="red">none</span>;
+      <span class="blue">color</span>: <span class="red">white</span>;
+      <span class="blue">transform</span>: <span class="green">background-color 300ms ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-link:first-child</span> {
+      <span class="blue">border-top</span>: <span class="red">thin solid #d00</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-link:hover</span> {
+      <span class="blue">background-color</span>: <span class="red">#d005</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.off-canvas-btn:checked ~ .off-canvas-menu</span> {
+      <span class="blue">transform</span>: <span class="yellow">translate</span>(<span class="green">0, 0</span>);
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <p>
+                El ejemplo es la tres lineas de abajo a la derecha que si le das click se comvertira en una x.
+              </p>
+              <nav class="prueba">
+                <div class="prueba">
+                  <a href="#" class="prueba">Sección 1</a>
+                  <a href="#" class="prueba">Sección 2</a>
+                  <a href="#" class="prueba">Sección 3</a>
+                  <a href="#" class="prueba">Sección 4</a>
+                  <a href="#" class="prueba">Sección 5</a>
+                </div>
+              </nav>
+            </article>
+        </section>
+        <hr>
+        <!-- Ventana Modal -->
+        <section id="ventana-modal" class="container">
+            <h2 class="title-h2">Ventana Modal</h2>
+            <article class="container-info">
+              <p>
+                Ahora vamos a aprender a hacer una ventana modal sin la necesidad de Javascript
+              </p>
+              <h3 class="yellow">Recomendacion</h3>
+              <p>
+                A los objetos interactivos como un boton, es recomendable ponerle un tamaño entre 2.5rem o 3 rem ya que esto es un aproximado al area de un dedo usando un celular.
+              </p>
+              <h3 class="blue">pointer-events</h3>
+              <p>
+                hace que los elementos (enlaces) no sean interactivos.
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.modal</span> {
+      <span class="blue">position</span>: <span class="red">fixed</span>;
+      <span class="blue">top</span>: <span class="green">0</span>;
+      <span class="blue">right</span>: <span class="green">0</span>;
+      <span class="blue">bottom</span>: <span class="green">0</span>;
+      <span class="blue">left</span>: <span class="green">0</span>;
+      <span class="blue">z-index</span>: <span class="green">997</span>;
+      <span class="blue">display</span>: <span class="red">flex</span>;
+      <span class="blue">justify-content</span>: <span class="red">center</span>;
+      <span class="blue">align-items</span>: <span class="red">center</span>;
+      <span class="blue">background-color</span>: <span class="red">#0008</span>;
+      <span class="blue">opacity</span>: <span class="red">0</span>;
+      <span class="blue">pointer-events</span>: <span class="red">none</span>;
+      <span class="blue">transition</span>: <span class="red">opacity 500ms ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.modal-container</span> {
+      <span class="blue">position</span>: <span class="red">relative</span>;
+      <span class="blue">border</span>: <span class="red">thin double #d00</span>;
+      <span class="blue">border-radius</span>: <span class="green">1rem</span>;
+      <span class="blue">padding</span>: <span class="green">2rem</span>;
+      <span class="blue">width</span>: <span class="green">70%</span>;
+      <span class="blue">height</span>: <span class="green">70vh</span>;
+      <span class="blue">display</span>: <span class="red">flex</span>;
+      <span class="blue">flex-direction</span>: <span class="red">column</span>;
+      <span class="blue">text-align</span>: <span class="red">left</span>;
+      <span class="blue">overflow</span>: <span class="red">hidden</span>;
+      <span class="blue">background-color</span>: <span class="red">#fff</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.modal:target</span> {
+      <span class="blue">opacity</span>: <span class="red">opacity</span>;
+      <span class="blue">pointer-events</span>: <span class="red">auto</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.modal-close</span> {
+      <span class="blue">position</span>: <span class="red">absolute</span>;
+      <span class="blue">top</span>: <span class="green">1rem</span>;
+      <span class="blue">right</span>: <span class="green">1rem</span>;
+      <span class="blue">width</span>: <span class="green">3rem</span>;
+      <span class="blue">height</span>: <span class="green">3rem</span>;
+      <span class="blue">font-size</span>: <span class="green">2rem</span>;
+      <span class="blue">font-weight</span>: <span class="red">bold</span>;
+      <span class="blue">text-align</span>: <span class="red">center</span>;
+      <span class="blue">text-decoration</span>: <span class="red">none</span>;
+      <span class="blue">line-height</span>: <span class="green">3rem</span>;
+      <span class="blue">color</span>: <span class="red">#fff</span>;
+      <span class="blue">background-color</span>: <span class="red">#d00</span>;
+      <span class="blue">border-radius</span>: <span class="green">50%</span>;
+      <span class="blue">transition</span>: <span class="red">background-color 300ms linear,
+         transform 300ms ease-in-out</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.modal-close:hover</span> {
+      <span class="blue">background-color</span>: <span class="red">#a00</span>;
+      <span class="blue">transform</span>: <span class="yellow">scale</span>(<span class="green">1.2</span>);
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <p>
+                Dale click a este boton de abajo
+              </p>
+              <div class="esto-es-ejemplo">
+                <a href="#modal-1" class="boton-modal">Abrir Modal</a>
+                <article id="modal-1" class="modal">
+                  <div class="modal-container">
+                    <a href="#cerrar" class="modal-close">X</a>
+                    <h2>Esto es una Ventana Modal</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo aperiam voluptate! Voluptatem eligendi debitis laboriosam nihil amet ab illum minima, optio autem labore doloribus animi consectetur maiores molestias explicabo!
+                    </p>
+                    <ul>
+                      <li><a href="">Enlace</a></li>
+                      <li><a href="">Enlace</a></li>
+                      <li><a href="">Enlace</a></li>
+                      <li><a href="">Enlace</a></li>
+                      <li><a href="">Enlace</a></li>
+                      <li><a href="">Enlace</a></li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </article>
+        </section>
+        <hr>
+        <!-- Intro Peliculas Star Wars -->
+        <section id="intro-star-wars" class="container">
+            <h2 class="title-h2">Intro Peliculas Star Wars</h2>
+            <article class="container-info">
+              <p>
+                Ahora vamos a realizar la animaciones cuando enpieza una pelicula de stars Wars
+              </p>
+            </article>
+            <article class="container-code">
+              <h3 class="red-title">Codigo</h3>
+              <div class="estilos-codigo">
+<pre class="style-code-1">
+  <code>
+    <span class="purple">@keyframe</span> <span class="blue">introStarWars</span> {
+      0% {
+        <span class="blue">transform</span>: <span class="yellow">perspective</span>(<span class="green">100vh</span>) <span class="yellow">rotateX</span>(<span class="green">15deg</span>) <span class="yellow">translateY</span>(<span class="green">100%</span>);
+      }
+
+      100% {
+        <span class="blue">transform</span>: <span class="yellow">perspective</span>(<span class="green">100vh</span>) <span class="yellow">rotateX</span>(<span class="green">25deg</span>) <span class="yellow">translateY</span>(<span class="green">-200%</span>);
+      }
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.star-wars</span> {
+      <span class="blue">margin-left</span>: <span class="red">auto</span>;
+      <span class="blue">margin-right</span>: <span class="red">auto</span>;
+      <span class="blue">width</span>: <span class="green">100%</span>;
+      <span class="blue">height</span>: <span class="green">100vh</span>;
+      <span class="blue">overflow</span>: <span class="red">hidden</span>;
+      <span class="blue">color</span>: <span class="red">#ffb13a</span>;
+      <span class="blue">background-image</span>: <span class="yellow">url</span>(<span class="red">"../assent/stars-wars.jpg"</span>);
+      <span class="blue">text-align</span>: <span class="red">center</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.star-wars-container</span> {
+      <span class="blue">margin-left</span>: <span class="red">auto</span>;
+      <span class="blue">margin-right</span>: <span class="red">auto</span>;
+      <span class="blue">width</span>: <span class="green">100%</span>;
+      <span class="blue">text-align</span>: <span class="red">justify</span>;
+      <span class="blue">letter-spacing</span>: <span class="green">0.1rem</span>;
+      <span class="blue">animation</span>: <span class="red">introStarWars 20s linear infinite</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.star-wars h2</span>,
+    <span class="orange">.star-wars h3</span> {
+      <span class="blue">font-size</span>: <span class="green">5vw</span>;
+      <span class="blue">text-align</span>: <span class="red">center</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.star-wars p</span> {
+      <span class="blue">font-size</span>: <span class="red">3vw</span>;
+      <span class="blue">line-height</span>: <span class="red">4rem</span>;
+    }
+  </code>
+</pre>
+              </div>
+              <h3 class="red-title">Ejemplo</h3>
+              <section class="star-wars">
+                <div class="star-wars-container">
+                  <h2>Episodio III</h2>
+                  <h3>La Venganza de los Sith</h3>
+                  <p>
+                    ¡Guerra! La República se
+                    desmorona bajo los ataques del
+                    despiadado Conde Dooku, señor
+                    de los Sith. Hay héroes en
+                    ambos bandos. El mal está por
+                    doquier.
+                  </p>
+                  <p>
+                    En una maniobra audaz, el
+                    diabólico líder droide, general
+                    Grievous, ha entrado a la
+                    capital de la República y
+                    secuestrado al canciller
+                    Palpatine, líder del Senado
+                    Galáctico.
+                  </p>
+                  <p>
+                    Mientras el Ejército Droide
+                    Separatista trata de huir de la
+                    asediada capital con su
+                    valioso rehén, dos caballeros
+                    Jedi dirigen una misión
+                    desesperada para rescatar
+                    al canciller cautivo…
+                  </p>
+                </div>
+              </section>
+            </article>
+        </section>
+        <hr>
+        <!-- Fin -->
+        <section>
+          <h2 class="fin-h2">Fin</h2>
+          <a href="#inicio-presentacion" class="inicio">^</a>
+        </section>
+      </article>
+      <aside></aside>
+    </main>
+    <footer class="footer">
+      <ul>
+        <li>
+          correo: <a href="#">contactohuayapa@gmail.com</a>
+        </li>
+        <li>
+          twitter: <a href="#">link</a>
+        </li>
+        <li>
+          youtube: <a href="#">link</a>
+        </li>
+      </ul>
+    </footer>
+</body>
+</html>

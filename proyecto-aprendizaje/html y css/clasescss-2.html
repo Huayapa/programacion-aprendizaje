@@ -1,0 +1,3244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo CSS 2</title>
+    <!-- descripcion -->
+    <meta name="description" content="Esta es la segunda parte de css que trata sobre Unidades y estilos.">
+    <!-- link de tipografia google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">
+    <!-- links de iconos por google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- links de iconos por Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- link de iconos por font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link de vinculacion -->
+    <link rel="stylesheet" href="css/stylecss-2.css">
+    <!-- url canonica -->
+    <link rel="canonical" href="http://midominiocss.com/url-css">
+    <!-- logo para el icono  -->
+    <link rel="icon" href="img/css-logo.png">
+    <!-- tema de color mobile -->
+    <meta name="theme-color" content="#4287f5">
+    <!-- link para compartir en redes  -->
+    <meta property="og:title" content="Clases Css Unidades y estilos" />
+    <meta property="og:description" content="Esta es la segunda parte de css que trata sobre Unidades y estilos" />
+    <meta property="og:image" content="https://tudominio.com/img/html.png" />
+    <meta property="og:url" content="http://midominiocss.com/url-css" />
+    <!-- link para compartir en redes (twitter) -->
+    <meta name="twitter:cart" content="summary">
+    <meta name="twitter:site" content="@usuario">
+</head>
+<body>
+    <header class="nav-nav">
+        <nav class="nav-general">
+            <h1 class="title-h1">Aprendiendo CSS</h1>
+            <h2 class="subtitle-h2">"Unidades & Estilos"</h2>
+        </nav>
+        <div class="inicio-nav">
+            <a href="clasescss-2.html">Inicio</a>
+            <a href="clasescss-2.html#temario">Temario</a>
+        </div>
+    </header>
+    <main>
+        <!-- Introducción -->
+        <section class="container-style" id="inicio">
+            <h2 class="title-style">Introducción</h2>
+            <p>
+                Ya terminamos la parte donde revisamos y aprendemos la documentación, ahora es momento de aprender sobre las unidades de medida y los estilos que le puedes otorgar a CSS.
+            </p>
+            <div class="container-img">
+                <img src="img/Unidades-de-medida-CSS.png" alt="Unidades de medidad CSS">
+            </div>
+            
+        </section>
+        <hr>
+        <!-- Temario de curso -->
+        <section id="temario" class="container-style">
+            <h2 class="title-style">Temario</h2>
+            <p>
+                Aqui las partes del curso:
+            </p>
+            <div class="list-temario">
+                <ul>
+                    <li>
+                        <details>
+                          <summary>
+                            <a href="clasescss-2.html#colores-css">Colores en CSS</a>
+                          </summary>
+                          <ul>
+                            <li>
+                              <a href="clasescss-2.html#colores-nombre"
+                              >Colores por nombres</a>
+                            </li>
+                            <li>
+                              <a href="clasescss-2.html#sistema-hex"
+                              >Colores por Sistema Hexadecimal</a>
+                            </li>
+                            <li>
+                              <a href="clasescss-2.html#sistema-rgb"
+                              >Colores por Sistema RGB</a>
+                            </li>
+                            <li>
+                              <a href="clasescss-2.html#sistema-hsl"
+                              >Colores por Sistema HSL</a>
+                            </li>
+                          </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#que-sistema-color-uso"
+                        >Que sistema de color uso?</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#transparent-currentcolor"
+                        >Transparent & Currentcolor</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#property-opacity"
+                        >Propiedad Opacity</a>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>
+                          <a href="clasescss-2.html#unidades-medida"
+                          >Unidades de medida en CSS</a>
+                        </summary>
+                        <ul>
+                          <li>
+                            <details>
+                              <summary>
+                                <a href="clasescss-2.html#container-style"
+                                >Unidades de medidas Absolutas</a>
+                              </summary>
+                              <ul>
+                                <li>
+                                  <a href="clasescss-2.html#pixeles">Los Pixeles</a>
+                                </li>
+                              </ul>
+                            </details>
+                          </li>
+                          <li>
+                            <details>
+                              <summary>
+                                <a href="clasescss-2.html#container-style"
+                                >Unidades de medidas Relativas</a>
+                              </summary>
+                              <ul>
+                                <li>
+                                  <a href="clasescss-2.html#relative-ems"
+                                  >Unidades de medidas Relativas EMs</a>
+                                </li>
+                                <li>
+                                  <a href="clasescss-2.html#relative-rems"
+                                  >Unidades de medida Relativa REMs</a>
+                                </li>
+                                <li>
+                                  <a href="clasescss-2.html#relative-exs"
+                                  >Unidades de medida Relativa EXs</a>
+                                </li>
+                                <li>
+                                  <a href="clasescss-2.html#relative-chs"
+                                  >Unidades de medida relativa CHs</a>
+                                </li>
+                              </ul>
+                            </details>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#porcentajes">Los porcentajes</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#viewport">Tamaño del viewport</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#cuando-uso-unidad-medida" 
+                        >Cuando debo usar cada unidad de medida?</a>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>
+                          <a href="clasescss-2.html#variables-funciones"
+                          >Variables y funciones en CSS</a>
+                        </summary>
+                        <ul>
+                          <li>
+                            <a href="clasescss-2.html#custom-property"
+                            >Custom property (Variables en CSS)</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#funcion-url"
+                            >Funcion url()</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#funcion-calc"
+                            >Funcion calc()</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#funcion-min-max"
+                            >Funcion min() & max()</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#funcion-clamp"
+                            >Funcion clamp()</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>
+                          <a href="clasescss-2.html#estilo-fuente-texto"
+                          >Estilos de Fuente y textos</a>
+                        </summary>
+                        <ul>
+                          <li>
+                              <a href="clasescss-2.html#estilo-fuente"
+                              >Estilos de fuente</a>
+                          </li>
+                          <li>
+                              <a href="clasescss-2.html#fuente-externa"
+                              >Fuentes externas (@font-face & font-display)</a>
+                          </li>
+                          <li>
+                              <a href="clasescss-2.html#google-font"
+                              >google font</a>
+                          </li>
+                          <li>
+                              <a href="clasescss-2.html#estilos-texto"
+                              >Estilos de Texto</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#iconos-tipograficos"
+                        >Iconos Tipograficos</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#propiedad-border-radius"
+                        >Propiedad border-radius</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#propiedad-outline"
+                        >Propiedad outline</a>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>
+                          <a href="clasescss-2.html#estilo-fondo"
+                          >Estilo de fondo</a>
+                        </summary>
+                        <ul>
+                          <li>
+                            <a href="clasescss-2.html#background-color"
+                            >background-color</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#background-image"
+                            >background-image</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#background-repeat"
+                            >background-repeat</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#background-size"
+                            >background-size</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#background-postion"
+                            >background-position</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#background-clip"
+                            >background-clip</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#background-origin"
+                            >background-origin</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#diferencia-clip-origin"
+                            >Diferencias entre clip y origin</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#background-attachment"
+                            >background-attachment</a>
+                          </li>
+                          <li>
+                            <a href="clasescss-2.html#shorthand-background"
+                            >shorthand background</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#fondos-multiples"
+                        >Fondos Multiples</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#estilos-imagenes"
+                        >Estilos de Imagenes</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#estilos-lista"
+                        >Estilos de Listas</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#texto-columna"
+                        >Textos en Columnas</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#estilo-tablas"
+                        >Estilos en Tablas</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#estilo-formulario"
+                        >Estilos de Formulario</a>
+                    </li>
+                    <li>
+                        <a href="clasescss-2.html#formularios-contacto-css"
+                        >Formularios de Contacto con CSS</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <!-- Colores en CSS -->
+        <section id="colores-css" class="container-style">
+            <h2 class="title-style">Colores en CSS</h2>
+            <p>
+                Puedes poner diferentes colores a tus elementos que por ahora solo se pueden poner a estas tres partes:
+            </p>
+            <ul>
+                <li>
+                    <h3 class="list-title">El fondo</h3>
+                    <article class="list-content">
+                        <p>
+                            Que se puede aplicar con el <b>background-color</b>.
+                        </p>
+                        <h4>Ejemplo:</h4>
+                        <p class="ejm-list-title">
+                            Soy un parrafo con un fondo de color lightgreen
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <h3 class="list-title">El borde</h3>
+                    <article class="list-content">
+                        <p>
+                            Significa que podemos poner color a los bordes, esto lo podemos hacer con el atributo <b>border</b>
+                        </p>
+                        <h4>Ejemplo</h4>
+                        <p class="ejm-list-border">
+                            Soy un parrafo con un borde de color negro.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <h3 class="list-title">El elemento</h3>
+                    <article class="list-content">
+                        <p>
+                            Podemos poner de color al elemento (el texto) y para eso debemos usar el atributo <b>color</b>.
+                        </p>
+                        <h4>Ejemplo</h4>
+                        <p class="ejm-list-element">
+                            Soy un parrafo con color blanco en el elemento.
+                        </p>
+                    </article>
+                </li>
+            </ul>
+            <p>
+                Para esto hay 4 diferentes formas de aplicar los colores (estilos).
+            </p>
+            <ul>
+                <li>
+                    <h3 class="list-title">Colores por Nombre</h3>
+                </li>
+                <li>
+                    <h3 class="list-title">Colores por Sistema Hexadecimal</h3>
+                </li>
+                <li>
+                    <h3 class="list-title">Colores por Sistema RGB</h3>
+                </li>
+                <li>
+                    <h3 class="list-title">Colores por Sistema HSL</h3>
+                </li>
+            </ul>
+            <p>
+                Tambien esta el <b>Sistema CMYK</b> que sirve para los medios inpresos
+            </p>
+            <h3 class="idea-recomendacion">Recomendacion</h3>
+            <P>
+                Si buscas en tu navegador web <b>rgb to hex</b> te saldra un cuadro de colores con todos los valores de cada sistema de color.
+            </P>
+        </section>
+        <hr>
+        <!-- Colores por nombres -->
+        <section id="colores-nombre" class="container-style">
+            <h2 class="title-style">Colores por Nombres</h2>
+            <article class="container-info">
+                <p>
+                    Como su nombre lo dice podemos aplicar el color sabiendo su nombre, esto nos puede servir si te sabes los nombres de colores especificos en ingles.
+                </p>
+            </article>
+            <article class="container-ejm">
+                <h3>Codigo:</h3>
+                <div class="container-pre-code">
+                  <pre class="style-code">
+                    <code class="style-code-code">
+                      {
+                      <span class="atributo-code">padding</span>: <span class="green-number">5px</span>;
+                      <span class="atributo-code">background-color</span>: <span class="red-text">black</span>;
+                      <span class="atributo-code">color</span>: <span class="red-text">white</span>;
+                      <span class="atributo-code">border</span>: <span class="red-text">3px solid gray</span>;
+                      }
+                  </code>
+                </pre>
+                </div>
+                <h3>Ejemplo:</h3>
+                <p class="ejm-color-nombre">
+                    Soy un parrafo con colores escritos por nombres
+                </p>
+            </article>
+        </section>
+        <hr>
+        <!-- Colores por Sistema Hexadecimal -->
+        <section id="sistema-hex" class="container-style">
+            <h2 class="title-style">Sistema Hexadecimal</h2>
+            <article class="container-info">
+                <p>
+                    Se llama Hexadecimal porque esta basada en el sistema de numeración Hexadecimal, quiere decir que contiene 16 digitos (0123456789ABCDEF) y solo acepta 6 digitos sin contar el (#).
+                </p>
+                <h3>Colores HEX</h3>
+                <p>
+                    Para poder mostrar los colores debes saber primero que es <b>RGB (RedGreenBlue)</b> siendo asi los primeros dos digitos seran para el red, los segundos dos digitos seran green y los ultimos dos seran para el blue (Al principio debes poner el #).
+                </p>
+                <p class="codigo-hexadecimal">
+                    #<span class="red">ff</span><span class="green">66</span><span class="blue">00</span>
+                </p>
+            </article>
+            <article class="container-ejm">
+                <pre class="style-code">
+                    {
+                        <span class="atributo-code">color</span>: <span class="red-text">#ffffff</span>; }color blanco
+                        <span class="atributo-code">color</span>: <span class="red-text">#ff0000</span>; }color rojo
+                        <span class="atributo-code">color</span>: <span class="red-text">#00ff00</span>; }color verde
+                        <span class="atributo-code">color</span>: <span class="red-text">#0000ff</span>; }color azul
+                        <span class="atributo-code">color</span>: <span class="red-text">#000000</span>; }color negro
+                    }
+                </pre>
+            </article>
+            <article class="container-info-2">
+                <h3>Opacidad</h3>
+                <p>
+                    Tambien podemos añadirle la Opacidad, para esto debemos poner 2 digitos adelante de los 6 digitos, para que lo interprete como el porcentaje (%) de la opacidad (de 1% a 99%).
+                </p>
+            </article>
+            <article class="container-ejm-2">
+                <pre class="style-code">
+                    {
+                        <span class="atributo-code">color</span>: <span class="red-text">#00000050</span>;
+                    }
+                </pre>
+            </article>
+            <h3>Ejemplo</h3>
+            <p class="ejm-hex">
+              Soy un parrafo con colores Hexadecimales.
+            </p>
+        </section>
+        <hr>
+        <!-- Colores por Sistema RGB -->
+        <section id="sistema-rgb" class="container-style">
+            <h2 class="title-style">Sistema RGB</h2>
+            <article class="container-info">
+                <p>
+                    <b>RGB (RedGreenBlue)</b> es un sistema que consiste representar varios colores a travez de combinar el rojo, verde y azul.
+                </p>
+                <p>
+                    El sistema <b>RGB</b> acepta 8 bits por canal (los bits solo aceptan 0 y 1), su valor maximo es 255, el mas bajo es 0 y puede aceptar 9 digitos (255, 255, 255), para poder aplicarlo debemos hacer uso de la funcion <b>rgb()</b>.
+                </p>
+                <h3 class="idea-recomendacion">Porques solo acepta 255?</h3>
+                <p>
+                    Como el sistema <b>RGB</b> acepta 8 bits por canal, debemos elevar 2 a la potencia 8 que es igual a 256 (Solo acepta 255 porque el 0 cuenta a la hora de pogramar).
+                </p>
+                <p class="codigo-hexadecimal">
+                    rgb(<span class="red">255</span>, <span class="green">255</span>, <span class="blue">255</span>)
+                </p>
+            </article>
+            <article class="container-ejm">
+                <pre class="style-code">
+                    {
+                        <span class="atributo-code">color</span>: <span class="red-text">rgb(255, 255, 255)</span>; }color blanco
+                        <span class="atributo-code">color</span>: <span class="red-text">rgb(255, 0, 0)</span>; }color rojo
+                        <span class="atributo-code">color</span>: <span class="red-text">rgb(0, 255, 0)</span>; }color verde
+                        <span class="atributo-code">color</span>: <span class="red-text">rgb(0, 0, 255)</span>; }color azul
+                        <span class="atributo-code">color</span>: <span class="red-text">rgb(0, 0, 0)</span>; }color negro
+                    }
+                </pre>
+            </article>
+            <article class="container-info-2">
+                <h3>Opacidad</h3>
+                <p>
+                  Si quieres agregar opacidad debemos usar la función <b>rgba()</b> y debemos agregarlo en el 4 parametro.
+                </p>
+                <h4 class="red">Ten en cuenta que:</h4>
+                <p>
+                  El numero 0 representaria el 0% de opacidad y el 1 el 100%, si quieres agregar una opacidad de 50% deberas usar los numeros decimales (0.50).
+                </p>
+            </article>
+            <article class="container-ejm-2">
+              <pre class="style-code">
+                {
+                  <span class="atributo-code">color</span>: <span class="red-text">rgba(0, 0, 0, 0.50)</span>;
+                }
+              </pre>
+            </article>
+            <h3>Ejemplo</h3>
+            <p class="ejm-rgb">
+              Soy un parrafo con colores rgb.
+            </p>
+        </section>
+        <hr>
+        <!-- Colores por Sistema HSL -->
+        <section id="sistema-hsl" class="container-style">
+          <h2 class="title-style">Sistema HSL</h2>
+          <article class="container-info">
+            <p>
+              <b>HSL</b> o <b>HueSaturationLightness</b> (Tono de Saturacion y Luminosidad) y acepta distintos valores.
+            </p>
+            <div class="container-img">
+              <img src="img/rueda-color-rgb-cmy-1024x483.webp" alt="ilustracion hsl">
+            </div>
+            <h3>Valores HSL</h3>
+            <p>
+              Debemos usar la función <b>hsl()</b> para poner los valores HSL.
+            </p>
+            <div class="list-hsl">
+              <ul>
+                <li>
+                  <p>
+                    El primero es <b>hue</b> (circulo cromatico) que acepta hasta 360°
+                  </p>
+                  <ol>
+                    <li><p>0° } red</p></li>
+                    <li><p>60° } yellow</p></li>
+                    <li><p>120° } green</p></li>
+                    <li><p>180° } cyan</p></li>
+                    <li><p>240° } blue</p></li>
+                    <li><p>300° } magenta</p></li>
+                  </ol>
+                </li>
+
+                <li>
+                  <p>
+                    El segundo es <b>Saturation</b> (Intensidad de color) y se maneja por porcentajes.
+                  </p>
+                  <ol>
+                    <li>
+                      <p>0% } Escala de grises</p>
+                    </li>
+                    <li>
+                      <p>100% } color puró</p>
+                    </li>
+                  </ol>
+                </li>
+
+                <li>
+                  <p>
+                    El tercer valor es <b>Lightness</b> (Luminosidad de color) y se maneja con los porcentajes.
+                  </p>
+                  <ol>
+                    <li>
+                      <p>0% } negro</p>
+                    </li>
+                    <li>
+                      <p>50% } color puro</p>
+                    </li>
+                    <li>
+                      <p>100% } blanco</p>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="container-ejm">
+            <pre class="style-code">
+              {
+                <span class="atributo-code">background-color</span>: <span class="red-text">hsl(60, 0%, 50%)</span>;
+              }
+              </pre>
+          </article>
+          <article class="container-info-2">
+            <h3>Opacidad</h3>
+            <p>
+              Si quieres agregar opacidad debemos usar la función <b>hsla()</b> y acepta decimales igua a <b>rgba()</b>.
+            </p>
+          </article>
+          <article class="container-ejm-2">
+            <pre class="style-code">
+              {
+                <span class="atributo-code">background-color</span>: <span class="red-text">hsla(60, 0%, 50%, 0.50)</span>;
+              }
+            </pre>
+          </article>
+          <h3>Ejemplo</h3>
+          <p class="ejm-hsl">
+            Soy un parrafo con colores rgb.
+          </p>
+        </section>
+        <hr>
+        <!-- Que sistema de color uso? -->
+        <section id="que-sistema-color-uso" class="container-style">
+          <h2 class="title-style">Que sistema de color uso?</h2>
+          <article class="container-info">
+            <p>
+              Eres libre de escojer cualquiera de los sistemas, ya que ninguno de los sistemas es mejor que el otro y existen varios sistemas de colores para que te acomodes mejor.
+            </p>
+            <h4 class="red">Info Extra</h4>
+            <p>
+              Algo que debes saber es que cuando pones algun sistemas de color, el navegador web lo interpreta como la funcion <b>rgb()</b> y <b>rgba()</b>.
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Transparent & Currentcolor -->
+        <section id="transparent-currentcolor" class="container-style">
+          <h2 class="title-style">Transparent & Currentcolor</h2>
+          <article class="container-info">
+            <h3>Valores:</h3>
+            <ol>
+              <li>
+                <h4>Transparent</h4>
+                <p>
+                  Su color es transparente
+                </p>
+                <h4>Ejemplo</h4>
+                <p class="transparent">
+                  Soy un parrafo con un fondo transparente pero no lo puedes ver.
+                </p>
+              </li>
+              <li>
+                <h4>currentColor</h4>
+                <p>
+                  Hereda el valor por defecto (black) o asignado de la propiedad <b>(color)</b> ancestro que tenga definido esta propiedad y busca del mas cerca al mas lejos.
+                </p>
+                <h4>Ejemplo</h4>
+                <p class="currentcolor">
+                  soy un parrafo con un currentColor, osea e herado el color  de mi ancestro
+                </p>
+              </li>
+            </ol>
+          </article>
+          <article class="container-ejm">
+            <pre class="style-code">
+              {
+                <span class="atributo-code">background-color</span>: <span class="red-text">magenta</span>;
+                <span class="atributo-code">background-color</span>: <span class="red-text">transparent</span>;
+                <span class="atributo-code">background-color</span>: <span class="red-text">currentColor</span>;
+              }
+            </pre>
+          </article>
+        </section>
+        <hr>
+        <!-- Propiedad Opacity -->
+        <section id="property-opacity" class="container-style">
+          <h2 class="title-style">Propiedad Opacity</h2>
+          <article class="container-info">
+            <p>
+              En la mayoria de sistemas de colores hablamos de la opacidad (alpha) en CSS hay un atributo para aplicar eso.
+            </p>
+            <h3>Opacity</h3>
+            <p>
+              Con esta propiedad podemos hacer que todos los elementos tenga la misma opacidad (color, background-color, border), acepta numero 0 y 1 asi que debes usar numeros decimales.
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3>Ejemplo</h3>
+            <p class="ejm-opacity">
+              Soy un parrafo con una opacidad del 0.5
+            </p>
+            <pre class="style-code">
+              {
+                <span class="atributo-code">background-color</span>: <span class="red-text">orchid</span>;
+                <span class="atributo-code">color</span>: <span class="red-text">navy</span>;
+                <span class="atributo-code">border</span>: <span class="red-text">thick solid black</span>;
+                <span class="atributo-code">opacity</span>: <span class="green">0.5</span>;
+              }
+            </pre>
+          </article>
+        </section>
+        <hr>
+        <!-- Unidades de medida en CSS -->
+        <section id="unidades-medida" class="container-style">
+          <h2 class="title-style">Unidades de medida en CSS</h2>
+          <article class="container-info">
+            <p>
+              Las unidades de medida se puede clasificar en 2:
+            </p>
+            <ol>
+              <li>
+                <h3>Absolutas</h3>
+                <p>
+                  En Absolutas su valor no puede cambiar ya que son unidades reales.
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      cm, mm, pc, in, Q } Se usan para documentos con medidad para imprimir
+                    </p>
+                  </li>
+                  <li>
+                    <p>pt (1/72 in) } puntos</p>
+                  </li>
+                  <li>
+                    <p>px (1/96 in) } pixeles</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Relativas</h3>
+                <p>
+                  Su valor es relativo al contexto de cada unidad de medida.
+                </p>
+                <ul>
+                  <li>
+                    <p>em, rem, ex, ch } es al tamaño de la fuente</p>
+                  </li>
+                  <li>
+                    <p>% } es al tamaño del contenedor</p>
+                  </li>
+                  <li>
+                    <p>vw, vh, vmax, vmin } es al tamaño del viewport</p>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+            <h3 class="red">recomendable</h3>
+            <p>
+              Recomendable usar las unidades de medida Relativa y visitar <a href="http://pxtoem.com/" target="_blank">www.pxtoem.com</a> te puede ayudar en las medidas.
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Unidades de medidas Absolutas -->
+        <section class="container-style">
+          <h2 class="title-style">Unidades de medidas Absolutas:</h2>
+        </section>
+        <hr>
+        <!-- Los pixeles -->
+        <section id="pixeles" class="container-style">
+          <h2 class="title-style">Los Pixeles</h2>
+          <article class="container-info">
+            <p>
+              Es una noventa seis ava parte de una pulgada real, que mayormente se usan en las imagenes digitales. 
+            </p>
+            <h3 class="red">Recomendacion</h3>
+            <ul>
+              <li>
+                <p>
+                  Para evitar problemas de medida debemos resetear el tamaño de la caja.
+                </p>
+              </li>
+              <li>
+                <p>
+                  No es recomendable usar pixeles (pero se usa de referencia), mejor son las unidades de medida relativa.
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="container-ejm">
+            <pre class="style-code">
+              *,
+              *<span class="atributo-code">::after</span>,
+              *<span class="atributo-code">::before</span> {
+                <span class="atributo-code">box-sizing</span>: <span class="red-text">border-box</span>;
+              }
+            </pre>
+          </article>
+        </section>
+        <hr>
+        <!-- Unidades de medidas Relativas -->
+        <section class="container-style">
+          <h2 class="title-style">Unidades de medidas Relativas:</h2>
+          <h3 class="red">recomendable</h3>
+          <p>
+            Antes de seguir debes saber a que en el alfabeto la letra <b>"m"</b> es la mas larga y la letra <b>"X"</b> es la mas alta de el alfabeto.
+          </p>
+        </section>
+        <hr>
+        <!-- Unidades de medidas Relativas  EMs-->
+        <section id="relative-ems" class="container-style">
+          <h2 class="title-style">EMs (medida relativa)</h2>
+          <article class="container-info">
+            <p>
+              Esta basada en la "m" de la fuente del elemento, me refiero a que los <b>em</b> siempren tomaran el tamaño base del elemento padre.
+            </p>
+            <p>
+              Por defecto el tamaño base es 16px asi que <b>1em = 16px</b> pero si al elemento padre cambias su tamaño base a 24px, el 1em pasara a ser 24px.
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <pre class="style-code">
+              }
+              <span class="atributo-code">background-color</span>: <span class="red-text">rebeccapurple</span>;
+              <span class="atributo-code">font-size</span>: <span class="red-text">2em</span>;
+              }
+            </pre>
+            <h3>Ejemplo</h3>
+            <p class="ejm-ems">
+              soy un parrafo con 2em y mi elemento padre tiene un tamaño base de 16px eso quiere decir que mi tamaño sera de 24px
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Unidades de medida Relativa REMs -->
+        <section id="relative-rems" class="container-style">
+          <h2 class="title-style">REMs (Medida Relativa)</h2>
+          <article class="container-info">
+            <p>
+              La unidad de medida <b>REMs</b> o <b>(Root em)</b> esta basada en la altura "m" de la fuente del elemento <b>raíz</b>(html), esto hace que los <b>rem</b> sea mas facil de comprender que los <b>em</b>.
+            </p>
+            <p>
+              Es casi lo mismo que los <b>Em</b>, la diferencia es que solo estara haciendo caso a el elemento raiz (la etiqueta html), por defecto <b>1em = 16px</b> y no se cambiar aunque el elemento padre tenga 24px.
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <pre class="style-code">
+              }
+                <span class="atributo-code">background-color</span>: <span class="red-text">rebeccapurple</span>;
+                <span class="atributo-code">font-size</span>: <span class="red-text">1em</span>;
+              }
+            </pre>
+            <h3>Ejemplo</h3>
+            <p class="ejm-rems">
+              Soy un parrafo con 1em y solo hago caso al elemento raíz.
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Unidades de medida Relativa EXs -->
+        <section id="relative-exs" class="container-style">
+          <h2 class="title-style">EXs (Medida Relativa)</h2>
+          <article class="container-info">
+            <p>
+              Los ex estan basado en la altura "X" de la fuente del elemento, tiene un parecido a los <b>em</b> la diferencia es que esta es sobre la altura y no la anchura.
+            </p>
+            <p>
+              Su valor de 1ex se puede proximar por 0.5em, Como se trata una de medida relativa es necesario un calculo matematico para determinar la medida real.
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <pre class="style-code">
+              .rems {
+                <span class="atributo-code">background-color</span>: <span class="red-text">cadetblue</span>;
+                <span class="atributo-code">font-size</span>: <span class="green">24px</span>;
+                <span class="atributo-code">padding</span>: <span class="green">1ex 0.5ex</span>;
+                <span class="atributo-code">border</span>: <span class="red-text">5px solid black</span>;
+              }
+            </pre>
+            <pre class="style-code">
+              .rems-child {
+                <span class="atributo-code">background-color</span>: <span class="red-text">salmon</span>;
+                <span class="atributo-code">font-size</span>: <span class="green">2ex</span>;
+                <span class="atributo-code">padding</span>: <span class="green">1ex</span>;
+                <span class="atributo-code">margin</span>: <span class="green">0.5ex</span>;
+                <span class="atributo-code">border</span>: <span class="red-text">5px solid black</span>;
+              }
+            </pre>
+            <h3>Ejemplo</h3>
+            <div class="container-ex-ejm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ex pariatur, ipsum nam iure repellendus recusandae velit
+              <div class="container-ex-ejm-child">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dolore quibusdam officia id, nisi et. Labore aperiam 
+              </div>
+            </div>
+          </article>
+        </section>
+        <hr>
+        <!-- Unidades de medida relativa CHs -->
+        <section id="relative-chs" class="container-style">
+          <h2 class="title-style">CHs (medida Relativa)</h2>
+          <article class="container-info">
+            <p>
+              La unidad <b>ch</b> esta basada en la anchura del "o" de la fuente del elemento, me refiero a que con el <b>ch</b> podemos limitar los caracteres que queremos, ya sea solo permitir 10 caracteres para una contraseña o 2000 caracteres para un blog.
+            </p>
+            <h3 class="red">debes saber que:</h3>
+            <ul>
+              <li>
+                <p>
+                  Esto puede ser muy util.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>1ch</b> es igual a 1 caracter.
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <pre class="style-code">
+              {
+                <span class="atributo-code">background-color</span>: <span class="red-text">cadetblue</span>;
+                <span class="atributo-code">width</span>: <span class="red-text">10ch</span>;
+              }
+            </pre>
+            <h3>Ejemplo</h3>
+            <p class="ejm-chs">1234567890</p>
+          </article>
+        </section>
+        <hr>
+        <!-- Los porcentajes -->
+        <section id="porcentajes" class="container-style">
+          <h2 class="title-style">Los Porcentajes (%)</h2>
+          <article class="container-info">
+            <p>
+              Los porcentajes (%) son relativos al tamaño del contenedor, esto quiere decir que su porcentaje siempre se definira al tamaño de su elemento.
+            </p>
+            <pre class="style-code">
+              {
+                <span class="atributo-code">background-color</span>: <span class="red-text">darkkhaki</span>;
+                <span class="atributo-code">width</span>: <span class="green">80%</span>;
+                <span class="atributo-code">font-size</span>: <span class="green">100%</span>;
+                <span class="atributo-code">padding</span>: <span class="green">2%</span>;
+                <span class="atributo-code">height</span>: <span class="green">100%</span>;
+              }
+            </pre>
+            <h3 class="red">Debes saber que:</h3>
+            <p>
+              Si pones una medida a la altura (height) no lo aplicara, lo recomendable es que tu documento ocupe la altura dependiendo del elemento, pero si quieres ponerlo debes crear una caja con un tamaño definido para poder afectar al hijo.
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <pre class="style-code">
+              height-parent {
+                <span class="atributo-code">background-color</span>: <span class="red-text">brown</span>;
+                <span class="atributo-code">width</span>: <span class="red-text">200px</span>;
+                <span class="atributo-code">height</span>: <span class="red-text">200px</span>;
+              }
+            </pre>
+            <pre class="style-code">
+              height-child {
+                <span class="atributo-code">background-color</span>: <span class="red-text">coral</span>;
+                <span class="atributo-code">width</span>: <span class="red-text">50%</span>;
+                <span class="atributo-code">height</span>: <span class="red-text">50%</span>;
+              }
+            </pre>
+            <h3>Ejemplo</h3>
+            <div class="porcentaje-ejm">
+              <div class="porcentaje-ejm-child">
+                caja hijo
+              </div>
+            </div>
+          </article>
+        </section>
+        <hr>
+        <!-- Unidades del viewport -->
+        <section id="viewport" class="container-style">
+          <h2 class="title-style">Unidades del viewport</h2>
+          <article class="container-info">
+            <p>
+              El viewport es relativo al tamaño del viewport, lo que quiero decir es que cada pantalla tiene distinto tamaño y el <b>100vh y 100vw</b> representa el tamaño completo del viewport y existes 4 tipos de unidades de medida.
+            </p>
+            <div class="conteiner-img">
+              <img src="img/viewport.png" alt="Representacion viewport">
+            </div>
+            <h3>Unidades de medida del viewport:</h3>
+            <ul>
+              <li>
+                <h3 class="red">vw</h3>
+                <p>
+                  vw o viewportWidth es para el ancho del viewport y va desde 1 al 100, es decir si tiene 1 agarra una pequeña proporcion del tamaño de la pantalla.
+                </p>
+              </li>
+              <li>
+                <h3 class="red">vh</h3>
+                <p>
+                  vh o viewportHeight es para la altura del viewport y va desde 1 al 100, es decir si tiene 1 agarra una pequeña
+                  proporcion del tamaño de la pantalla.
+                </p>
+              </li>
+              <li>
+                <h3 class="red">vmax</h3>
+                <p>
+                  vmax o viewportmax tomara entre <b>vh</b> y <b>vw</b> el que tenga mayor valor.
+                </p>
+              </li>
+              <li>
+                <h3 class="red">vmin</h3>
+                <p>
+                  vmin o viewportmin tomara entre <b>vh</b> y <b>vw</b> el que tenga menor valor.
+                </p>
+              </li>
+            </ul>
+            <p>
+              Esto es muy util y el mas usado ya que nos permite adaptar la web a distintos tipos de pantalla, tambien podemos crear un "hero image".
+            </p>
+            <h3 class="red">Recuerda que:</h3>
+            <ul>
+              <li>
+                <p>
+                  las etiquetas body tienen margenes por defecto.
+                </p>
+              </li>
+              <li>
+                <p>
+                  las barras de scroll del navegador tambien son parte del viewport.
+                </p>
+              </li>
+              <li>
+                <p>
+                  es recomendable poner al width con porcentajes(%) y al height con tamaño del viewport(vh).
+                </p>
+              </li>
+              <li>
+                <p>
+                  el viewport siempre estara basadas en el tamaño de la pantalla aunque este en una caja no le hara caso a la caja.
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo:</h3>
+            <pre class="style-code">
+                <code>
+                  .hero-img-ejm {
+                    <span class="atributo-code">background-color</span>: <span class="red-text">#bdbdbd</span>;
+                    <span class="atributo-code">width</span>: <span class="green">100%</span>;
+                    <span class="atributo-code">height</span>: <span class="green">100vh</span>;
+                    <span class="atributo-code">text-align</span>: <span class="red-text">center</span>;
+                    <span class="atributo-code">font-size</span>: <span class="green">5vh</span>;
+                    <span class="atributo-code">display</span>: <span class="red-text">flex</span>;
+                    <span class="atributo-code">flex-direction</span>: <span class="red-text">column</span>;
+                    <span class="atributo-code">justify-content</span>: <span class="red-text">center</span>;
+                    <span class="atributo-code">padding</span>: <span class="green">5vh 2vh</span>;
+                  }
+              </code>
+            </pre>
+            <h3>Ejemplo</h3>
+            <div class="hero-img-ejm">
+              <p>
+                Bienvenido a mi ejemplor de una "hero image" 
+              </p>
+            </div>
+          </article>
+        </section>
+        <hr>
+        <!-- Cuando debo usar cada unidad de medida? -->
+        <section id="cuando-uso-unidad-medida" class="container-style">
+          <h2 class="title-style">Cuando uso cada unidad de medida?</h2>
+          <article class="container-info">
+            <ul>
+              <li>
+                <h3>Las Absolutas</h3>
+                <p>
+                  Si tienes que diseñar una pagina para imprimir ahi nos combiene usar las absolutas (en general)
+                </p>
+              </li>
+              <li>
+                <h3>Unidades Relativas</h3>
+                <ol>
+                  <li>
+                    <p>
+                      Todo lo que tenga que ver con tipografia se recomienda usar los <b>rem</b>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Para <b>padding</b>, <b>margin</b> medidas externas podemos usar <b>rem</b> pero si los quieres que los tamaños sean proporcionales es mejor usar <b>em</b>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Si quieres delimitar cierto contenedor o elemento nos combiene usar los <b>ch</b>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Los porcentajes nos sirven para el diseño resposivo y que lo usaremos mucho.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Las unidades del viewport <b>(vh,vw)</b> nos sirve cuando queremos tomar como referencia el tamaño de la pantalla y lo usaremos mucho igual que los porcentajes
+                    </p>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <hr>
+        <!-- Variables y funciones en CSS -->
+        <section id="variables-funciones" class="container-style">
+          <h2 class="title-style">Variables y funciones en CSS</h2>
+          <article class="container-info">
+            <p>
+              CSS no es un lenguaje de programación pero cada vez enpieza a parecer a los lenguages.
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Custom property (Variables en CSS) -->
+        <section id="custom-property" class="container-style">
+          <h2 class="title-style">Custom property (variables CSS)</h2>
+          <article class="container-info">
+            <p>
+              Custom property o una variable (un espacio recervado para almacenar un dato), las variables deben estar definidas dentro de un selector.
+            </p>
+            <div class="como-lo-creo">
+              <h3 class="red">Como los creo?</h3>
+            <p>
+              Para poder crear estas variables debemos usar las <b>--</b> luego poner el respectivo nombre que tendra y por ultimo poner el valor que aplicara esta función.
+            </p>
+            <pre class="style-code-2">
+              <code>
+                soy-una-variable {
+                  <span class="blue">--ejemplo-de-nombre</span>: <span class="red">red</span>
+                }
+              </code>
+            </pre>
+            </div>
+            <div class="como-lo-invoco">
+              <h3 class="red">Como los Invoco?</h3>
+            <p>
+              Para poder invocar esta variable debemos hacer uso de la funcion <b>var()</b> y poner el nombre dentro (el nombre de la variable debe estar en el mismo selector para poder invocarlo)
+            </p>
+            <pre class="style-code-2">
+              <code>
+                soy-una-variable {
+                  <span class="blue">--ejemplo-de-nombre</span>: <span class="red">red</span>
+                  <span class="blue">color</span>: <span class="red">var(--ejemplo-de-nombre)</span>;
+                }
+              </code>
+            </pre>
+            </div>
+            <div class="recuerda-que">
+              <h3 class="red">Recuerda</h3>
+            <ol>
+              <li>
+                <p>
+                  Las variables deben estar en el mismo selector para funcionar.
+                </p>
+              </li>
+              <li>
+                <p>
+                  las Variables pueden tener el mismo nombre siempre y cuando esten en distintos selectores.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Las variables solo afectaran a su selector y a sus hijos, no afectaran a los demas selectores que tengas en mismo nombre del valor.
+                </p>
+              </li>
+            </ol>
+            </div>
+            <p>
+              Pero si quieres que una variable afecte a todos los elementos debemos crear nuestras variables en la etiqueta <b>html</b>, tambien podemos usar la seudoclase <b>:root</b> que es mejor porque tiene mayor especifidad.
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo:</h3>
+            <div class="code-ejm-3">
+              <pre class="style-code-2">
+                <code>
+                  .custom-props-1 {
+                    <span class="blue">--primary-color</span>: <span class="red">gray</span>
+                    <span class="blue">--font-size</span>: <span class="red">32px</span>;
+                    <span class="blue">background-color</span>: <span class="red">var(--primary-color)</span>;
+                  }
+                </code>
+              </pre>
+              <pre class="style-code-2">
+                <code>
+                  .custom-props-3 {
+                    <span class="blue">font-size</span>: <span class="red">var(--font-size)</span>;
+                  }
+                </code>
+              </pre>
+              <pre class="style-code-2">
+                <code>
+                  .title-props {
+                    <span class="blue">--primary-color</span>: <span class="red">navy</span>
+                    <span class="blue">color</span>: <span class="red">var(--primary-color, orange)</span>; }si la variable 
+                                                      no funciona
+                                                      ejecutara el
+                                                      otro color
+                  }
+                </code>
+              </pre>
+            </div>
+            <h3 class="title-props">Ejemplo</h3>
+            <section class="custom-props-1">
+              <article class="custom-props-2">
+                <div class="custom-props-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure illo odit architecto esse veritatis explicabo recusandae, accusamus consequuntur nesciunt id, ut omnis dolorum velit! Eius repudiandae qui nemo provident quidem.
+                </div>
+              </article>
+            </section>
+          </article>
+        </section>
+        <hr>
+        <!-- Funcion url() -->
+        <section id="funcion-url" class="container-style">
+          <h2 class="title-style">Función url()</h2>
+          <article class="container-info">
+            <p>
+              La funcion <b>url()</b> es para especificar la ruta donde queremos generar.
+            </p>
+            <h3 class="red">Nos puede servir para:</h3>
+            <ol>
+              <li>
+                <p>
+                  usar el <b>@import</b> con el <b>url()</b> para especificar otra hoja de estilo
+                </p>
+              </li>
+              <li>
+                <p>
+                  archivos tipograficos o imagenes de fondo
+                </p>
+              </li>
+            </ol>
+          </article>
+        </section>
+        <hr>
+        <!-- Funcion calc() -->
+        <section id="funcion-calc" class="container-style">
+          <h2 class="title-style">Funcion calc()</h2>
+          <article class="container-info">
+            <p>
+              La función <b>calc()</b> nos sirve para hacer calculos aritmeticos.
+            </p>
+            <div class="como-lo-creo">
+              <h3 class="red">Como lo creo?</h3>
+              <p>
+                Para poder crear esta funcion debemos hacer uso de la función <b>calc()</b>
+              </p>
+              <pre class="style-code">
+                <code>
+                  {
+                    <span class="blue">width</span>: <span class="red">calc( 1px + 1px * 2px)</span>;
+                  }
+                </code>
+              </pre>
+            </div>
+            <div class="recuerda">
+              <h3 class="red">Recuerda que</h3>
+              <ol>
+                <li>
+                  <p>
+                    Recuerda poner los espacios en blanco, no todo junto ya que puedo provocar algunos problemas
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Lo mejor que puedes hacer es usar el calc con valores, porque si quieres hacer un cambio de tamaño en tu web demoraras menos tiempo.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                .ch-10 {
+                  <span class="blue">--padding-size</span>: <span class="green">2ch</span>
+                  <span class="blue">--num-ch</span>: <span class="green">10ch</span>;
+                  <span class="blue">font-size</span>: <span class="green">2rem</span>;
+                  <span class="blue">background-color</span>: <span class="red">var(--default-bg-color)</span>;
+                  <span class="blue">width</span>: <span class="red">calc(var(--num-ch) + var(--padding-size) *2)</span>;
+                  <span class="blue">padding</span>: <span class="red">var(--padding-size)</span>;
+                }
+              </code>
+            </pre>
+            <h3>Ejemplo</h3>
+            <div class="ch-10">
+              <p>1234567890</p>
+            </div>
+          </article>
+        </section>
+        <hr>
+        <!-- Funcion min() & max() -->
+        <section id="funcion-min-max" class="container-style">
+          <h2 class="title-style">Función min() & max()</h2>
+          <article class="container-info">
+            <p>
+              <b>min()</b> y <b>max()</b> hace que los valores de un selector se comporten dinamicamente y su funcion es que tomara el valor minimo o maximo de sus expresiones separadas por comas, dependiendo si es <b>max o min</b>
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                .ch-10 {
+                  <span class="blue">background-color</span>: <span class="red">var(--default-bg-color)</span>;
+                  <span class="blue">margin-top</span>: <span class="green">1rem</span>;
+                  <span class="blue">width</span>: <span class="red">min(300px, 20vw, 20rem)</span>;
+                  <span class="blue">height</span>: <span class="red">max(200px, 25vh)</span>;
+                }
+              </code>
+            </pre>
+            <h3>Ejemplo</h3>
+            <div class="min-max">
+              funciones min() & max()
+            </div>
+          </article>
+        </section>
+        <hr>
+        <!-- Funcion clamp() -->
+        <section id="funcion-clamp" class="container-style">
+          <h2 class="title-style">Funcion clamp()</h2>
+          <article class="container-info">
+            <p>
+              <b>clamp()</b> es una función que puede recibir 3 valores (el primero el tamaño minimo, el segundo el tamaño ideal y el tercero el tamaño maximo) es un buen complemento para <b>min() y max()</b>
+            </p>
+            <h3 class="red">Debes saber que:</h3>
+            <p>
+              Para que funcione esta funcion debe tener unidades relativas y unidades absolutas al mismo tiempo.
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                .clamp-ejm {
+                  <span class="blue">font-size</span>: <span class="red">clamp(2rem, 1rem + 3vw, 3rem)</span>;
+                }
+              </code>
+            </pre>
+            <h3>Ejemplo</h3>
+            <p class="clamp-ejm">
+              Soy una parrafo un tamaño dinamico
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Estilos de Fuente y textos -->
+        <section id="estilo-fuente-texto" class="container-style">
+          <h2 class="title-style">Estilos de Fuente y textos</h2>
+          <article class="container-info">
+            <p>
+              Para que estes mayor informado entrar a <a href="https://cssreference.io/" target="_blank">css reference</a> ya que mayormente nos vamos a guiar de esta pagina.
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Estilos de fuente -->
+        <section id="estilo-fuente" class="container-style">
+          <h2 class="title-style">Estilos de fuente</h2>
+          <article class="container-info">
+            <p>
+              Los estilos de la fuente son para cambiar el color, tamaño y el tipo de fuente en tu texto del documento
+            </p>
+            <h3>Estilos de Fuentes Tipograficas:</h3>
+            <ol>
+              <li>
+                <h3 class="red">font-family</h3>
+                <p>
+                  Son familias de fuente que cambiar la tipografia del texto.
+                </p>
+                <h3>Ejemplo</h3>
+                <p class="font-family">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem eius molestiae delectus magni voluptates ipsum unde asperiores quos, suscipit est fuga deserunt numquam sed nulla tempora autem ab inventore!
+                </p>
+              </li>
+              <li>
+                <h3 class="red">font-size</h3>
+                <p>
+                  font size sirve para cambiar el tamaño de las letras de tu documento.
+                </p>
+                <h3>Ejemplo</h3>
+                <p class="font-size">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem eius molestiae delectus magni voluptates
+                  ipsum unde asperiores quos, suscipit est fuga deserunt numquam sed nulla tempora autem ab inventore!
+                </p>
+              </li>
+              <li>
+                <h3 class="red">font-weight</h3>
+                <p>
+                  <b>font weight</b> puede cambiar el grosor de la tipografia de tu texto.
+                </p>
+                <h3>Ejemplo</h3>
+                <p class="font-weight">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem eius molestiae delectus magni voluptates
+                  ipsum unde asperiores quos, suscipit est fuga deserunt numquam sed nulla tempora autem ab inventore!
+                </p>
+              </li>
+              <li>
+                <h3 class="red">font-style</h3>
+                <p>
+                  <b>font style</b> nos va definir el tipo de estilo al texto (puedes poner cursiva. etc)
+                </p>
+                <h3>Ejemplo</h3>
+                <p class="font-style">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem eius molestiae delectus magni voluptates
+                  ipsum unde asperiores quos, suscipit est fuga deserunt numquam sed nulla tempora autem ab inventore!
+                </p>
+              </li>
+              <li>
+                <h3 class="red">font-variant</h3>
+                <p>
+                  <b>font variant</b> hace que todas las letras se combiertan en mayusculas (debes usar el valor <b>small-caps</b> )
+                </p>
+                <h3>Ejemplo</h3>
+                <p class="font-variant">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem eius molestiae delectus magni voluptates
+                  ipsum unde asperiores quos, suscipit est fuga deserunt numquam sed nulla tempora autem ab inventore!
+                </p>
+              </li>
+              <li>
+                <h3 class="red">line-height</h3>
+                <p>
+                  <b>line height</b> lo que hace es poner la altura de cada linea para nuestros parrafos
+                </p>
+                <h3>Ejemplo</h3>
+                <p class="line-height">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem eius molestiae delectus magni voluptates
+                  ipsum unde asperiores quos, suscipit est fuga deserunt numquam sed nulla tempora autem ab inventore!
+                </p>
+              </li>
+              <li>
+                <h3 class="red">font (shorthand)</h3>
+                <p>
+                  <b>font</b> es un shorthand, es una propiedad todo en uno de los anteriores valores (font-family, font-size, font-style, font-variant, font-weight y line-height)
+                </p>
+                <h3>Ejemplo</h3>
+                <p class="font">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem eius molestiae delectus magni voluptates
+                  ipsum unde asperiores quos, suscipit est fuga deserunt numquam sed nulla tempora autem ab inventore!
+                </p>
+              </li>
+            </ol>
+          </article>
+        </section>
+        <hr>
+        <!-- Fuentes externas (@font-face & font-display) -->
+        <section id="fuente-externa" class="container-style">
+          <h2 class="title-style">Fuentes externas</h2>
+          <article class="container-info">
+            <p>
+              Las fuentes externas son sobre si quieremo agregar algun tipo de tipografia que no se encuentren por defecto.
+            </p>
+            <h3 class="red">Como lo creo?</h3>
+            <ol>
+              <li>
+                <p>
+                  Para esto primero debemos usar una regla CSS que se llama <b>@font-face</b>
+                </p>
+              </li>
+              <li>
+                <p>
+                  necesitamos tener los archivos fisicos de la tipografia
+                </p>
+              </li>
+              <li>
+                <p>
+                  necesitamos que el formato de la tipografia sea <b>woff o woff2 o ttf</b> y Significa <b>web open font format</b>
+                </p>
+              </li>
+            </ol>
+            <h3 class="red">Font-display</h3>
+            <p>
+              <b>font-display</b> es una propiedad de CSS que nos va decir como es que vas a cargar la fuente personalizada y tiene distintos valores:
+            </p>
+            <ol>
+              <li>
+                <h3>auto</h3>
+                <p>
+                  Permite que el navegador utilice el metodo predeterminado que suele ser <b>block</b>
+                </p>
+              </li>
+              <li>
+                <h3>block</h3>
+                <p>
+                  oculta brevemente el texto hasta que la fuente haya sido descargado por completo.
+                </p>
+              </li>
+              <li>
+                <h3>swap <b class="red">Recomendado</b></h3>
+                <p>
+                  Indica al navegador que utilice la fuente alternativa para mostrar el texto.
+                </p>
+              </li>
+              <li>
+                <h3>fallback</h3>
+                <p>
+                  Es una mezcla de auto y swap
+                </p>
+              </li>
+              <li>
+                <h3>optional</h3>
+                <p>
+                  Ocultara el texto, luego lo cargara con la fuente alternativa y finalmente aplicara la fuente personalizada
+                </p>
+              </li>
+            </ol>
+          </article>
+          <article class="container-ejm">
+            <h3>Codigo</h3>
+            <div class="code-ejm">
+              <pre class="style-code-2 bg-color-white">
+                <code>
+                  <span class="purple">@font-face</span> {
+                    <span class="blue">font-family</span>: <span class="red">"charlet"</span>; }nombre clave
+                    <span class="blue">font-display</span>: <span class="red">swap, sans-serif</span>;
+                    <span class="blue">src</span>: <span class="red">url("poner/direccion/tipografia.woff") format("woff")</span>;
+                  }
+
+                  <span class="orange">.charset</span> {
+                    <span class="blue">font-family</span>: <span class="red">"charlet"</span>;
+                  }
+                </code>
+              </pre>
+            </div>
+            <h3>Ejemplo</h3>
+            <p class="chalet">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero eligendi explicabo amet atque numquam quo dignissimos ullam, non, similique dicta eum veniam. Pariatur maiores incidunt, ducimus vero officia sapiente?
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- google font -->
+        <section id="google-font" class="container-style">
+          <h2 class="title-style">Google Font</h2>
+          <article class="container-info">
+            <p>
+              <a href="https://fonts.google.com/" target="_blank">Google fonts</a> es una pagina que nos ayuda en encontrar tipografias y iconos para nuestra web, se puede agregar a tu web de 2 formas (por un <b>link</b> o por el <b>@import</b>)
+            </p>
+            <h3 class="red">Recomendaciones</h3>
+            <ol>
+              <li>
+                <p>
+                  Cuando estes escojiendo algunas de las tipografias verifica bien si el contenido esta completo dependiendo de tus necesidades.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Cuando estes agregando los estilos con diferentes grosores, solo agrega pocos ya que puede afectar el rendimiento de tu pagina.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Usar 3 o mas tipografias es considerada una mala practica.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Los links de la tipografia elegida deben estar antes que el link de CSS
+                </p>
+              </li>
+              <li>
+                <p>
+                  Para poder aplicarlo debes usar el codigo que esta mas abajo de donde copiastes el link.
+                </p>
+              </li>
+            </ol>
+          </article>
+          <article class="container-ejm">
+            <h3>Links para el <b>head</b></h3>
+            <pre class="style-code">
+              <code>
+                &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+                &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+                &lt;link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet"&gt;
+              </code>
+            </pre>
+            <h3>Codigo para aplicarlo</h3>
+            <pre class="style-code">
+              <code>
+                {
+                  font-family: 'Raleway', sans-serif;
+                }
+              </code>
+            </pre>
+          </article>
+        </section>
+        <hr>
+        <!-- Estilos de Texto -->
+        <section id="estilos-texto" class="container-style">
+          <h2 class="title-style">Estilos de Texto</h2>
+          <article class="container-info">
+            <p>
+              Son estilos que puedes otorgar a alguna propiedades con texto.
+            </p>
+            <section class="container-propiedades">
+              <h3 class="red">Propiedades</h3>
+              <div class="container-ol-style-text">
+                <ol>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>text-align</h4>
+                      <p>
+                        Sirve para donde quieres mover el texto, izquierda, justificado, derecha y el centro.
+                      </p>
+                      <h4 class="red">Acepta estos valores:</h4>
+                      <ul>
+                        <li><b>left</b></li>
+                        <li><b>right</b></li>
+                        <li><b>conter</b></li>
+                        <li><b>justify</b></li>
+                      </ul>
+                    </div>
+
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">text-align</span>: <span class="red">center</span>;
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="text-align ejm-style-text">
+                      Soy un parrafor de ejemplo
+                      </p>
+                    </div>
+
+                  </li>
+                  <li>
+                    
+                    <div class="info-style-text-li">
+                      <h4>text-decoration</h4>
+                      <p>
+                        Nos va permitir difentes valores, podemos poner a los parrafos las lineas de los enlaces  (underline), etc. 
+                      </p>
+                      <h4 class="red">Acepta estos valores</h4>
+                      <ul>
+                        <li><b>none</b></li>
+                        <li><b>underline</b></li>
+                        <li><b>line-througt</b></li>
+                        <li><b>overline</b></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                              <span class="blue">text-decoration</span>: <span class="red">underline</span>;
+                            }
+                          </code>
+                        </pre>
+                      </div>
+                      
+                      <div class="ejm-style-text-li">
+                        <h5>Ejemplo</h5>
+                        <p class="text-decoration ejm-style-text">
+                          Soy un parrafo de ejemplo
+                        </p>
+                      </div>
+                      
+                  </li>
+                  <li>
+
+                      <div class="info-style-text-li">
+                        <h4>text-indent</h4>
+                        <p>
+                          Es para darle un espaciado al principio.
+                        </p>
+                      </div>
+
+                      <div class="code-style-text-li">
+                        <h5>Codigo</h5>
+                          <pre class="style-code-3">
+                            <code>
+                              {
+                                <span class="blue">text-indent</span>: <span class="green">2rem</span>
+                              }
+                            </code>
+                          </pre>
+                      </div>
+
+                      <div class="ejm-style-text-li">
+                        <h5>Ejemplo</h5>
+                        <p class="text-indent ejm-style-text">
+                          Soy un parrafor de ejemplo
+                        </p>
+                      </div>
+
+                  </li>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>text-overflow</h4>
+                      <p>
+                        Cuando un texto una parte no esta accesible pondra ... (Para que funcione debe tener <b>overflow: hidden;</b> y <b>white-space: nowrap;</b> )
+                      </p>
+                      <h4 class="red">Acepta estos valores</h4>
+                      <ul>
+                        <li><b>clip</b></li>
+                        <li><b>ellipsis</b></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">background-color</span>: <span class="red">blanchedalmo</span>
+                            <span class="blue">border</span>: <span class="red">thin solid black</span>
+                            <span class="blue">padding</span>: <span class="green">1rem</span>
+                            <span class="blue">width</span>: <span class="green">10%</span>
+                            <span class="blue">text-overflow</span>: <span class="red">ellipsis</span>
+                            <span class="blue">overflow</span>: <span class="red">hidden</span>
+                            <span class="blue">white-space</span>: <span class="red">nowrap</span>
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="text-overflow">
+                        Soy un parrafo de ejemplo
+                      </p>
+                    </div>
+
+                  </li>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>text-shadow</h4>
+                      <p>
+                        Define la sombra del contenido.
+                      </p>
+                    </div>
+
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">text-shadow</span>: <span class="green">2px 4px 10px red</span>;
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="text-shadow ejm-style-text">
+                        Soy un parrafo de ejemplo
+                      </p>
+                    </div>
+
+                  </li>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>text-transform</h4>
+                      <p>
+                        Nos va a permitir cambiar los textos en puro mayusculas(uppercase), puro minusculas(lowercase) o que cada letra enpiece de mayusculas (capitalize).
+                      </p>
+                      <h4 class="red">Acepta estos valores</h4>
+                      <ul>
+                        <li><b>uppercase</b></li>
+                        <li><b>lowercase</b></li>
+                        <li><b>capitalize</b></li>
+                      </ul>
+                    </div>
+
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">text-transform</span>: <span class="red">capitalize</span>;
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="text-transform ejm-style-text">
+                        Soy un parrafo de ejemplo con mayusculas en mis iniciales de cada palabra.
+                      </p>
+                    </div>
+
+                  </li>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>letter-spacing</h4>
+                      <p>
+                        Cada caracter del texto estara espaciado.
+                      </p>
+                    </div>
+
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">letter-spacing</span>: <span class="green">1rem</span>;
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="letter-spacing ejm-style-text">
+                        Soy un parrafo de ejemplo
+                      </p>
+                    </div>
+
+                  </li>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>white-space</h4>
+                      <p>
+                        Define a los elementos del sus espacios (valores: <b>nowrap, pre, pre-wrap y none</b> )
+                      </p>
+                      <h4 class="red">Acepta estos valores</h4>
+                      <ul>
+                        <li><b>nowrap</b></li>
+                        <li><b>pre</b></li>
+                        <li><b>pre-wrap</b></li>
+                        <li><b>none</b></li>
+                      </ul>
+                    </div>
+
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">white-space</span>: <span class="red">pre</span>;
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="white-space ejm-style-text">
+                        Soy un parrafo de ejemplo
+                        y tengo el mismo efecto que la 
+                        etiqueta &lt;pre&gt;
+                      </p>
+                    </div>
+
+                  </li>
+                </ol>
+              </div>
+            
+            </section>
+            <section class="container-complementario">
+              <h3 class="red">Complementario</h3>
+              <div class="container-ol-style-text">
+                <ul>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>word-break</h4>
+                      <p>
+                        Rompe palabras para que tu texto se adapte al tamaño de la caja (break-all)
+                      </p>
+                      <h4 class="red">Acepta estos valores</h4>
+                      <ul>
+                        <li><b>normal</b></li>
+                        <li><b>break-all</b></li>
+                      </ul>
+                    </div>
+
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">word-break</span>: <span class="red">break-all</span>;
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="word-break ejm-style-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta quidem unde illo suscipit, aliquid aliquam ipsa aperiam, odio eos, a id doloremque? Adipisci laborum numquam labore obcaecati aut. Architecto?
+                      </p>
+                    </div>
+
+                  </li>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>word-spacing</h4>
+                      <p>
+                        separa palabras no como letter-spacing que separa cada letra.
+                      </p>
+                    </div>
+
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">word-spacing</span>: <span class="green">1rem</span>;
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="word-spacing ejm-style-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta quidem unde illo suscipit, aliquid aliquam ipsa aperiam, odio eos, a id doloremque? Adipisci laborum numquam labore obcaecati aut. Architecto?
+                      </p>
+                    </div>
+
+                  </li>
+                  <li>
+
+                    <div class="info-style-text-li">
+                      <h4>writing-mode</h4>
+                      <p>
+                        Cambiara el modo de escritura (modo vertical o horizontal)
+                      </p>
+                      <h4 class="red">Acepta estos valores</h4>
+                      <ul>
+                        <li><b>horizontal-tb</b></li>
+                        <li><b>sideaway-lr</b></li>
+                        <li><b>sideaway-rl</b></li>
+                        <li><b>vertical-lr</b></li>
+                        <li><b>vertical-rl</b></li>
+                      </ul>
+                    </div>
+
+                    <div class="code-style-text-li">
+                      <h5>Codigo</h5>
+                      <pre class="style-code-3">
+                        <code>
+                          {
+                            <span class="blue">writing-mode</span>: <span class="red">vertical-lr</span>;
+                          }
+                        </code>
+                      </pre>
+                    </div>
+
+                    <div class="ejm-style-text-li">
+                      <h5>Ejemplo</h5>
+                      <p class="writing-mode ejm-style-text">
+                        Lorem ipsum dolor sit amet consectetur
+                      </p>
+                    </div>
+                    
+                  </li>
+                </ul>
+              </div>
+            
+            </section>
+          </article>
+        </section>
+        <hr>
+        <!-- Iconos Tipograficos -->
+        <section id="iconos-tipograficos" class="container-style">
+          <h2 class="title-style">Iconos Tipograficos</h2>
+          <article class="container-info">
+            <p>
+              Usaremos tres librerias que nos ofrecen iconos vectoriales que estan generado en tipografia, aparte de ello estas librerias nos dan la opcion de descargarlo en formato png y svg.
+            </p>
+            <h3 class="red">Librerias de iconos</h3>
+            <ol>
+              <li>
+                <details class="google-fonts"open>
+                  <summary>
+                    <a href="https://fonts.google.com/icons" target="_blank">Google fonts</a>
+                  </summary>
+                  <section class="container-funcionamiento-google">
+                    <h3 class="red">Como funciona</h3>
+                    <ol>
+                      <li>
+                        <p>
+                          Para añadir estos iconos, lo primero es escojer alguno
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          luego de eso debes copiar lo que dice en <b>Inserting the icon</b> y tambien copiar el link
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          para vincularlo con la web (debes ir donde dice <b>developer guide</b>) y tiene que ir antes de la hoja de estilos.
+                        </p>
+                      </li>
+                    </ol>
+                    <h4 class="red">Recomendaciones</h4>
+                    <p>
+                      Para que no haya algun problema de icono es recomendable una hoja de estilo que esta en google fonts (La hoja de estilos puede cambiar)
+                    </p>
+                    <p>
+                      Si el texto del &lt;span&gt; le cambias el texto por un nombre del google icons, se combertira en ese icono
+                    </p>
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-2">
+                      <code>
+                        Estos links pueden cambiar mejor copia del propio google font
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /&gt;
+                      </code>
+                    </pre>
+                    <pre class="style-code-2">
+                      <code>
+                        &lt;span class="material-symbols-outlined"&gt;
+                          info
+                        &lt;/span&gt;
+                      </code>
+                    </pre>
+                    <h3>Material Icons</h3>
+                    <link rel="stylesheet">
+                    <span class="material-symbols-outlined">
+                      info
+                    </span>
+                    <span class="material-symbols-outlined">
+                      Star
+                    </span>
+                  </section>
+                </details>
+              </li>
+              <li>
+                <details open>
+                  <summary>
+                    <a href="https://icons.getbootstrap.com/" target="_blank">Boostrap icons</a>
+                  </summary>
+                  <section class="container-boostrap">
+                    <h3 class="red">Como funciona</h3>
+                    <p>
+                      Boostrap como recomendacion nos dice que lo vinculemos por una terminal pero tambien nos ofrecen distintas alternativas, como descargarlo o utilizar CDN (usaremos el CDN)
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          Primero debemos copiar el link de CDN y ponerlo antes que el link de las hojas de estilo
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Luego escojer el icono que prefieras y copiar donde esta la etiqueta &lt;i&gt;
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Al igual que google fonts podemos cambiar los iconos, pero con Boostrap debemos cambiar la clase.
+                        </p>
+                      </li>
+                    </ol>
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-2">
+                      <code>
+                        Recomendable usar el link del mismo boostrap
+                        &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"&gt;
+                      </code>
+                    </pre>
+                    <pre class="style-code-2">
+                      <code>
+                        &lt;i class="bi bi-twitter"&gt;&lt;/i&gt;
+                        &lt;i class="bi bi-youtube"&gt;&lt;/i&gt;
+                      </code>
+                    </pre>
+                    <h3>Boostrap Icons</h3>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-youtube"></i>
+                  </section>
+                </details>
+              </li>
+              <li>
+                <details open>
+                  <summary>
+                    <a href="https://fontawesome.com/icons" target="_blank">Fontawesome</a>
+                  </summary>
+                  <section class="container-fontawesome">
+                    <h3 class="red">Como funciona</h3>
+                    <p>
+                      Fontawesome tiene una parte de iconos gratuitos y de pago, ademas que para poder copiar si cdn necesitas una verificacion de correo electronico, la manera para saltearse todo eso es usando la pagina <a href="https://cdnjs.com/" target="_blank">CDNJS</a> que es un contenido donde hay mas de 4000 librerias de sitios web (ahi buscaremos <b>font-awesome</b> ) y de ahi copiaremos las hojas de estilos
+                    </p>
+                    <p>
+                      Sobre como funciona es casi igual que <b>boostrap</b>
+                    </p>
+                    <h3 class="red">Codigo</h3>
+                    <pre class="style-code-2">
+                      <code>
+                      Recomendable usar el link del mismo fontawesome
+                      &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+                        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer" /&gt;
+                      </code>
+                    </pre>
+                    <pre class="style-code-2">
+                      <code>
+                        &lt;i class="fa-brands fa-google"&gt;&lt;/i&gt;
+                        &lt;i class="fa-brands fa-playstation"&gt;&lt;/i&gt;
+                      </code>
+                    </pre>
+                    <h3>Iconos font awesome</h3>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-playstation"></i>
+                  </section>
+                </details>
+              </li>
+            </ol>
+            <p>
+              Lo bueno de estos iconos es que no son imagenes si no caracteres que nos permiten agregarle un menu o un link
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Propiedad border-radius -->
+        <section id="propiedad-border-radius" class="container-style">
+          <h2 class="title-style">Propiedad border-radius</h2>
+          <article class="container-info">
+            <p>
+              Anteriormente ya vimos todas las propiedades del borde tambien aprendimos que hay una propiedad por cada uno de los bordes.
+            </p>
+            <p>
+              Pero nos olvidamos de la propiedad <b>border-radius</b> que nos permite redondear las cajas.
+            </p>
+            <h3 class="red">Border-radius</h3>
+            <p>
+              <b>Border-radius</b> es una propiedad <b>shorthand</b> eso quiere decir que son 4 propiedades en 1 y estas son sus 4 propiedades:
+            </p>
+            <ol>
+              <li>
+                <h3>border-top-left-radius</h3>
+                <p>
+                  Es la esquina superior izquierda
+                </p>
+              </li>
+              <li>
+                <h3>border-top-right-radius</h3>
+                <p>
+                  La esquina superior de la derecha
+                </p>
+              </li>
+              <li>
+                <h3>border-bottom-left-radius</h3>
+                <p>
+                  La esquina inferior derecha
+                </p>
+              </li>
+              <li>
+                <h3>border-bottom-right-radius</h3>
+                <p>
+                  La esquina inferior izquierda
+                </p>
+              </li>
+            </ol>
+            <h3 class="red">Extras</h3>
+            <p>
+              Tambien con el shorthand podemos añadir bordes diferentes solo debemos añadir mas medidas que afectaran de top, right, bottom, left.
+            </p>
+            <p>
+              Si queremos agregar bordes elipticos(un circulo ovalado vertical) tenemos que hacer uso de 2 valores en la definicion de <b>border-radius</b> y poner <b>/</b>en el medio de los 2.
+            </p>
+            <p>
+              Si quieres redondear una caja cuadrada debes usar 50%
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">Codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.border-radius</span> {
+                  <span class="blue">border-radius</span>: <span class="green">2rem</span>;
+                  <span class="blue">border-top-left-radius</span>: <span class="green">4rem</span>;
+                  <span class="blue">border-top-right-radius</span>: <span class="green">4rem</span>;
+                  <span class="blue">border-bottom-left-radius</span>: <span class="green">4rem</span>;
+                  <span class="blue">border-bottom-right-radius</span>: <span class="green">4rem</span>;
+                  <span class="blue">border-radius</span>: <span class="green">2rem 4rem</span>;
+                  <span class="blue">border-radius</span>: <span class="green">2rem 4rem 0</span>;
+                  <span class="blue">border-radius</span>: <span class="green">2rem 4rem 0 1rem</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Codigo del eliptico</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">border-radius-2</span> {
+                  <span class="blue">border-radius</span>: <span class="green">2rem / 4rem</span>;
+                  <span class="blue">border-radius</span>: <span class="green">2rem 4rem / 4rem 8rem</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box-border border-radius">
+            </div>
+            <h3 class="red">Ejemplo Eliptico</h3>
+            <div class="box-border border-radius-2">
+            </div>
+          </article>
+        </section>
+        <hr>
+        <!-- Propiedad outline -->
+        <section id="propiedad-outline" class="container-style">
+          <h2 class="title-style">Propiedad Outline</h2>
+          <article class="container-info">
+            <p>
+              El <b>outline</b> lo podemos definir como un borde externo, esto quiere decir que no forma parte del modelo de caja
+            </p>
+            <h3 class="red">Outline</h3>
+            <p>
+              <b>outline</b> es un shorthand (una simplificacion de las 4 propiedades)su 4 propiedades son estas:
+            </p>
+            <ul>
+              <li>
+                <h3>outline-offset</h3>
+                <p>
+                  Es para poner distancia para alejarse de la caja, puedes ponerle tambien numeros negativos para sea al revez
+                </p>
+              </li>
+              <li>
+                <h3>outline-width</h3>
+                <p>
+                  Es el tamaño que le otorgaras al outline
+                </p>
+              </li>
+              <li>
+                <h3>outline-style</h3>
+                <p>
+                  Es el estilo del outline
+                </p>
+              </li>
+              <li>
+                <h3>outline-color</h3>
+                <p>
+                  Es el color que le otorgaras a la caja
+                </p>
+              </li>
+            </ul>
+            <p>
+              Los elementos que mas se aprovechan del <b>outline</b> son para los formularios, si le das click a este <b>input text</b> vera una linea negra, ese es el outline
+            </p>
+            <div style="text-align: center;">
+              <input type="text">
+            </div>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">Codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.outline</span> {
+                  <span class="blue">color</span>: <span class="red">white</span>;
+                  <span class="blue">text-align</span>: <span class="red">center</span>;
+                  <span class="blue">outline-width</span>: <span class="green">5px</span>;
+                  <span class="blue">outline-style</span>: <span class="red">dashed</span>;
+                  <span class="blue">outline-color</span>: <span class="red">charstreuse</span>;
+                  <span class="blue">outline</span>: <span class="red">thick solid blue</span>;
+                  <span class="blue">outline-width</span>: <span class="green">10px</span>;
+                  <span class="blue">outline-offset</span>: <span class="green">1rem</span>;
+                  <span class="blue">outline-offset</span>: <span class="green">-2rem</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box-border outline">
+              Outline
+            </div>
+          </article>
+        </section>
+        <hr>
+        <!-- Estilo de fondo -->
+        <section id="estilo-fondo" class="container-style">
+          <h2 class="title-style">Estilo de fondo</h2>
+          <article class="container-info">
+            <p>
+              Existen muchas propiedades dirigidas a los fondos, no solo el <b>background-color</b> <b class="red">(que lo usamos muy seguido)</b>
+            </p>
+            <h3 class="red">Propiedades background</h3>
+            <i>background es un shorthand de todos estas propiedades</i>
+            <ul>
+              <li>
+                <h4>background-attachment</h4>
+              </li>
+              <li>
+                <h4>background-clip</h4>
+              </li>
+              <li>
+                <h4>background-color</h4>
+              </li>
+              <li>
+                <h4>background-image</h4>
+              </li>
+              <li>
+                <h4>background-origin</h4>
+              </li>
+              <li>
+                <h4>background-position</h4>
+              </li>
+              <li>
+                <h4>background-repeat</h4>
+              </li>
+              <li>
+                <h4>background-size</h4>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <hr>
+        <!-- background-color -->
+        <section id="background-color" class="container-style">
+          <h2 class="title-style">Background Color</h2>
+          <article class="container-info">
+            <p>
+              <b>background-color</b> define el color de fondo del elemento
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-color</span> {
+                  <span class="blue">background-color</span>: <span class="red">black</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-color"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- background-image -->
+        <section id="background-image" class="container-style">
+          <h2 class="title-style">Background Image</h2>
+          <article class="container-info">
+            <b>background-image</b> define la imagen del fondo del elemento, si no es del mismo tamaño la imagen se vera un poco afectada para solucionarlo existe una propiedad pero eso es para otra seccion
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-image</span> {
+                  <span class="blue">background-image</span>: <span class="red">url(../assets/laimagen.jpg)</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-image"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- background-repeat -->
+        <section id="background-repeat" class="container-style">
+          <h2 class="title-style">Background Repeat</h2>
+          <article class="container-info">
+            <p>
+              <b>background-repeat</b> define como se repite la imagen de fondo en el elemento, recomendable ver antes <b>background-size</b> y por defecto su valor es <b>repeat</b>
+            </p>
+            <h3 class="red">Valores</h3>
+            <ul>
+              <li>
+                <h4>repeat</h4>
+                <p>
+                  Es el valor por defecto y repetira la imagen si no llena el fondo
+                </p>
+              </li>
+              <li>
+                <h4>repeat-x</h4>
+                <p>
+                  Repetira la imagen solo a lado x
+                </p>
+              </li>
+              <li>
+                <h4>repeat-y</h4>
+                <p>
+                  repetira la imagen solo a lado y
+                </p>
+              </li>
+              <li>
+                <h4>no-repeat</h4>
+                <p>
+                  No repetira las imagenes aunque sobre espacio
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-repeat</span> {
+                  <span class="blue">background-image</span>: <span class="red">url(../assets/imagen.jpg)</span>;
+                  <span class="blue">background-size</span>: <span class="red">100px</span>;
+                  <span class="blue">background-repeat</span>: <span class="red">repeat</span>;
+                  <span class="blue">background-repeat</span>: <span class="red">repeat-x</span>;
+                  <span class="blue">background-repeat</span>: <span class="red">repeat-y</span>;
+                  <span class="blue">background-repeat</span>: <span class="red">no-repeat</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-repeat"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- background-size -->
+        <section id="background-size" class="container-style">
+          <h2 class="title-style">Background Size</h2>
+          <article class="container-info">
+            <p>
+              <b>background-size</b> define el tamaño de la imagen de fondo <b class="red">primer valor ancho, segundo valor alto</b>.
+            </p>
+            <div class="valores">
+              <h3 class="red">Valores</h3>
+              <p>
+                Tambien puede aceptar unidades de medida
+              </p>
+              <ul>
+                <li>
+                  <h4 class="red">cover</h4>
+                  <p>
+                    Cambia el tamaño de la imagen de fondo para asegurarse de que permanezca completamente visible
+                  </p>
+                </li>
+                <li>
+                  <h4 class="red">contain</h4>
+                  <p>
+                    Cambia el tamaño de la imagen de fondo para asegurarse de que el elemento esté completamente cubierto.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-size</span> {
+                  <span class="blue">background-image</span>: <span class="red">url(../assets/imagen.jpg)</span>;
+                  <span class="blue">background-size</span>: <span class="green">300px 200px</span>;
+                  <span class="blue">background-size</span>: <span class="green">300px</span>;
+                  <span class="blue">background-size</span>: <span class="red">contain</span>;
+                  <span class="blue">background-size</span>: <span class="red">cover</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-size"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- background-position -->
+        <section id="background-postion" class="container-style">
+          <h2 class="title-style">Background Position</h2>
+          <article class="container-info">
+            <p>
+              <b>background-position</b> define la posicion de la imagen de fondo <b class="red">primer valor x, segundo valor y,</b> si no se especifica un segundo valor este será center.
+            </p>
+            <p>
+              Aparte de los valores numericos podemos indicar el posicionamiento con las palabras: <b>center, top, bottom, left, right</b>.
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-position</span> {
+                  <span class="blue">background-image</span>: <span class="red">url(../assets/imagen.jpg)</span>;
+                  <span class="blue">background-size</span>: <span class="red">100px</span>;
+                  <span class="blue">background-repeat</span>: <span class="red">no-repeat</span>;
+                  <span class="blue">background-position</span>: <span class="red">1rem 2rem</span>;
+                  <span class="blue">background-position</span>: <span class="red">top center</span>;
+                  <span class="blue">background-position</span>: <span class="red">top right</span>;
+                  <span class="blue">background-position</span>: <span class="red">top left</span>;
+                  <span class="blue">background-position</span>: <span class="red">bottom center</span>;
+                  <span class="blue">background-position</span>: <span class="red">bottom right</span>;
+                  <span class="blue">background-position</span>: <span class="red">bottom left</span>;
+                  <span class="blue">background-position</span>: <span class="red">bottom</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-position"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- background-clip -->
+        <section id="background-clip" class="container-style">
+          <h2 class="title-style">Background Clip</h2>
+          <article class="container-info">
+            <p>
+              <b>background-clip</b> define cuanto debe extenderse el fondo dentro del elemento.
+            </p>
+            <h3 class="red">Valores</h3>
+            <ul>
+              <li>
+                <h4>border-box</h4>
+                <p>
+                  Es el valor por defecto y cubrira todo el borde
+                </p>
+              </li>
+              <li>
+                <h4>content-box</h4>
+                <p>
+                  Enpieza la imagen contando desde el contenido
+                </p>
+              </li>
+              <li>
+                <h4>padding-box</h4>
+                <p>
+                  Enpieza la imagen contando desde el padding
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                  <span class="orange">.bg-clip</span> {
+                    <span class="blue">background-color</span>: <span class="red">skyblue</span>;
+                    <span class="blue">background-image</span>: <span class="red">url(../assent/puesta-sol.jpg)</span>;
+                    <span class="blue">background-size</span>: <span class="red">100px</span>;
+                    <span class="blue">background-repeat</span>: <span class="red">no-repeat</span>;
+                    <span class="blue">background-padding</span>: <span class="red">padding-box</span>;
+                    <span class="blue">background-padding</span>: <span class="red">content-box</span>;
+                    <span class="blue">padding</span>: <span class="red">1rem</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-clip"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- background-origin -->
+        <section id="background-origin" class="container-style">
+          <h2 class="title-style">Background Origin</h2>
+          <article class="container-info">
+            <p>
+              <b>background-origin</b> define cómo se comportará la imagen de fondo al desplazarse por la página, tiene los mismos valores que <b>background-clip</b> pero por defecto viene con el valor <b>padding-box</b>
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-origin</span> {
+                  <span class="blue">background-color</span>: <span class="red">skyblue</span>;
+                  <span class="blue">background-image</span>: <span class="red">url(../assent/puesta-sol.jpg)</span>;
+                  <span class="blue">background-size</span>: <span class="red">100px</span>;
+                  <span class="blue">background-repeat</span>: <span class="red">no-repeat</span>;
+                  <span class="blue">padding</span>: <span class="red">1rem</span>;
+                  <span class="blue">background-origin</span>: <span class="red">content-box</span>;
+                  <span class="blue">background-origin</span>: <span class="red">border-box</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-origin"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- Diferencias entre clip y origin -->
+        <section id="diferencia-clip-origin" class="container-style">
+          <h2 class="title-style">Diferencias entre clip y origin</h2>
+          <article class="container-info">
+            <h3 class="red">Difencias</h3>
+            <ol>
+              <li>
+                <p>
+                  background-clip su imagen enpieza desde el borde y si lo disminuyes recortara algunos pedasos
+                </p>
+              </li>
+              <li>
+                <p>
+                  background-origin si su imagen enpieza desde el contenido y no cabe toda la imagen se empezara a desbordar del contenido
+                </p>
+              </li>
+              <li>
+                <p>
+                  background-clip afecta a todo el fondo (la imagen y el color de fondo)
+                </p>
+              </li>
+              <li>
+                <p>
+                  background-origin afecta solo a la imagen
+                </p>
+              </li>
+            </ol>
+          </article>
+        </section>
+        <hr>
+        <!-- background-attachment -->
+        <section id="background-attachment" class="container-style">
+          <h2 class="title-style">Background Attachment</h2>
+          <article class="container-info">
+            <p>
+              <b>background-attachment</b> define cómo se comportará la imagen de fondo al desplazarse por la pagina, con esto podemos lograr efectos interesantes.
+            </p>
+            <h3 class="red">Valores</h3>
+            <ol>
+              <li>
+                <h4>scroll</h4>
+                <p>
+                  la imagen de fondo se esta llendo junto al contenedor cuando scrolleamos la pantalla
+                </p>
+              </li>
+              <li>
+                <h4>fixed</h4>
+                <p>
+                  Con este valor vamos a lograr un efecto de paralax, mientras que movemos la caja se visualizara las partes de la imagen
+                </p>
+              </li>
+            </ol>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-attachment</span> {
+                  <span class="blue">background-color</span>: <span class="red">skyblue</span>;
+                  <span class="blue">background-image</span>: <span class="red">url(../assent/puesta-sol.jpg)</span>;
+                  <span class="blue">background-repeat</span>: <span class="red">no-repeat</span>;
+                  <span class="blue">background-size</span>: <span class="red">cover</span>;
+                  <span class="blue">width</span>: <span class="red">100%</span>;
+                  <span class="blue">height</span>: <span class="red">50vh</span>;
+                  <span class="blue">background-attachment</span>: <span class="red">scroll</span>;
+                  <span class="blue">background-attachment</span>: <span class="red">fixed</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-attachment"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- shorthand background -->
+        <section id="shorthand-background" class="container-style">
+          <h2 class="title-style">Shorthand Background</h2>
+          <article class="container-info">
+            <p>
+              <b>background</b> es un shorthand de las propiedades anteriores <b class="red">(background-image, background-position, background-size, background-repeat, background-origin, background-clip, background-attachment Y background-color)</b> en ese orden, lo shorthand demasiado largos no es recomendable usarlo a menos que quieras usar todas las propiedades, aparte que si solo quieres usar un valor el <b>background</b> reseteara todo lo anterior.
+            </p>
+          </article>
+        </section>
+        <hr>
+        <!-- Fondos Multiples -->
+        <section id="fondos-multiples" class="container-style">
+          <h2 class="title-style">Fondos Multiples</h2>
+          <article class="container-info">
+            <p>
+              Todas las propiedades de <b>background</b> pueden recibir varias imagenes de fondo con las <b>,</b>
+            </p>
+            <p>
+              Recuerda que al poner varias imagenes el orden debe inportar.
+            </p>
+            <p>
+              Gracias a esto podemos hacer increibles cosas.
+            </p>
+            <p>
+              Si usar 2 imagenes o mas, las propiedades <b>background</b> pueden cambiarles sus valores independientemente con las <b>,</b>
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo multiple</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-multiple</span> {
+                  <span class="blue">width</span>: <span class="green">50%</span>;
+                  <span class="blue">height</span>: <span class="green">40vh</span>;
+                  <span class="blue">background-image</span>: 
+                      <span class="red">url(../assets/laimagen.png)</span>,
+                      <span class="red">url(../assets/laimagen.jpg)</span>;
+                  <span class="blue">background-repeat</span>: <span class="red">repeat-x, no-repeat</span>;
+                  <span class="blue">background-size</span>: <span class="red">10%, cover</span>;
+                    }
+              </code>
+            </pre>
+            <h3 class="red">codigo multiple 2</h3>
+            <pre class="style-code-2">
+              <code>
+                <span class="orange">.bg-multiple-2</span> {
+                  <span class="blue">width</span>: <span class="green">90%</span>;
+                  <span class="blue">height</span>: <span class="green">700px</span>;
+                  <span class="blue">background-image</span>: 
+                        <span class="red">url(../assets/laimagenarbol.png) no-repeat center bottom</span>,
+                        <span class="red">url(../assets/laimagenaves.png) no-repeat center bottom</span>,
+                        <span class="red">url(../assets/laimagencielo.png) no-repeat center top</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <div class="box bg-multiple"></div>
+            <h3 class="red">ejemplo multiple</h3>
+            <p>
+              Aqui estoy usando 3 imagenes para crear este fondo.
+            </p>
+            <div class="box bg-multiple-2"></div>
+          </article>
+        </section>
+        <hr>
+        <!-- Estilos de Imagenes -->
+        <section id="estilos-imagenes" class="container-style">
+          <h2 class="title-style">Estilos de Imagenes</h2>
+          <article class="container-info">
+            <p>
+              Aqui mostraremos algunos estilos para etiquetas particulares
+            </p>
+            <h3>Estilos</h3>
+            <ul class="manera-estilos">
+              <li class="imagenes-resposivas">
+                <h4>imagenes resposivas</h4>
+                <p>
+                  Si quieres una imagen que se adapte a tu pantalla es muy sencillo, para esto debemos de resetear la imagen ya que es de buena practica con el <b>max-width</b>
+                </p>
+                <h4>codigo</h4>
+                <pre class="style-code-2">
+                  <code>
+                    <span class="orange">img</span> {
+                      <span class="blue">max-width</span>: <span class="green">100%</span>;
+                      <span class="blue">height</span>: <span class="red">auto</span>;
+                    }
+                  </code>
+                </pre>
+                <h4>Ejemplo</h4>
+                <img src="assent/puesta-sol.jpg" alt="la puesta de sol">
+              </li>
+              <li class="imagenes-dimensiones">
+                <h4>imagenes con dimesiones limitadas</h4>
+                <p>
+                  Si quieres hacer una imagen con dimenciones especificas debe estar dentro de una caja y medir el tamaño que quieras
+                </p>
+                <h4>propiedades</h4>
+                <ul>
+                  <li>
+                    <h5>object-fit</h5>
+                    <p>
+                      Tiene los mismo valores que <b>background-size</b> (cover, fill y contain), tambien esta el valor <b>scale-down</b> que toma ele valor que sea menor de los valores contain y none
+                    </p>
+                  </li>
+                  <li>
+                    <h5>object-position</h5>
+                    <p>
+                      Tiene los mismo valores que <b> background-position</b> (top, right, bottom y left)
+                    </p>
+                    <h4>Codigo</h4>
+                    <pre class="style-code-2">
+                      <code>
+                        <span class="orange">.cart</span> {
+                          <span class="blue">border</span>: <span class="red">medium solid gray</span>;
+                          <span class="blue">width</span>: <span class="red">50%</span>;
+                          <span class="blue">height</span>: <span class="red">300px</span>;
+                        }
+                      </code>
+                    </pre>
+                    <pre class="style-code-2">
+                      <code>
+                        <span class="orange">.cart img</span> {
+                          <span class="blue">background-color</span>: <span class="red">beige</span>;
+                          <span class="blue">height</span>: <span class="green">50%</span>;
+                          <span class="blue">object-fit</span>: <span class="red">fill</span>;/*defaul*/
+                          <span class="blue">object-fit</span>: <span class="red">cover</span>;
+                          <span class="blue">object-fit</span>: <span class="red">contain</span>;
+                          <span class="blue">object-fit</span>: <span class="red">none</span>;
+                          <span class="blue">object-fit</span>: <span class="red">scale-down</span>;
+                          <span class="blue">object-position</span>: <span class="red">left top</span>;
+                          <span class="blue">object-position</span>: <span class="red">right bottom</span>;
+                          <span class="blue">object-position</span>: <span class="red">left center</span>;
+                          <span class="blue">object-position</span>: <span class="green">50%, 50%</span>;
+                        }
+                      </code>
+                    </pre>
+                    <h4>Ejemplo</h4>
+                    <article class="cart">
+                      <img src="assent/puesta-sol.jpg" alt="la puesta de sol">
+                      <h4>puesta de sol</h4>
+                      <p>
+                        Soy un texto con la descripcion de la puesta de sol
+                      </p>
+                    </article>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <hr>
+        <!-- Estilos de Listas -->
+        <section id="estilos-lista" class="container-style">
+          <h2 class="title-style">Estilos de Listas</h2>
+          <article class="container-info">
+            <p>
+              Vamos a dar estilos a los elementos de una lista <b>&lt;ul&gt;, &lt;li&gt;</b> y tiene varias propiedades:
+            </p>
+            <h3>Propiedades</h3>
+            <ul>
+              <li>
+                <h4 class="red">list-style-image</h4>
+                <p>
+                  Define la imagen si lo usas dentro de una estiqueta list, recuerda que la imagen debe estar al caja para no desbordarse, una solucion es usando las propiedades <b>background</b>
+                </p>
+                <h5>Valores</h5>
+                <ul>
+                  <li>none</li>
+                  <li>url(la imagen)</li>
+                </ul>
+                <h5>codigo</h5>
+                <div class="codigo">
+                  <pre class="style-code-4">
+                    <code>
+                      .list-image li {
+                        <span class="blue">list-style-image</span>: <span class="red">url(imagen)</span>;
+                        <span class="blue">list-style-image</span>: <span class="red">none</span>;
+                        <span class="blue">list-style-type</span>: <span class="red">none</span>;
+                      }
+                    </code>
+                  </pre>
+                  <pre class="style-code-4">
+                    <code>
+                      .li-image li::before {
+                        <span class="blue">content</span>: <span class="red">""</span>;
+                        <span class="blue">display</span>: <span class="red">inline-block</span>;
+                        <span class="blue">width</span>: <span class="red">1rem</span>;
+                        <span class="blue">height</span>: <span class="red">1rem</span>;
+                        <span class="blue">background-image</span>: <span class="red">url(imagen)</span>;
+                        <span class="blue">background-size</span>: <span class="red">contain</span>;
+                        <span class="blue">background-repeat</span>: <span class="red">no-repeat</span>;
+                        <span class="blue">background-position</span>: <span class="red">center</span>;
+                      }
+                    </code>
+                  </pre>
+                </div>
+                <h5>Ejemplo</h5>
+                <ul class="list-image">
+                  <li>sdsadsa</li>
+                </ul>
+              </li>
+              <li>
+                <h4 class="red">list-style-position</h4>
+                <p>
+                  Es una propiedad que se usa mucho pero sirve para que la caja cuente desde el contenido o desde el punto
+                </p>
+                <h5>valores</h5>
+                <ul>
+                  <li>outline /*default*/</li>
+                  <li>inside</li>
+                </ul>
+                <h5>codigo</h5>
+                <pre class="style-code-4">
+                  <code>
+                    {
+                      <span class="blue">background-color</span>: <span class="red">lightcoral</span>;
+                      <span class="blue">list-style-position</span>: <span class="red">outline</span>;
+                      <span class="blue">list-style-position</span>: <span class="red">inside</span>;
+                    }
+                  </code>
+                </pre>
+                <h5>Ejemplo</h5>
+                <ul class="list-position">
+                  <li>Primavera</li>
+                  <li>Verano</li>
+                  <li>Otoño</li>
+                  <li>Invierno</li>
+                </ul>
+                <ul class="list-position-2">
+                  <li>Primavera</li>
+                  <li>Verano</li>
+                  <li>Otoño</li>
+                  <li>Invierno</li>
+                </ul>
+              </li>
+              <li>
+                <h4 class="red">list-style-type</h4>
+                <p>
+                  <b>list-style-type</b> sirve para cambiar los puntos por otra forma desde CSS, tambien se puede cambiar poniendo en la etiqueta ol o ul <b>type="___"</b> pero el beneficio de hacerlo en css es que no importa si es una lista ordena o desordenada se puede usar cualquier tipo de estilo.
+                </p>
+                <h5>valores</h5>
+                <p>
+                  Existen un monton pero estos son los mas usados:
+                </p>
+                <ul>
+                  <li>square</li>
+                  <li>disc /*defaul*/</li>
+                  <li>circle</li>
+                  <li>lower-roman</li>
+                  <li>upper-roman</li>
+                  <li>decimal</li>
+                  <li>decimal-leading-zero</li>
+                  <li>lower-greek</li>
+                  <li>none</li>
+                </ul>
+                <h5>Codigo</h5>
+                <pre class="style-code-4">
+                  <code>
+                    {
+                      <span class="blue">list-style-image</span>: <span class="red">square</span>;
+                      <span class="blue">list-style-image</span>: <span class="red">disc</span>;
+                      <span class="blue">list-style-image</span>: <span class="red">circle</span>;
+                      <span class="blue">list-style-image</span>: <span class="red">lower-roman</span>;
+                      <span class="blue">list-style-image</span>: <span class="red">upper-roman</span>;
+                      <span class="blue">list-style-image</span>: <span class="red">decimal</span>;
+                      <span class="blue">list-style-image</span>: <span class="red">decimal-leading-zero</span>;
+                      <span class="blue">list-style-image</span>: <span class="red">lower-greek</span>;
+                      <span class="blue">list-style-image</span>: <span class="red">none</span>;
+                    }
+                  </code>
+                </pre>
+                <h3>Ejemplo</h3>
+                <!-- type="circle" -->
+                <ul  class="list">
+                  <li>Primavera</li>
+                  <li>Verano</li>
+                  <li>Otoño</li>
+                  <li>Invierno</li>
+                </ul>
+              </li>
+              <li>
+                <h4 class="red">list-style (Shorthand)</h4>
+                <p>
+                  <b>list-style</b> es una shorthand de las 3 propiedades anteriores y deben estar en este order <b class="red">list-style-type, list-style-image y list-style-position</b>
+                </p>
+                <pre class="style-code-4">
+                  <code>
+                    {
+                      <span class="blue">list-style</span>: <span class="red">lower-latin url(imagen) inside</span>;
+                    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <hr>
+        <!-- Textos en Columnas -->
+        <section id="texto-columna" class="container-style">
+          <h2 class="title-style">Textos en Columnas</h2>
+          <article class="container-info">
+            <p>
+              En esta ocasión vamos a aprender a poner textos en columnas, esto no es igual a una maquetación ya que para ello son (flex-box y grid-css), este tema es mas cuando queremos redactar un texto en microsoft word y necesitamos dividir ese texto en distintas columnas y son 4 propiedades
+            </p>
+            <h3 class="red">Propiedades</h3>
+            <ul>
+              <li>
+                <h4>column-count</h4>
+                <p>
+                  El numero que pongas es cuantas columnas estaran
+                </p>
+              </li>
+              <li>
+                <h4>column-gap</h4>
+                <p>
+                  La unidad de medidad que pongas separar las columnas ya elegidas
+                </p>
+              </li>
+              <li>
+                <h4>column-rule</h4>
+                <p>
+                  crea una linea para separar las columnas <b class="red">(los valores son iguales que usar el shorthand border)</b>, puedes acompañarlo con la propiedad <b>list-style-position: inside</b> para que la linea no se pegue a los puntos
+                </p>
+              </li>
+              <li>
+                <h4>column-width</h4>
+                <p>
+                  Es para poner un minimo para una columna
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-4">
+              <code>
+                {
+                  <span class="blue">list-style-position</span>: <span class="red">inside</span>;
+                  <span class="blue">column-count</span>: <span class="green">4</span>;
+                  <span class="blue">column-gap</span>: <span class="green">1rem</span>;
+                  <span class="blue">column-rule</span>: <span class="red">thin solid black</span>;
+                  <span class="blue">column-width</span>: <span class="green">100px</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <ol class="text-column-4">
+              <li>Primavera</li>
+              <li>Verano</li>
+              <li>Otoño</li>
+              <li>Invierno</li>
+              <li>Primavera 2</li>
+              <li>Verano 2</li>
+              <li>Otoño 2</li>
+              <li>Invierno 2</li>
+              <li>Primavera 3</li>
+              <li>Verano 3</li>
+              <li>Otoño 3</li>
+              <li>Invierno 3</li>
+            </ol>
+          </article>
+        </section>
+        <hr>
+        <!-- Estilos en Tablas -->
+        <section id="estilo-tablas" class="container-style">
+          <h2 class="title-style">Estilos en Tablas</h2>
+          <article class="container-info">
+            <p>
+              Las Tablas hoy en dia no sirven para tabular datos, pero es bueno que tengas conocimiento de esto.
+            </p>
+            <p>
+              Para poder crear lineas entre las tablas anteriormente se usaba <b>border="1"</b> en la etiqueta, pero ahora se hace en Css, aunque las lineas saldran separadas:
+            </p>
+            <pre class="style-code-4">
+              <code>
+                table,
+                th,
+                td {
+                  <span class="blue">border</span>: <span class="red">medium solid black</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Propiedades</h3>
+            <ul>
+              <li>
+                <h4>border-collabse</h4>
+                <p>
+                  Sirve para poner lineas separadas o colapsadas(border pegados)
+                </p>
+              </li>
+              <li>
+                <h4>border-spacing</h4>
+                <p>
+                  Es el espaciado que hay entre las celdas, pero para que funcione el <b>border-collapse</b> debe esta en separadas
+                </p>
+              </li>
+              <li>
+                <h4>empty-cells</h4>
+                <p>
+                  Si una casilla esta vacia se ocultara,pero para que funcione el <b>border-collapse</b> debe esta en separadas
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">codigo</h3>
+            <pre class="style-code-4">
+              <code>
+                {
+                  <span class="blue">font-size</span>: <span class="green">10px</span>;
+                  <span class="blue">border-collapse</span>: <span class="red">collapse</span>;
+                  <span class="blue">border-collapse</span>: <span class="red">separate</span>;
+                  <span class="blue">empty-cells</span>: <span class="red">hide</span>;
+                }
+              </code>
+            </pre>
+            <pre class="style-code-4">
+              <code>
+                table,
+                th,
+                td {
+                  <span class="blue">border</span>: <span class="red">medium solid gray</span>;
+                  <span class="blue">border-spacing</span>: <span class="green">10px</span>;
+                }
+              </code>
+            </pre>
+            <h3 class="red">Ejemplo</h3>
+            <table class="table" >
+              <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td></td>
+                <td>9</td>
+              </tr>
+            </table>
+          </article>
+        </section>
+        <hr>
+        <!-- Estilos de Formulario -->
+        <section id="estilo-formulario" class="container-style">
+          <h2 class="title-style">Estilos de Formulario</h2>
+          <article class="container-info">
+            <p>
+              Como podemos aplicar estilos a los elementos de formulario, aqui no habran nuevas propiedades aunque no se cambiara mucho ya que son diseños simples
+            </p>
+            <p>
+              Te mostrare otro frameword <a href="https://materializecss.com/" target="_blank">materializecss</a> que nos aportaran diseños para elementos de formularios
+            </p>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">Ejemplo</h3>
+            <form action="https://formsubmit.co/huayapajosue0@email.com" method="post">
+              <input type="text" name="nombre" placeholder="escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                title="Nombre solo acepta letras y espacios en blancos" required>
+              <br>
+              <input type="email" name="correo" placeholder="escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+                title="formato de correo invalido" required>
+              <br>
+              <textarea name="comentarios" placeholder="escribe tus comentarios" cols="30" rows="10" required></textarea>
+              <br>
+              <input type="submit">
+            </form>
+          </article>
+        </section>
+        <hr>
+        <!-- Formularios de Contacto con CSS -->
+        <section id="formularios-contacto-css" class="container-style">
+          <h2 class="title-style">Formularios de Contacto con CSS</h2>
+          <article class="container-info">
+              <p>
+                Vamos a tratar de dar estilos a un formulario sin animaciones ya que nos falta esa clase.
+              </p>
+              <h3 class="red">Debes saber que:</h3>
+              <ul>
+                <li>
+                  <p>
+                    Los formularios es un elemento que trabaja en caja.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Lo mejor esque debes trabajar con un solo sistema de colores.
+                  </p>
+                </li>
+              </ul>
+          </article>
+          <article class="container-ejm">
+            <h3 class="red">Codigos</h3>
+            <pre class="style-code-4">
+              <code>
+                <span class="orange">.contact-form</span> {
+                  <span class="blue">--form-text-color</span>: <span class="red">#666</span>;
+                  <span class="blue">--form-placeholder-color</span>: <span class="red">#006999</span>;
+                  <span class="blue">--form-success-color</span>: <span class="red">#4cad50</span>;
+                  <span class="blue">--form-error-color</span>: <span class="red">#f44336</span>;
+                  <span class="blue">--form-bg-color</span>: <span class="red">#ddd</span>;
+                  <span class="blue">--form-border-color</span>: <span class="red">#222</span>;
+
+                  <span class="blue">background-color</span>: <span class="red">var(--form-bg-color)</span>;
+                  <span class="blue">border</span>: <span class="red">var(--form-border-color)</span>;
+                  <span class="blue">margin-left</span>: <span class="red">auto</span>;
+                  <span class="blue">margin-right</span>: <span class="red">auto</span>;
+                  <span class="blue">padding</span>: <span class="green">2rem</span>;
+                  <span class="blue">width</span>: <span class="green">80%</span>;
+                }
+              </code>
+            </pre>
+
+            <pre class="style-code-4">
+              <code>
+                <span class="orange">.contact-form > *</span> {
+                  <span class="blue">display</span>: <span class="red">block</span>;
+                  <span class="blue">width</span>: <span class="green">100%</span>;
+                  <span class="blue">margin-bottom</span>: <span class="green">2rem</span>;
+                  <span class="blue">font-family</span>: <span class="red">sans-serif</span>;
+                  <span class="blue">font-size</span>: <span class="green">1rem</span>;
+                  <span class="blue">padding</span>: <span class="green">0.5rem</span>;
+                  <span class="blue">border-radius</span>: <span class="green">0.25rem</span>;
+                  <span class="blue">color</span>: <span class="red"> var(--form-text-color)</span>;
+                  <span class="blue">caret-color</span>: <span class="red"> var(--form-placeholder-color)</span>; /*es para el color
+                                                                    del tipo de cursor*/
+                }
+              </code>
+            </pre>
+            
+            <pre class="style-code-4">
+              <code>
+                <span class="orange">.contact-form > *::placeholder</span> {
+                  <span class="blue">color</span>: <span class="red">var(--form-placeholder-color)</span>;
+                }
+              </code>
+            </pre>
+
+            <pre class="style-code-4">
+              <code>
+                <span class="orange">.contact-form > *[required]:invalid</span> {
+                  <span class="blue">border</span>: <span class="red">thin solid var(--form-error-color)</span>;
+                }
+              </code>
+            </pre>
+
+            <pre class="style-code-4">
+              <code>
+                <span class="orange">.contact-form > *[required]:valid</span> {
+                  <span class="blue">border</span>: <span class="red">thin solid var(--form-success-color)</span>;
+                }
+              </code>
+            </pre>
+
+            <pre class="style-code-4">
+              <code>
+                <span class="orange">.contact-form input[type="submit"]</span> {
+                  <span class="blue">margin-bottom</span>: <span class="green">0</span>;
+                  <span class="blue">width</span>: <span class="green">30%</span>;
+                  <span class="blue">margin-left</span>: <span class="red">auto</span>;
+                  <span class="blue">margin-right</span>: <span class="red">auto</span>;
+                  <span class="blue">background-color</span>: <span class="red">var(--form-placeholder-color)</span>;
+                  <span class="blue">font-size</span>: <span class="green">1.25rem</span>;
+                  <span class="blue">font-wight</span>: <span class="red">bold</span>;
+                  <span class="blue">color</span>: <span class="red">#fff</span>;
+                }
+              </code>
+            </pre>
+
+            <pre class="style-code-4">
+              <code>
+                <span class="orange">.contact-form input[type="submit"]:hover</span> {
+                  <span class="blue">cursor</span>: <span class="red">pointer</span>; /*cambiar diseño del cursor*/
+                  <span class="blue">opacity</span>: <span class="green">.75</span>;
+                }
+              </code>
+            </pre>
+
+            <pre class="style-code-4">
+              <code>
+                <span class="orange">.contact-form input[type="submit"]:hover</span> {
+                  <span class="blue">resize</span>: <span class="red">none</span>; /*es para alargar los comentarios*/
+                }
+              </code>
+            </pre>
+
+            <h3 class="red">Ejemplo</h3>
+            <form class="contact-form" action="https://formsubmit.co/huayapajosue0@email.com" method="post">
+              <input type="text" name="nombre" placeholder="escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                title="Nombre solo acepta letras y espacios en blancos" required>
+              <input type="email" name="correo" placeholder="escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+                title="formato de correo invalido" required>
+              <textarea name="comentarios" placeholder="escribe tus comentarios" cols="30" rows="10" required></textarea>
+              <input type="submit">
+            </form>
+          </article>
+        </section>
+      </main>
+      <footer class="fin-de-curso">
+        <p>Final!!</p>
+      </footer>
+    </body>
+    </html>

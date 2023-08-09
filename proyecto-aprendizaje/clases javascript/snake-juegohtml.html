@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juego Snake </title>
+        <style>
+            body {
+                background: rgb(93, 140, 155);
+                text-align: center;
+                margin: 64px 0 0 0;
+            }
+            canvas{
+                border: solid 8px white;
+                background: linear-gradient(
+                    0deg,
+                    rgb(8, 210, 42) 0%,
+                      rgb(54, 154, 121)100%
+                );
+            }
+        </style>
+    </head>
+    <button style="color:red ;">jugar</button>
+    <body>
+      <canvas width="500" height="500"></canvas>
+
+      <script>
+        const cuandoEnpieza = 1;//state_running
+        const cuandoPierde = 2;//state losing
+
+        const desplazarSerpierte= 100;//velocidad de serpiente tick
+        const tamanioPixeles = 10;//pixeles square size
+        const anchoTablero= 50;//board width
+        const largoTablero= 50;//board height
+        const escalaCresimiento= 10;//grow scale
+        const direccionMapa_controles = {//directions maps
+           
+           'A': [-1, 0],
+           'D': [1, 0],
+           'S': [0, 1],
+           'W': [0, -1],
+           'a': [-1, 0],
+           'd': [1, 0],
+           's': [0, 1],
+           'w': [0, -1],
+        };
+        let estado = {
+             canvas: null,
+             contexto: null,//context
+             serpiente: [{x: 0, y: 0}],//snake
+             direccion: {x: 1, y: 0},//direction
+             presa_alimento: {x: 0, y: 0},//prey
+             serpiente_crecer: 0,//growing
+             estado_ejecucion: cuandoEnpieza //runstate
+        };
+        function movimientoXY() {
+            return{
+                x: parseInt(Math.random() * anchoTablero),
+                y: parseInt(Math.random() * largoTablero)
+            };
+        };
+        function tick() {
+            const vida = estado.serpiente[0];
+            const dx = estado.direccion.x;
+            const dy = estado.direccion.y;
+            const indiceAlto = estado.serpiente.length - 1;
+                  
+            let tail = {};
+            let interval = desplazarSerpierte;
+
+            Object.assign(tail,
+             estado.serpiente[estado.serpiente.length - 1]);
+
+            let didScore = (
+                
+                vida.x === estado.presa_alimento.x && vida.y === estado.presa_alimento.y
+            );
+            if (estado.estado_ejecucion === cuandoEnpieza) {
+               for (let idx = indiceAlto; idx > -1; idx--) {
+                const sq = estado.serpiente[idx]
+                
+                if(idx === 0){
+                    sq.x += dx;
+                    sq.y += dy;
+                }else {
+                sq.x = estado.serpiente[idx - 1].x;
+                sq.y = estado.serpiente[idx - 1].y;
+                 }
+               } 
+            } else if (estado.estado_ejecucion === cuandoPierde){
+                interval = 10;
+                if (estado.serpiente.length > 0){
+                    estado.serpiente.splice(0, 1);
+                }
+
+                if(estado.serpiente.length === 0) {
+                    estado.estado_ejecucion = cuandoEnpieza;
+                    estado.serpiente.push(movimientoXY());
+                    estado.presa_alimento = movimientoXY();
+                }
+            }
+
+            if(detectarcolision()) {
+                estado.estado_ejecucion = cuandoPierde;
+                estado.serpiente_crecer = 0;
+            }
+
+            if (didScore) {
+                estado.serpiente_crecer += escalaCresimiento;
+                estado.presa_alimento = movimientoXY();
+            }
+
+            if (estado.serpiente_crecer > 0) {
+                estado.serpiente.push(tail);
+                estado.serpiente_crecer -= 1;
+            }
+
+            requestAnimationFrame(pintar);
+           setTimeout(tick, interval);
+        };
+        
+        function detectarcolision() {
+            const vida = estado.serpiente[0];
+
+            if(vida.x < 0 || vida.x >= anchoTablero || vida.y >= largoTablero || vida.y < 0){
+                return true;
+            }
+            for (let idx = 1; idx < estado.serpiente.length; idx++){
+                const sq = estado.serpiente[idx];
+                if (sq.x === vida.x && sq.y === vida.y) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        function pintarPixel(color, x, y) {
+            estado.contexto.fillStyle = color;
+            estado.contexto.fillRect(
+                x * tamanioPixeles,
+                y * tamanioPixeles,
+                tamanioPixeles,
+                tamanioPixeles
+            );
+        }
+
+        function pintar() {
+            estado.contexto.clearRect(0, 0, 500, 500);
+            for (let idx = 0; idx < estado.serpiente.length; idx++){
+                const {x, y} = estado.serpiente[idx];
+                pintarPixel('#0000FF', x, y);
+            }
+            const {x,y} = estado.presa_alimento;
+            pintarPixel('red', x, y);
+        }
+   
+        window.onload = function () {
+            estado.canvas =  document.querySelector('canvas');
+            estado.contexto = estado.canvas.getContext('2d');
+             window.onkeydown = function(e) {
+                const direccion = direccionMapa_controles[e.key];
+                if(direccion){
+                    const [x,y] = direccion;
+                    if (-x !== estado.direccion.x && -y !== estado.direccion.y) {
+                        estado.direccion.x = x;
+                        estado.direccion.y = y;
+                    }
+                }
+             }
+              tick();
+        }
+      </script>
+    </body>
+</html>

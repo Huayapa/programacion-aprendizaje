@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+/*----------------------------------------------------------------*/
+/*Ajustes de Scroll Vertical*/
+
+.slides {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    /*propiedad*/
+    scroll-snap-type: block mandatory;
+}
+
+.slide {
+    width: 100%;
+    height: inherit;
+    background-color: #1e2345;
+    /*propiedad*/
+    /* scroll-snap-align: none;
+    scroll-snap-align: start; */
+    scroll-snap-align: center;
+}
+
+.slide:nth-child(even) {
+    background-color: #108eb4;
+}
+
+.slide-container {
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    color: #d9e8f0;
+}
+
+/*------------------------------------------------------------------*/
+/*Ajustes de Scroll Horizontal*/
+
+.carousel {
+ border: thick solid #d938f0;
+ display: flex;
+ width: 50%;
+ height: 50vh;
+ overflow-x: hidden;
+}
+
+.carousel-container {
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(5, 100%);
+ overflow-x: scroll;
+ overflow-y: hidden;
+ /* scroll-snap-type: x mandatory; */
+ scroll-snap-type: inline mandatory;
+}
+
+.carousel-slide {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: #108eb4;
+ scroll-snap-align: center;
+}
+
+.carousel-slide:nth-child(even) {
+ background-color: #1e2345;
+}
+
+/*----------------------------------------------------------------------*/
+/*Texto Con Gradientes*/
+
+.gradient-text {
+    background-image: linear-gradient(45deg, magenta, yellow);
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -ms-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}

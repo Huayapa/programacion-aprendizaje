@@ -1,0 +1,45 @@
+body {
+  margin: 10px;
+}
+h1 {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.h2-margen-padding {
+  color: lightgreen;
+  font-size: 20px;
+}
+
+.p-lorem-1,
+.p-lorem-2 {
+  background-color: chocolate;
+  border: medium solid orange;
+  padding: 20px;
+  margin: 20px;
+}
+
+.style-code-easy {
+  background-color: midnightblue;
+  color: white;
+}
+/*
+Propiedad display
+*/
+
+.caja-bloque,
+.caja-linea-bloque {
+  background-color: olive;
+  color: white;
+  width: 500px;
+  height: 159px;
+  border: medium solid black;
+}
+
+.caja-linea-bloque {
+  display: inline-block;
+}
+
+.caja-bloque {
+  display: block;
+}

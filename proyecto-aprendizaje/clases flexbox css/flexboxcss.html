@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox CSS</title>
+    <meta
+      name="description"
+      content="aqui mostraremos la los conceptos basicos de bloxbox y sus utilidades"
+    />
+    <link rel="stylesheet" href="css/flexboxcss.css" />
+  </head>
+  <body>
+    <h1 class="titulo">Flexbox CSS</h1>
+    <header>
+      <hr />
+    </header>
+    <main class="margin">
+      <!-- introduccion -->
+      <section id="introduccion"> 
+        <h2 class="section-title">Introduccion</h2>
+        <p>
+          Flexbox (Modulo de caja Flexible) es un metodo en el que nos ayuda a
+          distribuir el espacio de los items de una interfaz y mejora las
+          capacidades de la alineacion.
+        </p>
+        <h3>Recomendacion:</h3>
+        <p>
+          Te recomiendo usar estos links para aprender mejor Flexbox y una
+          extencion que te ayudara en los inicios de esta clase.
+        </p>
+        <ul>
+          <li>
+            <a href="https://css-tricks.com/" target="_blank">tricks.com</a>
+          </li>
+          <li>
+            <a href="https://getbootstrap.com/" target="_blank"
+              >bootstrap.com</a
+            >
+          </li>
+          <li>
+            <a href="https://get.foundation/" target="_blank">foundation.com</a>
+          </li>
+          <li>
+            Usar la extension <strong>css Flexbox cheatsheet</strong>(en visual
+            studio code)
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <!-- temario -->
+      <section id="temario">
+        <h2 class="section-title">Temario de Curso</h2>
+        <ul>
+          <li><a href="flexboxcss.html#introduccion">Introduccion</a></li>
+          <li><a href="flexboxcss.html#temario">temario</a></li>
+          <li>
+            <details>
+              <summary>
+                <a href="flexboxcss.html#conceptos-basicos"
+                  >Conceptos Basicos</a
+                >
+              </summary>
+              <p>
+                <a href="flexboxcss.html#propiedades-basicas"
+                  >Propiedades Basicas</a
+                >
+              </p>
+            </details>
+          </li>
+          <li>
+            <a href="flexboxcss.html#flujo-flexbox">El Flujo de Flexbox</a>
+          </li>
+          <li>
+            <a href="flexboxcss.html#alineacion-main-axis">Alineación del Main Axis</a>
+          </li>
+          <li>
+            <a href="flexboxcss.html#alineacion-cross-axis">Alineación del Cross Axis</a>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <!-- Conceptos Basicos -->
+      <section id="conceptos-basicos">
+        <h2 class="section-title">Conceptos Basicos</h2>
+        <p>
+          Lo primero que debemos saber y entender de Flexbox es su terminologia,
+          ya que realmente Flexbox es un sistema unidimencional (puedes tener
+          filas y columnas pero no ambas)
+        </p>
+        <div class="container-img">
+          <img
+            src="img/terminology flexbox.png"
+            alt="terminologia de flexbox"
+          />
+        </div>
+        <p>
+          Para poder usar el flexbox debemos usar el atributo
+          <strong>display:___;</strong>
+        </p>
+        <h3 id="propiedades-basicas">Propiedades Basicas</h3>
+        <ul>
+          <li>
+            <code>display: flex;</code> } lo combierte a una caja flexbox de
+            bloque.
+          </li>
+          <h4>Ejemplo</h4>
+          <section class="conteiner">
+            <article class="item">flex item 1</article>
+            <article class="item">flex item 2</article>
+            <article class="item">flex item 3</article>
+          </section>
+          <section class="conteiner">
+            <article class="item">flex item 1</article>
+            <article class="item">flex item 2</article>
+            <article class="item">flex item 3</article>
+          </section>
+          <br />
+          <li>
+            display: inline-flex; } lo combierte en una caja flexbox pero
+            trabaja en linea.
+          </li>
+          <h4>Ejemplo</h4>
+          <section class="conteiner1">
+            <article class="item1">flex item 1</article>
+            <article class="item1">flex item 2</article>
+            <article class="item1">flex item 3</article>
+          </section>
+          <section class="conteiner1">
+            <article class="item1">flex item 1</article>
+            <article class="item1">flex item 2</article>
+            <article class="item1">flex item 3</article>
+          </section>
+          <br />
+        </ul>
+      </section>
+      <hr />
+      <!-- Flujo de Flexbox -->
+      <section id="flujo-flexbox">
+        <h2 class="section-title">El Flujo de Flexbox</h2>
+        <p>
+          El flujo de Flexbox se refiere al movimiento que le puedes otorgar a
+          los elementos.
+        </p>
+        <h3>Propiedades:</h3>
+        <p>
+          Ojo si usas la propiedad <code>flex-flow</code> puedes poner esas 2 propiedades en uno.
+        </p>
+        <ul>
+          <li>
+            <details>
+              <summary>
+                <code>flex-direction:_____;</code> } tiene 4 valores y son para
+                las direcciones:
+              </summary>
+              <br />
+              <ol>
+                <li>
+                  <code>flex-direction: row;</code> } es el valor por defecto
+                </li>
+                <h4>Ejemplo</h4>
+                <section class="conteiner">
+                  <article class="item">flex item 1</article>
+                  <article class="item">flex item 2</article>
+                  <article class="item">flex item 3</article>
+                </section>
+                <section class="conteiner">
+                  <article class="item">flex item 1</article>
+                  <article class="item">flex item 2</article>
+                  <article class="item">flex item 3</article>
+                </section>
+                <br />
+                <li>
+                  <code>flex-direction: row-reverse;</code> } se va a la parte
+                  contraria (la ultima parte) y las palabras estaran de reversa
+                </li>
+                <h4>Ejemplo</h4>
+                <section class="conteiner4">
+                  <article class="item4">flex item 1</article>
+                  <article class="item4">flex item 2</article>
+                  <article class="item4">flex item 3</article>
+                </section>
+                <section class="conteiner4">
+                  <article class="item4">flex item 1</article>
+                  <article class="item4">flex item 2</article>
+                  <article class="item4">flex item 3</article>
+                </section>
+                <br />
+                <li>
+                  <code>flex-direction: column;</code> } alinea los elementos
+                </li>
+                <h4>Ejemplo</h4>
+                <section class="conteiner5">
+                  <article class="item5">flex item 1</article>
+                  <article class="item5">flex item 2</article>
+                  <article class="item5">flex item 3</article>
+                </section>
+                <section class="conteiner5">
+                  <article class="item5">flex item 1</article>
+                  <article class="item5">flex item 2</article>
+                  <article class="item5">flex item 3</article>
+                </section>
+                <br />
+                <li>
+                  <code>flex-direction: column-reverse;</code> } alinea los
+                  elementos de forma inversa y se va a la parte contraria
+                </li>
+                <h4>Ejemplo</h4>
+                <section class="conteiner3">
+                  <article class="item3">flex item 1</article>
+                  <article class="item3">flex item 2</article>
+                  <article class="item3">flex item 3</article>
+                </section>
+                <br /><br />
+                <section class="conteiner3">
+                  <article class="item3">flex item 1</article>
+                  <article class="item3">flex item 2</article>
+                  <article class="item3">flex item 3</article>
+                </section>
+              </ol>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <code>flex-wrap:___;</code> } indica que puede haber cambios de
+                linea y tiene 3 valores:
+              </summary>
+              <br />
+              <ol>
+                <li>
+                  <code>flex-wrap: nowrap;</code> } la caja va tratar de alinear
+                  todos sus hijos en una sola linea(si esta con el column sera
+                  para las columnas)
+                </li>
+                <h4>Ejemplo</h4>
+                <section class="conteiner6">
+                  <article class="item6">flex item 1</article>
+                  <article class="item6">flex item 2</article>
+                  <article class="item6">flex item 3</article>
+                </section>
+                <br />
+                <section class="conteiner6">
+                  <article class="item6">flex item 1</article>
+                  <article class="item6">flex item 2</article>
+                  <article class="item6">flex item 3</article>
+                </section>
+                <br />
+                <li>
+                  <code>flex-wrap: wrap;</code> } intentara caver en una sola
+                  linea y si no se logra enpezaran a tomar las filas
+                </li>
+                <h4>Ejemplo</h4>
+                <section class="conteiner7">
+                  <article class="item7">flex item 1</article>
+                  <article class="item7">flex item 2</article>
+                  <article class="item7">flex item 3</article>
+                  <article class="item7">flex item 4</article>
+                  <article class="item7">flex item 5</article>
+                  <article class="item7">flex item 6</article>
+                  <article class="item7">flex item 7</article>
+                  <article class="item7">flex item 8</article>
+                  <article class="item7">flex item 9</article>
+                  <article class="item7">flex item 10</article>
+                  <article class="item7">flex item 11</article>
+                  <article class="item7">flex item 12</article>
+                </section>
+                <br />
+                <li>
+                  <code>flex-wrap: wrap-reverse;</code> } intentara caver en una
+                  sola linea y si no se logra enpezaran a tomar las filas y de
+                  forma reversa
+                </li>
+                <h4>Ejemplo</h4>
+                <section class="conteiner7 reversed7">
+                  <article class="item7">flex item 1</article>
+                  <article class="item7">flex item 2</article>
+                  <article class="item7">flex item 3</article>
+                  <article class="item7">flex item 4</article>
+                  <article class="item7">flex item 5</article>
+                  <article class="item7">flex item 6</article>
+                  <article class="item7">flex item 7</article>
+                  <article class="item7">flex item 8</article>
+                  <article class="item7">flex item 9</article>
+                  <article class="item7">flex item 10</article>
+                  <article class="item7">flex item 11</article>
+                  <article class="item7">flex item 12</article>
+                </section>
+              </ol>
+            </details>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <!-- Alineación del Main Axis ( justify-content ) -->
+      <section id="alineacion-main-axis">
+        <h2 class="section-title">
+          Alineación del Main Axis ( justify-content )
+        </h2>
+        <p>
+          Son propiedades que nos permitiran alinear elementos y como
+          distribuirlos en la caja flexbox, es para el eje X
+        </p>
+        <img src="img/main axis.png" alt="main axis">
+        <h3>Propiedades</h3>
+        <p>
+          Para estas propiedades debes poner antes el
+          <code>justify-content:___;</code>
+        </p>
+        <ul>
+          <li>
+            <code>justify-content: flex-start;</code> } es el valor por defecto
+          </li>
+          <h4>Ejemplo</h4>
+          <h5>filas</h5>
+          <section class="justify-content flex-start">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <h5>columnas</h5>
+          <section class="justify-content flex-start columnas-content">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <br>
+          <li>
+            <code>justify-content: flex-end;</code> } el valor ire a la parte
+            final
+          </li>
+          <h4>Ejemplo</h4>
+          <h5>filas</h5>
+          <section class="justify-content flex-end">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <h5>columnas</h5>
+          <section class="justify-content flex-end columnas-content">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <br>
+          <li>
+            <code>justify-content: center;</code> } el valor se ira al centro
+          </li>
+          <h4>Ejemplo</h4>
+          <h5>filas</h5>
+          <section class="justify-content center">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <h5>columnas</h5>
+          <section class="justify-content center columnas-content">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <br>
+          <li>
+            <code>justify-content: space-between;</code> } los valores seran
+            distribuidos en la parte de inicio final y centro (solo tendra margen en el
+            centro).
+          </li>
+          <h4>Ejemplo</h4>
+          <h5>filas</h5>
+          <section class="justify-content space-between">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <h5>columnas</h5>
+          <section class="justify-content space-between columnas-content">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <br>
+          <li>
+            <code>justify-content: space-around; </code> } los valores seran distribuidos como el <b>between</b> (tendran una margen todos y los del centro se sumaran sus margenes)
+          </li>
+          <h4>Ejemplo</h4>
+          <h5>filas</h5>
+          <section class="justify-content space-around">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <h5>columnas</h5>
+          <section class="justify-content space-around columnas-content">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <br>
+          <li>
+            <code>justify-content: space-evenly;</code> } los valores seran distribuidos de igual manera tambien los margenes
+          </li>
+          <h4>Ejemplo</h4>
+          <h5>filas</h5>
+          <section class="justify-content space-evenly">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <h5>columnas</h5>
+          <section class="justify-content space-evenly columnas-content">
+            <article class="item-content">Flex item 1</article>
+            <article class="item-content">Flex item 2</article>
+            <article class="item-content">Flex item 3</article>
+          </section>
+          <br>
+        </ul>
+      </section>
+      <hr>
+      <!-- Alineación del Cross Axis ( align-items y align-content ) -->
+      <section id="alineacion-cross-axis">
+        <h2 class="section-title">Alineación del Cross Axis</h2>
+        <p>
+          Es el eje secundario (eje Y) es vertical y su sentido es de arriba y abajo, nos servira para alinear los align-items y align-content.
+        </p>
+        <p>
+          Tambien sus resultados puedes varias dependiendo si estan en fila o columna.
+        </p>
+        
+        <h3>Propiedades</h3>
+        <ol>
+          <details open>
+            <summary><code>align-items:____;</code></summary>
+              <p>
+                Es para alinear items y existen estos valores:
+              </p>
+             <img class="img-cross-axis" src="img/align-items.svg" alt="align items">
+             <ol>
+              <li>
+                <code>align-items: stretch;</code> } Es el valor por defecto.
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content ">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-items: flex-start;</code> } la alineacion se va arriba
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-start-align">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-items: flex-end;</code> } la alineacion se va abajo
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-end-align">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-items: center;</code> } la alineacion estara en el centro
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-center-align">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-items: baseline;</code> } pareciera como fuera el flex-start pero lo que hace es centrar los textos de cada caja, dentro de cada linea.
+              </li>
+                <h4>Ejemplo</h4>
+                <section class="justify-content flex-baseline-align">
+                <article class="item-content item-align">Flex item 1</article>
+                <article class="item-content item-align">Flex item 2</article>
+                <article class="item-content item-align">Flex item 3</article>
+              </section>
+              <br>
+             </ol>
+          </details>
+          <details>
+            <summary><code>align-content:___;</code></summary>
+            <p>
+              Define la alineacion de cross axis y NO funciona cuando los hijos están en una sóla línea (me refiero al nowrap que con este valor no funciona).
+            </p>
+            <img class="img-cross-axis" src="img/align-content.svg" alt="aling content">
+            <ol>
+              <li>
+                <code>align-content: flex-start;</code> } la alineacion se va arriba
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-start-content">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-content: flex-end;</code> } la alineacion se va a la parte contraria
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-end-content">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-content: center;</code> } la alineacion estara en el centro
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-center-content">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-content: stretch;</code> } se estiran los elementos
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-stretch-content">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-content: space-between;</code> } reparte el espacio sobrante menos en las orillas
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-between-content">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-content: space-around;</code> } reparte el espacio sobrante tambien a las orillas y se suman los margenes de adentro
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-around-content">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+              <li>
+                <code>align-content: space-evenly;</code> } reparte el espacio por igual.
+              </li>
+              <h4>Ejemplo</h4>
+              <section class="justify-content flex-evenly-content">
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+                <article class="item-content">Flex item 1</article>
+                <article class="item-content">Flex item 2</article>
+                <article class="item-content">Flex item 3</article>
+              </section>
+              <br>
+            </ol>
+          </details>
+        </ol>
+      </section>
+      <hr>
+      <!-- Propiedades que afectan a los hijos ------------>
+      <!-- Factores de Crecimiento (Flex-grow) -->
+      <section id="factor-crecimiento">
+        <h2 class="section-title">Factores de Crecimiento (flex-grow)</h2>
+        <h3>Flex-grow</h3>
+        <p>
+          Cuando la caja flexbox tenga algun espacio disponible o sobrante los hijos tomaran todo ese espacio gracias a flex-grow y NO puede aceptar numero negativos
+        </p>
+        <h3>Como invocar a la propiedad?</h3>
+        <p>Este es el valor por defecto</p>
+          <pre class="fondo-code"><code>
+            <span class="code-class">.flex-grow</span> {
+              <span class="code-property">flex-grow</span>: <span class="code-number">0</span>;
+            }
+          </code></pre>
+        <h3 class="inportante">Inportante!</h3>
+        <p>
+          Esta propiedad debe vincularse a sus hijos NO el padre
+        </p>
+        <h3>Ejemplos</h3>
+        <p>
+          Para que funcione la propiedad debe estar en uno por lo menos,
+          estando en 1 los item hijos tomaran el espacio sobrante igualmente.
+        </p>
+        <pre class="fondo-code"><code>
+          <span class="code-class">.flex-grow</span> {
+              <span class="code-property">flex-grow</span>: <span class="code-number">1</span>;
+          }
+        </code></pre>
+        <section class="justify-content valor-por-defecto ">
+          <article class="item-content flex-grow">Flex item 1</article>
+          <article class="item-content flex-grow" >Flex item 2</article>
+          <article class="item-content flex-grow">Flex item 3</article>
+        </section>
+        <p>
+          pero cuando uno de ellos tiene el flex-grow en 2 o mas podra agarrar mas espacio sobrante (en este caso el 2 contenido tendra 3)
+        </p>
+        <div class="conteiner-code-flex-grow">
+          <pre class="fondo-code"><code>
+          <span class="code-class">.flex-grow</span> {
+              <span class="code-property">flex-grow</span>: <span class="code-number">1</span>;
+          }
+        </code></pre>
+        <pre class="fondo-code"><code>
+          <span class="code-class">.flex-grow:nth-child(2)</span> {
+              <span class="code-property">flex-grow</span>: <span class="code-number">3</span>;
+          }
+        </code></pre>
+        </div>
+        <section class="justify-content valor-por-defecto ">
+          <article class="item-content flex-grow">Flex item 1</article>
+          <article class="item-content flex-grow2">Flex item 2</article>
+          <article class="item-content flex-grow">Flex item 3</article>
+        </section>
+        <br>
+      </section>
+      <hr>
+      <!-- Factor de reduccion (flex-shrink)-->
+      <section id="factor-reduccion">
+        <h2 class="section-title">Factor de Reduccion (flex-shrink)</h2>
+        <h3>flex-shrink</h3>
+        <p>
+          Sirve para cuando la caja flexbox NO tenga espacio sobrante, me refiero a que si escroleas hasta dejar un espacio pequeño los hijos se reduciran , NO se aceptan valores negativos.
+        </p>
+        <h3>Como invocar la propiedad?</h3>
+        <p>Este es el valor por defecto</p>
+        <pre class="fondo-code"><code>
+          <span class="code-class">.flex-shirink</span> {
+              <span class="code-property">flex-shrink</span>: <span class="code-number">1</span>;
+          }
+        </pre></code>
+        <h3>Ejemplos</h3>
+        Esto es casi igual que flex-grow pero en al revez, Si quieres ver que pasa debes reducir la ventana.
+        <section class="justify-content valor-por-defecto ">
+          <article class="item-content flex-shrink">Flex item 1</article>
+          <article class="item-content flex-shrink">Flex item 2</article>
+          <article class="item-content flex-shrink">Flex item 3</article>
+        </section>
+        <p>
+          Tambien podemos hacer que una solo hijo se redusca mas.
+        </p>
+        <div class="conteiner-code-flex-grow">
+          <pre class="fondo-code"><code>
+          <span class="code-class">.flex-shirink</span> {
+              <span class="code-property">flex-shrink</span>: <span class="code-number">1</span>;
+          }
+        </pre></code>
+        <pre class="fondo-code"><code>
+          <span class="code-class">.flex-shirink:nth-child(2)</span> {
+              <span class="code-property">flex-shrink</span>: <span class="code-number">3</span>;
+          }
+        </pre></code>
+        </div>
+        <section class="justify-content valor-por-defecto ">
+          <article class="item-content flex-shrink">Flex item 1</article>
+          <article class="item-content flex-shrink2">Flex item 2</article>
+          <article class="item-content flex-shrink">Flex item 3</article>
+        </section>
+      </section>
+      <hr>
+      <!-- Tamaño de los hijos flexbox (flex-basis) -->
+      <section id="tamanio-hijos-flexbox">
+        <h2 class="section-title">Tamaño de los hijos flexbox (flex-basis)</h2>
+        <h3>flex-basis</h3>
+        <p>
+          Es el tamaño del elemento hijo dentro de la línea de la caja flexbox y al momento que exista esta propiedad ignorara el width o height (dependiendo si esta en fila o columna).
+        </p>
+        <h3 class="inportante">Inportante</h3>
+        <p>
+          Si la caja flexbox tiene direccion de fila, flex-basis representara el width.
+        </p>
+        <p>
+          Si la caja flexbox tiene direccion de columna, flex-basis representara el height.
+        </p>
+        <p>
+          El valor por defecto es auto
+        </p>
+        <h3>Como se invoca la propiedad?</h3>
+        <p>
+          Este es el valor por defecto.
+        </p>
+        <pre class="fondo-code"><code>
+          <span class="code-class">.flex-basis</span> {
+                <span class="code-property">flex-basis</span>: <span class="code-number">auto</span>;
+          }
+        </pre></code>
+        <h3>Ejemplos</h3>
+        <p>
+          Aqui lo ponemos con un valor de 150px, que en este ejemplo es el remplazo de width.
+        </p>
+        <pre class="fondo-code"><code>
+          <span class="code-class">.flex-basis</span> {
+              <span class="code-property">flex-basis</span>: <span class="code-number">150px</span>;
+          }
+        </pre></code>
+        <section class="justify-content valor-por-defecto ">
+          <article class="item-content flex-basis">Flex item 1</article>
+          <article class="item-content flex-basis">Flex item 2</article>
+          <article class="item-content flex-basis">Flex item 3</article>
+        </section>
+        <h3 class="inportante">shorthand (flex)</h3>
+        <p>
+          Al igual que los elementos padres, existe un shorthand para los elementos hijos que siplifica estas tres propiedades (flex-grow, flex-shrink y flex-basis) a uno solo.
+        </p>
+        <h4>Como se invoca la propiedad?</h4>
+        <pre class="fondo-code"><code>
+          <span class="code-class">.flex</span> {
+              <span class="code-property">flex</span>: <span class="code-number">0 1</span> <span class="code-string">auto</span>;
+          }
+        </pre></code>
+         esta es la propiedad shorthand para los elementos hijos (psdt: esta en el valor por defecto)
+      </section>
+      <hr>
+      <!-- Orden y Alineación de hijos flexbox (orden y align-self) -->
+      <section id="orden-alineacion">
+        <h2 class="section-title">
+          Orden y Alineación de hijos flexbox (orden y align-self)
+        </h2>
+        <p>
+          Nosotros podemos controlar el orden de los elementos y este valor debe estar hacia los hijos para que funcione.
+        </p>
+        <h3 class="propiedad-title">Propiedad: orden</h3>
+        <p>
+          Representa el orden que tendrán los elementos hijos en la caja flexbox.
+          <ul>
+            <li>Valor por defecto es 0</li>
+            <li>Se pueden aceptar valores negativos y positivos</li>
+            <li>Un valor menor siempre irá antes que un valor mayor</li>
+          </ul>
+        </p>
+        <h3>Ejemplos</h3>
+        <p>
+          Como todos los valores enpiezan con 0 al poner un numero negativo a cualquiera de los valores tomara el primer lugar y si es un numero mayor que 0 sera el ultimo.
+        </p>
+        <div>
+          <pre class="fondo-code"><code>
+            <span class="code-class">.flex-orden:nth-child(2)</span> {
+                <span class="code-property">orden</span>: <span class="code-number">-1</span>;
+            }
+          </pre></code>
+          <pre class="fondo-code"><code>
+            <span class="code-class">.flex-orden:nth-child(4)</span> {
+                <span class="code-property">orden</span>: <span class="code-number">2</span>;
+            }
+          </pre></code>
+        </div>
+       
+        <section class="justify-content valor-por-defecto ">
+          <article class="item-content flex-orden">Flex item 1</article>
+          <article class="item-content flex-orden">Flex item 2</article>
+          <article class="item-content flex-orden">Flex item 3</article>
+          <article class="item-content flex-orden">Flex item 4</article>
+          <article class="item-content flex-orden">Flex item 5</article>
+        </section>
+        <h3 class="propiedad-title">Propiedad: align-self</h3>
+        <p>
+          Sobreescribe el valor de la propiedad <code>align-items</code> soló para el elemento hijo especificado, valores que usa (ya estos valores ya se saben sus usos):
+        </p>
+        <ul>
+          <li>stretch</li>
+          <li>flex-start</li>
+          <li>flex-end</li>
+          <li>center</li>
+          <li>baseline</li>
+        </ul>
+        <h3>Ejemplo</h3> 
+        <pre class="fondo-code"><code>
+          <span class="code-class">.align-self:nth-child(2)</span> {
+              <span class="code-property">align-self</span>: <span class="code-string">flex-end</span>;
+          }
+        </pre></code>
+        <section class="justify-content valor-por-defecto ">
+          <article class="item-content align-self">Flex item 1</article>
+          <article class="item-content align-self">Flex item 2</article>
+          <article class="item-content align-self">Flex item 3</article>
+          <article class="item-content align-self">Flex item 4</article>
+          <article class="item-content align-self">Flex item 5</article>
+        </section>
+      </section>
+      <hr>
+      <!-- Ejemplos practicos para maquetación -->
+      <section id="ejm-practicos">
+        <h2 class="section-title">Ejemplos practicos para maquetación</h2>
+        <p>
+          En este link estaran mis ejemplos practicos para maquetar:
+        </p>
+        <h3>Maquetacion ejemplos de boostrap y artesanal</h3>
+        <ul>
+          <li>
+            <a href="flexbox-maquetacion.html" target="_blank"
+            >maquetación flexbox con boostrap</a>
+          </li>
+          <li>
+            <a href="flexbox-maquetacion-artesanal.html" target="_blank"
+            >maquetacion flexbox artesanal</a>
+          </li>
+        </ul>
+        <h3>casos practicos para flexbox</h3>
+        <ul>
+          <li>
+            <a href="ejemplos-practicos-flexbox.html" target="_blank"
+            >Ejemplo practico flexbox</a>
+          </li>
+        </ul>
+        <h3>boostrap & Flexbox</h3>
+        <ul>
+          <li>
+          <a href="boostrap-flexbox.html" target="_blank"
+          >boostrap y Flexbox</a>
+        </li>
+        </ul>
+        
+      </section>
+      <hr>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,805 @@
+
+
+/*Reseteo*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    --primary-color: rgba(255, 147, 147, 1);
+    --primary-color-border: rgba(241, 120, 120, 1);
+    --prymary-color-alt: rgba(251, 178, 178, 1);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html *::selection {
+    background-color: #b3d4fc;
+    color: #000;
+}
+
+b {
+    color: #4b22f4;
+}
+
+html * {
+    border-bottom: #000;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+[id] {
+    scroll-margin-top: 7ex;
+}
+
+/*nav principal*/
+
+.nav-principal {
+    background-image: linear-gradient(90deg, var(--primary-color) 15%, var(--primary-color-border) 48%, var(--prymary-color-alt) 87%);
+    width: 100%;
+    height: 6%;
+    border: thin solid #EF5B5B;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* padding: 1rem; */
+    background-attachment: fixed;
+    animation: translate-hero-image 400ms ease-in;
+}
+
+.nav-principal h1 {
+    margin: 0;
+    font-size: 2rem;
+    /* animation: movimiento 2s ease-in; */
+    text-shadow: 2px 4px 10px gray;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.enlaces-nav a {
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+    padding: 6% 1rem;
+}
+
+.enlaces-nav a:visited {
+    color: #000;
+}
+
+.enlaces-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5% 1rem;
+    transition: border-bottom 300ms ease-in-out;
+    border-bottom: medium solid black;
+}
+
+/*temario enlaces*/
+
+.temario-list summary {
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.temario-list a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.temario-list a:visited {
+    color: whitesmoke;
+}
+
+.temario-list a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: color 1s ease-in-out;
+    color: #58e4cf;
+    text-decoration: underline;
+}
+
+/*hero image*/
+
+@keyframes movimiento {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(1rem);
+    }
+    
+}
+
+@keyframes translate-hero-image {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+
+.hero-image {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/portada-css-grid-3.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.9;
+    overflow: hidden;
+    background-attachment: fixed;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    animation: translate-hero-image 600ms ease-in-out;
+}
+
+.hero-image h2 {
+    font-size: clamp(0.5rem, 2vw + 1rem, 5rem );
+    /* transform: rotate(-15deg); */
+    /* background-image: linear-gradient(to right, pink, violet, orange); */
+    /* -ms-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent; */
+    animation: movimiento 2s ease;
+    color: #fff;
+    text-shadow: 1rem 1rem 1rem gray;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    background-color: #000;
+    padding: 1rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+}
+
+.enlaces-hover a:hover {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+.enlaces-hover a {
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+/*ventana modal*/
+
+.boton-modal {
+    font-size: 3rem;
+    background-color: #000;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease-in-out;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-container {
+    position: relative;
+    border: medium solid var(--primary-color-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3rem;
+    color: #fff;
+    background-color: var(--prymary-color-alt);
+    border-radius: 50%;
+    transition: background-color 300ms linear,
+        transform 300ms ease-in-out;
+}
+
+.modal-close:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.enlace-modal img {
+    border-radius: 50%;
+}
+
+.enlace-modal a {
+    text-decoration: none;
+}
+
+.enlace-modal {
+    display: flex;
+    justify-content: baseline;
+}
+
+/*contenedores de secciones*/
+
+.container-section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    background-image: linear-gradient(0deg, rgba(250, 153, 153, 1) 15%, rgba(251, 125, 125, 1) 30%, rgb(243, 126, 126) 47%, rgba(251, 125, 125, 1) 64%, rgba(250, 153, 153, 1) 82%);
+    border: thin solid var(--primary-color-border);
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+.container-section h2:first-child {
+    border-bottom: thick solid #000;
+}
+
+.container-section img {
+    border: medium solid #000;
+    border-radius: 0.5rem;
+    width: 70%;
+}
+
+/* h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+} */
+
+/*codigo*/
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.white {
+    color: #fff;
+}
+
+.skye-blue {
+    color: skyblue;
+}
+
+.orange {
+    color: orange;
+}
+
+.purple {
+    color: purple;
+}
+
+.style-code-1 {
+    width: 80%;
+    background-color: #58e4cf;
+    border: thin solid black;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    overflow-x: auto;
+    font-size: 1rem;
+}
+
+/*titulos colores*/
+
+/* .red-title,
+.yellow-title,
+.green-title,
+.blue-title,
+.skye-blue,
+.orange-title,
+.purple-title {
+    -webkit-text-stroke: thin #000;
+    -moz-text-stroke: thin #000;
+} */
+.red-title {
+    color: red;
+}
+
+.yellow-title {
+    color: yellow;
+}
+
+.green-title {
+    color: green;
+}
+
+.blue-title {
+    color: blue;
+}
+
+.skye-blue-title {
+    color: skyblue;
+}
+
+.orange-title {
+    color: orange;
+}
+
+.purple-title {
+    color: purple;
+}
+
+.ul-section-basicos h3 {
+    font-size: 1rem;
+}
+
+/*-----------------------------------------------------*/
+/*----------------fin de maquetar------------------*/
+
+/*----------------Grid CSS--------------------------*/
+
+.container,
+.container-1 {
+    margin: 0 auto;
+    width: 80%;
+    height: 80vh;
+    background-color: #222;
+    border: medium solid #000;
+}
+
+.item {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: medium solid #999;
+}
+
+.container-1 {
+    height: 60vh;
+}
+
+.container-1 p {
+    font-size: 1rem;
+}
+/*
+conceptos basicos
+*/
+
+/*miran en html*/
+
+/*
+Grid Explicita
+*/
+
+.grid-explicit {
+    display: grid;
+    /* grid de 3x3 */
+    grid-template-columns: 50% 100px 1fr;
+    grid-template-rows: 2rem 20vh 30%;
+    /* grid de 5x4 */
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* Grid de 4x5 */
+    grid-template-columns: 20% repeat(2, 30%) 20%;
+    grid-template-rows: repeat(5, auto);
+    /* propiedades obsoletas */
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    grid-gap: 1rem 1rem;
+    /* nueva propiedad de las obsoletas */
+    gap: 1vh 1vw;
+    gap: 0;
+}
+
+/*
+Posicionamiento con Grid Lines
+*/
+
+.gridline .item:nth-child(10) {
+ color: #4b22f4;
+ grid-row-start: 2;
+ grid-row-end: 3;
+ grid-column-end: 2;
+ grid-column-start: 3;
+ /*atajo*/
+ grid-row: 2 / 3;
+ grid-column: 3 / 5;
+ /*otro atajo*/
+ grid-area: 2 / 3 / 3 / 5;
+}
+
+.gridline .item:nth-child(12) {
+    color: #4b22f4;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/*
+Posicionamiento con nombres de Grid Lines
+*/
+
+.grid-line-names {
+    display: grid;
+    /* grid 3x3 */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: [linea-c1] 1fr [linea-c2] 1fr [linea-c3] 1fr [linea-c4];
+    grid-template-rows: [linea-r1] 1fr [linea-r2] 1fr [linea-r3] 1fr [linea-r4];
+}
+
+.grid-line-names .item:nth-child(3) {
+    color: #58e4cf;
+    grid-row: linea-r3 / linea-r4;
+    grid-column: linea-c1 / linea-c4;
+}
+
+/*
+Posicionamiento con Grid Areas
+*/
+
+.grid-areas {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 100px repeat(2, 1fr) 60px;
+    grid-template-areas: 
+     "header header"
+     "content sidebar"
+    "content ."
+     "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/*
+Grid Implícita. Grids de bloque y de línea
+*/
+
+.grid-implicit {
+    display: grid;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 130px);
+}
+
+/*
+Flujo de la Grid (Grid Flow)
+*/
+
+.grid-flow {
+    display: grid;
+    /*grid de 5x3*/
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-auto-flow: column;
+    grid-auto-columns: 50px;
+    grid-auto-rows:150px;
+}
+
+/*
+Flujo Denso de la Grid (Grid Flow Dense)
+*/
+
+.grid-flow-dense {
+    display: grid;
+    /*grid de 5x4*/
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 70px);
+}
+
+.grid-flow-dense .item:nth-child(9) {
+    color: cyan;
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.grid-flow-dense-1 {
+    display: grid;
+    /*grid de 5x4*/
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 70px);
+    grid-auto-flow: row dense;
+}
+
+.grid-flow-dense-1 .item:nth-child(9) {
+    color: cyan;
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+/*
+Grid Layers: Celdas en capas (superposición)
+*/
+
+.grid-layers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-layers .item:nth-child(1) {
+    background-color: yellow;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.grid-layers .item:nth-child(2) {
+    background-color: #497AF8;
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+
+.grid-layers .item:nth-child(3) {
+    background-color: #90E971;
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+}
+
+.grid-layers .item:nth-child(4) {
+    background-color: orange;
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+}
+
+.grid-layers .item:nth-child(5) {
+    background-color: purple;
+    opacity: 75%;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+/*
+Orden y Alineación de Grid Items
+*/
+
+/*
+orden
+*/
+
+.grid-order {
+    display: grid;
+    /*Grid de 3x2*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-order .item:nth-child(1) {
+    /*defaul 0, -1 0 1*/
+    order: 1;
+}
+
+.grid-order .item:nth-child(2) {
+    /*defaul 0, -1 0 1*/
+    order: 2;
+}
+
+.grid-order .item:nth-child(5) {
+    /*defaul 0, -1 0 1*/
+    order: -1;
+}
+
+/*
+Alineacion
+*/
+
+.grid-align {
+    display: grid;
+    /*Grid de 3x2*/
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    /*justify-items alinea en el eje X*/
+    justify-items: center;
+    /*align alinea en el eje Y*/
+    align-items: center;
+}
+
+.grid-align .item:nth-child(4) {
+    justify-self: start;
+}
+
+/*
+Alineación de Grid Tracks
+*/
+
+.grid-align-track {
+    display: grid;
+    /*Grid de 3x2*/
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    /*justify-content alinea los tracks de la grid en el eje Horizontal (X)*/
+    justify-content: center;
+    justify-content: space-evenly;
+    /*align-content alinea los tracks de la grid en el eje vertical(Y)*/
+    align-content: center;
+    align-content: space-between;
+}
+
+/*
+Tamaños Máximos y Mínimos de Grid Tracks
+*/
+
+.grid-min-max {
+    display: grid;
+    /*Grid de 4x?*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(100px, 200px));
+    grid-template-columns: repeat(4, minmax(min-content, 200px));
+    grid-template-columns: repeat(4, minmax(100px, min-content));
+    grid-template-columns: repeat(4, minmax(100px, max-content));
+    grid-template-columns: repeat(4, minmax(max-content, 200px));
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+}
+
+/*
+Grids con Patrones Repetitivos
+*/
+
+.grid-repeat {
+    display: grid;
+    /*grid de ?*/
+    grid-template-columns: repeat(4, 10% 20% 30% 40%);
+    grid-template-columns: repeat(3, 10% 20% 30% 40%);
+    grid-template-columns: repeat(2, 10% 20% 30% 40%);
+    grid-template-columns: repeat(1, 10% 20% 30% 40%);
+    grid-template-rows: repeat(2, 100px 200px);
+    grid-auto-rows: 150px;
+    grid-auto-rows: repeat(2, 100px 200px); /*no funcionara*/
+}
+/*
+Grids Dinámicas. Responsive sin Media Queries
+*/
+
+/*grid-dinamicas*/
+
+.grid-dynamics {
+    display: grid;
+    /*grid de 4cx?f*/
+    grid-template-columns: repeat(4, 100px);
+    /*auto-fill rellena la grid con tracks generados dinamicamente*/
+    grid-template-columns: repeat(auto-fill, 100px);
+    /*auto-fit Ajusta la grid con los tracks generados dinamicamente*/
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/*grid-responsive*/
+
+.grid-responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+/*
+Grids Anidadas & Subgrids
+*/
+
+/*grid anidado*/
+.subitem {
+    padding: 1rem;
+    background-color: #DDD;
+    border: medium solid #ccc;
+}
+
+.grid-nested {
+    display: grid;
+    /*grid de 3cx?f*/
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*subgrid*/
+
+.grid {
+    display: grid;
+    /*grid de 3cx2f*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.subgrid {
+    /*paso 1*/
+    grid-column: span 3;
+    grid-row: 1 / 3;
+    /*paso 2*/
+    display: grid;
+    /*paso 3*/
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
+/*
+Responsive Layout con Grid Lines
+*/
+
+/*esta en el ejemplo*/
+
+/*
+Responsive Layout con Grid Areas
+*/
+
+/*esta en el ejemplo*/
+
+/*-----------------------Fin------------------------------------*/

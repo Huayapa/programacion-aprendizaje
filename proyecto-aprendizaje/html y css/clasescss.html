@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de css</title>
+    <meta name="description" content="aqui practicare y aprendera sobre CSS" />
+    <!-- <link rel="stylesheet" href="css/Reset.css"> -->
+    <!-- <link rel="stylesheet" href="css/Normalize.css"> -->
+    <link rel="stylesheet" href="css/styledeCSS.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h2 {
+        color: yellowgreen;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="container-title" >Aprendiendo CSS</h1>
+    <header >
+      <!-- https://www.figma.com/ -->
+      
+      <div class="navegation">
+        <nav class="navegacion">
+          <a href="#">Home</a>
+          <a href="#">contacto</a>
+          <a href="#">About us</a>
+        </nav>
+        <!-- Navegador -->
+        <div class="navegacion-buscador">
+          <form action="#">
+            <input type="search" placeholder="buscar...">
+          <button>
+            <i>buscar</i>
+          </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <hr>
+    <main id="body-one">
+      <section>
+        <!------------------- introduccion de css ----------------------->
+        <article id="introduction">
+          <h2 class="introduccion-css">Introduccion de CSS</h2>
+          <p>
+            CSS o <i>Cascading Style Sheets</i> (Hojas de estilo en cascada), es
+            un lenguaje de definicion para la presentacion del documento
+            <b>HTML</b>, funciona y se acopla con el lenguaje HTML que se
+            encarga del contenido basico de las paginas.
+          </p>
+          <img src="img/ejemplocsshtmljs.jpg" alt="ejemplocsshtmljs" />
+        </article>
+        <hr />
+      </section>
+
+      <section>
+        <!-------------------- Lista de secciones -------------->
+        <article id="temario">
+          <h2>Temario del curso</h2>
+          <ul class="temario-link">
+            <li>
+              <a href="clasescss.html#introduction">Introduccion de CSS</a>
+            </li>
+            <li>
+              <a href="clasescss.html#sintaxisbasica">Sintaxis Basicas</a>
+            </li>
+            <li><a href="clasescss.html#comentarios">Comentarios en CSS</a></li>
+            <li>
+              <a href="clasescss.html#formasinvocacion">Formas de invocacion</a>
+            </li>
+            <li>
+              <a href="clasescss.html#versionDocumentEnlaces"
+                >Versiones, documentos y enlaces</a
+              >
+            </li>
+            <li>
+              <a href="clasescss.html#SelectorBasico"
+              >Selectores Basicos</a>
+            </li>
+            <li>
+              <a href="clasescss.html#ordenYestructura"
+              >Orden y estructuracion</a>
+            </li>
+            <li>
+              <a href="clasescss.html#selector-avanzado"
+              >selectores directos y descendientes</a>
+            </li>
+            <li>
+              <a href="clasescss.html#pseudoclases"
+              >Pseudoclases</a>
+            </li>
+            <li>
+              <a href="clasescss.html#pseudoelementos"
+              >Pseudoelementos</a>
+            </li>
+            <li>
+              <a href="clasescss.html#Agrupacion-selectores"
+              >Agrupacion de Selectores</a>
+            </li>
+            <li>
+              <a href="clasescss.html#algoritmo-css"
+              >Algoritmo de CSS</a>
+            </li>
+            <li>
+              <a href="clasescss.html#reseteo-nomalizacion"
+              >Reseteo y normalizacion de estilos</a>
+            </li>
+            <li>
+              <a href="clasescss.html#prefijos-navegadores"
+              >Prefijos de los navegadores</a>
+            </li>
+            <li>
+              <a href="clasescss.html#modelo-caja"
+              >Modelos de Caja</a>
+            </li>
+            <li>
+              <a href="clasescss.html#width-height"
+              >width y height</a>
+            </li>
+            <li>
+              <a href="clasescss.html#border"
+              >Border</a>
+            </li>
+            <li>
+              <a href="clasescss.html#margin-padding"
+              >Margin & Padding</a>
+            </li>
+            <li>
+              <a href="clasescss.html#caja-linea-bloque"
+              >Caja de linea vs caja de bloque</a>
+            </li>
+            <li>
+              <a href="clasescss.html#propiedad-display"
+              >Propiedad display</a>
+            </li>
+            <li>
+              <a href="clasescss.html#propiedad-visibility"
+              >Propiedad Visibility</a>
+            </li>
+            <li>
+              <a href="clasescss.html#propiedad-overflow"
+              >Propiedad Overflow</a>
+            </li>
+            <li>
+              <a href="clasescss.html#tamanio-caja"
+              >Tamaño de Caja</a>
+            </li>
+            <li>
+              <a href="clasescss.html#float-clear"
+              >Propiedad Float & clear</a>
+            </li>
+            <li>
+              <a href="clasescss.html#colapso-margenes"
+              >colapso de margenes</a>
+            </li>
+            <li>
+              <a href="clasescss.html#centrados-caja"
+              >centrados de cajas</a>
+            </li>
+            <li>
+              <details>
+                <summary>
+                  <a href="clasescss.html#posicionamiento-css"
+                  >posicionamiento de CSS</a>
+                </summary>
+                <section class="section-position-css">
+                  <ul>
+                    <li>
+                      <a href="clasescss.html#posicionamiento-static"
+                      >Posicionamiento Static</a>
+                    </li>
+                    <li>
+                      <a href="clasescss.html#posicionamiento-relativo"
+                      >Posicionamiento Relativo</a>
+                    </li>
+                    <li>
+                      <a href="clasescss.html#posicion-absoluto"
+                      >Posicionamiento Absoluto</a>
+                    </li>
+                    <li>
+                      <a href="clasescss.html#posicion-fixed"
+                      >Posicionamiento Fixed</a>
+                    </li>
+                    <li>
+                      <a href="clasescss.html#position-sticky"
+                      >Posicionamiento Sticky</a>
+                    </li>
+                    <li>
+                      <a href="clasescss.html#propiedad-z-index"
+                      >Propiedad z index</a>
+                    </li>
+                  </ul>
+                </section>
+              </details>
+              
+            </li>
+            <li>
+              <a href="clasescss.html#cabecera-fixed-vs-sticky"
+              >Cabecera fixed VS Cabecera sticky</a>
+            </li>
+            <li>
+              <a href="clasescss.html#efect-slide-position-sticky"
+              >Efecto de slides con position Sticky</a>
+            </li>
+            <li>
+              <a href="clasescss.html#ventana-modal-fixed"
+              >Ventana Modal / Menú Móvil con posicionamiento fixed</a>
+            </li>
+            <li>
+              <a href="clasescss.html#margen-negativo"
+              >Margenes negativos</a>
+            </li>
+          </ul>
+          <hr />
+        </article>
+      </section>
+
+      <section>
+        <!------------------- Sintaxis Basica ------------------>
+        <article id="sintaxisbasica">
+          <h2>Sintaxis Basica</h2>
+          <p>Una regla de css consta de 2 partes:</p>
+          <ul>
+            <li>
+              el selector: es cualquier etiqueta html ( clases, id, mas adelante
+              se mostrara mas detalladamente).
+            </li>
+            <li>
+              bloque de declaraciones: es cada uno de los atributos que podemos
+              modificar.<i>
+                <br />
+                -Forma de sintaxis: <br />
+                atributo: valor; <br />
+                -Forma de mas palabras: <br />
+                atributo-de-mas-de-dos-palabras: otro-valor;
+              </i>
+            </li>
+          </ul>
+          <p>ejemplo:</p>
+          <pre><code>
+              h1 {                (el h1 es el selector)
+               color: orangered;                 (el color y el background-color 
+               background-color: skyblue;          son bloques de declaraciones)
+               } 
+            </code></pre>
+        </article>
+        <hr />
+        <!---------------------- comentarios en css ------------------------>
+        <article id="comentarios">
+          <h2>Comentarios en CSS</h2>
+          <p>
+            Para poder crear un comentario en css debemos usar los siguientes
+            signos : <br />
+            <b>*/ /* estos son los signos</b> <br />
+            ejemplo:
+          </p>
+          <code> /* soy un comentario */</code>
+        </article>
+        <hr />
+        <!-------------------- Formas de invocacion ---------------------->
+        <article id="formasinvocacion">
+          <h2>Formas de invocacion CSS</h2>
+          <p>Son diferentes formas de agregar estilos, existen tres formas:</p>
+          <ul>
+            <li>
+              <b>Estilos en linea </b> - a travez del atributo style aplicar
+              estilos, ejemplo y codigo:
+              <br />
+              <i style="font-weight: bold; color: orange">
+                style="font-weight: bold; color: orange"</i
+              >
+              (ponerlo en una etiqueta)
+            </li>
+
+            <li>
+              <b>Estilos internamente</b> - donde vamos a aplicar al interior
+              del documento html (creando la etiqueta <b>&lt;style&gt;</b> en
+              <b>&lt;head&gt;</b>), ejemplo y codigo: <br />
+              <pre>
+                <code>
+                  &lt;style&gt;
+                      h2 {
+                        color: yellowgreen;
+                      }
+                  &lt;/style&gt;
+                </code>
+              </pre>
+            </li>
+
+            <li>
+              <b>definicion de hoja externa(recomendable y la ideal forma)</b> -
+              es crearlo por otra carpeta o archivo y para agregar de manera
+              externa usar esto: <br />
+              &lt;link rel="stylesheet" href="lacarpetadelcss.css" /&gt;
+            </li>
+          </ul>
+          <p>
+            La forma recomendable y de buena practica no dice que debemos usar
+            el css en una hoja externa. Para poder vincular una hoja externa
+            dentrp de otra hoja externa que usas, debes usar el: <br />
+            <code>@import url(nombre de la carpeta)</code> <br />
+            Pero esto es de mala practica ya que a la hora de ejecutarlo el
+            navegador tendra que leer todo y con el @import (codigo bloqueante)
+            este se paralizara hasta que termine de descargar todo ese archivo.
+          </p>
+        </article>
+        <hr />
+        <!------ Versiones, documentos y enlaces de referenia ------->
+        <article id="versionDocumentEnlaces">
+          <h2>Versiones, documentos y enlaces de referencia</h2>
+          <p>
+            Estos son algunos link que te ayudaran a saber de las versiones,
+            sobre la documentacion css , enlaces que te ayudar a escribir mejor
+            y saber para que se usan:
+          </p>
+          <ul>
+            <li>
+              <a href="https://es.wikipedia.org/wiki/CSS" target="_blank"
+                >wikipedia-css.org</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/html/logo/" target="_blank"
+                >w3-html.org</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.w3.org/standards/webdesign/htmlcss.html"
+                target="_blank"
+                >w3-webdesing.org</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/TR/css-2020/" target="_blank"
+                >w3-css.org</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/es/docs/Web/CSS"
+                target="_blank"
+                >developer-mozilla-css.org</a
+              >
+            </li>
+            <li>
+              <a href="https://cssreference.io/" target="_blank"
+                >cssreference.io</a
+              >
+            </li>
+            <li>
+              <a href="https://caniuse.com/" target="_blank">caniuse.com</a>
+            </li>
+            <li>
+              <a href="https://codeguide.co/" target="_blank">codeguide.com</a>
+            </li>
+          </ul>
+        </article>
+        <hr />
+        <!----- Selector basicos: etiquetas, identificadores y clases ----->
+        <article id="SelectorBasico">
+          <h2>Selector basicos: etiquetas, identificadores y clases</h2>
+          <p>Los selectores basicos son:</p>
+          <ol>
+            <li><b>etiquetas</b> - son elementos html</li>
+            <li><b>identificadores</b> - son atributos id - #</li>
+            <li><b>clases</b> - atributo class</li>
+          </ol>
+          <p>ejemplo:(mirar el codigo)</p>
+          <h3>simple parrafo:</h3>
+          <p>
+            aqui se aplica css en el parrafo, el problema de esto es que a todos
+            los parrafos seran de ese color y no podran tener colores unicos.
+          </p>
+          <pre><code>
+                p {
+                  color: midnightblue;
+                }
+          </code></pre>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+            expedita veritatis assumenda obcaecati, maxime ipsam ducimus quae
+            nihil, ipsa non et repellendus rerum rem, deleniti nemo nisi ipsum!
+            Molestias, nesciunt?
+          </p>
+
+          <h3>parrafo con id:</h3>
+          <p>
+            Se añade un atributo id(#) al parrafo, es para que cada parrafo
+            tenga su propio color , pero poner un id para css en una mala
+            practica ya que los id son identificadores unicos.
+          </p>
+          <pre><code>
+                #parrafo-dos {
+                  background-color="skyblue";
+                }
+              </code></pre>
+          <p id="parrafo-dos">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            aspernatur, necessitatibus voluptatum nisi voluptas quod
+            perspiciatis minima placeat iusto modi nam, laborum eaque vel ut
+            magnam tenetur officiis! Quidem, facere.
+          </p>
+
+          <h3>parrafo con class:</h3>
+          <p>
+            Se añade un atributo class (.)al parrafo, esto es lo recomendable ya
+            que nos permite reultilizar el codigo a comparacion del id que no se
+            puede, tambien nos pemite añadir mas clases en la misma class.
+          </p>
+          <pre><code>
+            .text-32 {
+                font-size: 32px;
+            }
+
+            .bg-steelblue {
+                background-color: steelblue;
+            }
+
+            .text-white {
+                color: white;
+            }
+          </code></pre>
+          <p class="text-32 bg-steelblue text-white">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minus
+            odio nesciunt recusandae, laborum ullam incidunt earum laudantium
+            aliquid velit numquam excepturi iste, atque eius. Dolore vel
+            obcaecati quo quia?
+          </p>
+
+          <p>
+            Una recomendacion cuando usamos las clases , el nombre que le damos
+            es mejor que sea alusivo al diseño que le damos
+          </p>
+        </article>
+        <hr />
+        <!-- Dando orden y estructura a nuestro codigo html y css -->
+        <article id="ordenYestructura">
+          <h2>Dando orden y estructura a nuestro codigo html y css</h2>
+          <p>
+            Lo mejor que puedes hacer mientras que progrmas es acomodar y deja
+            limpio tu codigo ya que nos permite comprender mejor lo que
+            escribimos.
+          </p>
+        </article>
+        <hr />
+        <!------ Selector de hijos directos y descendientes ------>
+        <article id="selector-avanzado">
+          <h2>selectores avanzados</h2>
+          <h3>Selector de hijos:</h3>
+          <p>
+            Aqui mostraremos la diferencia entre los selectores directos y
+            descendientes.
+          </p>
+          <h4>Selectores directos</h4>
+          <p>
+            el cambio de color solo ira al de primer nivel(ojo la class debe
+            estar en la ul como ejemplo),si pones en la li, cambiara el color en
+            cambio si lo pones en la b no aplicara ningun color.ejemplo.
+          </p>
+          <pre><code>
+            .hijo-directo > li {           (se debe usar este simbolo > 
+                background-color: bisque;   para aplica estilos a hijos directos)
+              }
+          </code></pre>
+          <ul class="hijo-directo">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+          </ul>
+
+          <h4>Selectores descendientes</h4>
+          <p>
+            Los selectores descendientes aplicaran a los despues del primero (en
+            este ejemplo el &lt;b&gt;) y esto en css se lo aplica con un espacio
+            en blanco.
+          </p>
+          <pre><code>
+            .hijos-descendientes b {
+              background-color: aquamarine;
+            }
+          </code></pre>
+          <ul class="hijos-descendientes">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+          </ul>
+
+          <h3>Selector de hermanos :</h3>
+          <p>
+            Son elementos que estan al mismo nivel al elemento de
+            referencia,solo aplicara a los hermanos que esten por debajo.
+          </p>
+
+          <h4>Selector de hermanos (en general)</h4>
+          <p>(usar en css ~ para aplicarlo)</p>
+          <pre><code>
+            .hermanos-general ~ li {
+                  background-color: beige;
+              }
+          </code></pre>
+          <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-general"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+          </ul>
+
+          <h4>Selector de hermanos (adyacentes)</h4>
+          <p>
+            solo aplica a otoño ya que el selector adyacentes porque esta
+            inmediatamente debajo.(usar en css el + para aplicar hermanos
+            adyacentes)
+          </p>
+          <pre><code>
+            .hermanos-adyacentes + li {
+                  background-color: beige;
+              }
+          </code></pre>
+          <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-adyacentes"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+          </ul>
+
+          <h3>selectores de atributos</h3>
+          <p>
+            Los selectores de atributo nos van a permitir aplicar estilos a
+            travez de un atributo y tienen diferentes variantes. Para poder
+            aplicarlo debemos poner entre corchete[] el atributo.
+          </p>
+          <pre class="bg-color-aquamarine"><code>
+            .selectores-atributo a[href] {
+                color: orangered;
+              }
+          </code></pre>
+          <h4>tipos de variantes</h4>
+          <ul>
+            <li>* - aplica el estilo si contiene la palabra que pusistes</li>
+            <pre class="bg-color-aquamarine"><code>
+              .selectores-atributo a[href*="notas"] {
+                  font-size: 20px;
+                }
+            </code></pre>
+            <li>
+              ^ - aplica estilos solo si empiezan con la palabra que tu quieras
+            </li>
+            <pre class="bg-color-aquamarine"><code>
+              .selectores-atributo a[href^="http:"] {
+                  text-decoration: none;
+              }
+            </code></pre>
+            <li>$ - aplica el estilo solo si contiene el final igual</li>
+            <pre class="bg-color-aquamarine"><code>
+              .selectores-atributo a[href$=".com"] {
+                  background-color: black;
+              }
+            </code></pre>
+            <li>
+              ~ - aplica el estilo si contiene el texto, cuando estan separados
+              con espacios en blanco
+            </li>
+            <pre class="bg-color-aquamarine"><code>
+              .selectores-atributo a[class~="cursos"] {
+                  background-color: midnightblue;
+              }
+            </code></pre>
+            <li>
+              | - aplica el estilo si contiene el texto, cuando estan separados
+              con espacios en blanco y que despues del texto lleve un guion
+              medio -
+            </li>
+            <pre class="bg-color-aquamarine"><code>
+              .selectores-atributo a[class|="menu"] {
+                font-style: italic;
+              }
+            </code></pre>
+          </ul>
+
+          <nav class="selectores-atributo">
+            <ul>
+              <li>
+                <a href="https://jonmircha.com" target="_blank">Inicio</a>
+              </li>
+              <li>
+                <a
+                  class="menu item cursos button"
+                  href="https://jonmircha.com/cursos"
+                  target="_blank"
+                  >Cursos</a
+                >
+              </li>
+              <li>
+                <a href="http://jonmircha.com/blog" target="_blank">Blog</a>
+              </li>
+              <li>
+                <a href="https://jonmircha.com/notas" target="_blank">Notas</a>
+              </li>
+              <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+              <li>
+                <a
+                  class="menu-item ahora button"
+                  href="https://jonmircha.com/ahora"
+                  target="_blank"
+                  >Ahora</a
+                >
+              </li>
+            </ul>
+            <p>Para mayor entendimiento mirar el codigo</p>
+          </nav>
+          <h3>Selectores Universales (*)</h3>
+          <p>
+            Aplica a todos los elementos HTML que tengas en tu documento, su
+            signo para aplicarlo es <b>*</b>
+          </p>
+          <pre class="bg-color-aquamarine"><code>
+            *{
+              font-family: sans-serif;
+            }
+          </code></pre>
+          <p>
+            tambien se puede poner el selector Universal pero
+            contextualmente(dependiendo de donde nos encontremos)
+          </p>
+          <pre class="bg-color-aquamarine"><code>
+            &lt;ul class="selector-universal"&gt;
+            &lt;li&gt;&lt;b>Primaver&lt;</b>&lt;/li&gt;
+            &lt;li&gt;&lt;b>Verano&lt;/b&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;b>Otoño&lt;/b&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;b>Invierno&lt;/b&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+          -----------------------------------------------
+          Codigo css:
+          .selector-universal * {
+              font-size: 15;
+            }
+          </code></pre>
+          <ul class="selector-universal">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+          </ul>
+        </article>
+        <hr />
+        <!-- Pseudoclases de estado, por posicion y tipo -->
+        <article id="pseudoclases">
+          <h2>Pseudoclases:</h2>
+          <p>
+            es un selector que marca los elementos que están en un estado específico. existen un monton de pseudoclases, mostraremos los mas usados o los que mejor te servira. <br>
+            <i>
+              mayor informacion: <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes" target="_blank">Pseudoclasses</a>
+            </i>
+          </p>
+          <p>
+            <b>ejemplo de pseudoclases con formularios:</b> <br>
+            Aqui mostraremos algunos pseudoclases que nos serviran para los formularios
+          </p>
+          <ul>
+            <li>
+              <b>:required</b> - estara en su color hasta que se complete el formulario (ojo debe tener el atributo required para esto).
+              <pre class="bg-color-aquamarine"><code>
+                .form-pseudoclases *:required {
+                    border-color: yellow;
+                  }
+              </code></pre>
+            </li>
+            <li>
+              <b>:valid</b> - aplicara el color cuando se complete el formulario correctamente.
+              <pre class="bg-color-aquamarine"><code>
+                .form-pseudoclases *:valid {
+                    border-color: green;
+                }
+              </code></pre>
+            </li>
+            <li>
+              <b>:invalid</b> - aplicara el color cuando pongas un error en el formulario.
+              <pre class="bg-color-aquamarine"><code>
+                .form-pseudoclases *:invalid {
+                    border-color: red;
+                }
+              </code></pre>
+            </li>
+            <li>
+              <b>:focus</b> - aplicara el color cuando estas interactuando con el formulario.
+              <pre class="bg-color-aquamarine"><code>
+                .form-pseudoclases *:focus {
+                    background-color: skyblue;
+                }
+              </code></pre>
+            </li>
+            <li>
+              <b>:disable</b> - aplicara el color cuando el <b>input</b> este desabilitado.
+              <pre class="bg-color-aquamarine"><code>
+                .form-pseudoclases *:disabled {
+                    border-color: grey;
+                }
+              </code></pre>
+            </li>
+          </ul>
+          <form class="form-pseudoclases">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            <br>
+            <input type="email" name="correo" placeholder="Ingresa tu correo" required>
+            <br>
+            <input type="submit">
+            <input type="submit" disabled>
+          </form>
+          <p>
+            <b>Ejemplos con el nav (navegador) con enlaces</b> <br>
+            Aqui mostraremos algunos pseudoclases que nos serviran para los nav de formularios.
+          </p>
+          <ul>
+            <li>
+              <b>:hover</b> - cuando el raton o mouse esten en cualquier elemento cambiara de color.
+              <pre class="bg-color-aquamarine"><code>
+                .menu-pseudoclases a:hover {
+                   color: orange;
+                }
+              </code></pre>
+            </li>
+            <li>
+              <b>:visited</b> - aplica el color cuando un enlace ya esta visitado.
+              <pre class="bg-color-aquamarine"><code>
+                .menu-pseudoclases a:visited {
+                    color: olive;
+                }
+              </code></pre>
+            </li>
+            <li>
+              <b>:link</b> - aplica al color predeterminado de un enlace.
+              <pre class="bg-color-aquamarine"><code>
+                .menu-pseudoclases a:link {
+                    color: brown;
+                }
+              </code></pre>
+            </li>
+            <li>
+              <b>:active</b> - aplica color cuando estas apunto de darle click a un enlace.
+              <pre class="bg-color-aquamarine"><code>
+                .menu-pseudoclases a:active {
+                    background-color: blue;
+                }
+              </code></pre>
+            </li>
+          </ul>
+          <p>
+            OJO para que no halla problemas de que no se aplica es necesario usar la jerarquia siendo de este orden:
+            <ol>
+              <li>:link</li>
+              <li>:active</li>
+              <li>:visited</li>
+              <li>:hover</li>
+            </ol>
+          </p>
+          <nav class="menu-pseudoclases">
+            <a href="#seccion1">seccion1</a>
+            <br>
+            <a href="#seccion2">seccion2</a>
+            <br>
+            <a href="#seccion3">seccion3</a>
+            <br>
+            <a href="#seccion4">seccion4</a>
+          </nav>
+          <p class="p-pseudoclases">
+            Estoy Aplicando el hover ya que es para cualquier elemento. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam modi quis vero recusandae sed facilis est nihil placeat debitis ipsum laborum atque enim beatae pariatur maiores, et dolorum voluptas!
+          </p>
+          <a href="clasescss.html#temario">click para ir al temario</a>
+
+          <h3>Pseudoclases por posicion y tipo:</h3>
+
+          <p>
+            Existen varias Pseudoclases para el posicionamiento y los tipos, acontinuacion algunos de ellos
+          </p>
+          <p><b>Ejemplo con listas:</b></p>
+          <ul>
+            <li>
+              <b>:first-child</b> - aplicara al primer elemento que tenga.
+              <pre class="bg-color-aquamarine"><code>
+                    .lista-pseudoclases li:first-child {
+                        color: green;
+                    }
+              </code></pre>
+            </li>
+            <li>
+              <b>:last-child</b> - aplicara al final del elemento.
+              <pre class="bg-color-aquamarine"><code>
+                    .lista-pseudoclases li:last-child {
+                        color: violet;
+                    }
+              </code></pre>
+            </li>
+            <li>
+              <b>:nth-child(3)</b> - aplicara dependiendo de que numero le pongas.
+              <pre class="bg-color-aquamarine"><code>
+                    .lista-pseudoclases li:nth-child(3) {
+                        color: navy;
+                    }
+              </code></pre>
+            </li>
+            <li>
+              <b>:nth-child(4n)</b> - cada 4 &lt;li&gt; se aplicara.
+              <pre class="bg-color-aquamarine"><code>
+                    .lista-pseudoclases li:nth-child(4n) {
+                        font-size: 20px;
+                    }
+              </code></pre>
+            </li>
+            <li>
+              <b>:nth-child(3n + 1)</b> - aplicara cuando llege al numero y se repetira pero sumando cada ves.
+              <pre class="bg-color-aquamarine"><code>
+                    .lista-pseudoclases li:nth-child(3n + 1) {
+                        font-weight: bold;
+                    }
+              </code></pre>
+            </li>
+            <li>
+              <b>:nth-child(even)</b> - aplicara a los numeros pares de la lista.
+              <pre class="bg-color-aquamarine"><code>
+                    .lista-pseudoclases li:nth-child(even) {
+                        background-color: yellow;
+                    }
+              </code></pre>
+            </li>
+            <li>
+              <b>:nth-child(obb)</b> - aplicar a los numeros inpares de la lista.
+              <pre class="bg-color-aquamarine"><code>
+                    .lista-pseudoclases li:nth-child(odd) {
+                        background-color: orange;
+                    }
+              </code></pre>
+            </li>
+          </ul>
+          <ol class="lista-pseudoclases">
+            <li>Mú de Aries</li>
+            <li>Aldebaran de Tauro</li>
+            <li>Saga & Kanon de Geminis</li>
+            <li>Death Mask de Cancer</li>
+            <li>Aioria de Leo</li>
+            <li>Shaka de Virgo</li>
+            <li>Dohko de Libra</li>
+            <li>Milo de Escorpio</li>
+            <li>Aioros de Sagitario</li>
+            <li>Shura de Capricornio</li>
+            <li>Camus de Acuario</li>
+            <li>Afrodita de Piscis</li>
+          </ol>
+          <p><b>Ejemplos con tipos de etiquetas:</b></p>
+          <p>aqui pseudoclases para los tipos:</p>
+          <ul>
+            <li>
+              <b>:first-of-type</b> - aplicara al primero de su tipo (en este ejemplo el primer parrafo)
+              <pre class="bg-color-aquamarine"><code>
+                .articulo-pseudoclases p:first-of-type {
+                    background-color: pink;
+                }
+              </code></pre>
+            </li>
+            <li>
+              <b>:last-of-type</b> - aplicara al ultimo de su tipo.
+                <pre class="bg-color-aquamarine"><code>
+                  .articulo-pseudoclases p:last-of-type {
+                      background-color: violet;
+                  }
+                </code></pre>
+            </li>
+            <li>
+              <b>:nth-of-type(3)</b> - aplicara dependiendo de que numeros pones en su tipo.(se puede añadir los de n , + , even , obb).
+                <pre class="bg-color-aquamarine"><code>
+                  .articulo-pseudoclases p:nth-of-type(3) {
+                      background-color: fuchsia;
+                  }
+                </code></pre>
+            </li>
+            <li>
+              <b>:not(p, .cualquira)</b> - se aplicaran a todos, menos a los que pongas en (), (se añaden mas con ,).
+                <pre class="bg-color-aquamarine"><code>
+                  .articulo-pseudoclases *:not(p) {
+                      background-color: beige;
+                  }
+                </code></pre>
+            </li>
+          </ul>
+          <article class="articulo-pseudoclases">
+            <header>Esto es un header</header>
+            <p>esto es un parrafo 1</p>
+            <div>Esto es un div</div>
+            <p>esto es un parrafo 2</p>
+            <section>esto es una section</section>
+            <p>esto es un parrafo 3</p>
+            <div>esto es un div</div>
+            <p>esto es un parrafo 3</p>
+            <footer>esto e un footer</footer>
+          </article>
+        </article>
+        <hr>
+        <!------------- Pseudoelementos ----------------->
+        <article id="pseudoelementos">
+            <h2>Pseudoelementos</h2>
+            <p>
+              Los Pseudoelementos dan estilo a partes especificas de un elemento, se usan las dobles comillas :: para diferenciarlo de las Pseudoclases.
+              <i>
+                Mayor informacion aqui:
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements" target="_blank"
+                >Pseudoelementos</a>
+              </i>
+            </p>
+            <h4>Lista de Pseudoelementos</h4>
+            <p>
+              Para usarlos es inportante tener el atributo <b>content: ""</b>.<br>
+              <pre class="bg-color-aquamarine"><code>
+                .saga-geminis::before {
+                    content: "hola";
+                }
+              </code></pre>
+            </p>
+            <ul>
+              <li>
+                <b>::after</b> - aplica despues(final) del elemento.
+                <pre class="bg-color-aquamarine"><code>
+                  .saga-geminis::after {
+                      content: "🍁";
+                  }
+                </code></pre>
+              </li>
+
+              <li>
+                <b>::before</b> - aplica antes(primero) del elemento.
+                <pre class="bg-color-aquamarine"><code>
+                  .saga-geminis::before {
+                      content: "🤼‍♂️";
+                  }
+                </code></pre>
+              </li>
+
+                <p><b>Ejemplo par el after y before:</b></p>
+                <p>
+                  <i>Bandai Myth Cloth Ex</i> <span class="saga-geminis">Saga de Géminis</span><span class="saga-precio">500</span>
+                </p>
+              
+              <li>
+                <b>::first-letter</b> - Aplica a la primera letra.
+                <pre class="bg-color-aquamarine"><code>
+                  .p-pseudoelementos::first-letter {
+                      font-weight: bold;
+                       font-size: 32px;
+                  }
+                </code></pre>
+              </li>
+
+              <li>
+                <b>::first-line</b> - aplicara solo a la primera linea.
+                <pre class="bg-color-aquamarine"><code>
+                  .p-pseudoelementos::first-line {
+                      color: coral;
+                  }
+                </code></pre>
+              </li>
+
+              <li>
+                <b>::selection</b> - aplica al texto que seleccionas.
+                <pre class="bg-color-aquamarine"><code>
+                  .p-pseudoelementos::selection {
+                      background-color: black;
+                      color: green;
+                  }
+                </code></pre>
+              </li>
+
+                <p><b>Ejemplo para el first-letter , first-last y selection</b></p>
+                <p class="p-pseudoelementos">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dignissimos amet quibusdam distinctio cupiditate alias, rem non? Architecto culpa dolore repudiandae alias laudantium sint quam itaque doloribus nisi, impedit quos?
+                </p>
+
+              <li>
+                <b>::placeholder</b> - aplica al placeholder de tu input(debes tener el placeholder).
+                <pre class="bg-color-aquamarine"><code>
+                  .input-pseudoelementos::placeholder {
+                      color: aqua;
+                  }
+                </code></pre>
+              </li>
+
+                <p><b>Ejemplo para el placeholder</b></p>
+                <input type="text" class="input-pseudoelementos" name="nombre" placeholder="escribe tu nombre" autocomplete="off">
+            </ul>
+        </article>
+        <hr>
+        <!-------- Agrupacion de Selectores --------------->
+        <article id="Agrupacion-selectores">
+          <h2>Agrupacion de selectores</h2>
+          <p>
+            cuando queremos agrupar a diferentes elementos con el mismo estilo,debemos usar las <strong>,</strong> para agrupar.
+            <pre class="codigo-html-css"><code>
+              <span class="punto-css-selector">.</span><span class="selector-css">form-agrupar-selectores input</span>[<span class="type-atributo">type</span>=<span  class="string-html-css">"text"</span> ],
+              <span class="punto-css-selector">.</span><span class="selector-css">form-agrupar-selectores input</span>[<span class="type-atributo">type</span>=<span  class="string-html-css">"email"</span> ],
+              <span class="punto-css-selector">.</span><span class="selector-css">form-agrupar-selectores textarea</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">black</span>;
+                <span class="type-atributo">border-color</span>: <span class="string-html-css">#39ff14</span>;
+                <span class="type-atributo">border-width</span>: <span class="number-html-css">2px</span>;
+                <span class="type-atributo">border-style</span>: <span class="string-html-css">inset</span>;
+                <span class="type-atributo">font-size</span>: <span class="number-html-css">20px</span>;
+                <span class="type-atributo">display</span>: <span class="string-html-css">block</span>;
+                <span class="type-atributo">width</span>: <span class="number-html-css">300px</span>;
+                <span class="type-atributo">color</span>: <span class="string-html-css">#39ff14</span>;
+              }
+            </code></pre>
+          </p>
+          <form class="form-agrupar-selectores">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" autocomplete="off" required>
+            <input type="email" name="correo" placeholder="Escribe tu correo" autocomplete="off" required>
+            <textarea name="comentarios" placeholder="Escribe tu comentario" cols="30" rows="10" required></textarea>
+            <input type="submit">
+          </form>
+        </article>
+        <hr>
+        <!---------- Algoritmo de CSS ---------------->
+        <article id="algoritmo-css">
+          <h2>EL Algoritmo de CSS</h2>
+          <p>
+            El Algoritmo de css es la forma de como aplica los estilos el CSS al documento html, Es importante esto para no sufrir problemas de que no se apliquen los estilos correctamente o simplemente no aplique nada.
+          </p>
+          <h3>Lista de 3 Algoritmo</h3>
+          <ul>
+            <li>La Cascada</li>
+            <li>La Especificidad</li>
+            <li>La Herencia</li>
+          </ul>
+          <h3>La Cascada:</h3>
+          <p>
+            La cascada es un Algoritmo para aplicar estilos en CSS y tienen cierto orden que debes tomar en cuenta:
+          </p>
+          <ol>
+            <li>
+              El Origen del Codigo:
+              <ul>
+                <li>
+                  El User Agent (los estilos predeterminado del navegador)
+                </li>
+                <li>
+                  Personalizaciones del usuario (ejemplo como poner tema blanco y oscuro o el zoom del navegador)
+                </li>
+                <li>
+                  Los estilos del autor (osea nosotros como creador de html y css)
+                </li>
+              </ul>
+            </li>
+            <li>
+              La Especificidad del Selector - es la manera en el cual el navegador decide que valores de css son mas inportante para tu elemento
+            </li>
+            <li>
+              Orden de aparición - es de como va leyendo las lineas de codigo(de arriba a abajo y de izquierda a derecha)
+            </li>
+          </ol>
+          <h3>La Especificidad:</h3>
+          <p>
+            La especificad es la forma de como los navegadores deciden que elementos son mas inportantes y, por lo tanto, se aplicaran <em>(Aqui la cascada no tiene inportancia, ya que el que tenga mayor peso es el que ganara).</em>
+          </p>
+          <p>
+            La Especificidad es el peso que tiene un selector y se calcula de esta manera;
+          </p>
+          <table>
+            <tr>
+              <td>etiquetas y pseudoelementos</td>
+              <td>0,0,0,1</td>
+            </tr>
+            <tr>
+              <td>clases, atributos y pseudoclases</td>
+              <td>0,0,1,0</td>
+            </tr>
+            <tr>
+              <td>identificadores</td>
+              <td>0,1,0,0</td>
+            </tr>
+            <tr>
+              <td>Estilos en linea</td>
+              <td>1,0,0,0</td>
+            </tr>
+            <tr>
+              <td>!important</td>
+              <td>Rompe la especificad</td>
+            </tr>
+          </table>
+          <p>
+            Lo recomendable en crear un estilo y que el peso no sobre pase de 0,0,2,# (para evitar problemas), recordar que por cada selector de la tabla aumentara dependiendo del peso que tenga.
+          </p>
+          <h3>La Herencia:</h3>
+          <p>
+            Es la capacidad de un selector el cual determina la propiedad de un elemento padre y se transmite a sus hijos. <em>se parece a la herencia genetica</em>
+          </p>
+          <h4>Ejemplo</h4>
+          <blockquote>
+            Sé tolerante con los demas y estricto contigo mismo -<cite class="cita-marco">Marco Aurelio</cite>
+          </blockquote>
+          <pre class="codigo-html-css"><code>
+            <span class="selector-css">blockquote</span> {
+              <span class="type-atributo">background-color</span>: <span class="string-html-css"> aquamarine</span>;
+            }
+          </code></pre>
+          <pre class="codigo-html-css"><code>
+            <span class="punto-css-selector">.</span><span class="selector-css">cita-marco</span> {
+              <span class="type-atributo">background-color</span>: <span class="string-html-css">red</span>;
+              <span class="type-atributo">background-color</span>: <span class="string-html-css">inherit</span>;
+            }
+          </code></pre>
+          <p>
+            El <strong>inherit</strong> hace que aplique de su herencia osea su padre(en este caso la etiqueta pre)
+          </p>
+        </article>
+        <hr>
+        <!-- -----------Reseteo y normalizacion de estilos ------------>
+        <article id="reseteo-nomalizacion">
+          <h2>Reseteo y normalizacion de estilos</h2>
+          <p>
+            Esto es para normalizar o poner un estandar a todos los navegadores web, asi no sufrir algun tipo de error en diferentes navegadores, para solucionar esto podemos usar alguno de estos:
+          </p>
+          <ol>
+            <li><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset CSS</a> - este ya no se usa mucho porque su codigo ya no esta actualizado y los estandares de hoy en dia lo consideran de mala practica</li>
+            <li><a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize CSS</a> - este es recomendable ya que el codigo es ordenado y se mantiene actualizado al dia de hoy</li>
+          </ol>
+        </article>
+        <hr>
+        <!------------ Prefijos de los navegadores ------------>
+        <article id="prefijos-navegadores">
+          <h2>Prefijos de lo Navegadores</h2>
+          <p>
+            Los prefijos son fragmento de codigo agregado a la propiedad css que no estan estandarizadas, esto provoca en agregar nuevas propiedades a prefijos para diferentes navegadores.
+          </p>
+          <a href="https://autoprefixer.github.io/" target="_blank">autoprefixer</a>
+          <br>
+          <a href="https://caniuse.com/" target="_blank">caniuse</a>
+          <table>
+            <tr>
+              <td><b>prefijos</b></td>
+              <td><b>navegadores</b></td>
+            </tr>
+            <tr>
+              <td>-moz-</td>
+              <td>firefox</td>
+            </tr>
+            <tr>
+              <td>-webkit-</td>
+              <td>safari y chrome</td>
+            </tr>
+            <tr>
+              <td>-o-</td>
+              <td>opera</td>
+            </tr>
+            <tr>
+              <td>-khtml-</td>
+              <td>konqueror</td>
+            </tr>
+            <tr>
+              <td>-ms-</td>
+              <td>internet explorer</td>
+            </tr>
+            <tr>
+              <td>-chrome-</td>
+              <td>Google Chrome</td>
+            </tr>
+          </table>
+        </article>
+        <hr>
+        <!-------------- Modelos de Caja ------------->
+        <article id="modelo-caja">
+          <h2>Modelos de Caja</h2>
+          <p>
+            Es una caracteristica fundamental en CSS, ya que condiciona el diseño a todas las paginas web,para el ejemplo es mejor crearlo en otro documento html
+          </p>
+          <a href="box-model.html">Ejemplo de box model</a>
+          <p>
+            Los modelos de caja contienen las siguientes propiedades:
+          </p>
+          <img src="img/modelo-de-cajas.png" alt="modelos-de-caja">
+          <ol>
+            <li>
+              <strong>El contenido (content)</strong> - es el contenido del elemento HTML (texto).
+            </li>
+            <li>
+              <strong>El borde (border)</strong> - Lo que delimita cada uno de los elementos HTML.
+            </li>
+            <li>
+              <strong>El relleno (padding)</strong> - Son las distancias intenas (la distancia del borde con el contenido).
+            </li>
+            <li>
+              <strong>El margen (margin)</strong> - Son las distancias externas (la distancia entre el elemento a otros elementos padres o hermanos).
+            </li>
+          </ol>
+          <p>Dentro del modelo de caja hay que considerar sus 4 lados.</p>
+          <ol>
+            <li>Arriba (top)</li>
+            <li>Derecha (right)</li>
+            <li>Abajo (bottom)</li>
+            <li>izquierda (left)</li>
+          </ol>
+          <p>
+            Mas informacion en <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank"
+            ><em>developer mozilla</em></a>
+          </p>
+        </article>
+        <hr>
+        <!------------ width y height --------------------------->
+        <article id="width-height">
+          <h2>width y Height</h2>
+          <p>
+            width y height o ancho y alto nos va a permitir modificar la altura y anchura del borde.
+          </p>
+          <strong>Ejemplo</strong>
+          <p class="p-width-height">
+            Hola a todos, miren mi borde
+          </p>
+          <pre class="codigo-html-css"><code>
+            <span class="punto-css-selector">.</span><span class="selector-css">p-width-height</span> {
+              <span class="type-atributo">width</span>: <span class="number-html-css">400px</span>;
+              <span class="type-atributo">height</span>: <span class="number-html-css">100px</span>;
+              <span class="type-atributo">border-width</span>: <span class="number-html-css">4px</span>;
+              <span class="type-atributo">border-style</span>: <span class="string-html-css">solid</span>;
+            }
+          </code></pre>
+        </article>
+        <hr>
+        <!------------------- Border -------------------------->
+        <article id="border">
+          <h2>Border</h2>
+          <p>Es lo que delimita a cada uno de los elementos HTML, tiene tres propiedades:</p>
+          <ul>
+            <li>
+              <stron>border-color</stron> - es el color que se le da al borde
+            </li>
+            <li>
+              <stron>border-width</stron> - es el tamaño del borde en general, puedes medir por píxeles o thin(1px), medium(3px), thick(5px)
+            </li>
+            <li>
+              <stron>border-style</stron> - es el estilo de la linea y tiene distintas formas de ponerlo, solid(linea en el cuadro) ,dotted(punteado), dashed(punteado pero menor)
+            </li>
+          </ul>
+          <pre class="codigo-html-css"><code>
+            <span class="punto-css-selector">.</span><span class="selector-css">p-width-height</span> {
+              <span class="type-atributo">border-color</span>: <span class="string-html-css">green</span>;
+              <span class="type-atributo">border-width</span>: <span class="number-html-css">4px</span>;
+              <span class="type-atributo">border-style</span>: <span class="string-html-css">solid</span>;
+            }
+          </code></pre>
+          <p>
+            estas propiedades son de tipo shorthand(algo que nos facilita). <br>
+            tambien existe la propiedad <code><strong>border</strong></code>, que hace los 3 atributos juntos con solo poner sus especificacion. <a href="https://cssreference.io/" target="_blank">Mas info aqui</a>
+          </p>
+        </article>
+        <hr>
+        <!------- Margin & Padding ------------->
+        <article id="margin-padding">
+          <h2>Margin & Padding</h2>
+          <p>
+            Son casi lo mismo, la unica diferencia es que uno tiene la distancia externa y otro la distancia interna.
+          </p>
+          <a href="box-model.html">Ejemplo del margin y padding</a>
+          <p>
+            estas dos propiedades son de tipo shorthand(algo que nos facilita) son como 4 propiedades en 1: <br>
+            <li>
+              margin contiene: margin-top, margin-right, margin-bottom y margin-left
+            </li>
+            <li>
+              padding contiene: padding-top, padding-right, padding-bottom y padding-left
+            </li>
+          </p>
+          <pre class="codigo-html-css"><code>
+            {
+              <span class="type-atributo">padding</span>:<span class="number-html-css">20px</span>;
+              <span class="type-atributo">margin</span>:<span class="number-html-css">40px</span>;
+            }
+          </code></pre>
+          <p>
+            Tambien se pueden aplicar de distintos lados para ello debemos poner dos valores en ves de uno.
+          </p>
+          <pre class="codigo-html-css"><code>
+            {
+              <span class="type-atributo">padding</span>:<span class="number-html-css">20px 40px</span>;
+              <span class="type-atributo">margin</span>:<span class="number-html-css">40px 20px</span>;
+            }
+          </code></pre>
+          <p>
+            tambien se pueden poner para tres valores, el primer valor sera para top el segundo para right , left y el tercero para bottom. 
+          </p>
+          <pre class="codigo-html-css"><code>
+            {
+              <span class="type-atributo">padding</span>:<span class="number-html-css">20px 40px 30px</span>;
+              <span class="type-atributo">margin</span>:<span class="number-html-css">40px 20px 10px</span>;
+            }
+          </code></pre>
+          <p>
+            tambien se pueden de cuatro valores (piensa en las manesillas del relog) ya que el primero sera top, segundo right, tercero bottom, cuarto left.
+          </p>
+          <pre class="codigo-html-css"><code>
+            {
+              <span class="type-atributo">padding</span>:<span class="number-html-css">20px 40px 30px 10px</span>;
+              <span class="type-atributo">margin</span>:<span class="number-html-css">40px 20px 10px 30px</span>;
+            }
+          </code></pre>
+        </article>
+        <hr>
+        <!-- Caja de linea vs caja de bloque -->
+        <article id="caja-linea-bloque">
+          <h2>Caja de linea VS Caja de bloque</h2>
+          <h3>caracteristicas:</h3>
+          <h4>Caja de linea</h4>
+          <ul>
+            <li>
+              Ocupan el espacio necesario para mostrar su contenido
+            </li>
+            <li>
+              No tienen dimensiones modificables (alto, ancho)
+            </li>
+            <li>
+              Permiten otros elementos a su lado
+            </li>
+            <li>
+              Padding y margin solo empujan a los elementos adyacentes en horizontal, <strong>nunca en vertical</strong>
+            </li>
+          </ul>
+          <h4>Caja de bloque</h4>
+          <ul>
+            <li>
+              Ocupan todo el ancho disponible, lo que genera saltos de linea
+            </li>
+            <li>
+              Tienen dimensiones modificables (alto y ancho)
+            </li>
+            <li>
+              No permiten otros elementos a su lado(aunque lo especifiques)
+            </li>
+          </ul>
+          <h3>Ejemplo</h3>
+          <span class="caja-linea">Hola soy una caja de linea.</span><span>Hola soy otra caja de linea.</span>
+          <br>
+          <div class="caja-bloque">Hola soy una caja de bloque.</div><div class="caja-bloque">Hola soy otra caja de bloque.</div>
+          <h3>Codigo</h3>
+          <pre class="codigo-html-css"><code>
+            <span class="punto-css-selector">.</span><span class="selector-css">caja-linea</span>,
+            <span class="punto-html-css">.</span><span class="selector-css">caja-bloque</span> {
+              <span class="type-atributo">background-color</span>: <span class="string-html-css">darkcyan</span>;
+              <span class="type-atributo">color</span>: <span class="string-html-css">white</span>;
+              <span class="type-atributo">width</span>: <span class="number-html-css">500px</span>;
+              <span class="type-atributo">height</span>: <span class="number-html-css">100px</span>;
+              <span class="type-atributo">border</span>: <span class="string-html-css">medium solid black</span>;
+              <span class="type-atributo">padding</span>: <span class="number-html-css">16px</span>;
+            }
+
+            <span class="punto-css-selector">.</span><span class="selector-css">caja-linea</span> {
+              <span class="type-atributo">margin</span>: <span class="number-html-css">20px</span>;
+            }
+
+            <span class="punto-html-css">.</span><span class="selector-css">caja-bloque</span> {
+              <span class="type-atributo">margin</span>: <span class="number-html-css">40px</span>;
+            }
+          </code></pre>
+        </article>
+        <hr>
+        <!-- Propiedad display -->
+        <article id="propiedad-display"> 
+          <h2>Propiedad Display</h2>
+          <p>
+            Display es la propiedad que nos mostrara las cajas y especifica si esta es una caja de linea o bloque.
+          </p>
+          <h3>Lista de elementos Display</h3>
+          <ul>
+            <li>
+              <code>
+                <span class="type-atributo">display</span>: <span class="string-html-css">none</span>;
+              </code>
+              - el elemento es completamente removido del elemento(no se puede ver pero el contenido esta cargado).
+            </li>
+            <p>
+              El display none nos puede servir a la hora de un formulario, ya que si te salen avisos de que esta mas algo, para poder ocultarlos es necesario el none.
+            </p>
+            <li>
+              <code>
+                <span class="type-atributo">display</span>: <span class="string-html-css">inline</span>;
+              </code>
+              - el elemento solo usa el espacio requerido.
+            </li>
+            <li>
+              <code>
+                <span class="type-atributo">display</span>: <span class="string-html-css">block</span>;
+              </code>
+              - el elemento usa caja de bloque.
+            </li>
+            <li>
+              <code>
+                <span class="type-atributo">display</span>: <span class="string-html-css">inline-block</span>;
+              </code>
+              - tiene caracteristicas de linea pero se puede modificar sus dimensiones (alto y acho) como uno de bloque.
+            </li>
+            <p>
+            el display block y inline nos pueden servir para cambiar a los elementos de bloque y linea en viseversa(linea y bloque) a la hora de maquetar.
+          </p>
+            <li>
+              <code>
+                <span class="type-atributo">display</span>: <span class="string-html-css">list-item</span>;
+              </code>
+              - sirve para las etiquetas &lt;li&gt;(tanto listas ordenadas como desordenadas) 
+            </li>
+            <p>
+              los list-item ya esten inplementados por defecto (si ves la lista vera que el margen es distinto a un parrafo comun)
+            </p>
+            <li>
+              <code>
+                <span class="type-atributo">display</span>: <span class="string-html-css">table</span>;
+                <span class="type-atributo">display</span>: <span class="string-html-css">table-cell</span>;
+              </code>
+              - sirven para los contenedores y elementos de la table
+            </li>
+            <p>
+              Al igual que la list-item el table por defecto tiene sus propiedades distintas.
+            </p>
+          </ul>
+          <p>
+            Tambien existen display flex y display grid pero son mas extensos, eso es en otra clase y sirven para diseñar interfaces.
+          </p>
+          <em>Pequeño ejemplo <a href="box-model.html">en este enlace</a></em>
+        </article>
+        <hr>
+        <!-- Propiedad Visibility -->
+        <article id="propiedad-visibility">
+          <h2>Propiedad Visibility</h2>
+          <p>
+            Se puede confundir con la propiedad display ya que Visibility es visibilidad y la display es visualizacion pero son distintos. Cuando queremos desaparecer un elemento, debemos usar
+            <code>
+              <span class="type-atributo">display</span>: <span class="string-html-css">none</span>;
+            </code>
+            , pero si queremos ocultar el elemento y conservar el espacio que tenia debemos usar el 
+            <code>
+              <span class="type-atributo">visibility</span>: <span class="string-html-css">hidden</span>;
+            </code>
+          </p>
+          <h3>ejemplo</h3>
+          <div class="div-visibility">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae aperiam amet distinctio dolor numquam blanditiis incidunt, aut itaque ipsa dignissimos, possimus ducimus laboriosam deleniti modi commodi perferendis. Quibusdam, assumenda.
+          </div>
+        </article>
+        <hr>
+        <!-- Propiedad Overflow -->
+        <article id="propiedad-overflow">
+          <h2>Propiedad Overflow</h2>
+          <p>
+            La propiedad Overflow recorta el contenido al tamaño de su caja y pone barras de desplazamiento para leer el elemento completo.
+          </p>
+          <p>
+            existen varios atributo de overflow:
+          </p>
+          <ul>
+            <li>
+              <span class="type-atributo">overflow</span>: <span class="string-html-css">visible</span>;
+              - Este atributo ya viene por defecto.
+            </li>
+            <li>
+              <span class="type-atributo">overflow</span>: <span class="string-html-css">hidden</span>;
+              - oculta el elemento que sobrepasa la caja.
+            </li>
+            <li>
+              <span class="type-atributo">overflow</span>: <span class="string-html-css">scroll</span>;
+              - oculta el elemento que sobrepasa la caja y agrega las barras x & y del desplazamiento
+            </li>
+            <li>
+              <span class="type-atributo">overflow</span>: <span class="string-html-css">auto</span>;
+              - oculta el elemento que sobrepasa la caja y agrega la barra de desplazamiento pero de forma automatica detectara si necesita el x o y (la posicion)
+            </li>
+          </ul>
+          <h4>Ejemplo</h4>
+       
+          <p class="overflow">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quia hic eius aperiam, magni aspernatur animi reprehenderit deserunt placeat nam repellendus! Perspiciatis perferendis id itaque et ratione tempore qui! Omnis.
+          </p>
+        
+          <p class="overflow2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cum impedit ullam quidem! Itaque soluta ipsam voluptatem praesentium rerum magni voluptates voluptatum amet, quaerat aliquid molestias quis ut consectetur dolor.
+          </p>
+        </article>
+        <hr>
+        <!-- Tamaño de Caja -->
+        <article id="tamanio-caja">
+          <h2>Tamaño de Caja</h2>
+          <p>
+            sirve para el comportamiento del contenido de una caja y para el tamaño de una caja, estos atributos suman en tamaño en general(margin, padding,border y content) a la caja.existen algunos atributos:
+          </p>
+          <ul>
+            <li>
+              <span class="type-atributo">box-sizing</span>: <span class="string-html-css">content-box</span>;
+              - este es el valor por defecto de una caja
+            </li>
+              <div class="box-sizing-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto illo, sequi ducimus ad nisi nemo neque impedit animi cum accusamus ipsam eum excepturi, corporis hic, qui temporibus debitis corrupti quae.
+              </div>
+            <br>
+            <li>
+              <span class="type-atributo">box-sizing</span>: <span class="string-html-css">border-box</span>;
+              - empieza a contar el tamaño de la caja desde el borde(esto viene a solucionar el tamaño de caja).
+            </li>
+          </ul>
+          <section>
+            <h4>ejemplo (antes de border-box)</h4>
+            <article class="container-col-3">
+              <section class="item">Seccion 1</section>
+              <section class="item">Seccion 2</section>
+              <section class="item">Seccion 3</section>
+            </article>
+            <h4>ejemplo (despues de border-box)</h4>
+            <pre class="codigo-html-css"><code>
+              {
+                <span class="type-atributo">box-sizing</span>: <span class="string-html-css">border-box</span>;
+              }
+            </code></pre>
+            <article class="container-col-4">
+              <section class="item">Seccion 1</section>
+              <section class="item">Seccion 2</section>
+              <section class="item">Seccion 3</section>
+            </article>
+          </section>
+          
+          <p>
+            <a href="https://www.paulirish.com/2012/box-sizing-border-box-ftw/"
+             target="_blank"
+             >Paul Irish</a> nos propone una recomendacion para facilitarnos sobre el tamaño de la caja usando el border-box, para ayudar a no hacer muchos calculos de maquetacion sobre columnas.
+          </p>
+          <pre class="codigo-html-css"><code>
+            <span class="selector-css">html</span> {
+              <span class="type-atributo">box-sizing</span>: <span class="string-html-css">border-box</span>;
+            }
+            *,
+            *:before
+            *after {
+              <span class="type-atributo">box-sizing</span>: <span class="string-html-css">inherit</span>;
+            }
+          </pre></code>
+        </article>
+        <hr>
+        <!-- Propiedad Float & clear -->
+        <article id="float-clear">
+          <h2>Propiedad Float & clear</h2>
+          <h3>Propiedad Float</h3>
+          <p>
+            Se podria de decir que la propiedad float fue la forma de maquetar tu documento (ahora ya existe display flex, grid ), pero ahora en la actualidad se considera de mala practica.Porque genera problemas como en el ejemplo.
+          </p>
+          <h4>lista</h4>
+          <ul>
+            <li>float: none; - valor por defecto</li>
+            <li>float: right; - el elemento flotara a la derecha</li>
+            <li>float: left; - el elemento flotara a la izquierda</li>
+          </ul>
+          <h4>ejemplo</h4>
+          <article class="container-floats">
+            <section class="float-right">
+              Este elemento flota a la derecha
+            </section>
+            <section class="float-left">
+              Este elemeto flota a la izquierda
+            </section>
+          </article>
+          <article class="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsam laudantium voluptates laboriosam! Recusandae, exercitationem minus! Reprehenderit voluptatibus, earum similique exercitationem impedit cumque laboriosam officiis maxime tenetur laborum amet ullam.
+          </article>
+          <h3>Propiedad clear</h3>
+          <p>
+            la propiedad clear nos sirve para limpiar los efecto de los elementos float.
+          </p>
+          <h4>Lista</h4>
+          <ul>
+            <li>
+              clear: none; - valor por defecto
+            </li>
+            <li>
+              clear: right; - Limpia el efecto de float en la parte dereha
+            </li>
+            <li>
+              clear: left; - Limpia el efecto de float en la parte izquierda
+            </li>
+            <li>
+              clear: both; - Limpia el efecto de float en los dos lados
+            </li>
+          </ul>
+          <h4>ejemplo</h4>
+          <article class="container-floats">
+            <section class="float-right">
+              Este elemento flota a la derecha
+            </section>
+            <section class="float-left">
+              Este elemeto flota a la izquierda
+            </section>
+          </article>
+          <div class="clearfix"></div>
+          <article class="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsam laudantium voluptates laboriosam! Recusandae, exercitationem minus! Reprehenderit voluptatibus, earum similique exercitationem impedit cumque laboriosam officiis maxime tenetur laborum amet ullam.
+          </article>
+        </article>
+        <hr>
+        <!-- colapso de margenes -->
+        <article id="colapso-margenes">
+          <h2>Colapso de margenes</h2>
+          <p>
+            El colapso de margenes se refiere a cuando los margenes adyacentes de dos y mas bloques pueden combinarse para formar un unico margen, cuando estos se combinan su resultado se denomina a un margen colapsado.
+          </p>
+          <h3>Margenes verticales</h3>
+          <p>
+            Los margenes verticales de un elemento con otro elemento se van a acoplar <b>NO</b> se suman.
+          </p>
+          <p>
+            Por eso la recomendacion a la hora de maquetar un proyecto es que solo uses margin-top para todo el documento o margin-bottom, asi para evitar problemas 
+          </p>
+          <pre class="codigo-html-css"><code>
+            <span class="selector-css">.margin-colapse section</span> {
+              <span class="type-atributo">border</span>: <span class="string-html-css">thin solid black</span>;
+              <span class="type-atributo">margin-top</span>: <span class="number-html-css">16px</span>;
+              <span class="type-atributo">margin-bottom</span>: <span class="number-html-css">16px</span>;
+            }
+          </code></pre>
+          <h4>Ejemplo:</h4>
+          <article class="margin-collapse">
+            <section>Sección 1</section>
+            <section>Sección 2</section>
+          </article>
+          <h3>Margenes horizontales</h3>
+          <p>
+            Los margenes horizontales si pueden sumar a comparacion de las verticales que no se pueden.
+          </p>
+          <pre class="codigo-html-css"><code>
+            <span class="selector-css">.margin-colapse-h span</span> {
+              <span class="type-atributo">border</span>: <span class="string-html-css">thin solid black</span>;
+              <span class="type-atributo">margin-right</span>: <span class="number-html-css">16px</span>;
+              <span class="type-atributo">margin-left</span>: <span class="number-html-css">16px</span>;
+            }
+          </code></pre>
+          <h4>Ejemplo</h4>
+          <article class="margin-collapse-h">
+            <span>Span 1</span><span>span 2</span><span>span 3</span>
+          </article>
+        </article>
+        <hr>
+        <!-- centrados de cajas -->
+        <article id="centrados-caja">
+          <h2>Centrados de Caja</h2>
+          <p>
+            Si queremos posicionar nuestra caja en el centro debenos usar el margin rigth y margin left en auto (no usar el text aling ya que ese centra los elementos y no las cajas).
+          </p>
+          <p>
+            Tambien puedes usar el margin: 0 auto; pero recuerda que eliminara a los margin top y bottom.
+          </p>
+          <pre class="codigo-html-css"><code>
+            <span class="selector-css">.sitio-web</span> {
+              <span class="type-atributo">border</span>: <span class="string-html-css">thin solid black</span>;
+              <span class="type-atributo">background-color</span>: <span class="string-html-css">thistle</span>;
+              <span class="type-atributo">width</span>: <span class="number-html-css">400px</span>;
+              <span class="type-atributo">height</span>: <span class="number-html-css">500px</span>;
+              <span class="type-atributo">padding</span>: <span class="number-html-css">16px</span>;
+              <span class="type-atributo">margin-left</span>: <span class="string-html-css">auto</span>;
+              <span class="type-atributo">margin-right</span>: <span class="string-html-css">auto</span>;
+            }
+            </code></pre>
+          <h4>Ejemplo</h4>
+          <article class="sitio-web">
+            <header>soy la cabecera</header>
+            <main>Soy el contenido principal de este articulo</main>
+            <footer>Soy el pié de la pagina</footer>
+          </article>
+        </article>
+        <hr>
+        <!-- posicionamiento de CSS -->
+        <article id="posicionamiento-css">
+          <h2>Posicionamiento de CSS</h2>
+          <em><a href="positions.html">entrar a posicionamiento css</a></em>
+          <p>
+            La propiedad <a href="clasescss.html#float-clear">FLOAT</a> y POSITION nos permiten modificar la posicion de cualquier documento HTML.
+          </p>
+          <h4>Elementos flotantes</h4>
+          <ul>
+            <a href="clasescss.html#float-clear">aqui mayor informacion</a>
+            <li>float</li>
+            <li>clear</li>
+          </ul>
+          <h4>Tipos de Posicionamiento</h4>
+          <ul>
+            <li><a href="clasescss.html#posicionamiento-static">static</a> (esto es el predeterminado)</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+            <li>sticky</li>
+          </ul>
+          <p>
+            Para mover los elementos posicionados podemos usar estas propiedades:
+          </p>
+          <img src="img/3D_coordinate_system.svg.png" alt="plano 3d xyz">
+          <ul>
+            <li>top (vertical - eje Y)</li>
+            <li>bottom (vertical - eje Y)</li>
+            <li>left (horizontal - eje X)</li>
+            <li>right (horizontal - eje X)</li>
+            <li>z-index (profundidad - eje Z)</li>
+          </ul>
+          <p>
+            Las propiedades top y left van a tener mayor preferencia que bottom y right respectivamente.
+          </p>
+          <p>
+            al usar el top, left , etc su margen no aumenta los pixeles (osea del contenido al margen) si no se alejan del contendido(de forma contraria)
+          </p>
+          <p>
+            Estas cinco propiedades no funcionan con el valor static (ya que es el predeterminado)
+          </p>
+          <!-- Posicionamiento static -->
+          <section id="posicionamiento-static">
+            <h3>Posicionamiento Static</h3>
+            <p>
+              Es el posicionamiento predeterminado y significa que el elemento respeta el flujo del documento HTML, por lo que no se puede mover ni posicionar.
+            </p>
+            <pre class="codigo-html-css"><code>
+            <span class="selector-css">.static</span> {
+              <span class="type-atributo">background-color</span>: <span class="string-html-css">yellow</span>;
+              <span class="type-atributo">position</span>: <span class="number-html-css">static</span>;
+              no se mueven con el top y left 
+              porque es estatico
+              <span class="type-atributo">top</span>: <span class="number-html-css">16px</span>;
+              <span class="type-atributo">left</span>: <span class="number-html-css">16px</span>;
+            }
+          </code></pre>
+            <h4>Ejemplo</h4>
+            <div class="static">Soy una caja que no me puedo mover</div>
+          </section>
+          <!-- Posicionamiento relativo -->
+          <section id="posicionamiento-relativo">
+            <h3>Posicionamiento Relativo</h3>
+            <p>
+              El elemento <strong>relative</strong> conserva sus dimensiones y posicion original en el flujo del documento. Si se mueve toma como referencia su posicion original.
+            </p>
+            <p>
+              Se puede mover con pixeles positivos y negativos
+            </p>
+            <p>
+              al usar el top, left , etc su margen no aumenta los pixeles (osea del contenido al margen) si no se alejan del contendido(de forma contraria)
+            </p>
+            <img src="img/posicion-relativa.png" alt="posicion-relativa">
+            <pre class="codigo-html-css"><code>
+            <span class="selector-css">.relative</span> {
+              <span class="type-atributo">background-color</span>: <span class="string-html-css">turquose</span>;
+              <span class="type-atributo">position</span>: <span class="number-html-css">relative</span>;
+              <span class="type-atributo">top</span>: <span class="number-html-css">-20px</span>;
+              <span class="type-atributo">left</span>: <span class="number-html-css">50px</span>;
+            }
+          </code></pre>
+            <h4>Ejemplo</h4>
+            <div class="relative">Soy una caja Relativa</div>
+          </section>
+          <!-- Posicionamiento absoluto -->
+          <section id="posicion-absoluto">
+            <h3>Posicionamiento Absoluto</h3>
+            <p>
+              El elemento pierde sus dimensiones y posicion original en el documento. Cuando lo muevas puede tomar como referencia 2 elementos:
+            </p>
+            <ol>
+              <li>
+                El primer ancestro (cuando este dentro de otra caja osea una div, section, article, etc...) con posicionamiento relativo (debe tener las propiedades absolute el ancestro)
+              </li>
+              <li>
+                Si no encuentra un ancestro relativo, se mueve hacia el documento HTML
+              </li>
+            </ol>
+            <pre class="codigo-html-css"><code>
+            <span class="selector-css">.absolute</span> {
+              <span class="type-atributo">background-color</span>: <span class="string-html-css">lightcoral</span>;
+              <span class="type-atributo">position</span>: <span class="number-html-css">absolute</span>;
+              <span class="type-atributo">top</span>: <span class="number-html-css">10px</span>;
+              <span class="type-atributo">left</span>: <span class="number-html-css">5px</span>;
+            }
+          </code></pre>
+            <h4>Ejemplo</h4>
+            <div class="absolute">Soy una caja Absoluta</div>
+            <article class="relative-parent">
+              <div class="absolute-child">
+                Caja Absoluta con Ancestro Relativa
+              </div>
+            </article>
+          </section>
+          <br><br><br><br><br>
+          <!-- Posicionamiento fixed -->
+          <section id="posicion-fixed">
+            <h3>Posicionamiento Fixed</h3>
+            <p>
+              El elemento pierde sus dimensiones y posicion original en el flujo del documento. Si se mueve toma como referencia solo al documento HTML y su posicion estara fijo (aunque lo muevas con el scroll, el elemento no se movera).
+            </p>
+            <p>
+              Esto nos podria servir para que la barra principal este fija en todo el documento.
+            </p>
+            <pre class="codigo-html-css"><code>
+              <span class="selector-css">.fixed</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">lightgreen</span>;
+                <span class="type-atributo">position</span>: <span class="string-html-css">fixed</span>;
+                <span class="type-atributo">top</span>: <span class="number-html-css">30px</span>;
+                <span class="type-atributo">left</span>: <span class="number-html-css">50px</span>;
+                }
+            </code></pre>
+            <h4>Ejemplo</h4>
+            <em>lo desactive para que no haya problemas</em>
+            <div class="fixed">Soy una caja fixed</div>
+          </section>
+          <!-- Posicionamiento Sticky -->
+          <section id="position-sticky">
+            <h3>Posicionamiento Sticky</h3>
+            <p>
+              Es una combinación de posicionamiento relative y fixed, para este posicionamiento las propiedades <strong>top, left, bottom y right</strong> no pueden mover el elemento, sirven como un punto de referencia(mientras no lleguen a ese valor, el elemento se comportara como relative, cuando llega se convierte en fixed).
+            </p>
+            <p>
+              Para que este comportamiento funcione el elemento sticky debe ser hijo directo de body o su elemento contenedor debe tener dimensiones definidad y solo será sticky dentro de las dimensiones de su contenedor padre.
+            </p>
+            <h4>Ejemplo</h4>
+            <h5>Ejemplo con el body</h5>
+            <p>
+              si quieres que este en todo momento de tu pagina web debes ponerlo en el body
+            </p>
+            <div class="sticky">Soy una Caja Pegajosa(sticky)</div>
+
+            <h5>Ejemplo con el contenedor</h5>
+            <p>
+              si quieres ponerlo dentro de una seccion debe estar dentro de otro contenedor.
+            </p>
+            <section class="sticky-parent">
+              <div class="sticky-child">
+                Caja pegajosa como hijo(dentro de una seccion)
+              </div>
+            </section>
+          </section>
+          <br>
+          <!-- propiedad z index -->
+          <section id="propiedad-z-index">
+            <h3>Propiedad z index</h3>
+            <p>
+              Es la propiedad que controla la profundidad del posicionamiento, su valor predeterminado es auto, puede aceptar números positivos, negativos y ceros.
+            </p>
+            <p>
+              A mayor valor del elemento estara mas al frente, a menor valor del elemento estara mas al fondo.
+            </p>
+            <p>
+              Un elemento padre nunca podrá estar sobre sus elementos hijos, pero si estos tienen un valor negativo si pueden estar sobre sus elementos pádres (el elemento padre no debe tener definido el z-index).
+            </p>
+          <h4>Ejemplo</h4>
+          <p>
+            Lo recomendable es de poner el z-index de en 5 en 5 o 10
+          </p>
+          <h5>ejemplo sin una caja</h5>
+          <pre class="codigo-html-css"><code>
+              <span class="selector-css">.z-index-1</span>,
+              <span class="selector-css">.z-index-2</span>  {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">mediumaquamarine</span>;
+                <span class="type-atributo">position</span>: <span class="string-html-css">relative</span>;
+                <span class="type-atributo">top</span>: <span class="number-html-css">30px</span>;
+                <span class="type-atributo">left</span>: <span class="number-html-css">50px</span>;
+              }
+          </code></pre>
+          <pre class="codigo-html-css"><code>
+              <span class="selector-css">.z-index-1</span> {
+                <span class="type-atributo">z-index</span>: <span class="number-html-css">5</span>;
+              }
+          </code></pre>
+          <pre class="codigo-html-css"><code>
+              <span class="selector-css">.z-index-2</span> {
+                <span class="type-atributo">z-index</span>: <span class="number-html-css">-5</span>;
+              }
+          </code></pre>
+          
+          <div class="z-index-1">Probando z-index caja 1</div>
+          <div class="z-index-2">Probando z-index caja 2</div>
+          <br>
+          <h5>Ejemplo dentro de section</h5>
+          <pre class="codigo-html-css"><code>
+              <span class="selector-css">.z-index-parent</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">mediumorchid</span>;
+                <span class="type-atributo">position</span>: <span class="string-html-css">relative</span>;
+                <span class="type-atributo">width</span>: <span class="number-html-css">300px</span>;
+                <span class="type-atributo">height</span>: <span class="number-html-css">300px</span>;
+                }
+          </code></pre>
+          <pre class="codigo-html-css"><code>
+              <span class="selector-css">.z-index-child</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">mediumvioletred</span>;
+                <span class="type-atributo">position</span>: <span class="string-html-css">relative</span>;
+                <span class="type-atributo">width</span>: <span class="number-html-css">150px</span>;
+                <span class="type-atributo">height</span>: <span class="number-html-css">150px</span>;
+                <span class="type-atributo">top</span>: <span class="number-html-css">-75px</span>;
+                <span class="type-atributo">left</span>: <span class="number-html-css">200px</span>;
+                <span class="type-atributo">z-index</span>: <span class="number-html-css">-5</span>;
+                }
+          </code></pre>
+          <article class="z-index-parent">
+            <p>caja padre</p>
+            <div class="z-index-child">Hijo z-index</div>
+          </article>
+          </section>
+        </article>
+        <hr>
+        <!-- Cabecera fixed VS Cabecera sticky -->
+        <article id="cabecera-fixed-vs-sticky">
+          <h2>Cabecera fixed VS Cabecera sticky</h2>
+          <p>
+            Si quieres hacer un contendido para la contenedor(cabezera) es mejor usar el sticky ya que tiene propiedades de relative y fixed que lo hacen mejor 
+          </p>
+          <img src="img/partes-estructura-header-bot-footer.jpg" alt="cabecera">
+        </article>
+        <hr>
+        <!-- Efecto de slides con position Sticky -->
+        <article id="efect-slide-position-sticky">
+          <h2>Efecto de slides con position Sticky</h2>
+          <p>
+            Se refire a cunado queremos ver una seccion y el titulo seguira hasta acabar con su contenido y esto lo podemos lograr con el posicionamiento sticky
+          </p>
+          <div class="code-sticky">
+            <pre class="codigo-html-css"><code>
+              <span class="selector-css">.slide</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">paleturquoise</span>;
+                <span class="type-atributo">width</span>: <span class="number-html-css">100%</span>;
+                <span class="type-atributo">height</span>: <span class="number-html-css">100vh</span>;
+              }
+            </code></pre>
+            <pre class="codigo-html-css"><code>
+              <span class="selector-css">.slide:nth-child(odd)</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">palevioletred</span>;
+              }
+            </code></pre>
+            <pre class="codigo-html-css"><code>
+              <span class="selector-css">.slide-title</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">palegreen</span>;
+                <span class="type-atributo">padding</span>: <span class="number-html-css">16px</span>;
+                <span class="type-atributo">text-align</span>: <span class="string-html-css">center</span>;
+                <span class="type-atributo">position</span>: <span class="string-html-css">sticky</span>;
+                <span class="type-atributo">margin-top</span>: <span class="number-html-css">0</span>;
+                <span class="type-atributo">top</span>: <span class="number-html-css">50px</span>;
+              }
+            </code></pre>
+          </div>
+          <h4>Ejemplo</h4>
+          <section class="slides">
+            <!-- primer slide -->
+            <article class="slide">
+              <h3 class="slide-title">Titulos de seleccion</h3>
+              <div class="slide-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, corrupti voluptatum, unde recusandae est voluptas, voluptatibus ratione modi ipsa harum eveniet facilis quaerat velit hic exercitationem ea molestiae explicabo laboriosam?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, repudiandae quia distinctio soluta quibusdam quidem ipsam tenetur nobis sapiente, dolorem aliquam hic, quaerat placeat aperiam accusamus ullam consequatur exercitationem magnam?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, repudiandae quia distinctio soluta quibusdam quidem ipsam tenetur nobis sapiente, dolorem aliquam hic, quaerat placeat aperiam accusamus ullam consequatur exercitationem magnam?
+                </p>
+              </div>
+            </article>
+            <!-- segundo slide -->
+            <article class="slide">
+              <h3 class="slide-title">Titulos de seleccion</h3>
+              <div class="slide-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, corrupti voluptatum, unde recusandae est voluptas, voluptatibus ratione modi ipsa harum eveniet facilis quaerat velit hic exercitationem ea molestiae explicabo laboriosam?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, repudiandae quia distinctio soluta quibusdam quidem ipsam tenetur nobis sapiente, dolorem aliquam hic, quaerat placeat aperiam accusamus ullam consequatur exercitationem magnam?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, repudiandae quia distinctio soluta quibusdam quidem ipsam tenetur nobis sapiente, dolorem aliquam hic, quaerat placeat aperiam accusamus ullam consequatur exercitationem magnam?
+                </p>
+              </div>
+            </article>
+            <!-- tercer slide -->
+            <article class="slide">
+              <h3 class="slide-title">Titulos de seleccion</h3>
+              <div class="slide-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, corrupti voluptatum, unde recusandae est voluptas, voluptatibus ratione modi ipsa harum eveniet facilis quaerat velit hic exercitationem ea molestiae explicabo laboriosam?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, repudiandae quia distinctio soluta quibusdam quidem ipsam tenetur nobis sapiente, dolorem aliquam hic, quaerat placeat aperiam accusamus ullam consequatur exercitationem magnam?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, repudiandae quia distinctio soluta quibusdam quidem ipsam tenetur nobis sapiente, dolorem aliquam hic, quaerat placeat aperiam accusamus ullam consequatur exercitationem magnam?
+                </p>
+              </div>
+            </article>
+          </section>
+        </article>
+        <hr>
+        <!-- Ventana Modal / Menú Móvil con posicionamiento fixed -->
+        <article id="ventana-modal-fixed">
+          <h2>Ventana Modal / Menú Móvil con posicionamiento fixed</h2>
+          <p>
+            Nos referimos al crear una ventana modal para que cuando hagamos click en una sección, se abra una pequeña ventana con informacion necesaria de la sección 
+          </p>
+          <div class="code-window-modal">
+            <pre class="codigo-html-css"><code>
+              <span class="selector-css">.modal-window</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">black</span>;
+                <span class="type-atributo">color</span>: <span class="string-html-css">white</span>;
+                <span class="type-atributo">position</span>: <span class="string-html-css">fixed</span>;
+                <span class="type-atributo">right</span>: <span class="number-html-css">0</span>;
+                <span class="type-atributo">left</span>: <span class="number-html-css">0</span>;
+                <span class="type-atributo">top</span>: <span class="number-html-css">0</span>;
+                <span class="type-atributo">bottom</span>: <span class="number-html-css">0</span>;
+                <span class="type-atributo">opacity</span>: <span class="number-html-css">0,5</span>
+                <span class="type-atributo">display</span>: <span class="string-html-css">none</span>;
+              }
+            </code></pre>
+            <pre class="codigo-html-css"><code>
+              <span class="selector-css">.modal-window:target</span> {
+                <span class="type-atributo">display</span>: <span class="string-html-css">block</span>;
+              }
+            </code></pre>
+          </div>
+          <h4>Ejemplo</h4>
+          <article id="modal-1" class="modal-window">
+            <h3 class="modal-title">Ventana Modal</h3>
+            <div class="modal-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi, quis incidunt, aperiam fugit deleniti officia atque dicta dolor nostrum molestias, recusandae consectetur. Quibusdam perferendis excepturi asperiores neque aperiam incidunt.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi, quis incidunt, aperiam fugit deleniti officia atque dicta dolor nostrum molestias, recusandae consectetur. Quibusdam perferendis excepturi asperiores neque aperiam incidunt.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi, quis incidunt, aperiam fugit deleniti officia atque dicta dolor nostrum molestias, recusandae consectetur. Quibusdam perferendis excepturi asperiores neque aperiam incidunt.
+              </p>
+            </div>
+            <a href="#cerrar">cerrar modal</a>
+          </article>
+          <a href="#modal-1" class="modal-link">Abrir modal</a>
+        </article>
+        <hr>
+        <!-- Margenes negativos -->
+        <article id="margen-negativo">
+          <h2>Margenes negativos</h2>
+          <p>
+            los valores negativos del box model solo aplican a las distancias externas (margin).
+          </p>
+          <pre class="codigo-html-css"><code>
+              <span class="selector-css">.box</span> {
+                <span class="type-atributo">background-color</span>: <span class="string-html-css">sandybrown</span>;
+                <span class="type-atributo">padding</span>: <span class="number-html-css">20px</span>;
+                <span class="type-atributo">margin-top</span>: <span class="number-html-css">-30px</span>;
+                <span class="type-atributo">margin-left</span>: <span class="number-html-css">-20px</span>;
+              }
+            </code></pre>
+          <h4>ejemplo</h4>
+          
+          <div class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur porro in reiciendis non facilis totam, hic delectus doloribus beatae ipsa ad corrupti maxime aliquam? Modi minus consequuntur error earum inventore!
+          </div>
+        </article>
+        <hr>
+      </section>
+    </main>
+  </body>
+</html>

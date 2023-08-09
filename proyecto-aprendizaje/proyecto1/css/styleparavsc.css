@@ -1,0 +1,16 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  color: rgb(34, 34, 206);
+}
+body {
+  font-family: sans-serif;
+}
+h2 {
+  color: rgb(44, 170, 170);
+}
+html {
+  scroll-behavior: smooth;
+}

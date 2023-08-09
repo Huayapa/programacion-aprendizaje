@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-model</title>
+    <meta
+      name="description"
+      content="Aqui mostraremos el ejemplo a una box model."
+    />
+    <link rel="stylesheet" href="css/box-model.css" />
+  </head>
+  <body>
+    <h1>Modelo de caja para CSS</h1>
+    <p>INSPECCIONAR EL CODIGO PERO LA PARTE DE MODELO DE CAJA</p>
+    <a href="clasescss.html">volver a la pagina anterior</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sunt
+      dolorum magni, velit doloremque placeat recusandae quam dolore eius
+      inventore vero at nihil optio facere perspiciatis! Ab impedit quas vitae.
+    </p>
+    <hr />
+    <h2 class="h2-margen-padding">Ejemplo de Margen y padding</h2>
+    <p>
+      Para esto usaremos un div ya que estos por defecto no tienen ningun margen
+    </p>
+    <strong>Ejemplo</strong>
+    <div class="p-lorem-1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque cum
+      molestias nulla dolore! Quaerat doloribus iste molestias accusantium
+      labore esse pariatur unde quia aliquid nulla consectetur quos, voluptate
+      ab quis?
+    </div>
+    <div class="p-lorem-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam ullam
+      error hic inventore quae harum sapiente voluptas ad rem, optio ipsa
+      nostrum earum atque aliquid aperiam, vero tenetur nulla.
+    </div>
+    <hr />
+    <!-- ejemplo display -->
+    <h2 class="display">Ejemplo Display</h2>
+    <p>
+      codigo del caja bloque y linea pero aplicando el display none y
+      inline-block
+    </p>
+    <pre class="style-code-easy"><code>
+      .caja-bloque,
+      .caja-linea-bloque {
+          background-color: olive;
+          color: white;
+          width: 500px;
+          height: 159px;
+          border: medium solid black;
+      }
+
+      .caja-linea-bloque {
+          display: inline-block;
+      }
+
+      .caja-bloque {
+          display: none; (puse en display block para que no se oculte)
+      }
+    </code></pre>
+    <div class="caja-bloque">
+      soy una div. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+      debitis ea voluptates eligendi officia beatae adipisci, quis delectus
+      provident porro ratione aspernatur aliquid neque labore, vero fugiat
+      exercitationem eos laboriosam.
+    </div>
+    <span class="caja-linea-bloque">
+      soy una span. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+      dolor repellendus reprehenderit vitae beatae placeat cumque quod eligendi
+      harum assumenda omnis, consequuntur libero repudiandae numquam iste a nam?
+      Recusandae, libero!
+    </span>
+    <br />
+    <ul>
+      <li>lista 1</li>
+      <li>lista 2</li>
+      <li>lista 3</li>
+    </ul>
+    <br />
+    <table>
+      <tr>
+        <td>celda 1</td>
+        <td>celda 2</td>
+        <td>celda 3</td>
+      </tr>
+      <tr>
+        <td>celda 4</td>
+        <td>celda 5</td>
+        <td>celda 6</td>
+      </tr>
+      <tr>
+        <td>celda 7</td>
+        <td>celda 8</td>
+        <td>celda 9</td>
+      </tr>
+    </table>
+  </body>
+</html>

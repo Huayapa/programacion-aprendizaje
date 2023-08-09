@@ -1,0 +1,948 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    --primary-bg-color: #488edd;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-nav {
+    background-color: #3076e6;
+    position: sticky;
+    z-index: 20;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 15px;
+    border: 5px solid #0d3678;
+    align-items: baseline;
+    align-content: space-between;
+}
+
+.green {
+    color: rgb(24, 194, 24);
+}
+
+.title-h1 {
+    margin: 0;
+}
+
+.inicio-nav a {
+    text-decoration: none;
+}
+
+.subtitle-h2 {
+    margin: 0;
+}
+
+.inicio-nav a:link,
+.inicio-nav a:visited {
+    color: #000000 ;
+}
+
+.inicio-nav a:active,
+.inicio-nav a:hover {
+    margin: 0;
+    padding-top: 100%;
+    padding-bottom: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #9ba7ba;
+    opacity: 0.5;
+}
+
+.nav-general {
+    display: flex;
+    font-size: 80%;
+    align-items: baseline;
+    align-content: space-around;
+}
+
+.container-style {
+    background-color: rgba(63, 109, 184, 0.5);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title-style {
+    font-size: 30px;
+    border-bottom: 3px solid #0d3678;
+}
+
+.container-img img {
+    width: 80%;
+    border: 2px solid gray;
+}
+
+.list-temario {
+    width: 90%;
+    border: 2px solid gray;
+}
+
+.list-title {
+    color: #ff0000;
+}
+
+.idea-recomendacion {
+    color: #ffff00;
+}
+
+.style-code {
+    font-family: sans-serif;
+    border: 4px solid rgb(133, 145, 161);
+    background-color: rgb(76, 156, 226);
+    width: 90%;
+    font-size: 90%;
+    overflow: auto;
+    white-space: pre;
+}
+
+.style-code-2 {
+    font-family: sans-serif;
+    border: 4px solid rgb(51, 132, 253);
+    background-color: rgb(167, 167, 167);
+    width: 90%;
+    font-size: 90%;
+    overflow: auto;
+    white-space: pre;
+}
+
+
+.orange {
+    color: orange;
+}
+
+.green-number {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(22, 197, 22);
+}
+
+.blue {
+    color: blue;
+}
+
+.purple {
+    color: purple;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+.codigo-hexadecimal {
+    background-color: white;
+    border: 3px solid gray;
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+}
+
+.desabilitado {
+    pointer-events: none;
+    cursor: default;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(116, 116, 116, 0.5);
+}
+
+.conteiner-img {
+    width: 70%;
+    border: 3px solid gray;
+}
+
+.conteiner-img img {
+    width: 100%;
+}
+
+.style-code-3 {
+    font-family: sans-serif;
+    border: 4px solid rgb(62, 103, 161);
+    border-radius: 1rem;
+    background-color: rgb(119, 137, 153);
+    width: 90%;
+    font-size: 90%;
+    overflow: auto;
+    white-space: pre;
+}
+
+.container-ol-style-text {
+    background-color: var(--primary-bg-color);
+    padding: 1em;
+    border-radius: 1em;
+    border: 3px solid #0d3678;
+}
+
+
+.style-code-4 {
+    background-color: rgba(63, 109, 184, 0.5);
+    border-radius: 1rem;
+    border: medium solid gray;
+    overflow: auto;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/*fin de codigo principal*/
+/*-----------------------------------------------------------------*/
+/*Inicio de ejemplos clases*/
+
+
+/*
+ Colores en CSS: 
+*/
+
+/* Partes del elemento */
+.ejm-list-title {
+    background-color: lightgreen;
+}
+
+.ejm-list-border {
+    border: 3px solid black;
+}
+
+.ejm-list-element {
+    color: #ffffff;
+}
+
+
+/*
+Colores por Nombre:
+*/
+.ejm-color-nombre {
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: 3px solid gray;
+}
+
+/*
+Colores por Sistema Hexadecimal
+*/
+
+.ejm-hex {
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 3px solid #bdbdbd;
+}
+
+/*
+colores por sistema RGB
+*/
+
+.ejm-rgb {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(121, 121, 121);
+}
+
+/*
+colores por sistema hsl
+*/
+
+.ejm-hsl {
+    padding: 10px;
+    background-color: hsl(0, 100%, 0%);
+    color: hsl(0, 100%, 100%);
+    border: 3px solid hsl(0, 0%, 50%);
+}
+
+/*
+Transparent & color
+*/
+
+.transparent {
+    background-color: magenta;
+    background-color: transparent;
+}
+
+.currentcolor {
+    background-color: magenta;
+    background-color: currentColor;
+}
+
+/*
+Propiedad opacity
+*/
+
+.ejm-opacity {
+    background-color: orchid;
+    color: navy;
+    border: thick solid black;
+    opacity: 0.5;
+}
+
+/*
+unidad de medida relativa EM
+*/
+
+.ejm-ems {
+    background-color: rebeccapurple;
+    font-size: 2em;
+}
+
+/*
+Unidad de medida relativa REMs
+*/
+
+.ejm-rems {
+    background-color: rebeccapurple;
+    font-size: 1em;
+}
+
+/*
+Unidad de medida relativa EXs
+*/
+
+.container-ex-ejm {
+    background-color: cadetblue;
+    font-size: 24px;
+    padding: 1ex 0.5ex;
+    border: 5px solid black;
+}
+
+.container-ex-ejm-child {
+    background-color: salmon;
+    font-size: 2ex;
+    border: 5px solid black;
+    margin: 0.5ex;
+    padding: 1ex;
+}
+
+/*
+Unidad de medida relativa CHs
+*/
+
+.ejm-chs {
+    background-color: cadetblue;
+    width: 10ch;
+}
+
+/*
+Los porcentajes(%)
+*/
+
+.porcentaje-ejm {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+}
+
+.porcentaje-ejm-child {
+    background-color: coral;
+    width: 50%;
+    height: 50%;
+}
+
+/*
+unidad de medida Viewport
+*/
+
+.hero-img-ejm {
+    background-color: #bdbdbd;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh 2vh;
+}
+
+/* ------------------------------------------------------- */
+/*Variables y funciones*/
+
+/*
+custom propeties
+*/
+
+.custom-props-1 {
+    --primary-color: gray;
+    --font-size: 32px;
+    background-color: var(--primary-color);
+}
+
+.custom-props-3 {
+    font-size: var(--font-size);
+}
+
+.title-props {
+    --primary-color: navy;
+    color: var(--primary-color, orange);
+}
+
+:root {
+    color: black;
+    --variante-bg-color: rgb(255, 255, 255);
+    --default-bg-color: rgb(75, 165, 180);
+}
+
+/*
+funcion calc()
+*/
+
+.ch-10 {
+    --padding-size: 2ch;
+    --num-ch: 10ch;
+    background-color: var(--default-bg-color);
+    font-size: 2rem;
+    width: calc(var(--num-ch) + var(--padding-size) *2);
+    padding: var(--padding-size);
+}
+
+/*
+Funciones min y max
+*/
+
+.min-max {
+    background-color: var(--default-bg-color);
+    margin-top: 1rem;
+    width: min(300px, 20vw, 20rem);
+    height: max(200px, 25vh);
+}
+
+/*
+Funcion clamp()
+*/
+
+h1 {
+    font-size: clamp(2rem, 1rem + 3vw , 3rem);
+}
+
+.clamp-ejm {
+    font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}
+
+/*
+Estilos de fuente
+*/
+
+.font-family {
+    font-family: Georgia, 'Times New Roman', Times, serif; /*predeterminado*/
+    font-family: cursive;
+}
+
+.font-size {
+    font-size: 1.4rem;
+}
+
+.font-weight {
+    font-weight: 900;
+}
+
+.font-style {
+    font-style: oblique;
+}
+
+.font-variant {
+    font-variant: small-caps;
+}
+
+.line-height {
+    line-height: 2;
+}
+
+.font {
+    font: italic small-caps bold 24px / 1.5 monospace;
+}
+
+/*
+Formato woff o woff2 - Web Open Font Format
+*/
+
+@font-face {
+    font-family: "Chalet";
+    src: url("../assent/DancingScript-VariableFont_wght.ttf") format("woff");
+    font-display: swap;
+}   
+
+.chalet {
+    font-family: "Chalet", sans-serif;
+    font-size: 2rem;
+}
+
+
+/* @font-face {
+    font-family: "Pecita";
+    src: url("../assent/FuzzyBubbles-Bold.ttf") format("woff");
+}
+
+.pecita {
+    font-family: "Pecita";
+} */
+
+/*
+Estilos de Texto
+*/
+
+.ejm-style-text {
+    background-color: blanchedalmond;
+    border: 3px solid black;
+    padding: 1em;
+    margin: 2rem;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.text-decoration {
+    text-decoration: underline;
+}
+
+.text-indent {
+    text-indent: 2rem;
+}
+
+.text-overflow {
+    background-color: blanchedalmond;
+    border: thin solid black;
+    padding: 1rem;
+    width: 10%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-shadow {
+    text-shadow: 2px 4px 10px red;
+}
+
+.text-transform {
+    text-transform: capitalize;
+}
+
+.letter-spacing {
+    letter-spacing: 1rem;
+}
+
+.white-space {
+    white-space: pre;
+}
+
+.word-break {
+    word-break: break-all;
+}
+
+.word-spacing {
+    word-spacing: 1rem;
+}
+
+.writing-mode {
+    writing-mode: vertical-lr;
+}
+
+/*
+Iconos tipograficos
+*/
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+/*
+Propiedad border-radius
+*/
+
+.box-border {
+    background-color: black;
+    margin: 2rem auto;
+    width: 200px;
+    height: 200px;
+    border: thick solid red;
+}
+
+.border-radius {
+    border-radius: 2rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-radius: 2rem 4rem;
+    border-radius: 2rem 4rem 0;
+    border-radius: 2rem 4rem 0 1rem;
+}
+
+.border-radius-2 {
+    border-radius: 2rem / 4rem;
+    border-radius: 2rem 4rem / 4rem 8rem;
+}
+
+/*
+propiedad outline
+*/
+
+.outline {
+    color: white;
+    text-align: center;
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: chartreuse;
+    outline: thick solid blue;
+    /* border-width: 10px; */
+    outline-width: 10px;
+    outline-offset: 1rem;
+    outline-offset: -2rem;
+}
+
+/*----------------Estilos de fondo---------------------*/
+.box {
+    margin: 2rem auto;
+    width: 200px;
+    height: 200px;
+    border: thick dashed red;
+}
+
+/*
+Background-color
+*/
+
+.bg-color {
+    background-color: #000000;
+}
+
+/*
+background-image
+*/
+
+.bg-image {
+    background-image: url("../assent/puesta-sol.jpg");
+}
+
+/*
+background-repeat
+*/
+
+.bg-repeat {
+    background-image: url("../assent/puesta-sol.jpg");
+    background-size: 100px;
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+}
+
+/*
+background-size
+*/
+
+.bg-size {
+    background-image: url(../assent/puesta-sol.jpg);
+    background-size: 300px 200px;
+    background-size: 300px;
+    background-size: contain;
+    background-size: cover;
+}
+
+/*
+background-position
+*/
+
+.bg-position {
+    background-image: url(../assent/puesta-sol.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 1rem 2rem;
+    background-position: top center;
+    background-position: top right;
+    background-position: top left;
+    background-position: bottom center;
+    background-position: bottom right;
+    background-position: bottom left;
+    background-position: bottom;
+}
+
+/*
+background-clip
+*/
+
+.bg-clip {
+    background-color: skyblue;
+    background-image: url(../assent/puesta-sol.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-clip: content-box;
+    padding: 1rem;
+}
+
+/*
+background-origin
+*/
+
+.bg-origin {
+    background-color: skyblue;
+    background-image: url(../assent/puesta-sol.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    background-origin: content-box;
+    background-origin: border-box;
+}
+
+/*
+background-attachment
+*/
+
+.bg-attachment {
+    background-color: skyblue;
+    background-image: url(../assent/puesta-sol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    background-attachment: scroll; /*default*/
+    background-attachment: fixed;
+}
+
+/*
+background (shorthand)
+*/
+
+/* .bg-background {
+    background: url(../assent/puesta-sol.jpg) center center cover no-repeat content-box no-repeat fixed blueviolet;
+} */
+
+/*
+Fondos Multiples
+*/
+
+.bg-multiple {
+    width: 50%;
+    height: 40vh;
+    background-image: 
+    url(../assent/favicon.png),
+    url(../assent/puesta-sol.jpg); 
+    background-repeat: repeat-x, no-repeat;
+    background-size: 10%, cover;
+}
+
+.bg-multiple-2 {
+    width: 90%;
+    height: 700px;
+    background: 
+        url(../assent/arbol.png) no-repeat center bottom, 
+        url(../assent/aves.png) no-repeat center bottom,
+        url(../assent/cielo.png) no-repeat center top;
+}
+
+/*
+estilos de imagenes
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cart {
+    border: medium solid gray;
+    width: 50%;
+    height: 300px;
+}
+
+.cart img {
+    background-color: beige;
+    height: 50%;
+    object-fit: fill;/*default*/
+    object-fit: cover;
+    object-fit: contain;
+    object-fit: none;
+    object-fit: scale-down; /*toma el valor que sea menor de los valores contain y none*/
+    object-position: left top;
+    object-position: right bottom;
+    object-position: left center;
+    object-position: 50%, 50%;
+}
+
+/*
+Estilos de lista:
+ul
+li
+ol
+*/
+.list-image li {
+    list-style-image: url(../assent/favicon.png);
+    list-style-image: none;
+    list-style-type: none;
+}
+.list-image li::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../assent/favicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list {
+    list-style-type: square;
+    list-style-type: disc; /*default*/
+    list-style-type: circle;
+    list-style-type: lower-roman;
+    list-style-type: upper-roman;
+    list-style-type: decimal;
+    list-style-type: decimal-leading-zero;
+    list-style-type: lower-greek;
+    list-style-type: none;
+}
+
+.list-position li {
+    background-color: lightcoral;
+    list-style-position: outside;
+}
+
+.list-position-2 li {
+    background-color: lightcoral;
+    list-style-position: inside;
+}
+
+/* Textos en Columnas */
+
+.text-column-4 {
+    list-style-position: inside;
+    column-count: 4;
+    column-gap: 1rem;
+    column-rule: thin solid black;
+    column-width: 100px;/*tamaño minimo de la anchura en las columnas*/
+}
+
+/*Estilos de Tablas*/
+.table {
+    font-size: 3rem;
+    border-collapse: collapse;
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+table,
+th,
+td {
+    border: medium solid gray;
+    border-spacing: 10px;
+}
+
+/*Formulario de contacto estilos*/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.contact-form {
+    --form-text-color: #666;
+    --form-placeholder-color: #006999;
+    --form-success-color: #4cad50;
+    --form-error-color: #f44336;
+    --form-bg-color: #ddd;
+    --form-border-color: #222;
+
+    background-color: var(--form-bg-color);
+    border: thin solid var(--form-border-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    width: 80%;
+}
+
+.contact-form > * {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 0.25rem;
+    color: var(--form-text-color);
+    caret-color: var(--form-placeholder-color);
+}
+
+.contact-form > *::placeholder {
+    color: var(--form-placeholder-color);
+}
+
+.contact-form > *[required]:invalid {
+    border: thin solid var(--form-error-color);
+}
+.contact-form > *[required]:valid {
+    border: thin solid var(--form-success-color);
+}
+
+.contact-form input[type="submit"] {
+    margin-bottom: 0;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--form-placeholder-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact-form input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+/*------------------fin---------------------*/
+.fin-de-curso {
+    background-color: #000000;
+    margin: 0;
+    padding: .5rem;
+    color: wheat;
+}
+
+.fin-de-curso p {
+    font-size: 2rem;
+    text-align: center;
+}

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo tipos de datos</title>
+</head>
+<body>
+    <h1>Nuevos tipos de Datos en Javascript</h1>
+    <h2>this en Javascript</h2>
+    <script>
+        let id = Symbol("id");
+        let id2 = Symbol("id");
+
+        console.log(id===id2);
+        console.log(id, id2);
+        console.log(typeof id, typeof id2);
+
+        const NOMBRE = Symbol("nombre");
+        const SALUDAR = Symbol("saludar");
+
+        const persona = {
+            [NOMBRE]: "josue",
+            edad: 17
+        };
+        console.log(persona);
+
+        persona.NOMBRE = "josue huayapa";
+        console.log(persona);
+        console.log(persona.NOMBRE);
+        console.log(persona[NOMBRE]);
+
+        persona[SALUDAR] = function () {
+            console.log(`Hola`);
+        }
+        console.log(persona);
+        persona[SALUDAR]();
+
+
+        for(let propiedad in persona) {
+            console.log(propiedad);
+            console.log(persona[propiedad]);
+        }
+
+        Object.getOwnPropertySymbols(persona);
+        //--------------------------------------------------------------------------------------------------------------
+        //Ejercicios "2"
+           /* const numeroSobre = (number, sobre) => {
+                if(typeof number !== "number"){
+                    return Promise.reject(`error 1 ${number}`)
+                } 
+                if(typeof sobre !== "number") {
+                    return Promise.reject(`error 2${sobre}`);
+                }
+
+                return new Promise((resolucion,error) => {
+                    setTimeout(() => {
+                        resolucion({number,
+                            resolucion: number ** sobre
+                        });
+                    },0 | Math.random()*500);
+                
+                }); 
+            }*/
+           /*numeroSobre(4,3)
+
+           PROMESAS
+           .then(obj => {
+            console.log("inicio")
+            console.log(`numero: ${obj.number}, total:${obj.resolucion}`)
+                return numeroSobre(5,5)
+           })
+           .then(obj => {
+            console.log(`numero: ${obj.number}, total:${obj.resolucion}`)
+                return numeroSobre(2,5)
+           })
+           .then(obj => {
+            console.log(`numero: ${obj.number}, total:${obj.resolucion}`)
+           })
+           .catch((err => console.error(err)))*/
+
+           //ASYN -AWAIT
+
+           /*async function funcionParaNumeroSobre(){
+            try {
+                console.log("inicio");
+                let num = await numeroSobre(4,3);
+                    console.log(`numero: ${num.number}, total:${num.resolucion}`)
+
+                num = await numeroSobre(5,5);
+                    console.log(`numero: ${num.number}, total:${num.resolucion}`)
+
+                num = await numeroSobre(2,5);
+                    console.log(`numero: ${num.number}, total:${num.resolucion}`)
+
+                console.log("fin")
+
+            } catch (error) {
+                console.log(error)
+            }
+           }
+           funcionParaNumeroSobre();*/
+        //--------------------------------------------------------------------------------------------------------------
+        //SETS
+        const set = new Set([1, 3, 2, 3, 4, 5, true, false, false, {}, {}, "hola", "Hola"]);
+        console.log(set);
+        console.log(set.size);
+
+        const set2 = new Set();
+        set2.add(1);
+        set2.add(2);
+        set2.add(3);
+        set2.add(true);
+        set2.add(true);
+        set2.add(false);
+        set2.add("que tal");
+        set2.add({});
+        console.log(set2);
+        console.log(set2.size);
+
+        for(item of set) {
+            console.log(item);
+        }
+
+        set.forEach(item => console.log(item));
+
+        let arr = Array.from(set);
+        console.log(arr[6]);
+
+        set.delete("Hola");
+        console.log(set);
+
+        console.log(set.has(1));
+        console.log(set.has(true));
+
+        set2.clear();
+        console.log(set2);
+
+        //----------------------------------------------------------------------------------------------------------------
+        //MAPS
+
+        let mapa = new Map();
+        mapa.set("nombre", "josue");
+        mapa.set("apellido", "huayapa");
+        mapa.set("edad", 17);
+
+        console.log(mapa);
+        console.log(mapa.size);
+        console.log(mapa.has("correo"));
+        console.log(mapa.has("nombre"));
+        console.log(mapa.get("nombre"));
+        mapa.set("nombre", "josue huayapa");
+        console.log(mapa.get("nombre"));
+        mapa.delete("apellido");
+        console.log(mapa);
+
+        for (let [key, value] of mapa) {
+            console.log(`Llave: ${key}, Valor: ${value}`);  
+        }
+
+        const mapa2 = new Map([
+            ["nombre", "whizz"],
+            ["edad", 4],
+            ["animal", "perro"],
+            [null, "nulo"]
+        ])
+        console.log(mapa2);
+
+        const llavesDeMapa2 = [...mapa2.keys()];
+        const valoresDeMapa2 = [...mapa2.values()];
+
+        console.log(llavesDeMapa2);
+        console.log(valoresDeMapa2);
+        //----------------------------------------------------------------------------------------------------------------
+        //WEAKSETS & WEAKMAPS
+        //weakset
+        const ws = new WeakSet();
+
+        let valor1 = {"valor1": 1};
+        let valor2 = {"valor2": 2};
+        let valor3 = {"valor3": 3};
+
+        ws.add(valor1);
+        ws.add(valor2);
+        console.log(ws);
+
+        console.log(ws.has(valor1));
+        console.log(ws.has(valor3));
+
+        ws.delete(valor2);
+        console.log(ws);
+
+        ws.add(valor2);
+        console.log(ws);
+
+        /*setInterval(() => console.log(ws), 1000);
+
+        setTimeout(() => {
+            valor1 = null;
+            valor2 = null;
+            valor3 = null;
+        }, 2000);*/
+        //weakmap
+        const wm = new WeakMap();
+        let llave1 = {};
+        let llave2 = {};
+        let llave3 = {};
+
+        wm.set(llave1, 1);
+        wm.set(llave2, 2);
+        console.log(wm);
+
+        console.log(wm.has(llave1));
+        console.log(wm.has(llave3));
+
+        console.log(wm.get(llave1));
+        console.log(wm.get(llave2));
+        console.log(wm.get(llave3));
+
+        wm.delete(llave2);
+        console.log(wm);
+
+        wm.set(llave2, 2);
+        wm.set(llave3, 3);
+        console.log(wm);
+
+        /*setInterval(() => console.log(wm), 1000);
+
+        setTimeout(() => {
+            llave1 = null;
+            llave2 = null;
+            llave3 = null;
+        }, 2000);*/
+        //---------------------------------------------------------------------------------------------------------------
+        //ejercicios
+        function sumarPromesa(value1, value2) {
+            if(typeof value1 !== "number"){
+                    return Promise.reject(`error 1 ${value1}`);
+                } 
+            if(typeof value2 !== "number") {
+                    return Promise.reject(`error 2${value2}`);
+                }
+
+            return new Promise((resolucion1, error) => {
+                setTimeout(() => {
+                    resolucion1({
+                        value1,
+                        value2,
+                        resultado: value1 + value2
+                    });
+                }, 0 | Math.random() * 1000);
+            })
+        }
+
+        /*sumarPromesa(1, 1)
+        .then(obj => {
+            console.log("Inicio de suma");
+            console.log(`sumar: ${obj.value1} + ${obj.value2} \nResultado: ${obj.resultado}`);
+            return sumarPromesa(2, 2)
+        })
+        .then(obj => {
+            console.log(`sumar: ${obj.value1} + ${obj.value2} \nResultado: ${obj.resultado}`);
+            return sumarPromesa(4, 5)
+        })
+        .catch(err => console.log(err))*/
+
+        /*async function FuncionAsyncSumar(){
+          try {
+            console.log("inicio suma");
+            let obj =  await sumarPromesa(1, 2)
+            console.log(`sumar: ${obj.value1} + ${obj.value2} \nResultado: ${obj.resultado}`);
+
+            obj = await sumarPromesa(4, 5)
+            console.log(`sumar: ${obj.value1} + ${obj.value2} \nResultado: ${obj.resultado}`);
+
+            console.log("fin");
+        } catch (err) {
+            console.log(err);
+        }  
+        }
+        FuncionAsyncSumar();*/
+
+        const SALUDO =  Symbol();
+
+        const saludar = {
+            [SALUDO]: "Hola Mundo"
+        }
+        saludar[SALUDAR]  = function() {
+            console.log("hola");
+        }
+        saludar.SALUDO = "Hola a todos"
+
+        console.log(saludar);
+        console.log(saludar[SALUDO]);
+        console.log(saludar.SALUDO);
+        console.log(Object.getOwnPropertySymbols(saludar));
+
+        let set1 = new Set([1,1,2,3,5,5,true,true]);
+        console.log(set1);
+
+        let map1 = new Map([
+            ["hola", 9],
+            ["numero", 5]
+    ])
+    map1.set("ladrido", "guau")
+
+    console.log(map1);
+
+        let weakset = new WeakSet();
+
+        let valor4 = {"valor4": 4};
+        let valor5 = {"valor5": 5};
+
+        weakset.add(valor4);
+        weakset.add(valor5);
+
+        console.log(weakset);
+
+        let weakmap = new WeakMap();
+
+        let llave4 = {};
+        let llave5 = {};
+
+        weakmap.set(llave4, 5)
+        weakmap.set(llave5, "que tal")
+
+        console.log(weakmap);
+
+        
+
+
+        //----------------------------------------------------------------------------------------------------------------
+        //ITERABLES & ITERATORS
+
+        const iterable = [1, 2, 3, 4, 5];
+        /*const iterable = "Hola mundo";
+        const iterable = new Set([1, 2, 3, 4, 5]);
+        const iterable = new Map([["Nombre", "josue"] ["edad", 17]])*/
+
+        const iterador = iterable[Symbol.iterator]();
+
+        console.log(iterable);
+        console.log(iterador);
+        //forma Manual
+
+        /*console.log(iterador.next());
+        console.log(iterador.next());
+        console.log(iterador.next());
+        console.log(iterador.next());
+        console.log(iterador.next());
+        console.log(iterador.next());*/
+
+        //forma Auto
+
+        let next = iterador.next();
+
+        while (!next.done) {
+            console.log(next.value);
+            next = iterador.next();
+        }
+        //-------------------------------------------------------------------------------------------------------------
+        //GENERATORS
+
+        function* iterable1 () {
+            yield "hola";
+            console.log("hola consola");
+            yield "hola2";
+            console.log("aqui estaran instrucciones de el codigo");
+            yield "hola 3";
+            yield "hola 4";
+        }
+
+        let iterador1 = iterable1();
+        //manera manual
+        /*console.log(iterador1.next());
+        console.log(iterador1.next());
+        console.log(iterador1.next());
+        console.log(iterador1.next());
+        console.log(iterador1.next());*/
+        //manera auto
+        /*let next1 = iterador1.next();
+
+        while (!next1.done) {
+            console.log(next1.value);
+            next1 = iterador1.next();
+        }*/
+
+        for (const y of iterador1) {
+            console.log(y);
+        }
+
+        const arr1 = [...iterable1()];
+        console.log(arr1);
+
+        function cuadrado(valor) {
+            setTimeout(() => {
+                return console.log({ valor, result: valor * valor});
+            }, Math.random() * 1000);
+        }
+
+        /*function* generador() {
+            console.log("inicio Generador");
+            yield cuadrado(0);
+            yield cuadrado(1);
+            yield cuadrado(2);
+            yield cuadrado(3);
+            yield cuadrado(4);
+            yield cuadrado(5);
+            console.log("termina generador");
+        }
+
+        let gen = generador();
+
+        for (const y of gen) {
+            console.log(y);
+        }*/
+        //---------------------------------------------------------------------------------------------------------------
+        //PROXIES
+
+        const persona1 = {
+            nombre: "",
+            apellido: "",
+            edad: 0
+        }
+
+        const manejador = {
+            set(obj, prop, valor) {
+                if (Object.keys(obj).indexOf(prop) === -1) {
+                    return console.error(`La propiedad "${prop}" no existe en el objeto persona`);
+                }
+
+                if (
+                    (prop === "nombre" || prop === "apellido") &&
+                    !(/^[A-Za-zÑñÁáÉÍÓÚéíóúÜü\s]+$/g.test(valor))
+                ) {
+                    return console.error(`La propiedad "${prop}" solo acepta letras y espacios en blanco`);
+                }
+                obj[prop] = valor;
+            }
+        }
+
+        const josue = new Proxy(persona1, manejador);
+        josue.nombre = "josue";
+        josue.apellido = "huayapa";
+        josue.edad = 17;
+        josue.fecha = 2005;
+        console.log(josue);
+
+        console.log(persona1);
+        //--------------------------------------------------------------------------------------------------------------
+        //PROPIEDADES DINAMICAS DE OBJETOS
+
+        let aleatorio = Math.round(Math.random() * 100 + 5);
+
+        const objUsuarios = {
+            propiedad: "Valor",
+            [`id_${aleatorio}`]: "Valor Aleatorio"
+        };
+        console.log(objUsuarios);
+
+        const usuarios = ["josue", "irma", "miguel", "juan", "pablo"];
+        usuarios.forEach((usuario, index) => objUsuarios[`id_${index}`] = usuario);
+
+        console.log(objUsuarios);
+        //-----------------------------------------------------------------------------------------------------------------
+        //THIS
+        console.log(this);
+        console.log(window);
+        console.log(this === window);
+
+        this.nombre = "Contexto Global";
+        console.log(this.nombre);
+
+        function imprimir() {
+            console.log(this.nombre); //contexto global
+        }
+        imprimir();
+
+        const obj = {
+            nombre: "Contexto Objeto",
+            imprimir: function () {
+                console.log(this.nombre); //contexto objeto
+            }
+        }
+        obj.imprimir();
+
+        const obj2 = {
+            nombre: "Contexto Objeto 2",
+            imprimir //usamos el imprimir de la linea 474
+        }
+        obj2.imprimir();
+
+        const obj3 = {
+            nombre: "Contexto Global 3",
+            imprimir: () => {
+                console.log(this.nombre); //el arrow function no tiene scope por eso ejecutara la funcion global
+            }
+        }
+        obj3.imprimir();
+
+        function Persona(nombre) {
+            this.nombre = nombre;
+            //return console.log(this.nombre); //ejecutara josue si problemas
+
+            /*return function() {
+                console.log(this.nombre, 22);// esta funcion anonima crea su propio scope y como la funcion Persona ya tiene su scope ejecutara el contexto global
+            }*/
+
+            return () => console.log(this.nombre); //como los arrow function no tienen scope ejecutara el nombre 
+        }
+
+        let josue2 = new Persona("josue");
+        josue2();
+        //---------------------------------------------------------------------------------------------------------------------------------------------------
+        //CALL, APPLY , BIND
+        console.log(this);
+        this.lugar = "Contexto global";
+
+        function saludar1(saludo, aQuien) {
+            console.log(` ${saludo} ${aQuien} desde el ${this.lugar}`);
+        }
+
+        saludar1("hola", "whizz");
+
+        const obj4 = {
+            lugar: "contexto objeto 4"
+        }
+        
+        saludar1.call(obj4, "hola", "josue");//recibe los parametros con comas
+        saludar1.call(null, "hola", "josue");//regresara al contexto global
+        saludar1.call(this, "hola", "josue");//ejecuta dependiendo donde esta (en un contexto global o contexto de objeto)
+        saludar1.apply(obj4, ["hola", "huayapa"]); //recibe los parametros con arreglos
+        saludar1.apply(null, ["hola", "huayapa"]);//aplica los mismo que en call
+        saludar1.apply(this, ["hola", "huayapa"]);//aplica los mismo que en call
+
+        //bind crea un enlace , parece un arrow function que no tiene un scope si no utiliza una que a sido creada
+        this.nombre = "window";
+        const persona12 = {
+            nombre: "josue",
+            saludar:function () {
+                console.log(`Hola ${this.nombre}, 22`);//con un arrow function saldria undefined
+            }
+        }
+
+        persona12.saludar();
+
+        const otraPersona = {
+            saludar: persona12.saludar.bind(persona12)//sin el bind marcaria undefined por eso enlazar el contexto con bind
+        }                                               //si pongo this en "persona12" ejecutara el exterior en este caso window
+
+        otraPersona.saludar();
+        //--------------------------------------------------------------------------------------------------------------------------------
+        //JSON  (JavaScript Object Notation)
+        //se usa para transferir información entre sistemas.(javascript, php, python)
+        //es como un traductor para lenguajes
+        
+        const json = {
+            cadena: "jon",
+            numero: 35,
+            booleano: true,
+            arreglo: ["correr", "programar", "cocinar"],
+            objeto: {
+                twitter: "@enlaceTwitter",
+                email: "huayapajosue0@gmail.com"
+            },
+            nulo: null
+        }
+        console.log(json);
+        //json sirve para nodes.js (trabajar en la web)
+        console.log(JSON);
+        //estos comandos solo aplican a javascript
+        //parse: analiza el texto y lo combierte a objeto
+        
+        console.log("{}");//ejecutara el texto {}
+        console.log("[1,2,3]");//ejecutara el texto "[1,2,3]"
+        console.log(JSON.parse("{}")); //ejecutara en objeto {}
+        console.log(JSON.parse("[1,2,3]"));//lo detectara como un arreglo
+        console.log(JSON.parse("true"));//lo detecta como boolean
+        console.log(JSON.parse("19"))//lo detecto como numero
+        //console.log(JSON.parse("'hola mundo'")) los textos no se puede detectar
+        console.log(JSON.parse("null"))//lo detecta como null
+        //console.log(JSON.parse("undefined")) No es un formato valido de objeto para json
+
+        //stringify: es lo contrario de parse osea combierte un objeto o valor de javascript en texto JSON
+        console.log(JSON.stringify({}));//lo combierte a cadena de texto
+        console.log(JSON.stringify([1,2,3]));
+        console.log(JSON.stringify(true));
+        console.log(JSON.stringify(false));
+        console.log(JSON.stringify(19));
+        console.log(JSON.stringify(null));
+        console.log(JSON.stringify(undefined));//aca simplemente se combierte a cadena de texto
+        console.log(JSON.stringify({x: 2, y:3}));//lo combierte a notacion JSON
+        console.log(JSON.stringify(json));//todo lo combirtio a cadena de texto , si lo copias y pegas saldra igual que datos.json
+        console.log(JSON.parse('{"cadena": "jon","numero": "35","booleano": "true","arreglo": ["correr", "programar", "cocinar"],"objeto": {"twitter": "@enlaceTwitter","email": "huayapajosue0@gmail.com"},"nulo": null}'));
+        //en el parse para combertir el texto de json en el objeto 
+        //usar comillas simples primero y luego las comillas normales ya que json usan comillas normales
+        //lo malo todo debe estar en una linea
+        //FIN DE LA PRIMERA PARTE
+
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

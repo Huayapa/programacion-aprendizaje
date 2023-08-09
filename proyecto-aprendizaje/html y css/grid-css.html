@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo -->
+    <title>Aprendiendo Grid CSS</title>
+    <!-- descripcion -->
+    <meta name="description" content="Aqui aprendere a usar grid css">
+    <!-- logo para el icono -->
+    <link rel="icon" href="img/logo-grid-css.png">
+    <!-- google font tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">
+    <!-- Hoja de estilo css -->
+    <link rel="stylesheet" href="css/grid-css.css">
+    <!-- url canonica -->
+    <link rel="canonical" href="https://mi-dominio-de-prueba-grid-css.com/url-grid-css">
+    <!-- Tema de color mobile -->
+    <meta name="theme-color" content="#F17878">
+    <!-- link al compartirlo en las redes -->
+    <meta property="og:title" content="Aprendiendo Grid CSS" />
+    <meta property="og:description" content="Esta es la parte donde aprendemos grid css" />
+    <meta property="og:image" content="https://tudominio.com/img/logo.grid-css.png" />
+    <meta property="og:url" content="https://mi-dominio-de-prueba-grid-css.com/url-grid-css" />
+    <!-- link para compartir en redes (twitter) -->
+    <meta name="twitter:cart" content="Grid CSS">
+    <meta name="twitter:site" content="@huayapa1">
+</head>
+<body>
+  <!-- nav-grid-CSS -->
+  <nav class="nav-principal">
+    <div class="nav-content">
+      <h1>Grid CSS</h1>
+      <div class="enlaces-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#temario">Temario</a>
+        <a href="#final">Fin</a>
+      </div>
+    </div>
+  </nav>
+  <!-- hero-image de grid css -->
+  <header id="inicio" class="hero-image">
+    <h2>Aprendiendo Grid CSS</h2>
+    <!-- <img src="img/logo-grid-css.png" alt="logo-grid"> -->
+  </header>
+  <main>
+    <!-- Introduccion -->
+    <section id="introduccion" class="container-section">
+      <h2>Introduccion</h2>
+      <p>
+        CSS Grid es otra manera de maquetar tu documentacion web, lo cual puede lograr muchos diseños diferentes y no biene a remplazar la otras maquetaciones si no a complementarlos.
+      </p>
+      <p>
+        Lo que destaca en Grid css es que puedes dividir paginas en areas o regiones principales (sistema bidimencional) para definir la relacion en tamaños, posicion y capas entre partes conmo un tablero de ajedrez.
+      </p>
+      <img loading="lazy" src="img/grid-css-tetris-intro-3.png" alt="ejemplo-grid">
+    </section>
+    <hr>
+    <!-- Temario de Curso-->
+    <section id="temario" class="container-section">
+      <h2>Temario del Curso</h2>
+      <article class="info-container">
+        <p>
+          Aqui estara el temario de las seccion sobre grid CSS.
+        </p>
+      </article>
+      <article class="list-container temario-list">
+        <ul>
+          <li>
+            <a href="#conceptos-basicos">Conceptos Basico CSS</a>
+          </li>
+          <li>
+            <details open>
+              <summary>Grid Explicita:</summary>
+              <ul>
+                <li>
+                  <a href="#grid-explicita">Grid Explicita</a>
+                </li>
+                <li>
+                  <a href="#posicionamiento-grid-lines">Posicionamiento con Grid Lines</a>
+                </li>
+                <li>
+                  <a href="#posicionamiento-grid-lines-nombres">Posicionamiento con nombres de Grid Lines</a>
+                </li>
+                <li>
+                  <a href="#posicionamiento-grid-areas">Posicionamiento con Grid Areas</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open>
+              <summary>Grid Implicita</summary>
+              <ul>
+                <li>
+                  <a href="#grid-implicita">Grid Implícita. Grids de bloque y de línea</a>
+                </li>
+                <li>
+                  <a href="#flujo-grid-flow">Flujo de la Grid (Grid Flow)</a>
+                </li>
+                <li>
+                  <a href="#flujo-denso-grid">Flujo Denso de la Grid (Grid Flow Dense)</a>
+                </li>
+                <li>
+                  <a href="#grid-layers">Grid Layers: Celdas en capas (superposición)</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="#orden-alineacion-grid-items">Orden y Alineación de Grid Items</a>
+          </li>
+          <li>
+            <a href="#alineacion-grid-tracks">Alineación de Grid Tracks</a>
+          </li>
+          <li>
+            <a href="#tamanios-maximos-minimos-grid-tracks">Tamaños Máximos y Mínimos de Grid Tracks</a>
+          </li>
+          <li>
+            <a href="#grid-patrones-repetitivos">Grids con Patrones Repetitivos</a>
+          </li>
+          <li>
+            <details open>
+              <summary>Grids Dinamicas</summary>
+              <ul>
+                <li>
+                  <a href="#grid-dinamica-sin-media-queries">Responsive sin Media Queries</a>
+                </li>
+                <li>
+                  <a href="#grids-anidadas-subgrids">Grids Anidadas & Subgrids</a>
+                </li>
+                <li>
+                  <a href="#resposive-layout-grid-lines">Responsive Layout con Grid Lines</a>
+                </li>
+                <li>
+                  <a href="#responsive-layout-grid-areas">Responsive Layout con Grid Areas</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="#resumen">resumen general</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+    <!-- Conceptos Basico  CSS-->
+    <section id="conceptos-basicos" class="container-section">
+      <h2>Conceptos Basicos CSS</h2>
+      <article class="info-container">
+        <p>
+          Aqui en <i>Grid CSS</i> necesitamos entender los conceptos basicos.
+        </p>
+        <img src="img/grid-conceptos.png" alt="grid-conceptos">
+        <p>
+          Al igual que <i>flexbox</i> vamos a tener:
+        </p>
+        <ul class="ul-section-basicos">
+          <li>
+            <h3>
+              contenedor Padre(<b>Grid Container</b>)
+            </h3>
+            <p>
+              Es a la propiedad que le aplicaremos <b>display: grid;</b>.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Elementos Hijos(<b>Grid Items</b>)
+            </h3>
+            <p>
+              Van a ser las celdas (Las celdas se forman al haber una intercepcion entre una columna y una fila).
+            </p>
+          </li>
+          <li>
+            <h3>
+              Lineas de Cuadricula(<b>Grid Lines</b>)
+            </h3>
+            <p>
+              Son las lineas que forman las celdas eso quiere decir que siempre debes añadir uno mas para que formen celdas completas.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Pista de Cuadricula(<b>Grid Track</b>)
+            </h3>
+            <p>
+              Determina si sera toda un fila o toda una columna.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Celda de Cuadricula(<b>Grid Cell</b>)
+            </h3>
+            <p>
+              La celda es cada intercepcion entre una fila y columna.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Area de Cuadricula(<b>Grid Area</b>)
+            </h3>
+            <p>
+              Van a ser areas cuadriculares, quiere decir que puede ser rectangulo o cuadrado perfecto, combinar celdas.
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+    <!-- Grid Explicita -->
+    <section id="grid-explicita" class="container-section">
+      <h2>Grid Explicita</h2>
+      <article class="info-container">
+        <p>
+          Existes diferentes manera para definir una <b>Grid</b>, la mas fundamental es la <i>Grid explicita</i>
+        </p>
+        <h3 class="yellow-title">Porque se llama Grid explicita?</h3>
+        <p>
+          Porque explicitamente vamos a definir numero de filas y numero de columnas que tendra nuestra <b>Grid</b>.
+        </p>
+        <h3 class="skye-blue-title">grid-template-colums</h3>
+        <p>
+          Nos permite definir el numero de columnas
+        </p>
+        <h3 class="skye-blue-title">grid-template-row</h3>
+        <p>
+          Nos permite definir el numero de filas
+        </p>
+        <h3 class="green-title">fraccion</h3>
+        <p>
+          Es un valor para <b>Grid</b> y significa una fraccion el espacio sobrante, eso quiere decir que toda la parte que no este definida sera para el que tenga la fraccion <b>fr</b>
+        </p>
+        <h3 class="skye-blue-title">gap</h3>
+        <p>
+          Es una propiedad nueva que remplaza a estas 2 propiedades obsoletas (ya no se usan) <b>grid-row-gap</b>, <b>grid-column-gap</b> y el shorthand <b>grid-gap</b>
+        </p>
+        <p>
+          Esta propiedad sirve para separar las celdas de <b>Grid</b>
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.grid-explicit</span> {
+      <span class="blue">display</span>: <span class="red">grid</span>;
+      <span class="green">/*grid de 3x3*/</span>
+      <span class="blue">grid-template-columns</span>: <span class="green">50% 100px 1fr</span>;
+      <span class="blue">grid-template-rows</span>: <span class="green">2rem 20vh 30%</span>;
+      <span class="green">/*grid de 5x4*/</span>
+      <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">5, 20%</span>);
+      <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">4, auto</span>);
+      <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">5, 1fr</span>);
+      <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">4, 1fr</span>);
+      <span class="green">/*Grid de 4x5*/</span>
+      <span class="blue">grid-template-columns</span>: <span class="green">20%</span> <span class="yellow">repeat</span>(<span class="green">2, 30%</span>) <span class="green">20%</span>;
+      <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green"></span>);
+      <span class="green">/*propiedades obsoletas*/</span>
+      <span class="blue">grid-row-gap</span>: <span class="green">1rem</span>;
+      <span class="blue">grid-column-gap</span>: <span class="green">1rem</span>;
+      <span class="blue">grid-gap</span>: <span class="green">1rem 1rem</span>;
+      <span class="green">/*nueva propiedad de las obsoletas*/</span>
+      <span class="blue">gap</span>: <span class="green">1vh 1vw</span>;
+      <span class="blue">gap</span>: <span class="green">0</span>;
+    }
+  </code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-explicit">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 6</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 7</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 8</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 9</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 10</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 11</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 12</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 13</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 14</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 15</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 16</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 17</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 18</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 19</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Posicionamiento con Grid Lines -->
+    <section id="posicionamiento-grid-lines" class="container-section">
+      <h2>Posicionamiento con Grid Lines</h2>
+      <article class="info-container">
+        <p>
+          Ahora aprenderemos a como acomodar elementos ocupando numero de celdas con la ayuda de las <b>grid lines</b>.
+        </p>
+        <img src="img/grid-line-concepto.png" alt="grid-line-concepto">
+        <h3 class="yellow-title">Propiedades:</h3>
+        <ul>
+          <li>
+            <h4 class="skye-blue-title">grid-row-start & grid-row-end</h4>
+            <p>
+              Sirve para poner en que celda estara este elemento de las lineas (va desde cierto numero elegido hasta hasta que quieras que sea el final)
+            </p>
+            <div class="code-ejm-container">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.gridline .item:nth-child(10</span> {
+      <span class="blue">grid-row-start</span>: <span class="green">2</span>;
+      <span class="blue">grid-row-end</span>: <span class="green">3</span>;
+    }
+  </code>
+</pre>
+            </div>
+          </li>
+          <li>
+            <h4 class="skye-blue-title">grid-column-start & grid-column-end</h4>
+            <p>
+              Sirve para poner en que celda estara este elemento en las columnas
+              (va desde cierto numero elegido hasta hasta que quieras que sea el final)
+            </p>
+            <div class="code-ejm-container">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.gridline .item:nth-child(10</span> {
+      <span class="blue">grid-column-end</span>: <span class="green">2</span>;
+      <span class="blue">grid-column-start</span>: <span class="green">3</span>;
+    }
+  </code>
+</pre>
+            </div>
+          </li>
+          <li>
+            <h4 class="skye-blue-title">grid-column & grid-row</h4>
+            <p>
+              Es una atajo para las propiedades anteriores, para poder poner los dos valores de cada propiedad debes añadir <b>/</b> en medio.
+            </p>
+            <div class="code-ejm-container">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.gridline .item:nth-child(10</span> {
+      <span class="blue">grid-column</span>: <span class="green">3 / 4</span>;
+      <span class="blue">grid-row</span>: <span class="green">2 / 3</span>;
+    }
+  </code>
+</pre>
+            </div>
+          </li>
+          <li>
+            <h4 class="sky-blue-title">grid-area</h4>
+            <p>
+              <b>Grid-area</b> es una atajo de <i>grid-column</i> y <i>grid-row</i> y el orden de los valores es: primero el <b>grid-row</b> y luego el <b>grid-column</b>
+            </p>
+            <div class="code-ejm-container">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.gridline .item:nth-child(10)</span> {
+      <span class="blue">grid-area</span>: <span class="green">2 / 3 / 3 / 5</span>;
+    }
+  </code>
+</pre>
+            </div>
+          </li>
+        </ul>
+        <p>
+          Con estas propiedades tambien podemos agrandar celdas o combinarlos, para completar espacios de sobra.
+        </p>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.gridline .item:nth-child(10)</span> {
+      <span class="blue">grid-row</span>: <span class="green">2 / 3</span>;
+      <span class="blue">grid-column</span>: <span class="green">3 / 5</span>;
+    }
+  </code>
+</pre>
+        </div>
+        <p>
+          Hay otra manera de combinar o agrandar celdas usando el <b>span</b>
+        </p>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.gridline .item:nth-child(12)</span> {
+      <span class="blue">grid-column</span>: <span class="green">span 2</span>;
+      <span class="blue">grid-row</span>: <span class="green">span 3</span>;
+      <span class="blue">grid-column</span>: <span class="green">1 / span 2</span>;
+      <span class="blue">grid-row</span>: <span class="green">1 / span 2</span>;
+    }
+  </code>
+</pre>
+        </div>
+        <h3 class="yellow-title">Recomendacion</h3>
+        <p>
+          Si vas a definir las posiciones de tus elementos en las partes de las areas, lo mejor sera que definas todas las areas ya que el <i>flujo de la grid</i> (su algoritmo) puede posicionarlos de una mala forma.
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container-1 grid-explicit gridline">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 6</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 7</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 8</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 9</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 10</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 11</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 12</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 13</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 14</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 15</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Posicionamiento con nombres de Grid Lines -->
+    <section id="posicionamiento-grid-lines-nombres" class="container-section">
+      <h2>Posicionamiento con nombres de Grid Lines</h2>
+      <article class="info-container">
+        <p>
+          Ya vimos a como posicionar con <b>grid line</b> esta vez sera lo mismo pero con la tecnica linea en nombres
+        </p>
+        <h3 class="red-title">Como funciona?</h3>
+        <p>
+          Para poder hacer esto debemos agregar a las propiedades de Posicionamiento <b>[]</b> y su respectivo nombre (que no sea largo)
+        </p>
+        <h3 class="yellow-title">Recomendacion</h3>
+        <p>
+          Lo recomendable es no usar esta tecnica de nombre ya que es mas dificil de entender y genera una gran linea de texto aparte no hay diferencias con usar los valores anteriores y no podemos usar los shorthand de <a href="#posicionamiento-grid-lines">posicionamiento-grid-lines</a>
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.grid-line-names</span> {
+      <span class="blue">display</span>: <span class="red">grid</span>;
+      <span class="green">/*grid 3x3*/</span>
+      <span class="blue">grid-template-columns</span>: <span class="green">[linea-c1] 1fr [linea-c2] 1fr [linea-c3] 1fr [linea-c4]</span>;
+      <span class="blue">grid-template-row</span>: <span class="green">[linea-r1] 1fr [linea-r2] 1fr [linea-r3] 1fr [linea-r4]</span>;
+    }
+  </code>
+</pre>
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.grid-line-names .item:nth-child(3)</span> {
+      <span class="blue">grid-row</span>: <span class="red">linea-r3 / linea-r4</span>;
+      <span class="blue">grid-column</span>: <span class="red">linea-c1 / linea-c4</span>;
+    }
+  </code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-line-names">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 6</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 7</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 8</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 9</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Posicionamiento con Grid Areas -->
+    <section id="posicionamiento-grid-areas" class="container-section">
+      <h2>Posicionamiento con Grid Areas</h2>
+      <article class="info-container">
+        <p>
+          Una grid areas forman areas rectangulares en las celdas, esto nos puede servir cuando queremos maquetar la forma de la pagina web.
+        </p>
+        <h3 class="yellow-title">Propiedades</h3>
+        <ul>
+          <li>
+            <h4 class="skye-blue-title">grid-template-areas</h4>
+            <p>
+              Sirve para declarar el area con un nombre como si fuera unas celdas <b>(recomendable hacerlos con espacios)</b>
+            </p>
+            <div class="code-ejm-conteiner">
+<pre class="style-code-1">
+  <code>
+    <span class="orange">.grid-areas</span> {
+      <span class="blue">display</span>: <span class="red">grid</span>;
+      <span class="blue">grid-template-columns</span>: <span class="green">1fr 200px</span>;
+      <span class="blue">grid-template-rows</span>: <span class="green">100px</span> <span class="yellow">repeat</span>(<span class="green">2, 1fr</span>) <span class="green">60px</span>;
+      <span class="blue">grid-template-areas</span>:
+        <span class="red">"header header"</span>
+        <span class="red">"content sidebar"</span>
+        <span class="red">"content sidebar"</span>
+        <span class="red">"footer footer"</span>;
+    }
+  </code>
+</pre>
+            </div>
+          </li>
+          <li>
+            <h4 class="skye-blue-title">grid-areas</h4>
+            <p>
+              Sirve para poder aplicar lo que hicimos en <b>grid-template-areas</b> con sus respectivos nombres declarados.
+            </p>
+            <div class="code-ejm-conteniner">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.header</span> {
+    <span class="blue">grid-area</span>: header;
+  }
+
+  <span class="orange">.content</span> {
+    <span class="blue">grid-area</span>: content;
+  }
+
+  <span class="orange">.sidebar</span> {
+    <span class="blue">grid-area</span>: sidebar;
+  }
+
+  <span class="orange">.footer</span> {
+    <span class="blue">grid-area</span>: footer;
+  }
+
+</code>
+</pre>
+            </div>
+          </li>
+        </ul>
+        <p>
+          Con las grid areas tambien podemos dejar espacios en blancos sin elementos en las maquetaciones, solo debemos poner un punto en la parte que no queremos de <b>grid-template-areas</b>
+        </p>
+        <div class="code-ejm-conteiner">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-areas</span> }
+  <span class="blue">grid-template-areas</span>:
+    <span class="red">"header header"</span>
+    <span class="red">"content sidebar"</span>
+    <span class="red">"content ."</span> <span class="green">&lt;---- es este punto</span>
+    <span class="red">"footer footer"</span>;
+</code>
+</pre>
+        </div>
+        <p>
+          Luego de ver esto nos damos cuenta de porque <b>grid</b> no remplaza a <b>flexbox</b>
+          ya que <i>grid</i> esta pensado para la maquetacion y <i>flexbox</i> para centrar elementos dentro de <i>grid</i>
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-areas">
+          <header class="item header">
+            <p>header</p>
+          </header>
+          <article class="item content">
+            <p>content</p>
+          </article>
+          <aside class="item sidebar">
+            <p>sidebar</p>
+          </aside>
+          <footer class="item footer">
+            <p>footer</p>
+          </footer>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Grid Implícita. Grids de bloque y de línea -->
+    <section id="grid-implicita" class="container-section">
+      <h2>Grid Implícita. Grids de bloque y de línea</h2>
+      <article class="info-container">
+        <h3>Grid Implicita</h3>
+        <p>
+          La <i>Grid Implicita</i> es la sobra o el resto de elementos de una <i>Grid explicita</i> (reticula ya definida sus columnas y filas) y las <i>Grid Implicitas</i> por lo general toman un valor en automatico (se trataran de ajustar al tamaño del contenedor y si no hay mas espacio, se desbordara).
+        </p>
+        <h3>Grids de bloque y de línea</h3>
+        <p>
+          Al igual que <b>flexbox</b> las <i>grid</i> tienen su forma de linea y de bloque:
+        </p>
+        <ul>
+          <li>
+            <p><b>display: grid;</b> &lt;---bloque</p>
+          </li>
+          <li>
+            <p><b>display: inline-grid</b> &lt;---linea</p>
+          </li>
+        </ul>
+        <p>
+          Si la grid esta en linea podemos introducir varias cajas con grid a la mismo ancho(calcular el tamaño)
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-implicit</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">display</span>: <span class="red">inline-grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4, 1fr</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">3, 200px</span>);
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-implicit">
+          <article class="item">
+            <p>grid item 1</p>
+          </article>
+          <article class="item">
+            <p>grid item 2</p>
+          </article>
+          <article class="item">
+            <p>grid item 3</p>
+          </article>
+          <article class="item">
+            <p>grid item 4</p>
+          </article>
+          <article class="item">
+            <p>grid item 5</p>
+          </article>
+          <article class="item">
+            <p>grid item 6</p>
+          </article>
+          <article class="item">
+            <p>grid item 7</p>
+          </article>
+          <article class="item">
+            <p>grid item 8</p>
+          </article>
+          <article class="item">
+            <p>grid item 9</p>
+          </article>
+          <article class="item">
+            <p>grid item 10</p>
+          </article>
+          <article class="item">
+            <p>grid item 11</p>
+          </article>
+          <article class="item">
+            <p>grid item 12</p>
+          </article>
+          <article class="item">
+            <p>grid item 13</p>
+          </article>
+          <article class="item">
+            <p>grid item 14</p>
+          </article>
+          <article class="item">
+            <p>grid item 15</p>
+          </article>
+          <article class="item">
+            <p>grid item 16</p>
+          </article>
+          <article class="item">
+            <p>grid item 17</p>
+          </article>
+          <article class="item">
+            <p>grid item 18</p>
+          </article>
+          <article class="item">
+            <p>grid item 19</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Flujo de la Grid (Grid Flow) -->
+    <section id="flujo-grid-flow" class="container-section">
+      <h2>Flujo de la Grid (Grid Flow)</h2>
+      <article class="info-container">
+        <p>
+          El flujo de la grid permite controlar de como se reparten los elementos dentro de la celda, por defecto se generan filas pero tambien podemos cambiar el flujo.
+        </p>
+        <h3 class="skye-blue-title">grid-auto-flow</h3>
+        <p>
+          Sirve para cambiar el flujo de la grid, si en columna o linea, es como si fuera <b>flex-direction</b> de flexbox.
+        </p>
+        <h3 class="skye-blue-title">grid-auto-columns & grid-auto-rows</h3>
+        <p>
+          Sirven cuando sobra espacio en la reticula y queremos cambiar el tamaño de las celdas sobrantes en menor tamaño para no desbordarse
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-flow</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="green">/*grid de 5x3*/</span>
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">5, 1fr</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">3, 150px</span>);
+    <span class="blue">grid-auto-flow</span>: <span class="red">columns</span>; <span class="green">predeterminado es rows</span>
+    <span class="blue">grid-auto-columns</span>: <span class="green">5px</span>; <span class="green">predeterminado es auto</span>
+    <span class="blue">grid-auto-rows</span>: <span class="green">150px</span>; <span class="green">predeterminado es auto</span>
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-flow">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 6</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 7</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 8</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 9</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 10</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 11</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 12</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 13</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 14</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 15</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 16</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 17</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 18</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 19</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Flujo Denso de la Grid (Grid Flow Dense) -->
+    <section id="flujo-denso-grid" class="container-section">
+      <h2>Flujo Denso de la Grid (Grid Flow Dense)</h2>
+      <article class="info-container">
+        <p>
+          Ahora vamos a aprovechar las celdas vacias o restantes de la <i>Grid Explicita</i> con la densidad.
+        </p>
+        <h3 class="red-title">Importante</h3>
+        <p>
+          Cuando le quieres dar a una celda un columna de 3 pero solo hay 2 columnas, lo que hace es recorrer la otra fila desde el inicio y los de arriba se quedaran vacias
+        </p>
+        <section class="container grid-flow-dense">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 6</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 7</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 8</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 9</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 10</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 11</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 12</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 13</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 14</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 15</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 16</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 17</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 18</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 19</p>
+          </article>
+        </section>
+        <h3 class="red-title">Como aprovechar ese espacio de lo anterior?</h3>
+        <p>
+          Para poder usar los espacios sobrantes que dejo el ejemplo anterior debemos añadir <b>dense</b> dentro de <b>grid-auto-flow</b>(Esto tambien funciona cuando esta en columnas o filas):
+        </p>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  {
+    <span class="blue">grid-auto-flow</span>: <span class="red">row dense</span>;
+  }
+</code>
+</pre>
+        </div>
+        <section class="container grid-flow-dense-1">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 6</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 7</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 8</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 9</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 10</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 11</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 12</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 13</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 14</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 15</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 16</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 17</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 18</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 19</p>
+          </article>
+        </section>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo general</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-flow-dense</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">5, 1fr</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">4, 70px</span>);
+  }
+
+  <span class="orange">.grid-flow-dense .item:nth-child(9)</span> {
+    <span class="blue">color</span>: <span class="red">cyan</span>;
+    <span class="blue">grid-row</span>: <span class="green">span 3</span>;
+    <span class="blue">grid-column</span>: <span class="green">span 3</span>;
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-flow-dense-1">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 6</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 7</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 8</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 9</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 10</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 11</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 12</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 13</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 14</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 15</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 16</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 17</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 18</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 19</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Grid Layers: Celdas en capas (superposición -->
+    <section id="grid-layers" class="container-section">
+      <h2>Grid Layers: Celdas en capas (superposición)</h2>
+      <article class="info-container">
+        <p>
+          Ahora vamos a acomodar los grid items en capas, recuerda que las capas son como cuando quieres dibujar y hay varias capas o hojas para ir deliniando tu dibujo.
+        </p>
+        <img src="/img/capas.png" alt="referencia a las capas">
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-layers</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4, 1fr</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">4, 1fr</span>);
+  }
+
+  <span class="orange">.grid-layers .item:nth-child(1)</span> {
+    <span class="blue">background-color</span>: <span class="red">yellow</span>;
+    <span class="blue">grid-column</span>: <span class="green">1 / 3</span>;
+    <span class="blue">grid-row</span>: <span class="green">1 / 3</span>;
+  }
+
+  <span class="orange">.grid-layers .item:nth-child(2)</span> {
+    <span class="blue">background-color</span>: <span class="red">blue</span>;
+    <span class="blue">grid-column</span>: <span class="green">3 / 5</span>;
+    <span class="blue">grid-row</span>: <span class="green">1 / 3</span>;
+  }
+  <span class="orange">.grid-layers .item:nth-child(3)</span> {
+    <span class="blue">background-color</span>: <span class="red">lightgreen</span>;
+    <span class="blue">grid-column</span>: <span class="green">1 / 3</span>;
+    <span class="blue">grid-row</span>: <span class="green">3 / 5</span>;
+  }
+  <span class="orange">.grid-layers .item:nth-child(4)</span> {
+    <span class="blue">background-color</span>: <span class="red">orange</span>;
+    <span class="blue">grid-column</span>: <span class="green">3 / 5</span>;
+    <span class="blue">grid-row</span>: <span class="green">3 / 5</span>;
+  }
+  <span class="orange">.grid-layers .item:nth-child(5)</span> {
+    <span class="blue">background-color</span>: <span class="red">purple</span>;
+    <span class="blue">opacity</span>: <span class="green">75%</span>;
+    <span class="blue">grid-column</span>: <span class="green">2 / 4</span>;
+    <span class="blue">grid-row</span>: <span class="green">2 / 4</span>;
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-layers">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Orden y Alineación de Grid Items -->
+    <section id="orden-alineacion-grid-items" class="container-section">
+      <h2>Orden y Alineación de Grid Items</h2>
+      <article class="info-container">
+        <div class="sub-info-container">
+          <h3 class="yellow-title">Orden de Grid Items</h3>
+          <p>
+            Ahora vamos a ordenar los elementos hijos dentro de la <b>Grid</b>, para esto vamos usar la misma propiedad que se usaba en <b>flexbox</b> para alinear.
+          </p>
+          <h4 class="skye-blue-title">order</h4>
+          <p>
+            Hace ordenar los elementos de la caja <b>grid</b> o <b>flexbox</b>, el valor predeterminado es 0 y puede aceptar valores negartivos (-1, 0, 1), recuerda que el valor menor ira primero y el mayor ira ultimo.
+          </p>
+          <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-order</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">3, 1fr</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">2, 1fr</span>);
+  }
+
+  <span class="orange">.grid-order .item:nth-child(1)</span> {
+    <span class="blue">order</span>: <span class="green">1</span>;
+  }
+
+  <span class="orange">.grid-order .item:nth-child(2)</span> {
+    <span class="blue">order</span>: <span class="green">2</span>;
+  }
+
+  <span class="orange">.grid-order .item:nth-child(5)</span> {
+    <span class="blue">order</span>: <span class="green">-1</span>;
+  }
+</code>
+</pre>
+          </div>
+          <section class="container grid-order">
+            <article class="item">
+              <p>Grid Item 1</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 2</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 3</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 4</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 5</p>
+            </article>
+          </section>
+          <p>
+            Esta propiedad solo aplica cuando este el flujo de la grid y tambien funciona cuando el <b>grid-auto-flow</b> este en columna o fila.
+          </p>
+        </div>
+        <div class="sub-info-container">
+          <h3 class="yellow-title">Alineación de Grid Items</h3>
+          <p>
+            Ahora vamos a aprender a alinear las <i>celdas</i> solas tambien las filas completas (Grid Track)
+          </p>
+          <h4 class="skye-blue-title">justify-items</h4>
+          <p>
+            Lo que hace <b>justify-items</b> es justificar la alineacion de los items en columna (x) y usa acepta estos valores : <b>stretch(default)</b>, <b>start</b>, <b>end</b>, <b>center</b>.
+          </p>
+          <h4 class="skye-blue-title">align-items</h4>
+          <p>
+            Lo que hace <b>align-items</b> es justificar la alineacion de los items en fila (y) y acepta estos valores: <b>stretch(default)</b>, <b>start</b>, <b>end</b>, <b>center</b>.
+          </p>
+          <h4 class="skye-blue-title">justify-self</h4>
+          <p>
+            Pero si solo quieres alinear un item idependientemente debes usar la propiedad <b>justify-self</b>
+          </p>
+          <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-align</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">3, 200px</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">2, 200px</span>);
+    <span class="green">/*justify-items alinea en el eje X*/</span>
+    <span class="blue">justify-items</span>: <span class="red">center</span>;
+    <span class="green">/*align alinea en el eje Y*/</span>
+    <span class="blue">align-items</span>: <span class="red">center</span>;
+  }
+
+  <span class="orange">.grid-align .item:nth-child(4)</span> {
+    <span class="blue">justify-self</span>: <span class="red">start</span>;
+  }
+</code>
+</pre>
+          </div>
+          <section class="container grid-align">
+            <article class="item">
+              <p>Grid Item 1</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 2</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 3</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 4</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 5</p>
+            </article>
+          </section>
+        </div>
+      </article>
+    </section>
+    <hr>
+    <!-- Alineación de Grid Tracks -->
+    <section id="alineacion-grid-tracks" class="container-section">
+      <h2>Alineación de Grid Tracks</h2>
+      <article class="info-container">
+        <p>
+          Ahora vamos alinear las <b>Grid Track row o column</b>(todas las filas o columnas), lo alineara al contenedor padre y usaremos propiedades que tanbien se usan en <b>flexbox</b>.
+        </p>
+        <h3 class="yellow-title">Propiedades:</h3>
+        <ul>
+          <li>
+            <h4 class="skye-blue-title">justify-content</h4>
+            <p>
+              Sirve para alinea los tracks de la grid en el eje Horizontal (X)
+            </p>
+          </li>
+          <li>
+            <h4 class="skye-blue-title">align-content</h4>
+            <p>
+              Sirve para alinea los tracks de la grid en el eje vertical(Y)
+            </p>
+          </li>
+        </ul>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-align-track</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">3,200px</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">2, 200px</span>);
+    <span class="blue">justify-content</span>: <span class="red">center</span>;
+    <span class="blue">justify-content</span>: <span class="red">space-evenly</span>;
+    <span class="blue">align-items</span>: <span class="red">center</span>;
+    <span class="blue">align-items</span>: <span class="red">space-between</span>;
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-align-track">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Tamaños Máximos y Mínimos de Grid Tracks -->
+    <section id="tamanios-maximos-minimos-grid-tracks" class="container-section">
+      <h2>Tamaños Máximos y Mínimos de Grid Tracks</h2>
+      <article class="info-container">
+        <p>
+          Existe una funcion que se llama <b>grid-min-max</b> que nos permite tener maximos tamaños y minimos tamaños en cada uno de los <b>tracks</b>
+        </p>
+        <h3 class="yellow-title">minmax()</h3>
+        <p>
+          Esta propiedad sirve para poder hacer que la grid sea mas dinamica, acepta 2 valores (la primera es para el valor minima del elemento y el segundo es para el valor maximo)
+        </p>
+        <h3 class="red-title">min-content & max-content</h3>
+        <p>
+          Son 2 valores que puede aceptar el <b>minmax()</b> y su utilidad es para reducir o aumentar el minimo o maximo del contenido(las letras), si la palabra es larga no se cortara pero si los espacios de la oracion, estos dos valores los puedes usar en los tamaño maximo o minimo cualquiera de los 2.
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-min-max</span> {
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4, 1fr</span>);
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4</span>, <span class="yellow">minmax</span>(<span class="green">100px, 200px</span>));
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4</span>, <span class="yellow">minmax</span>(<span class="red">min-content</span>, <span class="green">200px</span>));
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4</span>, <span class="yellow">minmax</span>(<span class="green">100px</span>, <span class="red">min-content</span>));
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4</span>, <span class="yellow">minmax</span>(<span class="green">100px</span>, <span class="red">max-content</span>));
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4</span>, <span class="yellow">minmax</span>(<span class="red">max-content</span>, <span class="green">200px</span>));
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4</span>, <span class="yellow">minmax</span>(<span class="red">MIN-content</span>, <span class="red">max-content</span>));
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container grid-min-max">
+          <article class="item">
+            <p>GridItems1</p>
+          </article>
+          <article class="item">
+            <p>Grid Items 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Items 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Items 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Items 5</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Grids con Patrones Repetitivos -->
+    <section id="grid-patrones-repetitivos" class="container-section">
+      <h2>Grids con Patrones Repetitivos</h2>
+      <article class="info-container">
+        <p>
+          Ahora hacer patrones Repetitivos para la <b>Grid</b> y usaremos la funcion <b>repeat()</b> que ya sabemos anteriormente.
+        </p>
+        <h3 class="yellow-title">repeat()</h3>
+        <p>
+          Esta funcion repetira el tamaño de las celdas dependiendo del valor que pongas, esta funcion no servira para las <b>grid implicitas</b>(<b>grid-auto-rows</b>, <b>grid-auto-columns</b>, <b>grid-auto-flow</b>).
+        </p>
+        <h3 class="red-title">nos sirve para:</h3>
+        <p>
+          Nos puede sevir para darles patrones diferentes de una manera distinta.
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-repeat</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4, 10% 20% 30% 40%</span>);
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">3, 10% 20% 30% 40%</span>);
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">2, 10% 20% 30% 40%</span>);
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">1, 10% 20% 30% 40%</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">2, 100px 200px</span>);
+    <span class="blue">grid-auto-rows</span>: <span class="green">150px</span>;
+    <span class="blue">grid-auto-rows</span>: <span class="yellow">repeat</span>(<span class="green">2, 100px 200px</span>); <span class="green">/*no funcionara*/</span>
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <section class="container  grid-repeat">
+          <article class="item">
+            <p>Grid Item 1</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 2</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 3</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 4</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 5</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 6</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 7</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 8</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 9</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 10</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 11</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 12</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 13</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 14</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 15</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 16</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 17</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 18</p>
+          </article>
+          <article class="item">
+            <p>Grid Item 19</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Grids Dinámicas. Responsive sin Media Queries -->
+    <section id="grid-dinamica-sin-media-queries" class="container-section">
+      <h2>Grids Dinámicas. Responsive sin Media Queries</h2>
+      <article class="info-container">
+        <div class="sub-info-container">
+          <h3>Grids Dinamicas</h3>
+          <p>
+            Vamos a aprender 2 valores que nos ayudaran al asignar al tamaño de las columnas y filas, estos 2 valores nos serviran para realizar <i>resposive Design</i> sin la necesesidad de meter <i>Media Queries</i>.
+          </p>
+          <h4 class="red-title">auto-fill</h4>
+          <p>
+            Sirve para rellenar la caja de la grid con tracks generados dinamicamente y funcionar si es fila o columna.
+          </p>
+          <h4 class="red-title">auto-fit</h4>
+          <p>
+            Sirve para ajustar la grid con los tracks existentes y funcionar si es fila o columna.
+          </p>
+          <h4 class="yellow-title">Importante</h4>
+          <ul>
+            <li>
+              <p>
+                Si usamos la funcion <b>minmax()</b> como segundo valor en una columna o fila y esta el <b>auto-fill</b>, generara espacios disponibles cuando quieras agregar otros items.
+              </p>
+            </li>
+            <li>
+              Si usamos la funcion <b>minmax()</b> como segundo valor en una columna o fila y esta el <b>auto-fit</b>, ajustara las items dentro del contenedor.
+            </li>
+          </ul>
+          <h4 class="red-title">Codigo</h4>
+          <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-dynamics</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="green">/*grid de 4cx?f*/</span>
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">4, 100px</span>);
+    <span class="green">/*auto-fill rellena la grid con tracks generados dinamicamente*/</span>
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">auto-fill, 100px</span>);
+    <span class="green">/*auto-fit Ajusta la grid con los tracks generados dinamicamente*/</span>
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">auto-fit, 100px</span>);
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="blue">auto-fill</span>, <span class="yellow">minmax</span>(<span class="green">100px, 1fr</span>));
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="blue">auto-fit</span>, <span class="yellow">minmax</span>(<span class="green">100px, 1fr</span>));
+  }
+</code>
+</pre>
+          </div>
+          <h4 class="red-title">Ejemplo</h4>
+          <section class="container grid-dynamics">
+            <article class="item">
+              <p>Grid Item 1</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 2</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 3</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 4</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 5</p>
+            </article>
+          </section>
+        </div>
+        <div class="sub-info-container">
+          <h3>Responsive sin Media Queries</h3>
+          <p>
+            ahora vamos a practicarlo en hacerlos responsivo sin media queries y usaremos lo que previamente vimos anteriormente
+          </p>
+          <h4 class="red-title">Codigo</h4>
+          <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-responsive</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="blue">auto-fit</span>, <span class="yellow">minmax</span>(<span class="green">150px, 1fr</span>));
+  }
+</code>
+</pre>
+          </div>
+          <h4 class="red-title">ejemplo</h4>
+          <section class="container grid-responsive">
+            <article class="item">
+              <p>Grid Item 1</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 2</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 3</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 4</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 5</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 6</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 7</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 8</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 9</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 10</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 11</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 12</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 13</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 14</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 15</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 16</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 17</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 18</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 19</p>
+            </article>
+          </section>
+        </div>
+      </article>
+    </section>
+    <hr>
+    <!-- Grids Anidadas & Subgrids -->
+    <section id="grids-anidadas-subgrids" class="container-section">
+      <h2>Grids Anidadas & Subgrids</h2>
+      <article class="info-container">
+        <p>
+          Ahora vamos a aprender a como hacer que un elemento hijo <b>grid</b> pueda ser grid, esto se conoce como las <b>Grids Anidadas</b> y veremos tambien una caracteristica que se llama <b>subgrid</b> que sirve para que los nietos van a heredar las caracteristicas de la Grid Padre.
+        </p>
+        <section class="sub-info-container">
+          <h3 class="red-title">Grids Anidadas</h3>
+          <p>
+            Para poder hacer esto solo debemos agregar la misma <b>clase</b> al elemento hijo que contiene nietos, aunque no compartiran en una misma reticula.
+          </p>
+          <h4 class="red-title">Codigo</h4>
+          <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid-nested</span> { <span class="green">&lt;--se usara en el padre y en el hijo</span>
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="green">grid de 3cx?f</span>
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">3, 1fr</span>);
+  }
+</code>
+</pre>
+          </div>
+          <h4 class="red-title">Ejemplo</h4>
+          <section class="container grid-nested">
+            <article class="item grid-nested">
+              <div class="subitem">
+                <p>Grid SubItem Anidado 1</p>
+              </div>
+              <div class="subitem">
+                <p>Grid SubItem Anidado 2</p>
+              </div>
+              <div class="subitem">
+                <p>Grid SubItem Anidado 3</p>
+              </div>
+              <div class="subitem">
+                <p>Grid SubItem Anidado 4</p>
+              </div>
+              <div class="subitem">
+                <p>Grid SubItem Anidado 5</p>
+              </div>
+            </article>
+            <article class="item">
+              <p>Grid Item 2</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 3</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 4</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 5</p>
+            </article>
+          </section>
+        </section>
+        <section class="sub-info-container">
+          <h3 class="red-title">Sub Grids</h3>
+          <p>
+            El problema de que no se pueden juntar las reticulas en las <b>Grid Anidadas</b> se puede solucionar gracias a las <b>sub Grids</b>, pero esta caracteristica <a href="https://caniuse.com/?search=subgrid" target="_blank">no esta soportada en todos los navegadores</a>.
+          </p>
+          <h4 class="yellow-title">Pasos para que funcione:</h4>
+          <ol>
+            <li>
+              <p>
+                Definir explicitamente el tamaño que ocupará el elemento que aplicara subgrid dentro del contenedor padre, es decir definir las propiedades <b>grid-column</b> y <b>grid-row</b>
+              </p>
+            </li>
+            <li>
+              <p>
+                Aplicar display grid al elemento que aplicara subgrid
+              </p>
+            </li>
+            <li>
+              <p>
+                Aplicar el valor de subgrid a las columnas, a las filas o ambas depende de como se requiera
+              </p>
+            </li>
+          </ol>
+          <h4 class="red-title">Codigo</h4>
+          <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">.grid</span> {
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="green">/*grid de 3cx2f*/</span>
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">3, 1fr</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">4, 1fr</span>);
+  }
+  <span class="orange">.subgrid</span> {
+    <span class="green">/*Paso 1*/</span>
+    <span class="blue">grid-columns</span>: <span class="red">span 3</span>;
+    <span class="blue">grid-rows</span>: <span class="red">1 / 3</span>;
+    <span class="green">/*Paso 2*/</span>
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="green">/*Paso 3*/</span>
+    <span class="blue">grid-template-columns</span>: <span class="red">subgrid</span>;
+    <span class="blue">grid-template-rows</span>: <span class="red">subgrid</span>;
+  }
+</code>
+</pre>
+          </div>
+          <h4 class="red-title">Ejemplo</h4>
+          <section class="container grid">
+            <article class="item subgrid">
+              <div class="subitem">
+                <p>Grid SubItem 1</p>
+              </div>
+              <div class="subitem">
+                <p>Grid SubItem 2</p>
+              </div>
+              <div class="subitem">
+                <p>Grid SubItem 3</p>
+              </div>
+              <div class="subitem">
+                <p>Grid SubItem 4</p>
+              </div>
+              <div class="subitem">
+                <p>Grid SubItem 5</p>
+              </div>
+            </article>
+            <article class="item">
+              <p>Grid Item 2</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 3</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 4</p>
+            </article>
+            <article class="item">
+              <p>Grid Item 5</p>
+            </article>
+          </section>
+          <i>Si no se aprecia es porque el navegador donde lo visualizas aun no es compatible</i>
+        </section>
+      </article>
+    </section>
+    <hr>
+    <!-- Responsive Layout con Grid Lines -->
+    <section id="resposive-layout-grid-lines" class="container-section">
+      <h2>Responsive Layout con Grid Lines</h2>
+      <article class="info-container">
+        <p>
+          Ya vimos todas las caracteristicas sobre las <b>grids</b> ahora vamos a hacer algunos ejercicios, este ejercicios trataran de hacer resposive layout con lineas e areas.
+        </p>
+        <h3 class="yellow-title">grid lines</h3>
+        <p>
+          Si buscamos <b>holy grail layout</b> en tu navegador encotraremos las maquetaciones simples.
+        </p>
+        <img src="img/holy layout.jpg" alt="holy grail layout">
+        <p>
+          <i>haremos lo que esta en la imagen usando <b>grid Lines</b></i>
+        </p>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+          <h4>Cuerpo general del codigo</h4>
+<pre class="style-code-1">
+<code>
+  <span class="orange">body</span> {
+    <span class="blue">margin</span>: <span class="green">0</span>;
+    <span class="blue">min-height</span>: <span class="green">100vh</span>;
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">6, 1fr</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">5, auto</span>);
+  }
+</code>
+</pre>
+          <h4>Version mobile</h4>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.header</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 6</span>
+    <span class="blue">grid-row</span>: <span class="green">span 1</span>
+  }
+  <span class="orange">.nav</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 6</span>
+    <span class="blue">grid-row</span>: <span class="green">2 / 3</span>
+  }
+  <span class="orange">.uc-left</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 1</span>
+    <span class="blue">grid-row</span>: <span class="green">span 2</span>
+  }
+  <span class="orange">.uc-center</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 1</span>
+    <span class="blue">grid-row</span>: <span class="green">span 2</span>
+  }
+  <span class="orange">.uc-right</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 1</span>
+    <span class="blue">grid-row</span>: <span class="green">span 2</span>
+  }
+  <span class="orange">.middle</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 3</span>
+    <span class="blue">grid-row</span>: <span class="green">span 1</span>
+  }
+  <span class="orange">.lower</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 3</span>
+    <span class="blue">grid-row</span>: <span class="green"> span 1</span>
+  }
+  <span class="orange">.footer</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 6</span>
+    <span class="blue">grid-row</span>: <span class="green"> span 1</span>
+  }
+</code>
+</pre>
+          <h4>Version desktop</h4>
+<pre class="style-code-1">
+<code>
+  <span class="purple">@media</span> <span class="red">screen</span> and (<span class="blue">min-width</span>: <span class="green">1024px</span>) {
+    <span class="orange">body</span> {
+      <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">5, 1fr</span>);
+      <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">5, auto</span>);
+    }
+    <span class="orange">.header</span> {
+    <span class="blue">grid-column</span>: <span class="green">span 5</span>
+    <span class="blue">grid-row</span>: <span class="green">span 1</span>
+    }
+    <span class="orange">.nav</span> {
+    <span class="blue">grid-column</span>: <span class="green">1 / 2</span>
+    <span class="blue">grid-row</span>: <span class="green">2 / 5</span>
+    }
+    <span class="orange">.uc-left</span> {
+    <span class="blue">grid-column</span>: <span class="green">2 / 3</span>
+    <span class="blue">grid-row</span>: <span class="green">2 / 3</span>
+    }
+    <span class="orange">.uc-center</span> {
+    <span class="blue">grid-column</span>: <span class="green">3 / 5</span>
+    <span class="blue">grid-row</span>: <span class="green">2 / 3</span>
+    }
+    <span class="orange">.uc-right</span> {
+    <span class="blue">grid-column</span>: <span class="green">5 / 6</span>
+    <span class="blue">grid-row</span>: <span class="green">2 / 3</span>
+    }
+    <span class="orange">.middle</span> {
+    <span class="blue">grid-column</span>: <span class="green">2 / 6</span>
+    <span class="blue">grid-row</span>: <span class="green">3 / 4</span>
+    }
+    <span class="orange">.lower</span> {
+    <span class="blue">grid-column</span>: <span class="green">2 / 6</span>
+    <span class="blue">grid-row</span>: <span class="green">4 / 5</span>
+    }
+    <span class="orange">.footer</span> {
+    <span class="blue">grid-column</span>: <span class="green">1 / 6</span>
+    <span class="blue">grid-row</span>: <span class="green"> 5 / 6</span>
+    }
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <a href="grid_layout.html" target="_blank">Ejemplo de la maquetacion aqui</a>
+        <iframe width="90%" height="500px" src="grid_layout.html" frameborder="0"></iframe>
+      </article>
+    </section>
+    <hr>
+    <!-- Responsive Layout con Grid Areas -->
+    <section id="responsive-layout-grid-areas" class="container-section">
+      <h2>Responsive Layout con Grid Areas</h2>
+      <article class="info-container">
+        <p>
+          Ahora vamos a hacer lo mismo que el anterior (<b>resposive layout</b>) pero esta vez usaremos las <b>Grid Areas</b>
+        </p>
+        <p>
+          <b>
+            Con esta forma de hacerlo, hace hacer menos codigo y mas entendible
+          </b>
+        </p>
+        <h3 class="yellow-title">Links de Recomendacion para aprender CSS Grid</h3>
+        <ul>
+          <li>
+            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">css-tricks</a>
+          </li>
+          <li>
+            <a href="https://learncssgrid.com/" target="_blank">learncssgrid</a>
+          </li>
+          <li>
+            <a href="https://www.w3.org/TR/css3-grid-layout/" target="_blank">w3c</a>
+          </li>
+          <li>
+            <a href="http://www.gridexamples.com/" target="_blank">grid-examples</a>
+          </li>
+          <li>
+            <a href="https://codepen.io/collection/DgwjNL/" target="_blank">codepen</a>
+          </li>
+          <li>
+            <a href="https://codepen.io/anthonydugois/pen/RpYBmy" target="_blank">codepen</a>
+          </li>
+          <li>
+            <a href="https://griddy.io/" target="_blank">griddy</a>
+          </li>
+          <li>
+            <a href="https://cssgridgarden.com/#es" target="_blank">cssgridgarden</a>
+          </li>
+        </ul>
+      </article>
+      <article class="code-container">
+        <h3 class="red-title">Codigo</h3>
+        <div class="code-ejm-container">
+<pre class="style-code-1">
+<code>
+  <span class="orange">body</span> {
+    <span class="blue">margin</span>: <span class="green">0</span>;
+    <span class="blue">min-height</span>: <span class="green">100vh</span>;
+    <span class="blue">display</span>: <span class="red">grid</span>;
+    <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">6, 1fr</span>);
+    <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">5, auto</span>);
+    <span class="blue">grid-template-areas</span>: <span class="red">
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "uc-left uc-left uc-center uc-center uc-right uc-right"
+      "middle middle middle lower lower lower"
+      "footer footer footer footer footer footer"</span>;
+  }
+</code>
+</pre>
+          <h4>Version mobile</h4>
+<pre class="style-code-1">
+<code>
+  <span class="orange">.header</span> {
+    <span class="blue">grid-area</span>: <span class="white">header</span>
+  }
+  <span class="orange">.nav</span> {
+    <span class="blue">grid-area</span>: <span class="white">nav</span>
+  }
+  <span class="orange">.uc-left</span> {
+    <span class="blue">grid-area</span>: <span class="white">uc-left</span>
+  }
+  <span class="orange">.uc-center</span> {
+    <span class="blue">grid-area</span>: <span class="white">uc-center</span>
+  }
+  <span class="orange">.uc-right</span> {
+    <span class="blue">grid-area</span>: <span class="white">uc-right</span>
+  }
+  <span class="orange">.middle</span> {
+    <span class="blue">grid-area</span>: <span class="white">middle</span>
+  }
+  <span class="orange">.lower</span> {
+    <span class="blue">grid-area</span>: <span class="white">lower</span>
+  }
+  <span class="orange">.footer</span> {
+    <span class="blue">grid-area</span>: <span class="white">footer</span>
+  }
+</code>
+</pre>
+          <h4>Version desktop</h4>
+<pre class="style-code-1">
+<code>
+  <span class="purple">@media</span> <span class="red">screen</span> and (<span class="blue">min-width</span>: <span class="green">1024px</span>) {
+    <span class="orange">body</span> {
+      <span class="blue">grid-template-columns</span>: <span class="yellow">repeat</span>(<span class="green">5, 1fr</span>);
+      <span class="blue">grid-template-rows</span>: <span class="yellow">repeat</span>(<span class="green">5, auto</span>);
+      <span class="blue">grid-template-areas</span>: <span class="red">
+        "header header header header header"
+        "nav uc-left uc-center uc-center uc-right"
+        "nav middle middle middle middle"
+        "nav lower lower lower lower"
+        "footer footer footer footer footer"</span>;
+    }
+  }
+</code>
+</pre>
+        </div>
+        <h3 class="red-title">Ejemplo</h3>
+        <a href="grid-layout-areas.html" target="_blank">Ejemplo de la maquetacion aqui</a>
+        <iframe width="90%" height="500px" src="grid-layout-areas.html" frameborder="0"></iframe>
+      </article>
+    </section>
+    <hr>
+    <!-- resumen -->
+    <section id="resumen" class="container-section">
+      <h2>resumen general</h2>
+      <article class="info-container">
+        <p>
+          mostraremos las propiedades mas inportantes y resumire el contenido:
+        </p>
+        <h3 class="yellow-title">Propiedades</h3>
+        <ul>
+          <li>
+            <h4 class="skye-blue-title">display: grid;</h4>
+            <p>activar el grid</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="skye-blue-title">grid-template-columns & grid-auto-rows</h4>
+            <p>definir columnas o filas</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="skye-blue-title">gap</h4>
+            <p>separa celdas</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="red-title">posicionamiento grid line</h4>
+            <p><b class="skye-blue-title">grid-column & grid-row</b> acomodan elementos</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="red-title">posicionamiento grid areas</h4>
+            <p><b class="skye-blue-title">grid-template-areas & grid-area</b> acomodar elementos</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="skye-blue-title">grid-auto-flow & grid-auto-columns & grid-auto-rows</h4>
+            <p>sirven para el flujo de la grid</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="skye-blue-title">order</h4>
+            <p>ordenar elementos</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="skye-blue-title">justify-items & align-items & justify-self</h4>
+            <p>alinear celdas</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="skye-blue-title">justify-content & align-content</h4>
+            <p>alinear tracks</p>
+          </li>
+          <hr>
+          <li>
+            <h4 class="yellow-title">funciones y valores:</h4>
+            <ul>
+              <li>
+                <p class="green-title">1fr</p>
+              </li>
+              <li>
+                <p class="red-title">dense</p>
+              </li>
+              <li>
+                <p class="white">span</p>
+              </li>
+              <li>
+                <p class="yellow-title">minmax()</p>
+              </li>
+              <li>
+                <p class="red-title">min-content & max-content</p>
+              </li>
+              <li>
+                <p class="yellow-title">repeat()</p>
+              </li>
+              <li>
+                <p class="red-title">auto-fit & auto-fill</p>
+              </li>
+              <li>
+                <p class="red-title">subgrid</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+  </main>
+  <!-- footer -->
+  <footer id="final" class="footer">
+    <div>
+      <ul class="enlaces-hover">
+        <li>
+          <a href="#">email: huayapajosue0@gmail.com</a>
+        </li>
+        <li>
+          <a href="#">twitter: aun falta</a>
+        </li>
+        <li>
+          <a href="#">facebook: huayapa josue</a>
+        </li>
+      </ul>
+    </div>
+    <div class="tarjeta-modal">
+      <a href="#modal-1" class="boton-modal">📜</a>
+      <article id="modal-1" class="modal">
+        <div class="modal-container">
+          <a href="#cerrar" class="modal-close">X</a>
+          <h2 class="yellow-title">Donde aprendi esto?</h2>
+          <p>
+            Todo esto lo aprendi en youtube gracias a <b>jonmircha</b>.
+          </p>
+          <div class="enlace-modal">
+            <a href="https://jonmircha.com/" target="_blank"><img src="img/unnamed.jpg" alt=""></a>
+            <h3>jonmircha</h3>
+          </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
